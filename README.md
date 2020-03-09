@@ -4,7 +4,7 @@
 
 Reconhecedor de entidades atual (rule_based_ner.py): Baseia-se em uma combinação de expressões regulares com o extrator de nomes (de pessoas e organizações) da biblioteca spaCy.
 
-As expresses regulares que estão sendo mantidas no arquivo rules.tsv, com o formato <TIPO de ENTIDADE> \t <EXPRESSÃO REGULAR>, 
+As expresses regulares estão sendo mantidas no arquivo rules.tsv, com o formato <TIPO de ENTIDADE> \t <EXPRESSÃO REGULAR>, 
 
 
 Como utilizar:
