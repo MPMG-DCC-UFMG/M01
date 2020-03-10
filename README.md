@@ -17,9 +17,9 @@ Como utilizar:
      Obs.: Se preferir, pode instalar dentro de um ambiente virtual (https://docs.python.org/3/tutorial/venv.html)
 
 3) Rodar o script:
-      python3 -m rule_based_ner entrada saida
+      python3 -m rule_based_ner <ENTRADA> <SAIDA>
  
-     onde entrada é um arquivo contendo texto livre qualquer e saída é o arquivo de saída, que está no seguinte formato: uma entidade por linha e três colunas separadas por \t: tipo da entidade, string da entidade, e janela de texto onde ela apareceu. Também é gerado um arquivo .json no formato aceito pelo doccano (interface gráfica para rotulação de texto)
+     onde <ENTRADA> é um arquivo contendo texto livre qualquer e <SAIDA> é o arquivo de saída, que está no seguinte formato: uma entidade por linha e três colunas separadas por \t: tipo da entidade, string da entidade, e janela de texto onde ela apareceu. Também é gerado um arquivo .json no formato aceito pelo doccano (interface gráfica para rotulação de texto)
 
 
 4) Testes rápidos:
