@@ -12,7 +12,7 @@ Como utilizar:
 1) Baixar todo o código e ir para a pasta onde foi baixado
 
 2) Instalar bibliotecas:
-     pip3 install requirements.txt
+     sudo pip3 install requirements.txt
 
      Obs.: Se preferir, pode instalar dentro de um ambiente virtual (https://docs.python.org/3/tutorial/venv.html)
 
