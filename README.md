@@ -26,7 +26,7 @@ Como utilizar:
 
     Para testar se o reconhecedor está funcionando bem, por exemplo para entidades do tipo "LOCAL", digite:
 
-      grep -x -e "LOCAL.*" <saida>
+      grep -x -e "LOCAL.*" SAIDA
 
     Assim, imprimem-se todas as linhas do arquivo <saida> que começam com a string LOCAL
 
