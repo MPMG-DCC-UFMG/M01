@@ -5,8 +5,10 @@ import re
 import sys
 from preprocessing.text_cleaner import *
 from pycpfcnpj import cpfcnpj
-
+import json
+from datetime import datetime
 import spacy
+
 nlp = spacy.load("pt")
 
 NSENTS=10
@@ -114,8 +116,13 @@ if __name__ == "__main__":
     patterns = load_regex_file("rules.tsv")
 
     infile = open(sys.argv[1], encoding="utf-8")
-    outfile = open(sys.argv[2], "w", encoding="utf-8")
-    outjson = open(sys.argv[2] + ".json", "w", encoding="utf-8")
+    out_mp = {"file": sys.argv[1], "entities": [], "timestamp":str(datetime.now())}
+    mp_ents = out_mp["entities"]
+
+    outfile = open(sys.argv[2] + ".aux", "w", encoding="utf-8")
+    outjson = open(sys.argv[2] + "_doccano.json", "w", encoding="utf-8")
+    outfile_mp = open(sys.argv[2] + ".json", "w", encoding="utf-8")
+
     text = infile.read().replace("-\n", "")
     text = clear_special_chars(text)
     infile.close()
@@ -133,8 +140,11 @@ if __name__ == "__main__":
         for start, end, ent_type in ents:
             span = text[start:end]
             print(ent_type, "\t", span, "\t\t", text[start-50:end+50], file=outfile)
-
+            mp_ents.append({"entity":span, "start":start, "end":end, "label":ent_type})
+    json.dump(out_mp, outfile_mp, indent=3)
     outfile.close()
     outjson.close()
+    outfile_mp.close()
+
 
 
