@@ -20,7 +20,7 @@ Como utilizar:
     python3 -m spacy download pt
 
 4) Rodar o script:
-      python3 -m rule_based_ner ENTRADA SAIDA
+      python3 -m rule_based_ner ENTRADA SAIDA [MODELO (opcional)]
  
      onde ENTRADA é um arquivo contendo texto livre qualquer e SAIDA é o nome que será dado aos arquivos de saída. São gerados quatro arquivos de saída em diferentes formatos:
      a) .json: formato utilizado pelo MPMG
@@ -28,6 +28,7 @@ Como utilizar:
      c) .conll: https://universaldependencies.org/format.html
      d) .aux: uma entidade por linha e três colunas separadas por \t: tipo da entidade, string da entidade, e janela de texto onde ela apareceu.
 
+    MODELO é um parâmetro opcional e consiste no caminho do diretório do modelo, caso desejar utilizar um modelo customizado. Se nao for passado nada como parâmetro, será utilziado o modelo do diretório models/model_lener
 
 5) Testes rápidos:
 

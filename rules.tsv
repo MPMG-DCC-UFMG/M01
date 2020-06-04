@@ -6,14 +6,13 @@ CNPJ	\d{2,3}\.?\d{3}\.?\d{3}/\d{4}\-?\d{2}
 #Varia muito, pode precisar de treino
 #RG	\d(\.\d{3}){2}\-\d
 
-PROCESSO_JUDICIAL	\d\.\d{4}\.\d{2}\.\d{3}\.?\d{3}\-\d/\d{3}
-PROCESSO_ADMINISTRATIVO	(\d{7}[\-/]\d{4}[\-/]\d{4}\-\d)|(\u00b0\s\d{3}/d{4})
+#Obtem do CoreNLP:
+#PROCESSO_JUDICIAL	\d\.\d{4}\.\d{2}\.\d{3}\.?\d{3}\-\d/\d{3}
+#PROCESSO_ADMINISTRATIVO	(\d{7}[\-/]\d{4}[\-/]\d{4}\-\d)|(\u00b0\s\d{3}/d{4})
+#LOCAL  (R\.|RUA|Rua|Av|Av\.|AV|Pra\u00e7a|P\u00e7a|Rodovia|Via)\s+[\w\s]+[,\-/]\s*[\d\.]+\s?[,\-/][\.\w+\s?]*([,\-/][\.\w+\s?]*)?
+#TEMPO   (\d\d?/\d\d?/\d\d(\d\d)?)|(\d\d?\sde\s(JAN|FEV|MAR|ABR|MAI|JUN|JUL|AGO|SET|OUT|NOV|DEZ|Jan|Fev|Mar|Abr|Mai|Jun|Jul|Ago|Set|Out|Nov|Dez|jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)\w*(\sde\s\d{4})?)
+
 VALOR_MONETARIO	R\$\s*\d[\d\.\s]*(,\d{2})?
 
-#LOCAL: ainda imperfeito (pegando outras coisas depois do endereco), mas pode filtrar depois
-LOCAL	(R\.|RUA|Rua|Av|Av\.|AV|Pra\u00e7a|P\u00e7a|Rodovia|Via)\s+[\w\s]+[,\-/]\s*[\d\.]+\s?[,\-/][\.\w+\s?]*([,\-/][\.\w+\s?]*)?
-
 CEP	CEP\s*\d{2}\.?\d{3}\-\d{3}
-DATA	(\d\d?/\d\d?/\d\d(\d\d)?)|(\d\d?\sde\s(JAN|FEV|MAR|ABR|MAI|JUN|JUL|AGO|SET|OUT|NOV|DEZ|Jan|Fev|Mar|Abr|Mai|Jun|Jul|Ago|Set|Out|Nov|Dez|jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)\w*(\sde\s\d{4})?)
-#PESSOA: already addressed by SpacY
-#PESSOA	([A-Z\u00c0-\u00da][a-z\u00e0\u00fa]+\s)([A-Z\u00c0-\u00da][a-z\u00e0\u00fa]+\s)+
+

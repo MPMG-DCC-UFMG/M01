@@ -8,8 +8,9 @@ from pycpfcnpj import cpfcnpj
 import json
 from datetime import datetime
 import spacy
+from spacy.gold import biluo_tags_from_offsets
+from inout import *
 
-nlp = spacy.load("pt")
 
 NSENTS=10
 NAME_RE = "([A-Z\u00c0-\u00da][a-z\u00e0\u00fa]+\s)([A-Z\u00c0-\u00da][a-z\u00e0\u00fa]+\s)+"
@@ -25,7 +26,7 @@ NON_ORGS = set("ano di\u00e1rio ato cpf cnpj termo caderno processo objeto parte
 
 
 
-
+#TODO: adicionar IGNORE-CASE como opcao pra cada regex
 def load_regex_file(filename):
     patterns = []
     infile = open(filename, encoding="utf-8")
@@ -63,21 +64,24 @@ def person_org_ner(text):
     ents = []
     doc = nlp(text)
     for ent in doc.ents:
-        spl = ent.text.split()
-        if ent.label_ == "PER":
-            if re.match(NAME_RE, ent.text) == None:
-                continue
-            if spl[0].lower() in NON_PER_STARTS:
-                continue
-            if spl[-1].lower() in NON_PER_ENDS:
-                continue
-            ents.append( [ent.start_char, ent.end_char, "PESSOA"] )
+        if "PE" in ent.label_ or "ORG" in ent.label_:
+            ents.append( [ent.start_char, ent.end_char, ent.label_] )
+    return merge_bio_tags(ents)
+        #spl = ent.text.split()
+        #if ent.label_ == "PER" or ent.label == "PESSOA":
+            #if re.match(NAME_RE, ent.text) == None:
+            #    continue
+            #if spl[0].lower() in NON_PER_STARTS:
+            #    continue
+            #if spl[-1].lower() in NON_PER_ENDS:
+            #    continue
+        #    ents.append( [ent.start_char, ent.end_char, "PESSOA"] )
 
-        if ent.label_ == "ORG":
-            if ent.text.strip().lower() in NON_ORGS:
-                continue
-            ents.append( [ent.start_char, ent.end_char, "ORG"] )
-    return ents
+        #if ent.label_ == "ORG" or ent.label==:
+        #    if ent.text.strip().lower() in NON_ORGS:
+        #        continue
+        #    ents.append( [ent.start_char, ent.end_char, "ORGANIZACAO"] )
+    #return ents
 
 def additional_person_ner(text, ents_dict):
     ents = []
@@ -96,7 +100,20 @@ def ents2dict(ents):
         res[ (start, end) ] = label
     return res
 
-        
+def ents2dict_conll(doc, tags):
+    res = {}
+    ind = 0
+    i = 0
+    for token in list(doc):
+        start = ind
+        ind += len(token)
+        end = ind
+        res[ (start, end) ] = tags[i]
+        i += 1
+        ind += 1
+    return res
+
+  
 
 def print_output_line(out, outfile):
     print("{\"text\": \"%s\", \"labels\":" % out["text"], end=" ", file=outfile)
@@ -106,45 +123,92 @@ def print_output_line(out, outfile):
     #    print(", [%d, %d, \"%s\"]" % (l[0], l[1], l[2]), end="", file=outfile)
     print("}", file=outfile)
 
+def mark_occupied(ents, labeled):
+    for start,end,lab in ents:
+        for i in range(start, end):
+            labeled.add(i)
+
+def filter_occupied(ents, labeled):
+    res = []
+    for start,end,lab in ents:
+        include = True
+        for i in range(start, end):
+            if i in labeled:
+                include = False
+                break
+        if include:
+            res.append( (start, end, lab) )
+    return res
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print ("usage: %s <input file> <outfile> " % sys.argv[0])
+        print ("usage: %s <input file> <outfile> [model file]" % sys.argv[0])
         sys.exit(-1)
 
 
     patterns = load_regex_file("rules.tsv")
-
-    infile = open(sys.argv[1], encoding="utf-8")
+    infilename = sys.argv[1]
+    infile = open(infilename, encoding="utf-8")
     out_mp = {"file": sys.argv[1], "entities": [], "timestamp":str(datetime.now())}
     mp_ents = out_mp["entities"]
 
     outfile = open(sys.argv[2] + ".aux", "w", encoding="utf-8")
     outjson = open(sys.argv[2] + "_doccano.json", "w", encoding="utf-8")
     outfile_mp = open(sys.argv[2] + ".json", "w", encoding="utf-8")
+    out_conll =  open(sys.argv[2] + ".conll", "w", encoding="utf-8")
 
-    text = infile.read().replace("-\n", "")
-    text = clear_special_chars(text)
-    infile.close()
-    sents = merge_sentences(split_sentences(text))
+
+    conll = False
+
+    if infilename.endswith(".conll"):
+        conll = True
+
+    if conll: #Texto de entrada montado a partir do arquivo em formato CoNLL
+        sents, labels = load_conll(infilename)
+        assert len(sents) == len(labels)
+        NSENTS = 1
+    else: #Texto de entrada livre, deve ser limpo
+        infile = open(infilename, encoding="utf-8")
+        text = infile.read().replace("-\n", "")
+        text = clear_special_chars(text)
+        sents = merge_sentences(split_sentences(text))
+        infile.close()
 
     for i in range(0, len(sents), NSENTS):
         sep = ". "
-        text = sep.join(sents[i : i + NSENTS]).strip()
-        ents = person_org_ner(text) + rule_based_ner(patterns, text)
+        text = sep.join(sents[i : i + NSENTS])
+        labeled = set()
+        ents = rule_based_ner(patterns, text)
+
+        #Trata sobreposicoes de entidades
+        if conll:
+            mark_occupied(ents, labeled)
+            ents += filter_occupied(merge_bio_tags(labels[i]), labeled)
         ents_dic = ents2dict(ents)
-        ents = ents + additional_person_ner(text, ents_dic)
-        ents = sorted(ents)
         out = {"text":text, "labels":ents}
         print_output_line(out, outjson)
         for start, end, ent_type in ents:
             span = text[start:end]
+            #if ent_type != "O":
             print(ent_type, "\t", span, "\t\t", text[start-50:end+50], file=outfile)
             mp_ents.append({"entity":span, "start":start, "end":end, "label":ent_type})
+
+        doc = nlp(text)
+        #tags = [tok.ent_iob_ + "-" + tok.ent_type_ for tok in doc]
+        tags = [lab.replace("U-", "B-").replace("L-", "I-") for lab in biluo_tags_from_offsets(doc, ents)]
+
+        #conll output
+        if False: #conll: #Se formato de entrada for CoNLL
+            ents_dic = ents2dict_conll(doc, tags)
+            print_conll_paired(text, ents_dic, labels[i], out_conll)
+        else:
+            print_conll(doc, tags, out_conll)
+
     json.dump(out_mp, outfile_mp, indent=3)
     outfile.close()
     outjson.close()
+    out_conll.close()
     outfile_mp.close()
-
 
 
