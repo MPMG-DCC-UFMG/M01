@@ -12,7 +12,7 @@ from spacy.gold import biluo_tags_from_offsets
 from inout import *
 
 
-NSENTS=10
+NSENTS=1
 NAME_RE = "([A-Z\u00c0-\u00da][a-z\u00e0\u00fa]+\s)([A-Z\u00c0-\u00da][a-z\u00e0\u00fa]+\s)+"
 UPPER_NAME_RE = "([A-Z\u00c0-\u00da]+\s)([A-Z\u00c0-\u00da]\s?)+"
 UPPER_NAME_PATTERN = re.compile(UPPER_NAME_RE)
@@ -150,8 +150,8 @@ if __name__ == "__main__":
     patterns = load_regex_file("rules.tsv")
     infilename = sys.argv[1]
     infile = open(infilename, encoding="utf-8")
-    out_mp = {"file": sys.argv[1], "entities": [], "timestamp":str(datetime.now())}
-    mp_ents = out_mp["entities"]
+    out_mp = {"file": sys.argv[1], "sentences": [], "timestamp":str(datetime.now())}
+    mp_sents = out_mp["sentences"]
 
     outfile = open(sys.argv[2] + ".aux", "w", encoding="utf-8")
     outjson = open(sys.argv[2] + "_doccano.json", "w", encoding="utf-8")
@@ -180,6 +180,8 @@ if __name__ == "__main__":
         text = sep.join(sents[i : i + NSENTS])
         labeled = set()
         ents = rule_based_ner(patterns, text)
+        mp_sent = {"text": text, "entities":[]}
+        mp_ents = mp_sent["entities"]
 
         #Trata sobreposicoes de entidades
         if conll:
@@ -193,7 +195,7 @@ if __name__ == "__main__":
             #if ent_type != "O":
             print(ent_type, "\t", span, "\t\t", text[start-50:end+50], file=outfile)
             mp_ents.append({"entity":span, "start":start, "end":end, "label":ent_type})
-
+        mp_sents.append(mp_sent)
         doc = nlp(text)
         #tags = [tok.ent_iob_ + "-" + tok.ent_type_ for tok in doc]
         tags = [lab.replace("U-", "B-").replace("L-", "I-") for lab in biluo_tags_from_offsets(doc, ents)]

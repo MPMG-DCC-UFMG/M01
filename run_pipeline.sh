@@ -15,9 +15,9 @@ outfile=$2
 
 #CoreNLP NER
 echo "Running CoreNLP NER..."
-./text_corenlp.sh $infile $corenlp_model $outfile"_corenlp.conll"
+./text_corenlp.sh "$infile" "$corenlp_model" "$outfile.corenlp.conll"
 
 #Acrescenta regex-based NER ao resultado do CoreNLP
 echo "Adding regex-based named entities..."
-python3 -m rule_based_ner $outfile"_corenlp.conll" $outfile
+python3 -m rule_based_ner "$outfile.corenlp.conll" "$outfile"
 

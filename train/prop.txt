@@ -1,5 +1,5 @@
-trainFile = train/lener_train.conll
-serializeTo = models/lener_model.ser.gz
+trainFile = train/lener_train+valid.conll
+serializeTo = models/lener_model_train+valid.ser.gz
 map = word=0,answer=1
 
 useClassFeature=true
