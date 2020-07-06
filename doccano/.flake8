@@ -1,3 +1,0 @@
-[flake8]
-filename = app/*
-max-line-length = 120
