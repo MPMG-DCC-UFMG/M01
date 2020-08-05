@@ -1,6 +1,6 @@
 # M02
  Processamento de linguagem natural para reconhecimento, extração e classificação de entidades nomeadas e suas relações.
- 
+
 
 Reconhecedor de entidades atual (rule_based_ner.py): Baseia-se em uma combinação de expressões regulares com o extrator de nomes (de pessoas e organizações) da biblioteca spaCy.
 
@@ -15,20 +15,19 @@ Como utilizar:
      sudo pip3 install requirements.txt
 
      Obs.: Se preferir, pode instalar dentro de um ambiente virtual (https://docs.python.org/3/tutorial/venv.html)
-     
-3) Baixar os modelos spacy para o idioma português, com o comando abaixo:
-    python3 -m spacy download pt
+
+3) Baixar o modelo CoreNLP:
+    wget https://drive.google.com/file/d/1e5PaQKkfs6x7wjhn_Np4o2xBJM8FuCI_/view?usp=sharing
 
 4) Rodar o script:
-      python3 -m rule_based_ner ENTRADA SAIDA [MODELO (opcional)]
- 
+      ./run_pipeline.sh ENTRADA SAIDA
+
      onde ENTRADA é um arquivo contendo texto livre qualquer e SAIDA é o nome que será dado aos arquivos de saída. São gerados quatro arquivos de saída em diferentes formatos:
      a) .json: formato utilizado pelo MPMG
      b) _doccano.json: formato utilizado pela aplicação Doccano
      c) .conll: https://universaldependencies.org/format.html
      d) .aux: uma entidade por linha e três colunas separadas por \t: tipo da entidade, string da entidade, e janela de texto onde ela apareceu.
 
-    MODELO é um parâmetro opcional e consiste no caminho do diretório do modelo, caso desejar utilizar um modelo customizado. Se nao for passado nada como parâmetro, será utilziado o modelo do diretório models/model_lener
 
 5) Testes rápidos:
 
@@ -37,4 +36,3 @@ Como utilizar:
       grep -x -e "LOCAL.*" SAIDA.aux
 
     Assim, imprimem-se todas as linhas do arquivo SAIDA.aux que começam com a string LOCAL
-
