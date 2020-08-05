@@ -50,10 +50,42 @@ def load_conll(filename, col=2):
             start = ind
             ind += len(spl[0])
             end = ind
-            sent_labels.append( (start, end, spl[col-1]) )
+            sent_labels.append( [start, end, spl[col-1]] )
             ind += 1
     infile.close()
     return sents, labels
+
+def load_conll_probs(filename, col=2):
+    infile = open(filename, encoding="utf-8")
+    labels = []
+    sents = []
+    ind = 0
+    acc = ""
+    sent_labels = []
+    for line in infile:
+        lin = line.strip()
+        if lin == "":
+            ind = 0
+            #labels.append( (0, 0, None) )
+            sents.append(acc)
+            labels.append(sent_labels)
+            acc = ""
+            sent_labels = []
+        else:
+            spl = lin.split()
+            acc += spl[0] + " "
+            start = ind
+            ind += len(spl[0])
+            end = ind
+            probs = {}
+            for s in spl[col:]:
+                spl_ = s.split("=")
+                probs[spl_[0]] = float(spl_[1])
+            sent_labels.append( [start, end, spl[col-1], probs] )
+            ind += 1
+    infile.close()
+    return sents, labels
+
 
 
 def conll2spacy_train_data(filename):
@@ -185,11 +217,17 @@ def merge_bio_tags(ents):
             if i >= len(ents):
                 break
         if current != "O":
-            res.append( (start, end, current) )
+            res.append( [start, end, current] )
     return res
 
 
-
+def read_lower_cased_strings(filename):
+    infile = open(filename, encoding="utf-8")
+    res = set()
+    for line in infile:
+        res.add(line.strip().lower())
+    infile.close()
+    return res
 
 
 
