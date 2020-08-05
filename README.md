@@ -20,12 +20,17 @@ Como utilizar:
     wget https://drive.google.com/file/d/1e5PaQKkfs6x7wjhn_Np4o2xBJM8FuCI_/view?usp=sharing
 
 4) Rodar o script:
-      ./run_pipeline.sh ENTRADA SAIDA
+     
+     ./run_pipeline.sh ENTRADA SAIDA
 
      onde ENTRADA é um arquivo contendo texto livre qualquer e SAIDA é o nome que será dado aos arquivos de saída. São gerados quatro arquivos de saída em diferentes formatos:
+     
      a) .json: formato utilizado pelo MPMG
+     
      b) _doccano.json: formato utilizado pela aplicação Doccano
+     
      c) .conll: https://universaldependencies.org/format.html
+     
      d) .aux: uma entidade por linha e três colunas separadas por \t: tipo da entidade, string da entidade, e janela de texto onde ela apareceu.
 
 
