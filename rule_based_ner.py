@@ -13,6 +13,8 @@ from inout import *
 
 
 NSENTS=1
+WSIZE=100
+
 NAME_RE = "([A-Z\u00c0-\u00da][a-z\u00e0\u00fa]+\s)([A-Z\u00c0-\u00da][a-z\u00e0\u00fa]+\s)+"
 UPPER_NAME_RE = "([A-Z\u00c0-\u00da]+\s)([A-Z\u00c0-\u00da]\s?)+"
 UPPER_NAME_PATTERN = re.compile(UPPER_NAME_RE)
@@ -178,6 +180,12 @@ if __name__ == "__main__":
     for i in range(0, len(sents), NSENTS):
         sep = ". "
         text = sep.join(sents[i : i + NSENTS])
+        window = ""
+        if i > 0:
+            window += (sents[i-1] + ". ")
+        window += (text + ". ")
+        if i < len(sents) - 1:
+            window += sents[i+1]
         labeled = set()
         ents = rule_based_ner(patterns, text)
         mp_sent = {"text": text, "entities":[]}
@@ -193,7 +201,7 @@ if __name__ == "__main__":
         for start, end, ent_type in ents:
             span = text[start:end]
             #if ent_type != "O":
-            print(ent_type, "\t", span, "\t\t", text[start-50:end+50], file=outfile)
+            print(ent_type, "\t", span, "\t", text[max(0, start-WSIZE):start], "\t", text[end:end+WSIZE], file=outfile)
             mp_ents.append({"entity":span, "start":start, "end":end, "label":ent_type})
         mp_sents.append(mp_sent)
         doc = nlp(text)
