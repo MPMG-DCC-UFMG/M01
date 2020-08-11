@@ -1,20 +1,17 @@
 #!/bin/sh
 
-dir=/data/users/fmuniz/editais
+dir=$1
 
-for f in $dir/*/*/*/*/*.entidades.json $dir/*/*/*/*.entidades.json
+for f in `find "$dir" -type f -name "*.entidades.json"`
 do
-    #if [ ! -s "$f" ]
-    #then	
-        echo "$f"
-        python3 -m data_extraction.licitacao "$f" "$f.attribs"
-    #fi
+    echo "$f"
+    python3 -m data_extraction.licitacao "$f" "$f.attribs"
 done
 
-for f in $dir/*/*/*/*/*json.attribs $dir/*/*/*/*json.attribs
+
+
+for f in `find "$dir" -type f -name "*.attribs"`
 do
     cat "$f"
 done > licitacoes.csv
-
-
 

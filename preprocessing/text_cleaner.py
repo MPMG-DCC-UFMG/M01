@@ -5,11 +5,18 @@ import re
 
 nlp = spacy.load("pt")
 
+def extract_digits(string):
+    digits = []
+    for char in string:
+        if char.isdigit():
+            digits.append(char)
+    return "".join(digits)
+
 
 def clear_special_chars(text):
     res = ""
     for c in text:
-        if (c >= "\u0020" and c <= "\u007E") or (c >= "\u00A1" and c <= "\u00FF"):
+        if (c >= "\u0020" and c <= "\u007E") or (c >= "\u00A1" and c <= "\u00FF") or c == "\n":
             res += c
         else:
             res += " "
@@ -26,7 +33,7 @@ def tokenize(string):
 #@param text The text that must be split in to sentences.
 
 def split_sentences(text):
-    sentence_delimiters = re.compile(u'[\\[\\].!?;:]\s|\n')
+    sentence_delimiters = re.compile(u'[\\[\\].!?;]\s|\n')
     sentences = sentence_delimiters.split(text)
     return sentences
 
@@ -49,6 +56,11 @@ def merge_sentences(sentences):
     return new_sents
 
 
+
+def replacements(text, replace_list):
+    for expr,repl in replace_list:
+        text = text.replace(expr, repl)
+    return text
 
 #Limpa texto e exclui linhas que nao tem entidades nomeadas
 
@@ -74,8 +86,10 @@ if __name__ == "__main__":
     outfile = open(sys.argv[2], "w", encoding="utf-8")
     infile = open(sys.argv[1], encoding="utf-8")
 
+    replace_list = [ ["-\n", ""], [" / ", "/"], ["Av.", "Av"], ["\u00ba.", "\u00ba"], ["\u00aa.", "\u00aa"] ]
+
     text = infile.read()
-    text = clean_text(text)
+    text = replacements(clear_special_chars(text), replace_list)
     outfile.write(text)
     outfile.close()
 
