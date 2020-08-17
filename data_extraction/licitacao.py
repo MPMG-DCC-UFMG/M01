@@ -212,7 +212,7 @@ def extract_data_rec_doc(entities, ano):
         if not ("/" in tempo[0] or "-" in tempo[0]):
             continue
         previous_window = tempo[1].lower()
-        if "receb" in previous_window or "abert" in previous_window:
+        if "rece" in previous_window or "abert" in previous_window:
             ok = True
             ind_verificado = ind
             break
