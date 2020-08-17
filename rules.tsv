@@ -17,7 +17,7 @@ VALOR_MONETARIO	R\$\s*\d[\d\.\s]*(,\d{2})?
 DOTACAO_ORCAMENTARIA	[\d\.\-]{20}[\d\.\-]*
 CEP	CEP.?.?.\d{2}\.?\d{3}\-\d{3}
 #PRAZO	\d+\s.*(dias?|semanas?|mês|meses)\scorrid\ws?
-MUNICIPIO	[mM](unicípio|UNICÍPIO)\s+(de|DE)\s+(\w+)((\s\w\w\w?)?\s+\w+)?
+MUNICIPIO	[mM](unicípio|UNICÍPIO|unicipal|UNICIPAL)\s+(de|DE)\s+(\w+)((\s\w\w\w?)?\s+\w+)?
 
 LICITACAO	(LICITAÇÃO|CERTAME)\s..\s\d+/\d{4}
 MODALIDADE_LICITACAO	[mM](ODALIDADE|odalidade).?.(\w+\s?)+
