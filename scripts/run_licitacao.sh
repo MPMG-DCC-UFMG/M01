@@ -1,6 +1,7 @@
 #!/bin/sh
 
 dir=$1
+out=$2
 
 find "$dir" -type f -name "*.entidades.json" | while read f
 do
@@ -13,5 +14,5 @@ done
 find "$dir" -type f -name "*.attribs" | while read f
 do
     cat "$f"
-done > licitacoes.csv
+done > $out
 

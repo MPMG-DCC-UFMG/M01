@@ -17,7 +17,7 @@ if __name__ == "__main__":
         print ("usage: %s <input file> <outfile> [nome do municipio]" % sys.argv[0])
         sys.exit(-1)
 
-
+    municipio = ""
     infile = open(sys.argv[1], encoding="utf-8")
     outfile = open(sys.argv[2], "w", encoding="utf-8")
     if len(sys.argv) == 4:
