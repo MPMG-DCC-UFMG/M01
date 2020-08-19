@@ -7,8 +7,6 @@ from preprocessing.text_cleaner import *
 from pycpfcnpj import cpfcnpj
 import json
 from datetime import datetime
-import spacy
-from spacy.gold import biluo_tags_from_offsets
 from inout import *
 
 
@@ -61,39 +59,6 @@ def rule_based_ner(rules, text):
                 ents.append([start, end, ent_type])
     return ents
 
-
-def person_org_ner(text):
-    ents = []
-    doc = nlp(text)
-    for ent in doc.ents:
-        if "PE" in ent.label_ or "ORG" in ent.label_:
-            ents.append( [ent.start_char, ent.end_char, ent.label_] )
-    return merge_bio_tags(ents)
-        #spl = ent.text.split()
-        #if ent.label_ == "PER" or ent.label == "PESSOA":
-            #if re.match(NAME_RE, ent.text) == None:
-            #    continue
-            #if spl[0].lower() in NON_PER_STARTS:
-            #    continue
-            #if spl[-1].lower() in NON_PER_ENDS:
-            #    continue
-        #    ents.append( [ent.start_char, ent.end_char, "PESSOA"] )
-
-        #if ent.label_ == "ORG" or ent.label==:
-        #    if ent.text.strip().lower() in NON_ORGS:
-        #        continue
-        #    ents.append( [ent.start_char, ent.end_char, "ORGANIZACAO"] )
-    #return ents
-
-def additional_person_ner(text, ents_dict):
-    ents = []
-    for match in UPPER_NAME_PATTERN.finditer(text):
-        start, end = match.span()
-        if "MASP" not in text[end:end+6]:
-            continue
-        if (start, end) not in ents_dict:
-            ents.append( [start, end, "PESSOA"] )
-    return ents
 
 
 def ents2dict(ents):
