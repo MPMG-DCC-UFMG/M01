@@ -38,6 +38,18 @@ do
     done
 
 
+    find "$d" -maxdepth 1 -type f -name "*.html" | while read f
+    do
+       echo "$f"
+       filename=`basename "$f" ".html"`
+       out="$outdir/$outsubdir/$filename"
+
+       python3 -m html2text --ignore-links --ignore-images "$f" utf-8 > "$out.txt"
+       python3 -m preprocessing.text_cleaner "$out.txt" "$out.clean"
+
+       ./run_pipeline.sh "$out.clean" "$out.entidades"
+    done
+
 
 done
 
