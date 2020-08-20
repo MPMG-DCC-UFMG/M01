@@ -3,7 +3,7 @@ import json
 #from spacy.gold import offsets_from_biluo_tags
 
 
-nlp = spacy.load("pt")
+#nlp = spacy.load("pt")
 
 def load_2col_annotated_data(filename):
     data = []
