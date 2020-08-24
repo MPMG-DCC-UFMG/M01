@@ -45,7 +45,10 @@ def load_conll(filename, col=2):
             acc = ""
             sent_labels = []
         else:
-            spl = lin.split()
+            if "\t" in lin:
+                spl = lin.split("\t")
+            else:
+                spl = lin.split()
             acc += spl[0] + " "
             start = ind
             ind += len(spl[0])
