@@ -1,9 +1,7 @@
 # coding: utf-8
 import sys
-import spacy
 import re
 
-nlp = spacy.load("pt")
 
 def extract_digits(string):
     digits = []

@@ -2,7 +2,7 @@ import sys
 
 def is_null(key):
     for k in key:
-        if k == "":
+        if len(k) < 4:
             return True
     return False
 
@@ -14,12 +14,14 @@ def add_row(row, spl):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print ("usage: %s <input file> <outfile>" % sys.argv[0])
+        print ("usage: %s <input file> <outfile> [nome do municipio]" % sys.argv[0])
         sys.exit(-1)
 
-
+    municipio = ""
     infile = open(sys.argv[1], encoding="utf-8")
     outfile = open(sys.argv[2], "w", encoding="utf-8")
+    if len(sys.argv) == 4:
+        municipio = sys.argv[3]
     data = []
     print("id,processo_licitatorio,num_exercicio,modalidade,municipio,tipo_licitacao,data_rec_doc", file=outfile)
     spl = infile.readline().strip().split(",")
@@ -31,6 +33,8 @@ if __name__ == "__main__":
         if not is_null(key):
             add_row(row, spl)
             if key != next_key:
+                if row[3] == "":
+                    row[3] = municipio
                 data.append(row)
                 row = ["" for i in range(len(spl))]
         spl = next_spl
@@ -38,6 +42,8 @@ if __name__ == "__main__":
 
     if not is_null(key):
         add_row(row, spl)
+        if row[3] == "":
+            row[3] = municipio
         data.append(row)
 
     for i,spl in enumerate(data):

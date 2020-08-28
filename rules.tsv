@@ -1,7 +1,7 @@
 MASP	[mM][aA][sS][pP]\s*[\d\.\s]*\-?\d
 TEL	\(\s??0?\s?\*?\*?\s?\d{2}\s?\)\s?\d{4,5}[\-]?\d{4}\s
 CPF	\d{3}\.?\d{3}\.?\d{3}\-?\d{2}
-CNPJ	\d{2,3}\.?\d{3}\.?\d{3}\s?/\s?\d{4}\-?\d{2}
+CNPJ	\d{2,3}\.?\d{3}\.?\d{3}\s?/\s?\d{4}\s?\-?\s?\d{2}
 
 #Varia muito, pode precisar de treino
 #RG	\d(\.\d{3}){2}\-\d
@@ -16,12 +16,12 @@ TEMPO	(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\-\s?\d\d?\-\s?\d\s?\
 VALOR_MONETARIO	R\$\s*\d[\d\.\s]*(,\d{2})?
 DOTACAO_ORCAMENTARIA	[\d\.\-]{20}[\d\.\-]*
 CEP	CEP.?.?.\d{2}\.?\d{3}\-\d{3}
-PRAZO	\d+\s.*(dias?|semanas?|mês|meses)\scorrid\ws?
-MUNICIPIO	[mM](unicípio|UNICÍPIO)\s+(de|DE)\s+(\w+)((\s\w\w\w?)?\s+\w+)?
+#PRAZO	\d+\s.*(dias?|semanas?|mês|meses)\scorrid\ws?
+MUNICIPIO	[mM](unicípio|UNICÍPIO|unicipal|UNICIPAL)\s+(de|DE)\s+(\w+)((\s\w\w\w?)?\s+\w+)?
 
 LICITACAO	(LICITAÇÃO|CERTAME)\s..\s\d+/\d{4}
 MODALIDADE_LICITACAO	[mM](ODALIDADE|odalidade).?.(\w+\s?)+
-TIPO_LICITACAO	[tT](IPO|ipo).?.(\w+\s?)+
-OBJETO_LICITACAO	(objeto|OBJETO).+
+#TIPO_LICITACAO	[tT](IPO|ipo).?.(\w+\s?)+
+#OBJETO_LICITACAO	(objeto|OBJETO).+
 NUM_LICIT_OU_MODALID	(\u00b0|\u00ba)\s\d+\s?/[\d\.\s?]+
-ANO	(2\.?\s?\d\d\d\s)|(1\.?9\s?\d\d\s)
+#ANO	(2\.?\s?\d\d\d\s)|(1\.?9\s?\d\d\s)

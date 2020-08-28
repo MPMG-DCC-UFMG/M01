@@ -1,9 +1,9 @@
 import json
-import spacy
-from spacy.gold import offsets_from_biluo_tags
+#import spacy
+#from spacy.gold import offsets_from_biluo_tags
 
 
-nlp = spacy.load("pt")
+#nlp = spacy.load("pt")
 
 def load_2col_annotated_data(filename):
     data = []
@@ -45,7 +45,10 @@ def load_conll(filename, col=2):
             acc = ""
             sent_labels = []
         else:
-            spl = lin.split()
+            if "\t" in lin:
+                spl = lin.split("\t")
+            else:
+                spl = lin.split()
             acc += spl[0] + " "
             start = ind
             ind += len(spl[0])

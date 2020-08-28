@@ -4,7 +4,9 @@ from nltk.metrics.distance import edit_distance
 from preprocessing.casing import title_case
 from preprocessing.text_cleaner import extract_digits
 from inout import read_lower_cased_strings
+import re
 
+DATE_PATTERN = re.compile("(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\-\s?\d\d?\-\s?\d\s?\.?\s?\d(\d\d)?)")
 
 FILENAME_MUNIC = "data/municipios.txt"
 MUNICIPIOS = read_lower_cased_strings("data/municipios.txt")
@@ -126,7 +128,7 @@ def extract_municipio(entities):
     spl = string.split()
 
     #Elimima "Municipio de" do nome, se houver
-    if "município de" in string:
+    if "município de" in string or "municipal de" in string:
         spl = spl[2:]
 
     n = len(spl)
@@ -205,23 +207,31 @@ def extract_data_rec_doc(entities, ano):
     N = 10
     ind_verificado = -1
     ok = False
-   
+    valid_times = []
+    valid_inds = []
+ 
     for ind,tempo in enumerate(tempos):
         if ind > N:
             break
-        if not ("/" in tempo[0] or "-" in tempo[0]):
+        if not DATE_PATTERN.match(tempo[0]): #not ("/" in tempo[0] or "-" in tempo[0]):
             continue
+        valid_times.append(tempo[0])
+        valid_inds.append(ind)
         previous_window = tempo[1].lower()
-        if "receb" in previous_window or "abert" in previous_window:
+        if "rece" in previous_window or "abert" in previous_window:
             ok = True
             ind_verificado = ind
             break
 
+    if len(valid_times) == 0:
+        return ""
+
     if ok:
         print("Indice da data de recebimento", ind_verificado)
     else:
-        print("String \"receb\" nao aparece no contexto de nenhuma data")
-        ind = 0
+        print("Nem a string \"rece\" nem a string \"abert\" aparece no contexto de alguma data")
+        ind = valid_inds[0]
+
 
     date_string = tempos[ind][0]
     if ("/" in date_string):
