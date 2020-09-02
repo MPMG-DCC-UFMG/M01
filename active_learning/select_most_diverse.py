@@ -4,7 +4,6 @@ from inout import load_conll, load_conll_probs
 from collections import deque
 from random import shuffle
 from scipy.stats import entropy
-from numpy import mean
 
 def get_ent_type(label):
     if "-" in label:
@@ -18,31 +17,32 @@ def get_iob(label):
 
 
 #Calcula score de utilidade de uma frase rotulada com labels
-# Parametro n consiste no numero de top-n tokens da frase que serao considerados
-
-def calc_score(labels, n=1):
-    values = []
+def calc_score(labels):
+    m = 0
     for j,lab in enumerate(labels):
         start,end,lab,probs = lab
         h = entropy(list(probs.values()))
-        values.append(h)
-    return mean(sorted(values, reverse=True)[:n])
+        if h > m:
+            m = h
+    return m
 
 
 sents,labels = load_conll_probs(sys.argv[2])
 sents,true_labels = load_conll(sys.argv[1], col=2)
 
-n = int(sys.argv[4])
+sents0,labels0 = load_conll_probs(sys.argv[2])
+
+
 frac = 0.1
-if len(sys.argv) == 6:
-    frac = float(sys.argv[5])
+if len(sys.argv) == 5:
+    frac = float(sys.argv[4])
 
 out = open(sys.argv[3], "w", encoding="utf-8")
 scores = []
 nselect = int(frac * len(labels))
 
 for i, labs in enumerate(labels):
-    sc = calc_score(labs, n)
+    sc = calc_score(labs)
     scores.append( (sc, i) )
     print(sc)
 
