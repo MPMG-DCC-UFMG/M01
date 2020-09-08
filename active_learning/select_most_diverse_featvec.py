@@ -1,10 +1,8 @@
 import sys
 
 from inout import load_conll, load_conll_probs
-from collections import deque
-from random import shuffle
 from scipy.stats import entropy
-from sklearn.metrics.pairwise import cosine_similarity
+from ml.categorical_feats import load_feats, sim_matrix
 from numpy import array, mean
 
 def get_ent_type(label):
@@ -29,28 +27,6 @@ def calc_score(start_end_indexes, sum_distance, n=1):
     return mean(sorted(values, reverse=True)[:n])
 
 
-def convert2mat(labels):
-    sent2indexes = []
-    mat = []
-    j = 0
-    start,end,lab,probs = labels[0][0]
-    feature_index = []
-    for name in probs:
-        feature_index.append(name)
-
-    for labs in labels:
-        indexes = []
-        ind_start = j
-        for lab in labs:
-            start,end,lab,probs = lab
-            vec = [probs[feat] for feat in feature_index]
-            mat.append(vec)
-            indexes.append(j)
-            j += 1
-        sent2indexes.append( (ind_start, j) )
-    return array(mat), sent2indexes
-
-
 def sum_dist(similarities):
     sums = []
     for i in range(len(similarities)):
@@ -59,14 +35,13 @@ def sum_dist(similarities):
 
 
 #"Unlabeled" dataset
-sents,labels = load_conll_probs(sys.argv[2])
+mat = load_feats(sys.argv[2])
 sents,true_labels = load_conll(sys.argv[1], col=2)
 
 
 #Initial labeled dataset
-sents0,labels0 = load_conll_probs(sys.argv[4])
+mat0 = load_feats(sys.argv[4])
 sents0,true_labels0 = load_conll(sys.argv[3], col=2)
-
 
 n = int(sys.argv[6])
 
@@ -78,13 +53,10 @@ out = open(sys.argv[5], "w", encoding="utf-8")
 
 nselect = int(frac * len(labels))
 
-mat, sent2indexes =  convert2mat(labels)
-mat0, sent2indexes0 = convert2mat(labels0)
-
 print("Computing similarities...")
 
 #Similarity matrix unlabeled X labeled samples
-similarities = cosine_similarity(mat, mat0)
+similarities = sim_matrix(mat, mat0)
 sum_distance = sum_dist(similarities)
 
 print("Finished computing similarities.")
@@ -108,7 +80,7 @@ for t in range(nselect):
     start,end = sent2indexes[chosen_sent]
 
     #Add similarities of the tokens of the chosen sent
-    new_similarities = cosine_similarity(mat, mat[start:end,:])
+    new_similarities =  sim_matrix(mat, mat[start:end])
     new_sum_dist = sum_dist(new_similarities)
     sum_distance += new_sum_dist
     print("SumOfDistances:\n", sum_distance)
