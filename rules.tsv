@@ -13,7 +13,7 @@ CNPJ	\d{2,3}\.?\d{3}\.?\d{3}\s?/\s?\d{4}\s?\-?\s?\d{2}
 #PROCESSO_ADMINISTRATIVO	(\d{7}[\-/]\d{4}[\-/]\d{4}\-\d)|(\u00b0\s\d{3}/d{4})
 #LOCAL  (R\.|RUA|Rua|Av|Av\.|AV|Pra\u00e7a|P\u00e7a|Rodovia|Via)\s+[\w\s]+[,\-/]\s*[\d\.]+\s?[,\-/][\.\w+\s?]*([,\-/][\.\w+\s?]*)?
 
-TEMPO	(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\-\s?\d\d?\-\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\sde\s(?i)(jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)\w*(\sde\s\d{4})?)
+TEMPO	(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\-\s?\d\d?\-\s?\d\s?\.?\s?\d(\d\d)?)|(?i)(\d\d?\sde\s(jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)\w*(\sde\s\d{4})?)
 
 VALOR_MONETARIO	\w\$\s*\d[\d\.\s]*(,\d{2})?
 DOTACAO_ORCAMENTARIA	\d[\d\.\-]{20}[\d\.\-]*
