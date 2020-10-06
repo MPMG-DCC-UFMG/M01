@@ -32,5 +32,5 @@ Como utilizar:
 
 4) Executar:
 
-    java -cp mp-ufmg-ner.jar:lib/* Pipeline <diretorio de entrada> <diretorio de saida> [#threads (opcional)] 2> /dev/null
+    java -cp mp-ufmg-ner.jar:lib/* Pipeline \<diretorio de entrada\> \<diretorio de saida\> [#threads (opcional)] 2> /dev/null
  
