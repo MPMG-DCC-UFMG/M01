@@ -233,10 +233,13 @@ def read_lower_cased_strings(filename):
     return res
 
 
-
-
-
-
+def load_set(filename):
+    infile = open(filename, encoding="utf-8")
+    res = []
+    for line in infile:
+        res.append(line.strip())
+    infile.close()
+    return set(res)
 
 
 
