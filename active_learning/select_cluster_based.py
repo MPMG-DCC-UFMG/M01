@@ -103,8 +103,10 @@ for group in groups.values():
     s = sorted(group)
     sorted_groups.append(s)
     for j in range(len(s)):
-        entr,i = s[-j]
-        print(mat[indexes[i]], entr, end="\n")
+        entr,i = s[len(s) - j - 1]
+        if j == 0:
+            print(entr)
+        print(mat[indexes[i]], entr)
     print("============\n")
 
 while len(selected) < nselect:
