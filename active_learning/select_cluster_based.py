@@ -2,7 +2,7 @@ import sys
 
 from inout import load_conll, load_conll_probs
 from scipy.stats import entropy
-from ml.categorical_feats import load_feats, to_text
+from ml.categorical_feat_reader import load_feats, to_text
 from sklearn.cluster import AgglomerativeClustering
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 #from sklearn.metrics.pairwise import cosine_similarity
@@ -104,7 +104,6 @@ for group in groups.values():
     sorted_groups.append(s)
     for j in range(len(s)):
         entr,i = s[-j]
-        selected.append(indexes_sent[i])
         print(mat[indexes[i]], entr, end="\n")
     print("============\n")
 
