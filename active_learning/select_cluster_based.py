@@ -48,17 +48,26 @@ sents,true_labels = load_conll(sys.argv[1], col=2)
 
 n = int(sys.argv[5])
 entr_thresh = 0.6
+sim_thresh = 0.8
 frac = 0.1
-if len(sys.argv) == 7:
-    frac = float(sys.argv[6])
+if len(sys.argv) == 9:
+    frac = float(sys.argv[8])
+if len(sys.argv) > 7:
+    entr_thresh = float(sys.argv[6])
+    sim_thresh = float(sys.argv[7])
 
 out = open(sys.argv[4], "w", encoding="utf-8")
+
+dist_thresh = 1 - sim_thresh
 
 print("unlabeled examples:", sys.argv[1], file=sys.stderr)
 print("label probabilities of the unlabeled examples:", sys.argv[2], file=sys.stderr)
 print("features of the unlabeled examples", sys.argv[3], file=sys.stderr)
 print("output:", sys.argv[4], file=sys.stderr)
-print("n:", sys.argv[5], file=sys.stderr)
+print("n:", n, file=sys.stderr)
+print("entr_thresh:", entr_thresh, file=sys.stderr)
+print("sim_thresh:", sim_thresh, file=sys.stderr)
+
 
 #stopwords = load_set("data/stopwords.txt")
 mat_filtered, indexes_sent, indexes, entropies = pre_select(mat, labels, n=n)
@@ -83,8 +92,8 @@ print("Computing similarities...")
 sim = cosine_distances(mat_filtered)
 
 print("Clustering...")
-clusterer = AgglomerativeClustering(n_clusters=nselect, affinity="precomputed", linkage="average")
-#clusterer = AgglomerativeClustering(n_clusters=None, affinity="precomputed", linkage="average", distance_threshold=0.3)
+#clusterer = AgglomerativeClustering(n_clusters=nselect, affinity="precomputed", linkage="average")
+clusterer = AgglomerativeClustering(n_clusters=None, affinity="precomputed", linkage="average", distance_threshold=dist_thresh)
 clusters = clusterer.fit_predict(sim)
 
 groups = {}
@@ -94,7 +103,6 @@ for i, c in enumerate(clusters):
     if c not in groups:
         groups[c] = []
     groups[c].append( (entropies[i], i) )
-
 
 sorted_groups = []
 
@@ -109,6 +117,15 @@ for group in groups.values():
         print(mat[indexes[i]], entr)
     print("============\n")
 
+nrelevant_clusters = 0
+
+for group in sorted_groups:
+    if len(group) > 0:
+        entr, i = group[len(group) - 1]
+        if entr > entr_thresh:
+            nrelevant_clusters += 1
+
+
 while len(selected) < nselect:
     met_thresh = False
     for group in sorted_groups:
@@ -117,11 +134,13 @@ while len(selected) < nselect:
             if entr > entr_thresh:
                 selected.append(indexes_sent[i])
                 met_thresh = True
+                if  len(selected) >= nselect:
+                    break
     if not met_thresh:
         break
 
-
-print("len(selected)=", len(selected), "nselect=", nselect)
+print("entr_thresh, sim_thresh, #clusters, #relevant_clusters, #to_select, #selected, #coverage_of_rel_clusters:")
+print(entr_thresh, sim_thresh, len(sorted_groups), nrelevant_clusters, nselect, len(selected), len(selected)/nrelevant_clusters)
 
 #Print selected sentences
 for i in selected:
