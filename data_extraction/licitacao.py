@@ -190,7 +190,8 @@ def extract_tipo_from_orig_text(orig_text):
     return ""
 
 
-
+def valid_date(yyyy, mm, dd):
+    return len(yyyy) == 4 and int(mm) > 0 and int(mm) < 13 and int(dd) > 0 and int(dd) < 32
 
 #ano: pode ter sido extraido anteriormente pelo numero do processo
 def extract_data_rec_doc(entities, ano):
@@ -218,7 +219,7 @@ def extract_data_rec_doc(entities, ano):
         valid_times.append(tempo[0])
         valid_inds.append(ind)
         previous_window = tempo[1].lower()
-        if "rece" in previous_window or "abert" in previous_window:
+        if "rece" in previous_window or "abert" in previous_window or "public" in previous_window:
             ok = True
             ind_verificado = ind
             break
@@ -229,7 +230,7 @@ def extract_data_rec_doc(entities, ano):
     if ok:
         print("Indice da data de recebimento", ind_verificado)
     else:
-        print("Nem a string \"rece\" nem a string \"abert\" aparece no contexto de alguma data")
+        print("Nenhuma das strings \"rece\", \"abert\", \"public\" aparece no contexto de alguma data")
         ind = valid_inds[0]
 
 
@@ -250,7 +251,10 @@ def extract_data_rec_doc(entities, ano):
             yyyy = "20" + yyyy
     else:
         yyyy = ano
-    res = "-".join( [yyyy, mm, dd] )
+    if valid_date(yyyy, mm, dd):
+        res = "-".join( [yyyy, mm, dd] )
+    else:
+        res = ""
     print("BEFORE:", date_string, "AFTER:", res)
     return res
 
