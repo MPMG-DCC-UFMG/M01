@@ -11,7 +11,7 @@ DATE_PATTERN = re.compile("(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?
 FILENAME_MUNIC = "data/municipios.txt"
 MUNICIPIOS = read_lower_cased_strings("data/municipios.txt")
 WSIZE = 100
-MODALIDADES = ["convite", "tomada de preços", "concorrência", "concurso", "pregão presencial", "pregão eletrônico", "leilão", "chamamento público"]
+MODALIDADES = ["convite", "tomada de preços", "concorrência", "concurso", "pregão presencial", "pregão eletrônico", "leilão"]
 TIPOS = ["melhor técnica", "menor preço", "maior lance ou oferta", "técnica e preço"]
 INF = 999999999
 
@@ -218,7 +218,7 @@ def extract_data_rec_doc(entities, ano):
         valid_times.append(tempo[0])
         valid_inds.append(ind)
         previous_window = tempo[1].lower()
-        if "rece" in previous_window or "abert" in previous_window:
+        if "rece" in previous_window or "abert" or "public" in previous_window:
             ok = True
             ind_verificado = ind
             break
@@ -229,7 +229,7 @@ def extract_data_rec_doc(entities, ano):
     if ok:
         print("Indice da data de recebimento", ind_verificado)
     else:
-        print("Nem a string \"rece\" nem a string \"abert\" aparece no contexto de alguma data")
+        print("Nenhuma das strings \"rece\", \"abert\" ou \"public\" aparece no contexto de alguma data")
         ind = valid_inds[0]
 
 
