@@ -42,26 +42,45 @@ Formato de entrada: Arquivos de texto ou PDF ou HTML
 Formato de saída: Arquivos JSON com a estrutura ilustrada no seguinte exemplo:
 
 {
+
     "file": "data/teste.txt",
+    
     "text": "João da Silva nasceu em Teresópolis."
+    
     "entities": [
+    
         {
+        
             "start": 0,
+            
             "end": 13,
+            
             "label": "PESSOA",
+            
             "entity": "João da Silva"
+            
         },
+        
         {
+        
             "start": 24,
+            
             "end": 36,
+            
             "label": "LOCAL",
+            
             "entity": "Teresópolis"
+            
         }
+        
     ],
+    
     "timestamp": "2020-09-24 19:09:29.387"
+    
 }
 
-Onde "file" é o arquivo de origem, "text" é o texto contido no arquivo de origem, "timestamp" contém a data e horário em que o arquivo foi processado e "entities" é a lista de entidades extraídas
+
+onde "file" é o arquivo de origem, "text" é o texto contido no arquivo de origem, "timestamp" contém a data e horário em que o arquivo foi processado e "entities" é a lista de entidades extraídas
 
 Para cada entidade:
 
