@@ -4,7 +4,7 @@ Reconhecedor de entidades atual (mp-ufmg-ner.jar): Baseia-se em uma combinação
 
 As expressões regulares estão sendo mantidas no arquivo rules.tsv, que contém uma expressão por linha, no formato: TIPO_ ENTIDADE \t EXPRESSÃO_REGULAR
 
-# Pre-requisitos
+# Pré-requisitos
 
 - Python 3
 
