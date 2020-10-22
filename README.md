@@ -42,6 +42,7 @@ Formato de entrada: Arquivos de texto ou PDF ou HTML
 Formato de saída: Arquivos JSON com a estrutura ilustrada no seguinte exemplo:
 
 {
+
     "file": "data/teste.txt",
     "text": "João da Silva nasceu em Teresópolis."
     "entities": [
