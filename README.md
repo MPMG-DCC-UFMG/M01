@@ -28,7 +28,9 @@ As expressões regulares estão sendo mantidas no arquivo rules.tsv, que contém
 
 4) Executar:
 
+
    java -cp mp-ufmg-ner.jar:lib/* Pipeline ENTRADA SAÍDA [#threads (opcional)] 2> /dev/null
+
 
    onde:
 
