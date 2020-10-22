@@ -27,11 +27,9 @@ As expressões regulares estão sendo mantidas no arquivo rules.tsv, que contém
     wget https://drive.google.com/file/d/1e5PaQKkfs6x7wjhn_Np4o2xBJM8FuCI_/view?usp=sharing
 
 4) Executar:
-
-
+{
    java -cp mp-ufmg-ner.jar:lib/* Pipeline ENTRADA SAÍDA [#threads (opcional)] 2> /dev/null
-
-
+}
    onde:
 
     - ENTRADA pode ser um diretório ou um arquivo texto, PDF, ou HTML. Se for um diretório, serão processados todos os arquivos texto/PDF/HTML do diretório. A mesma estrutura de diretórios da ENTRADA é reproduzida na SAÍDA.
