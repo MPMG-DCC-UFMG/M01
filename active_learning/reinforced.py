@@ -11,6 +11,7 @@ from numpy.random import rand, randint
 from inout import load_set
 from operator import itemgetter
 from math import log
+from random import shuffle
 
 def pre_select(mat, labels, last_unlabeled_index, n=1):
     res = []
@@ -85,7 +86,6 @@ if __name__ == "__main__":
     entr_thresh = 0.6
     sim_thresh = 0.8
     frac = 0.1
-    lr = 1
 
     if len(sys.argv) == 12:
         frac = float(sys.argv[11])
@@ -163,17 +163,22 @@ if __name__ == "__main__":
     larger_cluster_size = max([len(g) for g in groups.values()])
     log_larger_cluster_size = log(larger_cluster_size)
     NFEATURES = 3
-    f1_ant = 0.2369
+    f1_ant = 0
 
     #Inicializar w com pesos aleatorios
     w = rand(NFEATURES)
     S = 20 #tamanho de cada mini-amostra
     T = 50
-    A = 5 #numero de mini-amostras
-    epsilon = 0.2
+    A = 3 #numero de mini-amostras
+    M = A #numero de pares (x, recompensa) a serem selecionados da memoria de replay
+    epsilon = 0.1
     SA = S*A
     x_cluster = {}
     print("w:", w)
+    lr = 1
+
+    mem_size = 1000
+    memory = [] #History of most recent pairs (x_mean, DeltaF1)
 
     for t in range(T):
         X = []
@@ -218,7 +223,8 @@ if __name__ == "__main__":
                 print(file=out)
             out.close()
 
-            cmd = "cat " +  lab_filename + "_sample5k " + outpath + " > " +  outpath + ".conll"
+            cmd = "cat " +  lab_filename + " " + outpath + " > " +  outpath + ".conll"
+            #cmd = "cat " +  lab_filename + "_sample5k " + outpath + " > " +  outpath + ".conll"
             #cmd = "cat " + outpath + " > " +  outpath + ".conll"
             #os.system("cat " + outpath + ".conll")
 
@@ -244,13 +250,29 @@ if __name__ == "__main__":
             f1 = extract_f1(outpath + ".metrics")
             avg_f1 += f1
             delta_f1 = f1 - f1_ant
+
             gradient += delta_f1 * x_mean
+
+            memory.append( (x_mean, delta_f1) )
+            if len(memory) > mem_size:
+                memory.pop(0)
+
             print("x_mean:", x_mean)
             print("DeltaF1:", delta_f1)
             print("f1:", f1)
 
+        mem = memory
+        shuffle(mem)
+
+        n_selected_from_mem = min(M, len(memory))
+        #Use random sample from "replay" memory
+        for m in range(n_selected_from_mem):
+            x_mean, delta_f1 = mem[m]
+            gradient += delta_f1 * x_mean
+
+        gradient *= 1/(A+n_selected_from_mem)
         #Atualizar pesos
-        w += lr * (1/A) * gradient
+        w += lr * gradient
         avg_f1 /= A
         f1_ant = avg_f1
         print("avgF1:", avg_f1)
