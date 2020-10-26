@@ -44,7 +44,7 @@ As expressões regulares estão sendo mantidas no arquivo rules.tsv, que contém
     Nesse caso, o resultado será impresso na saída padrão
 
 
-#Formato de entrada/saída
+# Formato de entrada/saída
 
 Formato de entrada: Arquivos de texto ou PDF ou HTML
 
