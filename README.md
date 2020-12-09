@@ -32,12 +32,7 @@ As expressões regulares estão sendo mantidas no arquivo rules.tsv, que contém
 
     - SAÍDA é o nome do arquivo de saída (se ENTRADA for um arquivo) ou o nome do diretório de saída (se ENTRADA for um diretório).
     
-    
-    Também é possível passar o texto de entrada na própria linha de comando, utilizando a opção "-str", da seguinte maneira:
-    
-    java -jar mp-ufmg-ner.jar -str "texto de entrada"
-    
-    Nesse caso, o resultado será impresso na saída padrão
+    - segmented: opção para dividir o texto em partes ("sentences") na saída
 
 
 # Formato de entrada/saída
