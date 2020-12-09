@@ -27,7 +27,7 @@ As expressões regulares estão sendo mantidas no arquivo rules.tsv, que contém
    
    onde:
 
-    - ENTRADA pode ser um diretório ou um arquivo texto, PDF, ou HTML. Se for um diretório, serão processados todos os arquivos texto/PDF/HTML do diretório. A mesma estrutura de diretórios da ENTRADA é reproduzida na SAÍDA.
+    - ENTRADA pode ser um diretório ou um arquivo texto, PDF, ou HTML. Se for um diretório, serão processados todos os arquivos texto/PDF/HTML do diretório, e a mesma estrutura de diretórios da ENTRADA será reproduzida na SAÍDA.
 
     - SAÍDA é o nome do arquivo de saída (se ENTRADA for um arquivo) ou o nome do diretório de saída (se ENTRADA for um diretório).
     
@@ -46,6 +46,7 @@ Formato de entrada: Arquivos de texto ou PDF ou HTML
 Formato de saída (segmented): Arquivos JSON com a estrutura ilustrada no seguinte exemplo:
 
 {
+
     "src_file": "data/teste.txt",
     "file": "data/teste.json",
     "sentences": [
@@ -75,7 +76,7 @@ onde:
 
    - "src_file": arquivo de origem
 
-   - "file": arquivo de saida,
+   - "file": arquivo de saida
 
    - "sentences": texto contido no arquivo de origem, separado em partes
 
@@ -98,6 +99,34 @@ Para cada entidade:
 Formato de saida (sem a opção -segmented):
 
 Similar ao formato descrito acima, porém o texto do arquivo de origem não é dividido em "sentences"
+
+
+# Extrator de licitações
+
+É uma aplicação que utiliza como entrada a saída (.json) do reconhecedor de entidades e produz como saída uma linha de csv contendo os seguintes atributos básicos de uma licitação:
+
+Número_Licitação, Ano, Modalidade, Município, Tipo, Data de recebimento
+
+Ex.:
+
+26,2017,Pregão Presencial,Varginha,Menor Preço,2017-06-23
+
+
+# Como utilizar o extrator de licitações:
+
+    python3 -m data_extraction.licitacao ENTRADA SAIDA
+    
+    onde:
+    
+    - ENTRADA: Arquivo de entidades (.json definido acima, com texto segmentado)
+   
+    - SAIDA: linha csv definida acima
+    
+    
+    
+    
+    
+
 
 
 
