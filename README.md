@@ -12,7 +12,7 @@ As expressões regulares estão sendo mantidas no arquivo rules.tsv, que contém
 
 
 
-# Como utilizar
+# Instalação
 
 1) Baixar todo o código e ir para a pasta onde foi baixado
 
@@ -20,8 +20,9 @@ As expressões regulares estão sendo mantidas no arquivo rules.tsv, que contém
 2) Baixar o modelo de reconhecimento de entidades e colocá-lo na pasta "models"
 
     wget https://drive.google.com/file/d/1e5PaQKkfs6x7wjhn_Np4o2xBJM8FuCI_/view?usp=sharing
+    
 
-3) Executar:
+# Modo de uso:
 
    java -jar mp-ufmg-ner.jar ENTRADA SAÍDA [-segmented (opcional)]
    
@@ -112,7 +113,7 @@ Ex.:
 26,2017,Pregão Presencial,Varginha,Menor Preço,2017-06-23
 
 
-# Como utilizar o extrator de licitações:
+# Como utilizar o extrator de licitações
 
     python3 -m data_extraction.licitacao ENTRADA SAIDA
     
