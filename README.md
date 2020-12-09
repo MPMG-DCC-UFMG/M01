@@ -16,19 +16,14 @@ As expressões regulares estão sendo mantidas no arquivo rules.tsv, que contém
 
 1) Baixar todo o código e ir para a pasta onde foi baixado
 
-2) Instalar bibliotecas:
 
-   sudo pip3 install requirements.txt
-
-   Obs.: Se preferir, pode instalar dentro de um ambiente virtual (https://docs.python.org/3/tutorial/venv.html)
-
-3) Baixar o modelo de reconhecimento de entidades e colocá-lo na pasta "models"
+2) Baixar o modelo de reconhecimento de entidades e colocá-lo na pasta "models"
 
     wget https://drive.google.com/file/d/1e5PaQKkfs6x7wjhn_Np4o2xBJM8FuCI_/view?usp=sharing
 
-4) Executar:
+3) Executar:
 
-   java -cp mp-ufmg-ner.jar:lib/* Pipeline ENTRADA SAÍDA [#threads (opcional)] 2> /dev/null
+   java -jar mp-ufmg-ner.jar ENTRADA SAÍDA [-segmented (opcional)]
    
    onde:
 
@@ -39,7 +34,7 @@ As expressões regulares estão sendo mantidas no arquivo rules.tsv, que contém
     
     Também é possível passar o texto de entrada na própria linha de comando, utilizando a opção "-str", da seguinte maneira:
     
-    java -cp mp-ufmg-ner.jar:lib/* Pipeline -str "texto de entrada"
+    java -jar mp-ufmg-ner.jar -str "texto de entrada"
     
     Nesse caso, o resultado será impresso na saída padrão
 
@@ -48,32 +43,47 @@ As expressões regulares estão sendo mantidas no arquivo rules.tsv, que contém
 
 Formato de entrada: Arquivos de texto ou PDF ou HTML
 
-Formato de saída: Arquivos JSON com a estrutura ilustrada no seguinte exemplo:
+Formato de saída (segmented): Arquivos JSON com a estrutura ilustrada no seguinte exemplo:
 
 {
-
-    "file": "data/teste.txt",
-    "text": "João da Silva nasceu em Teresópolis."
-    "entities": [
-    
+    "src_file": "data/teste.txt",
+    "file": "data/teste.json",
+    "sentences": [
         {
-            "start": 0,  
-            "end": 13,   
-            "label": "PESSOA", 
-            "entity": "João da Silva" 
-        },
-        {
-            "start": 24,
-            "end": 36,
-            "label": "LOCAL",
-            "entity": "Teresópolis"
-        } 
+            "text": "João da Silva nasceu em Teresópolis."
+            "entities": [
+                {
+                    "start": 0,  
+                    "end": 13,   
+                    "label": "PESSOA", 
+                    "entity": "João da Silva" 
+                },
+                {
+                    "start": 24,
+                    "end": 36,
+                    "label": "LOCAL",
+                    "entity": "Teresópolis"
+                }
+            ]
+        }
     ],
     "timestamp": "2020-09-24 19:09:29.387"
 }
 
 
-onde "file" é o arquivo de origem, "text" é o texto contido no arquivo de origem, "timestamp" contém a data e horário em que o arquivo foi processado e "entities" é a lista de entidades extraídas
+onde:
+
+   - "src_file": arquivo de origem
+
+   - "file": arquivo de saida,
+
+   - "sentences": texto contido no arquivo de origem, separado em partes
+
+   - "text": cada parte do texto
+
+   - "timestamp" contém a data e horário em que o arquivo foi processado
+
+   - "entities": é a lista de entidades extraídas
 
 Para cada entidade:
 
@@ -82,5 +92,14 @@ Para cada entidade:
    - "label": tipo de entidade
    
    - "entity": sequência de caracteres da entidade (corresponde a text[start:end])
+
+
+
+Formato de saida (sem a opção -segmented):
+
+Similar ao formato descrito acima, porém o texto do arquivo de origem não é dividido em "sentences"
+
+
+
 
  

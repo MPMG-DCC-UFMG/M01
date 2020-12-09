@@ -282,7 +282,7 @@ if __name__ == "__main__":
     tipo = extract_tipo_from_orig_text(orig_text)
     data = extract_data_rec_doc(ents, ano)
 
-    row = ["%%%s%%" % num, ano, mod, mun, tipo, data]
+    row = ["%s" % num, ano, mod, mun, tipo, data]
     to_print = ",".join(row)
     if len(to_print) > len(row) + 1:
         print(to_print, file=outfile)
