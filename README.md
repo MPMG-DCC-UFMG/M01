@@ -22,7 +22,7 @@ As expressões regulares estão sendo mantidas no arquivo rules.tsv, que contém
     wget https://drive.google.com/file/d/1e5PaQKkfs6x7wjhn_Np4o2xBJM8FuCI_/view?usp=sharing
     
 
-# Modo de uso:
+# Como executar:
 
    java -jar mp-ufmg-ner.jar ENTRADA SAÍDA [-segmented (opcional)]
    
@@ -113,7 +113,7 @@ Ex.:
 26,2017,Pregão Presencial,Varginha,Menor Preço,2017-06-23
 
 
-# Como utilizar o extrator de licitações
+# Como executar o extrator de licitações:
 
     python3 -m data_extraction.licitacao ENTRADA SAIDA
     
