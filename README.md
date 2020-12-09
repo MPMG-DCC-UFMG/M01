@@ -116,7 +116,7 @@ Ex.:
     
     - ENTRADA: Arquivo de entidades (.json definido acima, com texto segmentado)
    
-    - SAIDA: linha csv definida acima
+    - SAIDA: Nome do arquivo que conterá a linha csv definida acima
     
     
     
