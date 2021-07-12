@@ -1,4 +1,4 @@
-# M02: Processamento de linguagem natural para reconhecimento, extração e classificação de entidades nomeadas e suas relações
+# M01: Processamento de linguagem natural para reconhecimento, extração e classificação de entidades nomeadas e suas relações
 
 Reconhecedor de entidades atual (mp-ufmg-ner.jar): Baseia-se em uma combinação de expressões regulares com o reconhecedor de entidades da biblioteca CoreNLP.
 
