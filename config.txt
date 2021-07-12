@@ -1,0 +1,3 @@
+aproxSegmentSize = 100
+minSegmentSize = 20
+regexFile = rules.tsv

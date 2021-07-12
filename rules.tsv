@@ -11,17 +11,17 @@ CNPJ	\d{2,3}\.?\d{3}\.?\d{3}\s?/\s?\d{4}\s?\-?\s?\d{2}
 #Obtem do CoreNLP:
 #PROCESSO_JUDICIAL	\d\.\d{4}\.\d{2}\.\d{3}\.?\d{3}\-\d/\d{3}
 #PROCESSO_ADMINISTRATIVO	(\d{7}[\-/]\d{4}[\-/]\d{4}\-\d)|(\u00b0\s\d{3}/d{4})
-#LOCAL  (R\.|RUA|Rua|Av|Av\.|AV|Pra\u00e7a|P\u00e7a|Rodovia|Via)\s+[\w\s]+[,\-/]\s*[\d\.]+\s?[,\-/][\.\w+\s?]*([,\-/][\.\w+\s?]*)?
+ENDERECO	(R\.|RUA|Rua|Av|Av\.|AV|Pra\u00e7a|P\u00e7a|Rodovia|Via)\s+[\w\s]+[,\-/]\s*[\d\.]+\s?[,\-/][\.\w+\s?]*([,\-/][\.\w+\s?]*)?
 
 TEMPO	(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\-\s?\d\d?\-\s?\d\s?\.?\s?\d(\d\d)?)|(?i)(\d\d?\sde\s(jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)\w*(\sde\s\d{4})?)
 
-VALOR_MONETARIO	\w\$\s*\d[\d\.\s]*(,\d{2})?
+VALOR_MONETARIO	(\w\$\s*\d[\d\.\s]*(,\d{2})?)|(\d[\d\.]*,\d{2})
 DOTACAO_ORCAMENTARIA	\d[\d\.\-]{20}[\d\.\-]*
 CEP	CEP.?.?.\d{2}\.?\d{3}\-\d{3}
 #PRAZO	\d+\s.*(dias?|semanas?|mês|meses)\scorrid\ws?
 MUNICIPIO	(([mM](unicípio|UNICÍPIO))|((Prefeitura\sMunicipal)|(PREFEITURA\sMUNICIPAL)))\s+(de|DE)\s+(\w+)(\s+\w+){0,3}
 
-#LICITACAO	(LICITAÇÃO|CERTAME)\s..\s\d+/\d{4}
+LICITACAO	(LICITAÇÃO|CERTAME)\s..\s\d+/\d{4}
 #MODALIDADE_LICITACAO	[mM](ODALIDADE|odalidade).?.(\w+\s?)+
 #TIPO_LICITACAO	[tT](IPO|ipo).?.(\w+\s?)+
 #OBJETO_LICITACAO	(objeto|OBJETO).+
