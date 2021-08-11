@@ -1,4 +1,4 @@
-# M02: Processamento de linguagem natural para reconhecimento, extração e classificação de entidades nomeadas e suas relações
+# M01: Processamento de linguagem natural para reconhecimento, extração e classificação de entidades nomeadas e suas relações
 
 Reconhecedor de entidades atual (mp-ufmg-ner.jar): Baseia-se em uma combinação de expressões regulares com o reconhecedor de entidades da biblioteca CoreNLP.
 
@@ -10,6 +10,11 @@ As expressões regulares estão sendo mantidas no arquivo rules.tsv, que contém
 
 - Java 8 ou superior
 
+# Tipos de entidade reconhecidos (rótulos)
+
+- PESSOA, ORGANIZAÇÃO, LOCAL, TEMPO, LEGISLAÇÃO e JURISPRUDÊNCIA, por meio do modelo treinado pelo método CoreNLP;
+
+- VALOR MONETÁRIO, CPF, CNPJ, CEP, MASP, TELEFONE e LICITAÇÃO (incluindo os seguintes atributos de licitação: número (NUM_LICIT_OU_MODALID), ANO, MODALIDADE, TIPO, OBJETO, DOTAÇÃO_ORÇAMENTÁRIA, por meio de expressões regulares.
 
 
 # Instalação
