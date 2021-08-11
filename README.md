@@ -29,7 +29,7 @@ As expressões regulares estão sendo mantidas no arquivo rules.tsv, que contém
 
 # Como executar:
 
-   java -jar mp-ufmg-ner.jar ENTRADA SAÍDA [-segmented (opcional)]
+   java -Dfile.encoding=UTF-8 -jar mp-ufmg-ner.jar ENTRADA SAÍDA [-segmented (opcional)]
    
    onde:
 
