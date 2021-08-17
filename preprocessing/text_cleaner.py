@@ -31,7 +31,7 @@ def tokenize(string):
 #@param text The text that must be split in to sentences.
 
 def split_sentences(text):
-    sentence_delimiters = re.compile(u'[\\[\\].!?;]\s|\n')
+    sentence_delimiters = re.compile(u'[\\[\\].;!?]\s')
     sentences = sentence_delimiters.split(text)
     return sentences
 
@@ -88,6 +88,9 @@ if __name__ == "__main__":
 
     text = infile.read()
     text = replacements(clear_special_chars(text), replace_list)
+
+    sents = merge_sentences(split_sentences(text))
+    print("len(sents):", len(sents))
     outfile.write(text)
     outfile.close()
 

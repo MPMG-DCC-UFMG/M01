@@ -1,3 +1,6 @@
+removeNewLines = true
+segmented = false
 aproxSegmentSize = 100
 minSegmentSize = 20
+model = models/lener_model.ser.gz
 regexFile = rules.tsv

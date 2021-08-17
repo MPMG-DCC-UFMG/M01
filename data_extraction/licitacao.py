@@ -2,12 +2,13 @@ import sys
 import json
 from nltk.metrics.distance import edit_distance
 from preprocessing.casing import title_case
-from preprocessing.text_cleaner import extract_digits
+from preprocessing.text_cleaner import extract_digits, tokenize
 from inout import read_lower_cased_strings
+from prefix_tree import *
 import re
 
-DATE_PATTERN = re.compile("(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\-\s?\d\d?\-\s?\d\s?\.?\s?\d(\d\d)?)")
-
+#DATE_PATTERN = re.compile("(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\-\s?\d\d?\-\s?\d\s?\.?\s?\d(\d\d)?)")
+DATE_PATTERN = re.compile("(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\-\s?\d\d?\-\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\.\s?\d\d?\.\s?\d\s?\.?\s?\d(\d\d)?)")
 FILENAME_MUNIC = "data/municipios.txt"
 MUNICIPIOS = read_lower_cased_strings("data/municipios.txt")
 WSIZE = 100
@@ -15,6 +16,12 @@ MODALIDADES = ["convite", "tomada de preços", "concorrência", "concurso", "pre
 TIPOS = ["melhor técnica", "menor preço", "maior lance ou oferta", "técnica e preço"]
 INF = 999999999
 
+TREE_MODALIDADES = make_dictionary(MODALIDADES)
+TREE_TIPOS = make_dictionary(TIPOS)
+TREE_MUNICIPIOS = make_dictionary(MUNICIPIOS)
+
+#TREE_MODALIDADES.print_tree()
+#TREE_TIPOS.print_tree()
 
 #Carrega saida ".aux" do reconhecedor de entidades
 def load_entities(filename):
@@ -35,7 +42,10 @@ def load_entities_from_json(filename):
     infile = open(filename, encoding="utf-8")
     data = json.load(infile)
     infile.close()
-    sents = data["sentences"]
+    if "sentences" in data:
+        sents = data["sentences"]
+    else:
+        sents = [data]
     for sent in sents:
         t = sent["text"]
         text.append(t)
@@ -115,7 +125,8 @@ def extract_num_processo(entities):
 
 
 
-def extract_municipio(entities):
+
+def extract_municipio_old(entities):
     res = ""
     if "MUNICIPIO" not in entities:
         return ""
@@ -142,52 +153,72 @@ def extract_municipio(entities):
     return title_case(string)
 
 
-def extract_modalidade(entities):
-    if "MODALIDADE_LICITACAO" not in entities:
-        return ""
-    ents = entities["MODALIDADE_LICITACAO"]
+def extract_modalidade(tokenized_text):
+    matches = exact_matches(tokenized_text, TREE_MODALIDADES)
+    if len(matches) > 0:
+        return title_case(matches[0])
+    return ""
+
+def extract_tipo(tokenized_text):
+    matches = exact_matches(tokenized_text, TREE_TIPOS)
+    if len(matches) > 0:
+        return title_case(matches[0])
+    return ""
+
+
+def extract_municipio(tokenized_text):
+    matches = exact_matches(tokenized_text, TREE_MUNICIPIOS)
+    if len(matches) > 0:
+        return title_case(matches[0])
+    return ""
+
+
+
+#    if "MODALIDADE_LICITACAO" not in entities:
+#        return ""
+#    ents = entities["MODALIDADE_LICITACAO"]
 
     #Extrai nome da primeira entidade detectada como modalidade
-    before = ents[0][0].strip()
-    string = before.lower()
+#    before = ents[0][0].strip()
+#    string = before.lower()
 
     #Elimima "modalidade" do nome, se houver
-    if "modalidade" in string:
-        string = " ".join(string.split()[1:])
+#    if "modalidade" in string:
+#        string = " ".join(string.split()[1:])
 
-    res = title_case(extract_by_edit_distance(string, MODALIDADES))
-    print("BEFORE:", before, "AFTER:", res)
-    return res
+#    res = title_case(extract_by_edit_distance(string, MODALIDADES))
+#    print("BEFORE:", before, "AFTER:", res)
+#    return res
 
 
-def extract_tipo(entities):
-    if "TIPO_LICITACAO" not in entities:
-        return ""
-    ents = entities["TIPO_LICITACAO"]
+#def extract_tipo(entities):
+#    if "TIPO_LICITACAO" not in entities:
+#        return ""
+#    ents = entities["TIPO_LICITACAO"]
 
     #Extrai nome da primeira entidade detectada como modalidade
-    before = ents[0][0].strip()
-    string = before.lower()
+#    before = ents[0][0].strip()
+#    string = before.lower()
 
     #Elimima "modalidade" do nome, se houver
-    if "tipo" in string:
-        string = " ".join(string.split()[1:])
+#    if "tipo" in string:
+#        string = " ".join(string.split()[1:])
 
-    res = title_case(extract_by_edit_distance(string, TIPOS))
-    print("BEFORE:", before, "AFTER:", res)
-    return res
+#    res = title_case(extract_by_edit_distance(string, TIPOS))
+#    print("BEFORE:", before, "AFTER:", res)
+#    return res
 
 
 #Faz casamento exato dos tipos no texto original
-def extract_tipo_from_orig_text(orig_text):
-    if len(orig_text) == 0:
-        return ""
-    orig_text_low = orig_text.lower()
-
-    for tipo in TIPOS:
-        if tipo in orig_text_low:
-            return title_case(tipo)
-    return ""
+#def extract_tipo_from_orig_text(orig_text):
+#    if len(orig_text) == 0:
+#        return ""
+#    orig_text_low = orig_text.lower()
+#
+#    for tipo in TIPOS:
+#        if tipo in orig_text_low:
+#            return title_case(tipo)
+#    return ""
 
 
 def valid_date(yyyy, mm, dd):
@@ -196,11 +227,11 @@ def valid_date(yyyy, mm, dd):
 #ano: pode ter sido extraido anteriormente pelo numero do processo
 def extract_data_rec_doc(entities, ano):
 
-    if "TEMPO" not in entities:
+    if "DATA" not in entities:
         return ""
 
     #Formato de codigos[i]: [string_entidade, contexto_anterior, contexto_posterior]
-    tempos = entities["TEMPO"]
+    tempos = entities["DATA"]
 
     #Verifica as N primeiras entidades detectadas como TEMPO,
     #dando prioridade a que tenha "receb" na string do contexto anterior
@@ -239,6 +270,8 @@ def extract_data_rec_doc(entities, ano):
         spl = date_string.split("/")
     elif ("-" in date_string):
         spl = date_string.split("-")
+    elif ("." in date_string):
+        spl = date_string.split(".")
     else:
         return ""
 
@@ -265,6 +298,9 @@ if __name__ == "__main__":
         sys.exit(-1)
 
     ents,orig_text = load_entities_from_json(sys.argv[1])
+    norm_text = remover_acentos(orig_text).lower()
+    tokenized = tokenize(norm_text)
+    #print(tokenized)
     outfile = open(sys.argv[2], "w", encoding="utf-8")
 
     if len(ents) == 0:
@@ -276,10 +312,11 @@ if __name__ == "__main__":
     num, ano, mod = extract_num_processo(ents)
 
     if mod == None:
-        mod = extract_modalidade(ents)
+        print("Usando dicionario de modalidades", file=sys.stderr)
+        mod = extract_modalidade(tokenized)
 
-    mun = extract_municipio(ents)
-    tipo = extract_tipo_from_orig_text(orig_text)
+    mun = extract_municipio(tokenized)
+    tipo = extract_tipo(tokenized)
     data = extract_data_rec_doc(ents, ano)
 
     row = ["%s" % num, ano, mod, mun, tipo, data]

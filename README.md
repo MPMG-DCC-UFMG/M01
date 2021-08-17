@@ -29,15 +29,30 @@ As expressões regulares estão sendo mantidas no arquivo rules.tsv, que contém
 
 # Como executar:
 
-   java -Dfile.encoding=UTF-8 -jar mp-ufmg-ner.jar ENTRADA SAÍDA [-segmented (opcional)]
+   java -Dfile.encoding=UTF-8 -jar mp-ufmg-ner.jar ENTRADA SAÍDA
    
    onde:
 
     - ENTRADA pode ser um diretório ou um arquivo texto, PDF, ou HTML. Se for um diretório, serão processados todos os arquivos texto/PDF/HTML do diretório, e a mesma estrutura de diretórios da ENTRADA será reproduzida na SAÍDA.
 
     - SAÍDA é o nome do arquivo de saída (se ENTRADA for um arquivo) ou o nome do diretório de saída (se ENTRADA for um diretório).
-    
-    - segmented: opção para dividir o texto em partes ("sentences") na saída
+
+
+# Configurações do NER
+
+    O arquivo config.txt apresenta algumas opções para executar o reconhecedor de entidades, entre elas a opção "segmented = true", que serve para dividir o texto em partes na saída. Normalmente não é necessário alterar nenhuma opção, mas em algumas situações isto pode ser útil. A lista de opções encontra-se abaixo:
+
+    - removeNewLines: Remover (true) ou não (false) quebras de linha do texto
+
+    - segmented: Segmentar (true) ou não (false) o texto
+
+    - aproxSegmentSize: tamanho aproximado do segmento (em número de caracteres). Ignorado se segmented=false.
+
+    - minSegmentSize: tamanho mínimo de um segmento de texto (ignorado se segmented=false)
+
+    - model: arquivo contendo o modelo de reconhecimento de entidades (arquivo binário produzido pelo CoreNLP)
+
+    - regexFile: arquivo contendo as expressões regulares
 
 
 # Formato de entrada/saída
