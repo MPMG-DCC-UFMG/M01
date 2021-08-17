@@ -134,13 +134,9 @@ Ex.:
     
     onde:
     
-    - ENTRADA: Arquivo de entidades (.json definido acima, com texto segmentado)
+    - ENTRADA: Arquivo de entidades (aceita ambos os formatos .json definidos acima)
    
     - SAIDA: Nome do arquivo que conterá a linha csv definida acima
-    
-    
-    
-    
     
 
 
