@@ -3,6 +3,11 @@ import sys
 import re
 
 
+from unicodedata import normalize
+
+def remover_acentos(txt):
+    return normalize('NFKD', txt).encode('ASCII', 'ignore').decode('UTF-8')
+
 def extract_digits(string):
     digits = []
     for char in string:
@@ -14,7 +19,7 @@ def extract_digits(string):
 def clear_special_chars(text):
     res = ""
     for c in text:
-        if (c >= "\u0020" and c <= "\u007E") or (c >= "\u00A1" and c <= "\u00FF") or c == "\n":
+        if (c >= "\u0020" and c <= "\u007E") or (c >= "\u00A1" and c <= "\u00FF") :
             res += c
         else:
             res += " "
