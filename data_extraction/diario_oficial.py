@@ -67,17 +67,21 @@ def filter_text(doc):
     doc = normalize('NFKD', doc).encode('ascii', 'ignore').decode('utf8')
     return re.sub('[^a-zA-Z0-9 \/\\n]', '', doc)
 
-#Retorna o valor em attr_values mais similar a string
+#Retorna o indice do valor em attr_values mais similar a string
 def extract_by_edit_distance(string, attr_values):
     m = INF
-    res = ""
-    for value in attr_values:
+    res = -1
+    for i,value in enumerate(attr_values):
         d = edit_distance(string, value)
+        if "herdeiros" in value:
+            d += 9
         #print("D =", d, value)
         if d < m:
             m = d
-            res = value
-    return res
+            res = i
+    if m > 0.9 * len(string):
+        return -1, -1
+    return res,m
 
 def last_alpha_chars(text, pointer, n=2, max_previous=8):
     chars = ""
@@ -91,6 +95,13 @@ def last_alpha_chars(text, pointer, n=2, max_previous=8):
         if pointer < 0:
             break
     return chars
+
+def tokenize_and_sort(string, remove_stopwords=True):
+    global STOPWORDS
+    tokens = list(set(tokenize(string, hifen=True)))
+    if remove_stopwords:
+        tokens = [t for t in tokens if t not in STOPWORDS]
+    return remover_acentos(" ".join(sorted(tokens)))
 
 
 #Extrai lista de servidores-alvo da acao, lei em que ela se baseia e datas
@@ -175,9 +186,10 @@ if __name__ == "__main__":
     entities, index, text = load_entities_from_json(sys.argv[1])
     outfile = open(sys.argv[2], "w", encoding="utf-8")
     atos_file = open("data/dicionario_atos.txt", encoding="utf-8")
-
+    out_atos = open(sys.argv[2] + ".atos", "w", encoding="utf-8")
     atos_list = [line.strip().lower() for line in atos_file]
     atos_file.close()
+    atos_processed = [tokenize_and_sort(x) for x in atos_list]
 
     if len(entities) == 0:
         print("Nao foram detectadas entidades no arquivo", file=sys.stderr)
@@ -201,11 +213,14 @@ if __name__ == "__main__":
 
         if len(masps) == 0:
             continue
-
-        acao = remove_repetitions(acao)
-        rel = extract_by_edit_distance(acao, atos_list)
-        print(acao)
-        print(rel)
+        print(acao, file=out_atos)
+        acao_processed = tokenize_and_sort(acao)
+        rel_ind, dist = extract_by_edit_distance(acao_processed, atos_processed)
+        if rel_ind == -1:
+            continue
+        rel = atos_list[rel_ind]
+        print(acao_processed, "|", acao)
+        print(atos_processed[rel_ind], "|", rel, "|", dist)
         print("=========")
 
 
@@ -242,5 +257,6 @@ if __name__ == "__main__":
 
     df = pandas.DataFrame(rows, columns="ENTIDADE_1 ENTIDADE_2 TIPO_ENTIDADE_1 TIPO_ENTIDADE_2 TIPO_RELACAO LEIS DATA FRASE".split())
     df.to_csv(outfile, index=False)
+    out_atos.close()
 
 

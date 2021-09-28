@@ -26,8 +26,11 @@ def clear_special_chars(text):
     return res
 
 
-def tokenize(string):
-    for punct in ".,:;!?":
+def tokenize(string, hifen=False):
+    puncts = ".,:;!?"
+    if hifen:
+        puncts += "-"
+    for punct in puncts:
         string = string.replace(punct, " ")
     return string.split()
 
