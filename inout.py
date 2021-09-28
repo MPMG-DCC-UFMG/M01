@@ -1,4 +1,5 @@
 import json
+import sys
 #import spacy
 #from spacy.gold import offsets_from_biluo_tags
 
@@ -53,8 +54,12 @@ def load_conll(filename, col=2):
             start = ind
             ind += len(spl[0])
             end = ind
-            sent_labels.append( [start, end, spl[col-1]] )
+            if len(spl) > 1:
+                sent_labels.append( [start, end, spl[col-1]] )
             ind += 1
+    if len(acc) > 0:
+        sents.append(acc)
+        labels.append(sent_labels)
     infile.close()
     return sents, labels
 
@@ -65,7 +70,9 @@ def load_conll_probs(filename, col=2):
     ind = 0
     acc = ""
     sent_labels = []
+    line_no = 0
     for line in infile:
+        line_no += 1
         lin = line.strip()
         if lin == "":
             ind = 0
@@ -75,7 +82,11 @@ def load_conll_probs(filename, col=2):
             acc = ""
             sent_labels = []
         else:
-            spl = lin.split()
+            if "\t" in lin:
+                spl = lin.split("\t")
+            else:
+                spl = lin.split()
+
             acc += spl[0] + " "
             start = ind
             ind += len(spl[0])
@@ -83,9 +94,16 @@ def load_conll_probs(filename, col=2):
             probs = {}
             for s in spl[col:]:
                 spl_ = s.split("=")
-                probs[spl_[0]] = float(spl_[1])
+                if len(spl_) == 2:
+                    probs[spl_[0]] = float(spl_[1])
+                else:
+                    print("Erro de formato na linha", line_no, ":", line, file=sys.stderr)
             sent_labels.append( [start, end, spl[col-1], probs] )
             ind += 1
+    if len(acc) > 0:
+        sents.append(acc)
+        labels.append(sent_labels)
+
     infile.close()
     return sents, labels
 
