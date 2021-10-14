@@ -206,7 +206,10 @@ class JsonPredictionInputReader(BaseInputReader):
         return dataset
 
     def _parse_dataset(self, dataset_path, dataset):
-        documents = json.load(open(dataset_path))
+        if type(dataset_path) == str:
+            documents = json.load(open(dataset_path))
+        else:
+            documents = dataset_path
         for document in tqdm(documents, desc="Parse dataset '%s'" % dataset.label):
             self._parse_document(document, dataset)
 
@@ -225,6 +228,15 @@ class JsonPredictionInputReader(BaseInputReader):
         document = dataset.create_document(doc_tokens, [], [], doc_encoding)
 
         return document
+
+def DirectJsonPredictionInputReader(JsonPredictionInputReader):
+    def __init__(self, types_path: str, tokenizer: BertTokenizer, spacy_model: str = None,
+                 max_span_size: int = None, logger: Logger = None):
+        super().__init__(types_path, tokenizer, max_span_size=max_span_size, logger=logger)
+
+    def _parse_dataset(self, documents, dataset):
+        for document in tqdm(documents, desc="Parse dataset '%s'" % dataset.label):
+            self._parse_document(document, dataset)
 
 
 def _parse_tokens(jtokens, dataset, tokenizer):

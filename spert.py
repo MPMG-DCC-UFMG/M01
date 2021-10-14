@@ -21,6 +21,9 @@ def _eval():
     arg_parser = eval_argparser()
     process_configs(target=__eval, arg_parser=arg_parser)
 
+def _eval_pred():
+    arg_parser = predict_argparser()
+
 
 def __eval(run_args):
     trainer = SpERTTrainer(run_args)
@@ -39,6 +42,25 @@ def __predict(run_args):
                     input_reader_cls=input_reader.JsonPredictionInputReader)
 
 
+def _test():
+    arg_parser = predict_argparser()
+    process_configs(target=__test, arg_parser=arg_parser)
+
+
+def __test(run_args):
+    trainer = SpERTTrainer(run_args)
+    data = [
+             {
+               "tokens":["João", "Silva", "mora", "na", "Rua", "dos", "Milagres", "."]
+               #"entities": [{"start":0, "end":2, "type": "PESSOA"}, {"start":4, "end":7, "type": "LOCAL"}],
+               #"relations": [{"head":0, "tail":1, "type": "local_residencia"}]
+             }
+           ]
+
+    trainer.predict(dataset_path=data, types_path=run_args.types_path,
+                    input_reader_cls=input_reader.JsonPredictionInputReader)
+
+
 if __name__ == '__main__':
     arg_parser = argparse.ArgumentParser(add_help=False)
     arg_parser.add_argument('mode', type=str, help="Mode: 'train' or 'eval'")
@@ -48,6 +70,10 @@ if __name__ == '__main__':
         _train()
     elif args.mode == 'eval':
         _eval()
+    elif args.mode == 'eval_prediction':
+        _eval_pred() #TODO
+    elif args.mode == 'test':
+        _test()
     elif args.mode == 'predict':
         _predict()
     else:

@@ -1,7 +1,8 @@
-nltk==3.4.5
-numpy==1.15.1
-pandas==0.22.0
-spacy==2.0.12
-tensorflow==1.5.0
-html2text==2020.1.16
-
+Jinja2==2.10.3
+numpy==1.17.4
+tensorboardX==1.6
+torch==1.4.0
+tqdm==4.55.1
+transformers[sentencepiece]==4.1.1
+scikit-learn==0.24.0
+spacy==3.0.1

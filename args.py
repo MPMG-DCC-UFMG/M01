@@ -2,10 +2,13 @@ import argparse
 
 
 def _add_common_args(arg_parser):
-    arg_parser.add_argument('--config', type=str)
+    arg_parser.add_argument('--config', type=str, default="configs/example_train.conf")
 
     # Input
     arg_parser.add_argument('--types_path', type=str, help="Path to type specifications")
+
+    #If used, overrides prediction_path in config file
+    arg_parser.add_argument('--input', type=str, default="")
 
     # Preprocessing
     arg_parser.add_argument('--tokenizer_path', type=str, help="Path to tokenizer")
