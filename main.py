@@ -4,10 +4,7 @@ from args import train_argparser, eval_argparser, predict_argparser
 from config_reader import process_configs
 from spert import input_reader
 from spert.spert_trainer import SpERTTrainer
-from regex_ner import RegexNER
-from ..preprocessing.text_cleaner import merge_sentences
 
-import spacy
 
 def _train():
     arg_parser = train_argparser()
@@ -36,16 +33,32 @@ def __eval(run_args):
 
 def _predict():
     arg_parser = predict_argparser()
-    process_configs(target=__predict_text, arg_parser=arg_parser)
+    process_configs(target=__predict, arg_parser=arg_parser)
 
 
-def __predict_text(run_args):
-#    trainer = SpERTTrainer(run_args)
-    tokenizer = spacy.load("pt_core_news_sm")
-#    regex_ner = RegexNER("../rules.tsv")
-    
-#    trainer.predict(dataset_path=run_args.dataset_path, types_path=run_args.types_path,
-#                    input_reader_cls=input_reader.JsonPredictionInputReader)
+def __predict(run_args):
+    trainer = SpERTTrainer(run_args)
+    trainer.predict(dataset_path=run_args.dataset_path, types_path=run_args.types_path,
+                    input_reader_cls=input_reader.JsonPredictionInputReader)
+
+
+def _test():
+    arg_parser = predict_argparser()
+    process_configs(target=__test, arg_parser=arg_parser)
+
+
+def __test(run_args):
+    trainer = SpERTTrainer(run_args)
+    data = [
+             {
+               "tokens":["João", "Silva", "mora", "na", "Rua", "dos", "Milagres", "."]
+               #"entities": [{"start":0, "end":2, "type": "PESSOA"}, {"start":4, "end":7, "type": "LOCAL"}],
+               #"relations": [{"head":0, "tail":1, "type": "local_residencia"}]
+             }
+           ]
+
+    trainer.predict(dataset_path=data, types_path=run_args.types_path,
+                    input_reader_cls=input_reader.JsonPredictionInputReader)
 
 
 if __name__ == '__main__':
@@ -59,6 +72,8 @@ if __name__ == '__main__':
         _eval()
     elif args.mode == 'eval_prediction':
         _eval_pred() #TODO
+    elif args.mode == 'test':
+        _test()
     elif args.mode == 'predict':
         _predict()
     else:
