@@ -4,7 +4,8 @@ from pycpfcnpj import cpfcnpj
 
 class RegexNER:
     def __init__(self, regex_filename):
-        self.patterns = load_regex_file(regex_filename)
+        self.regex_filename = regex_filename
+        self.patterns = self.load_regex_file()
 
     def load_regex_file(self):
         patterns = []
@@ -34,7 +35,7 @@ class RegexNER:
             for match in pattern.finditer(text):
                 start, end = match.span()
                 span = text[start:end]
-                if additional_validation(ent_type, span):
-                    ents.append( (start, end, ent_type) )
+                #if self.additional_validation(ent_type, span):
+                ents.append( (start, end, ent_type) )
         return ents
 
