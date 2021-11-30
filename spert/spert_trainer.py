@@ -54,7 +54,7 @@ class SpERTTrainer(BaseTrainer):
         self._log_datasets(input_reader)
 
         train_sample_count = train_dataset.document_count
-        updates_epoch = train_sample_count // args.train_batch_size
+        updates_epoch = train_sample_count // args.train_batch_size #numero de batches
         updates_total = updates_epoch * args.epochs
 
         self._logger.info("Updates per epoch: %s" % updates_epoch)
@@ -87,14 +87,15 @@ class SpERTTrainer(BaseTrainer):
         if args.init_eval:
             self._eval(model, validation_dataset, input_reader, 0, updates_epoch)
 
-        # train
+        # train - loop principal
         for epoch in range(args.epochs):
             # train epoch
+            # Ajustar o modelo aos dados de treino, utilizando compute_loss como loss function
             self._train_epoch(model, compute_loss, optimizer, train_dataset, updates_epoch, epoch)
 
             # eval validation sets
-            if not args.final_eval or (epoch == args.epochs - 1):
-                self._eval(model, validation_dataset, input_reader, epoch + 1, updates_epoch)
+            #if not args.final_eval or (epoch == args.epochs - 1):
+            #    self._eval(model, validation_dataset, input_reader, epoch + 1, updates_epoch)
 
         # save final model
         extra = dict(epoch=args.epochs, updates_epoch=updates_epoch, epoch_iteration=0)
@@ -168,6 +169,8 @@ class SpERTTrainer(BaseTrainer):
 
         return model
 
+
+    # Cada iteracao do proceso de treinamento
     def _train_epoch(self, model: torch.nn.Module, compute_loss: Loss, optimizer: Optimizer, dataset: Dataset,
                      updates_epoch: int, epoch: int):
         self._logger.info("Train epoch: %s" % epoch)
@@ -177,15 +180,17 @@ class SpERTTrainer(BaseTrainer):
         data_loader = DataLoader(dataset, batch_size=self._args.train_batch_size, shuffle=True, drop_last=True,
                                  num_workers=self._args.sampling_processes, collate_fn=sampling.collate_fn_padding)
 
-        model.zero_grad()
+        model.zero_grad() #Inicializa gradientes com vetor de zeros
 
         iteration = 0
-        total = dataset.document_count // self._args.train_batch_size
+        total = dataset.document_count // self._args.train_batch_size  #Numero de batches (sub-amostras do treino)
         for batch in tqdm(data_loader, total=total, desc='Train epoch %s' % epoch):
             model.train()
             batch = util.to_device(batch, self._device)
 
-            # forward step
+            # forward step:   entrada -> modelo -> saida (= entity_logits, rel_logits)
+            # entity_logits[i] indica a probabilidade do span de entrada ser uma entidade do tipo i. Tipo i = 0 eh o tipo nao-entidade
+            # rel_logits[i] indica a probabilidade do par de entidades ter uma relacao do tipo i. Tipo i = 0 eh o tipo nao-relacao
             entity_logits, rel_logits = model(encodings=batch['encodings'], context_masks=batch['context_masks'],
                                               entity_masks=batch['entity_masks'], entity_sizes=batch['entity_sizes'],
                                               relations=batch['rels'], rel_masks=batch['rel_masks'])

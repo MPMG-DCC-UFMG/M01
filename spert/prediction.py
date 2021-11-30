@@ -164,6 +164,7 @@ def store_predictions(documents, pred_entities, pred_relations, store_path):
     predictions = []
 
     for i, doc in enumerate(documents):
+        entities2scores = {}
         tokens = doc.tokens
         sample_pred_entities = pred_entities[i]
         sample_pred_relations = pred_relations[i]
@@ -175,6 +176,7 @@ def store_predictions(documents, pred_entities, pred_relations, store_path):
             span_tokens = util.get_span_tokens(tokens, entity_span)
             entity_type = entity[2].identifier
             converted_entity = dict(type=entity_type, start=span_tokens[0].index, end=span_tokens[-1].index + 1)
+            entities2scores[(span_tokens[0].index, span_tokens[-1].index + 1)] = entity[3]
             converted_entities.append(converted_entity)
         converted_entities = sorted(converted_entities, key=lambda e: e['start'])
 
@@ -196,9 +198,12 @@ def store_predictions(documents, pred_entities, pred_relations, store_path):
             head_idx = converted_entities.index(converted_head)
             tail_idx = converted_entities.index(converted_tail)
 
-            converted_relation = dict(type=relation_type, head=head_idx, tail=tail_idx)
+            converted_relation = dict(type=relation_type, head=head_idx, tail=tail_idx, score=relation[3])
             converted_relations.append(converted_relation)
         converted_relations = sorted(converted_relations, key=lambda r: r['head'])
+
+        for conv_ent in converted_entities:
+            conv_ent["score"] = entities2scores[ (conv_ent["start"], conv_ent["end"]) ]
 
         doc_predictions = dict(tokens=[t.phrase for t in tokens], entities=converted_entities,
                                relations=converted_relations)

@@ -62,7 +62,7 @@ class SpERT(BertPreTrainedModel):
         h = self.bert(input_ids=encodings, attention_mask=context_masks)[-2]
         #for h_ in h:
         #    print(h)
-        batch_size = encodings.shape[0]
+        batch_size = encodings.shape[0]   #Numero de linhas da matriz (= numero de exemplos do batch)
 
         # classify entities
         size_embeddings = self.size_embeddings(entity_sizes)  # embed entity candidate sizes
