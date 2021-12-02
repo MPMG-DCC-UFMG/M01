@@ -75,21 +75,21 @@ def print_metrics(pred, gt, docs, verbose=False, relation=False):
             for elem in sorted(list(s)):
                 if elem not in p:
                     if not relation:
-                        doc_idx, start, end, label = elem
+                        doc_idx, (start, end, label) = elem
                         tokens = docs[doc_idx]["tokens"]
-                        print(" ".join(tokens[start:end]))
-                    else:
-                        docidx, head, tail, label = elem
+                        print("\t" + " ".join(tokens[start:end]))
+                    #else:
+                    #    docidx, head, tail, label = elem
 
             print("Wrong retrieval:")
             for elem in sorted(list(p)):
                 if elem not in s:
                     if not relation:
-                        doc_idx, start, end, label = elem
+                        doc_idx, (start, end, label) = elem
                         tokens = docs[doc_idx]["tokens"]
-                        print(" ".join(tokens[start:end]))
-                    else:
-                        docidx, head, tail, label = elem
+                        print("\t" + " ".join(tokens[start:end]))
+                    #else:
+                    #    docidx, head, tail, label = elem
 
         if label != "|micro":
             precs.append(prec)
