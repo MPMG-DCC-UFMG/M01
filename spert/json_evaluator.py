@@ -21,7 +21,8 @@ def convert(jdata):
             cls = (i, ent_tuple(ent))
             ents[label].add(cls)
             ents["|micro"].add(cls)
-
+        if "relations" not in dic:
+            continue
         for rel in dic["relations"]:
             head = rel["head"]
             tail = rel["tail"]
