@@ -30,7 +30,7 @@ for idx in range(len(sents)):
                 break
             start,end,ent = labs[j]
             tokens.append(sent[start:end])
-        if ent[1] == "-":
+        elif ent[1] == "-":
             current_ent = ent[2:]
             start_idx = j
             end_idx = start_idx + 1
