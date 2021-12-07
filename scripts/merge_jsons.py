@@ -23,13 +23,23 @@ def merge_jsons(jdata1, jdata2):
         tokens = dic1["tokens"]
         ents = {}
         rels = {}
-        for ent in dic2["entities"] + dic1["entities"]:
+        for ent in dic2["entities"]:
             if "score" in ent:
                 sc = ent["score"]
             else:
-                sc = 0.9 #default value
+                sc = 0.6 #default value
             span = (ent["start"], ent["end"])
             ents[span] = (ent["type"], sc)
+
+
+        for ent in dic1["entities"]:
+            if "score" in ent:
+                sc = ent["score"]
+            else:
+                sc = 0.9 #default value (prioritize dic1 over dic2)
+            span = (ent["start"], ent["end"])
+            ents[span] = (ent["type"], sc)
+
 
         entmap = {}
         new_entities = []
