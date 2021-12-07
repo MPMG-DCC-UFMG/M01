@@ -38,8 +38,14 @@ def merge_jsons(jdata1, jdata2):
             eid += 1
             new_entities.append({"start": span[0], "end": span[1], "type": type_sc[0], "score": type_sc[1]})
         
-        process_relations(dic2["relations"], dic2["entities"], rels)
-        process_relations(dic1["relations"], dic1["entities"], rels)
+        rels1 = []
+        rels2 = []
+        if "relations" in dic1:
+            rels1 = dic1["relations"]
+        if "relations" in dic2:
+            rels2 = dic2["relations"]
+        process_relations(rels2, dic2["entities"], rels)
+        process_relations(rels1, dic1["entities"], rels)
         new_relations = []
         for span, type_sc in sorted(rels.items()):
             h = entmap[span[0]]
