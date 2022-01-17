@@ -2,8 +2,14 @@
 import sys
 import re
 
+import spacy
+
+nlp = spacy.load("pt_core_news_sm")
 
 from unicodedata import normalize
+
+
+PUNCT=".,:;!?"
 
 def remover_acentos(txt):
     return normalize('NFKD', txt).encode('ASCII', 'ignore').decode('UTF-8')
@@ -35,6 +41,17 @@ def tokenize(string, hifen=False):
     return string.split()
 
 
+#Junta novamente palavras que foram separadas pelo tokenizer
+def tokens2sentence(tokens):
+    tokens_with_spaces = []
+    for token in tokens:
+        if token not in PUNCT:
+            tokens_with_spaces.append(" " + token)
+        else:
+            tokens_with_spaces.append(token)
+    return "".join(tokens_with_spaces)[1:]
+
+
 #Utility function to return a list of sentences.
 #@param text The text that must be split in to sentences.
 
@@ -44,21 +61,28 @@ def split_sentences(text):
     return sentences
 
 
+def is_acronym(token):
+    return (len(token) < 4) or (len(token) < 7 and token.isupper())
+
 #Merge sentences that should not be separated
 
 def merge_sentences(sentences):
     new_sents = []
     acc = ""
-    for sentence in sentences:
+    for sent_idx,sentence in enumerate(sentences):
+        if sent_idx > 0:
+            prev_sent = sentences[sent_idx-1]
+        else:
+            prev_sent = "a"
         sent = sentence.strip()
         if len(sent) < 1:
             continue
-        if sent[0].isupper():
+        if sent[0].isupper() and (not is_acronym(prev_sent[-10:].strip().split()[-1]) or len(acc) > 350) :
             if acc != "":
                 new_sents.append(acc.strip())
             acc = ""  
         acc += " " + sent
-    new_sents.append(acc.strip())
+    new_sents.append(" ".join(acc.strip().split()))
     return new_sents
 
 
@@ -92,14 +116,20 @@ if __name__ == "__main__":
     outfile = open(sys.argv[2], "w", encoding="utf-8")
     infile = open(sys.argv[1], encoding="utf-8")
 
-    replace_list = [ ["-\n", ""], [" / ", "/"], ["Av.", "Av"], ["\u00ba.", "\u00ba"], ["\u00aa.", "\u00aa"] ]
+    replace_list = [ ["-\n", ""], [" / ", "/"], ["\u00ba.", "\u00ba"], ["\u00aa.", "\u00aa"] ]
 
     text = infile.read()
     text = replacements(clear_special_chars(text), replace_list)
-
-    sents = merge_sentences(split_sentences(text))
+    #text = clear_special_chars(text)
+    print("Cleaned text:", text)
+    #sents = merge_sentences(split_sentences(text))
+    doc = nlp(text)
+    sents = [span.text for span in doc.sents]
+    print("Before:", sents)
+    sents = merge_sentences(sents)
     print("len(sents):", len(sents))
-    outfile.write(text)
+    print(sents)
+    outfile.write(". ".join(sents))
     outfile.close()
 
 

@@ -9,7 +9,8 @@ import spacy
 class Pipeline:
 
     def __init__(self):
-        self.replace_list = [ ["-\n", ""], [" / ", "/"], ["Av.", "Av"], ["\u00ba.", "\u00ba"], ["\u00aa.", "\u00aa"] ]
+        #self.replace_list = [ ["-\n", ""], [" / ", "/"], ["Av.", "Av"], ["\u00ba.", "\u00ba"], ["\u00aa.", "\u00aa"] ]
+        self.replace_list = [ ["-\n", ""], [" / ", "/"] ]
         self.tokenizer = spacy.load("pt_core_news_sm")
         self.regex_ner = RegexNER("rules_do.tsv")
         self.json_formater = JsonFormater(self.tokenizer)
@@ -17,7 +18,9 @@ class Pipeline:
 
     def process(self, text):
         text = replacements(clear_special_chars(text), self.replace_list)
-        sents = merge_sentences(split_sentences(text))
+        doc = self.tokenizer(text)
+        sents = [ span.text for span in doc.sents ]
+        sents = merge_sentences(sents)
         print("#Number of sentences:", len(sents))
         res = []
         for sent in sents:
@@ -26,7 +29,7 @@ class Pipeline:
 
         marked = res.copy()
         marked = self.json_formater.mark_ents(marked)
-        return marked
+        return res,marked
         #return sents
 
     def process_json(self, data):
@@ -46,31 +49,32 @@ class Pipeline:
 
         #Get original labels
         for i,dic in enumerate(data):
-            marked[i]["entities"] = dic["entities"]
-            marked[i]["relations"] = dic["relations"]
+            if "entities" in dic:
+                marked[i]["entities"] = dic["entities"]
+            if "relations" in dic:
+                marked[i]["relations"] = dic["relations"]
             
         return res,marked
 
 
 
-#Test
-infile = open(sys.argv[1], encoding="utf-8")
-outfile = open(sys.argv[2], "w", encoding="utf-8")
-outfile_iob = open(sys.argv[2] + ".iob", "w", encoding="utf-8")
 
-#text = infile.read()
-text = json.load(infile)
-infile.close()
+if __name__ == '__main__':
 
-pipeline = Pipeline()
+    infile = open(sys.argv[1], encoding="utf-8")
+    outfile = open(sys.argv[2], "w", encoding="utf-8")
+    outfile_iob = open(sys.argv[2] + ".iob", "w", encoding="utf-8")
 
-res,marked = pipeline.process_json(text)
-to_iob(res, outfile_iob)
-outfile_iob.close()
-json.dump(marked, outfile, indent=4)
-outfile.close()
+    #text = infile.read()
+    text = json.load(infile)
+    infile.close()
 
-#for sent in pipeline.process(text):
-#    print(sent)
-#    print()
+    pipeline = Pipeline()
+
+    res,marked = pipeline.process_json(text)
+    to_iob(res, outfile_iob)
+    outfile_iob.close()
+    json.dump(marked, outfile, indent=4)
+    outfile.close()
+
 
