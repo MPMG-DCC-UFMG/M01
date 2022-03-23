@@ -70,12 +70,14 @@ def merge_sentences(sentences):
     new_sents = []
     acc = ""
     for sent_idx,sentence in enumerate(sentences):
+        #print(sentence)
         if sent_idx > 0:
-            prev_sent = sentences[sent_idx-1]
+            prev_sent = sentences[sent_idx-1].strip()
         else:
             prev_sent = "a"
         sent = sentence.strip()
-        if len(sent) < 1:
+        #print("prev_sent", prev_sent)
+        if len(sent) < 1 or len(prev_sent) < 1:
             continue
         if sent[0].isupper() and (not is_acronym(prev_sent[-10:].strip().split()[-1]) or len(acc) > 350) :
             if acc != "":

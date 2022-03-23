@@ -16,16 +16,24 @@ class Pipeline:
         self.json_formater = JsonFormater(self.tokenizer)
 
 
-    def process(self, text):
+    def process(self, text, max_sentence_len=2000):
         text = replacements(clear_special_chars(text), self.replace_list)
-        doc = self.tokenizer(text)
-        sents = [ span.text for span in doc.sents ]
+        #doc = self.tokenizer(text)
+        #sents = [ span.text for span in doc.sents ]
+        sents = split_sentences(text)
+        #print("#Number of sentences (before):", len(sents))
         sents = merge_sentences(sents)
         print("#Number of sentences:", len(sents))
         res = []
+        print("Regex-based preprocessing...")
+
         for sent in sents:
-            ents = self.regex_ner.ner(sent)
-            res.append(self.json_formater.format(sent, ents))
+            n = len(sent)
+            for i in range(0, n, max_sentence_len):
+                subsent = sent[i: i+max_sentence_len]
+                ents = self.regex_ner.ner(subsent)
+                #print(len(subsent))
+                res.append(self.json_formater.format(subsent, ents))
 
         marked = res.copy()
         marked = self.json_formater.mark_ents(marked)
