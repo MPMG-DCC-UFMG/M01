@@ -73,6 +73,25 @@ def __test(run_args):
                     input_reader_cls=input_reader.JsonPredictionInputReader)
 
 
+
+#Carrega modelo na memoria 1 unica vez e espera por requisicoes de "predict"
+def _requests():
+    arg_parser = predict_argparser()
+    process_configs(target=__requests, arg_parser=arg_parser)
+
+def __requests(run_args):
+    trainer = SpERTTrainer(run_args)
+    #trainer._load_model() #Ja chama na primeira vez que faz o predict
+    pipeline = Pipeline()
+
+    while True:
+        text = input("Digite o texto: ")
+        jdata, jdata_marked = pipeline.process(text) #Converte texto no formato de entrada do SpERT
+
+        trainer.predict(dataset_path=jdata, types_path=run_args.types_path,
+                    input_reader_cls=input_reader.JsonPredictionInputReader)
+
+
 if __name__ == '__main__':
     arg_parser = argparse.ArgumentParser(add_help=False)
     arg_parser.add_argument('mode', type=str, help="Mode: 'train' or 'eval'")
@@ -89,5 +108,7 @@ if __name__ == '__main__':
     elif args.mode == 'predict':
         print("INFERENCIA")
         _predict()
+    elif args.mode == 'requests':
+        _requests()
     else:
         raise Exception("Mode not in ['train', 'eval', 'predict', 'eval_prediction'], e.g. 'python spert.py train ...'")

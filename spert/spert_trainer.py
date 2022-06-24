@@ -34,6 +34,7 @@ class SpERTTrainer(BaseTrainer):
         self._tokenizer = BertTokenizer.from_pretrained(args.tokenizer_path,
                                                         do_lower_case=args.lowercase,
                                                         cache_dir=args.cache_path)
+        self.model = None
 
     def train(self, train_path: str, valid_path: str, types_path: str, input_reader_cls: Type[BaseInputReader]):
         args = self._args
@@ -143,10 +144,11 @@ class SpERTTrainer(BaseTrainer):
                                         spacy_model=args.spacy_model)
         dataset = input_reader.read(dataset_path, 'dataset')
 
-        model = self._load_model(input_reader)
-        model.to(self._device)
+        if self.model == None:
+            self.model = self._load_model(input_reader)
+            model.to(self._device)
 
-        self._predict(model, dataset, input_reader)
+        self._predict(self.model, dataset, input_reader)
 
     def _load_model(self, input_reader):
         model_class = models.get_model(self._args.model_type)
