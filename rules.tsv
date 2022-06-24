@@ -26,7 +26,7 @@ ATO	(ATO)\s(ADMINISTRATIVO)?..\s?\d+/\d{4}
 #COMPETENCIA	((?=O|A\s)(.+)(?=\,\s*no uso d))|(\nATOS?\sD(O|A)\s.+\n)
 #COMPETENCIA_TITULO	(\nATOS?\sD(O|A)\s)(.+\n)
 
-COMPETENCIA	(?i)((sub|vice)?\-?(chefe|diretor|secretário|secretária|secretaria|diretoria|presidente|governador|assessor|supervisor|coordenador|gerente|corregedor|procurador)(\s*[\w\u00C0-\u00FF]+){0,5})
+COMPETENCIA	(?i)((sub|vice)?\-?(chefe|diretor|secretário|secretária|secretaria|diretoria|presidente|governador|assessor|supervisor|coordenador|gerente|corregedor|procurador)(a?)(\s*[\w\u00C0-\u00FF]+){0,5})
 
 #MODALIDADE_LICITACAO	[mM](ODALIDADE|odalidade).?.[\w\u00C0-\u00FF\s]+
 #TIPO_LICITACAO	[tT](IPO|ipo).?.[\w\u00C0-\u00FF\s]+
