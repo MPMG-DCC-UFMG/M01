@@ -146,7 +146,7 @@ class SpERTTrainer(BaseTrainer):
 
         if self.model == None:
             self.model = self._load_model(input_reader)
-            model.to(self._device)
+            self.model.to(self._device)
 
         self._predict(self.model, dataset, input_reader)
 
