@@ -16,7 +16,10 @@ Ex.:
     python3 -m spacy download pt_core_news_sm
 
 # Como executar
-    python3 -m data_extraction.licitacao ENTRADA SAIDA
+
+    Pela linha de comando, a partir do diretório "extrator_licit":
+    
+    python3 -m main.py ENTRADA SAIDA
 
     onde:
 
