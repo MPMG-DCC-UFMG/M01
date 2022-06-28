@@ -1,4 +1,4 @@
-# RegexCoreNLP NER
+# MP-UFMG-NER
 
 Reconhecedor de entidades baseado em uma combinação de expressões regulares com o reconhecedor de entidades da biblioteca CoreNLP.
 
@@ -44,7 +44,10 @@ O arquivo config.txt apresenta algumas opções para executar o reconhecedor de 
 - model: arquivo contendo o modelo de reconhecimento de entidades (arquivo binário produzido pelo CoreNLP)
 
 - regexFile: arquivo contendo as expressões regulares
-Formato de entrada/saída
+
+
+# Formato de entrada/saída
+
 Formato de entrada: Arquivos de texto ou PDF ou HTML
 
 Formato de saída (segmented): Arquivos JSON com a estrutura ilustrada no seguinte exemplo:
@@ -79,25 +82,25 @@ Formato de saída (segmented): Arquivos JSON com a estrutura ilustrada no seguin
 
 onde:
 
-"src_file": arquivo de origem
+ - "src_file": arquivo de origem
 
-"file": arquivo de saida
+ - "file": arquivo de saida
 
-"sentences": texto contido no arquivo de origem, separado em partes
+ - "sentences": texto contido no arquivo de origem, separado em partes
 
-"text": cada parte do texto
+ - "text": cada parte do texto
 
-"timestamp" contém a data e horário em que o arquivo foi processado
+- "timestamp" contém a data e horário em que o arquivo foi processado
 
-"entities": é a lista de entidades extraídas
+- "entities": é a lista de entidades extraídas
 
 Para cada entidade:
 
-"start", "end": índices de início e fim da entidade no texto
+- "start", "end": índices de início e fim da entidade no texto
 
-"label": tipo de entidade
+- "label": tipo de entidade
 
-"entity": sequência de caracteres da entidade (corresponde a text[start:end])
+- "entity": sequência de caracteres da entidade (corresponde a text[start:end])
 
 Formato de saida (sem a opção -segmented):
 
