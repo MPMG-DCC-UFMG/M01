@@ -8,6 +8,8 @@ Este repositório contém módulos de software para tarefas que envolvem reconhe
 
 - outros: Módulos em desenvolvimento
 
+Instruções de instalação e uso de cada módulo podem ser encontradas no arquivo README contido em cada diretório
+
 
 
 
