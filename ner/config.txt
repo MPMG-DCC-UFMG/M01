@@ -1,4 +1,4 @@
-removeNewLines = true
+removeNewLines = false
 segmented = false
 aproxSegmentSize = 100
 minSegmentSize = 20
