@@ -1,6 +1,6 @@
 # Extrator de licitações
 
-É uma aplicação que utiliza como entrada a saída (.json) do reconhecedor de entidades MP-UFMG-NER e produz como saída uma linha de csv contendo os seguintes atributos básicos de uma licitação:
+É uma aplicação que utiliza como entrada a saída (.json) do reconhecedor de entidades MP-UFMG-NER (vide https://github.com/MPMG-DCC-UFMG/M01/tree/master/ner) e produz como saída uma linha de csv contendo os seguintes atributos básicos de uma licitação:
 
 Número_Licitação, Ano, Modalidade, Município, Tipo, Data de recebimento
 
