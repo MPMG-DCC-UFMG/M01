@@ -128,6 +128,16 @@ Ex.:
 26,2017,Pregão Presencial,Varginha,Menor Preço,2017-06-23
 
 
+# Requisitos 
+
+- Python3
+
+
+# Instalação
+
+pip install -r requirements.txt
+python3 -m spacy download pt_core_news_sm
+
 # Como executar o extrator de licitações:
 
     python3 -m data_extraction.licitacao ENTRADA SAIDA
