@@ -31,7 +31,7 @@ COMPETENCIA	(?i)((sub|vice)?\-?(chefe|diretor|secretário|secretária|secretaria
 #MODALIDADE_LICITACAO	[mM](ODALIDADE|odalidade).?.[\w\u00C0-\u00FF\s]+
 #TIPO_LICITACAO	[tT](IPO|ipo).?.[\w\u00C0-\u00FF\s]+
 #OBJETO_LICITACAO	(objeto|OBJETO).{5,150}
-#NUM_LICIT_OU_MODALID	(\u00b0|\u00ba)\s?\d+\s?/[\d\.\s?]+
-#ANO	(2\.?\s?\d\d\d\s)|(1\.?9\s?\d\d\s)
+NUM_LICIT_OU_MODALID	(\u00b0|\u00ba)\s?\d+\s?/[\d\.\s?]+
+ANO	(2\.?\s?\d\d\d\s)|(1\.?9\s?\d\d\s)
 #
 #
