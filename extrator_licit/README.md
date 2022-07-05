@@ -19,7 +19,7 @@ Ex.:
 
     Pela linha de comando, a partir do diretório "extrator_licit":
     
-    python3 -m main.py ENTRADA SAIDA
+    python3 -m main ENTRADA SAIDA
 
     onde:
 
