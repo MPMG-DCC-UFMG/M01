@@ -17,9 +17,9 @@ VALOR MONETÁRIO, CPF, CNPJ, CEP, MASP, TELEFONE e LICITAÇÃO (incluindo os seg
 
 Baixar todo o código e ir para a pasta "ner"
 
-Baixar o modelo de reconhecimento de entidades e colocá-lo na pasta "ner/models":
+Baixar o modelo de reconhecimento de entidades do link abaixo e colocá-lo na pasta "ner/models":
 
-   wget https://drive.google.com/file/d/1e5PaQKkfs6x7wjhn_Np4o2xBJM8FuCI_/view?usp=sharing
+   https://drive.google.com/u/0/uc?id=1e5PaQKkfs6x7wjhn_Np4o2xBJM8FuCI_
 
 # Como executar:
 
