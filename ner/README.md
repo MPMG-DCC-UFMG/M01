@@ -19,8 +19,9 @@ Baixar todo o código e ir para a pasta "ner"
 
 Baixar o modelo de reconhecimento de entidades do link abaixo e colocá-lo na pasta "ner/models":
 
-   https://drive.google.com/u/0/uc?id=1e5PaQKkfs6x7wjhn_Np4o2xBJM8FuCI_
-
+   ```
+      https://drive.google.com/u/0/uc?id=1e5PaQKkfs6x7wjhn_Np4o2xBJM8FuCI_
+   ```
 # Como executar:
 
 java -Dfile.encoding=UTF-8 -jar mp-ufmg-ner.jar ENTRADA SAÍDA
