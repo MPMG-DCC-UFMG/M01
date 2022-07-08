@@ -58,8 +58,8 @@ class SpERT(BertPreTrainedModel):
                        entity_sizes: torch.tensor, relations: torch.tensor, rel_masks: torch.tensor):
         # get contextualized token embeddings from last transformer layer
         context_masks = context_masks.float()
-        #h = self.bert(input_ids=encodings, attention_mask=context_masks)['last_hidden_state']
-        h = self.bert(input_ids=encodings, attention_mask=context_masks)[-2]
+        h = self.bert(input_ids=encodings, attention_mask=context_masks, return_dict=True)['last_hidden_state']
+        #h = self.bert(input_ids=encodings, attention_mask=context_masks)[-2]
         #for h_ in h:
         #    print(h)
         batch_size = encodings.shape[0]   #Numero de linhas da matriz (= numero de exemplos do batch)
