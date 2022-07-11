@@ -1,0 +1,37 @@
+MASP	[mM][aA][sS][pP]\s*[\d\.\s]*\-?\s?\d
+TEL	\(\s??0?\s?\*?\*?\s?\d{2}\s?\)\s?\d{4,5}[\-]?\d{4}\s
+
+#Validacao de digitos verificadores feita no codigo
+CPF	\d{3}\s?\.?\s?\d{3}\.?\s?\d{3}\s?\-?\s?\d{2}
+CNPJ	\d{2,3}\s?\.?\s?\d{3}\s?\.?\s?\d{3}\s?/\s?\d{4}\s?\-?\s?\d{2}
+
+#Varia muito, pode precisar de treino
+#RG	\d(\.\d{3}){2}\-\d
+
+#Obtem do CoreNLP:
+#PROCESSO_JUDICIAL	\d\.\d{4}\.\d{2}\.\d{3}\.?\d{3}\-\d/\d{3}
+#PROCESSO_ADMINISTRATIVO	(\d{7}[\-/]\d{4}[\-/]\d{4}\-\d)|(\u00b0\s\d{3}/d{4})
+ENDERECO	(?i)((av|av\.|ave\.|rua|pra\u00e7a|p\u00e7a|rodovia)\s+([,\-/\.\u00ba\u00b0\w\u00C0-\u00FF]+\s*){1,10})
+
+DATA	(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\-\s?\d\d?\-\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\.\s?\d\d?\.\s?\d\s?\.?\s?\d(\d\d)?)|(?i)(\d\d?\sde\s(jan|fev|mar|março|abr|mai|jun|jul|ago|set|out|nov|dez)\w*(\sde\s\d{4})?)
+
+VALOR_MONETARIO	(\w\$\s*\d[\d\.\s]*(,\d{2})?)|(\d[\d\.]*,\d{2})
+DOTACAO_ORCAMENTARIA	\d[\d\.\-]{20}[\d\.\-]*
+CEP	CEP.?.?.\d{2}\.?\d{3}\-\d{3}
+#PRAZO	\d+\s.*(dias?|semanas?|mês|meses)\scorrid\ws?
+#MUNICIPIO	(([mM](unicípio|UNICÍPIO))|((Prefeitura\sMunicipal)|(PREFEITURA\sMUNICIPAL)))\s+(de|DE)\s+[\w\u00C0-\u00FF]+(\s+[\w\u00C0-\u00FF]+){0,3}
+
+#LICITACAO	(LICITAÇÃO|CERTAME)\s..\s\d+/\d{4}
+ATO	(ATO)\s(ADMINISTRATIVO)?..\s?\d+/\d{4}
+#COMPETENCIA	((?=O|A\s)(.+)(?=\,\s*no uso d))|(\nATOS?\sD(O|A)\s.+\n)
+#COMPETENCIA_TITULO	(\nATOS?\sD(O|A)\s)(.+\n)
+
+COMPETENCIA	(?i)((sub|vice)?\-?(chefe|diretor|secretário|secretária|secretaria|diretoria|assessor|supervisor|coordenador|gerente|corregedor|procurador)(a?)(\s*[\w\u00C0-\u00FF]+){0,5})
+
+#MODALIDADE_LICITACAO	[mM](ODALIDADE|odalidade).?.[\w\u00C0-\u00FF\s]+
+#TIPO_LICITACAO	[tT](IPO|ipo).?.[\w\u00C0-\u00FF\s]+
+#OBJETO_LICITACAO	(objeto|OBJETO).{5,150}
+#NUM_LICIT_OU_MODALID	(\u00b0|\u00ba)\s?\d+\s?/[\d\.\s?]+
+#ANO	(2\.?\s?\d\d\d\s)|(1\.?9\s?\d\d\s)
+#
+#
