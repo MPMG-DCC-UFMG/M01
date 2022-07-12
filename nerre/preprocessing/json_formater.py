@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 
 PUNCT=".,;?!:"
 
@@ -31,7 +32,7 @@ def to_iob(jdata, outfile):
         print(file=outfile)
 
 
-def to_char_level_format(jdata):
+def to_char_level_format(jdata, source_file=None, dest_file=None):
     segments = []
     for dic in jdata:
         idx_token2char = {}
@@ -73,7 +74,14 @@ def to_char_level_format(jdata):
         segments.append({"text": segment_text, 
                          "entities": new_entities, 
                          "relations": new_relations})
-        return segments
+
+        res = {"sentences": segments}
+        res["timestamp"] = str(datetime.now())
+        if source_file != None:
+            res["src_file"] = source_file
+        if dest_file != None:
+            res["file"] = dest_file
+        return res
 
 def match_tokens(ent_str, tokens, start_from=0):
     token_idx = start_from

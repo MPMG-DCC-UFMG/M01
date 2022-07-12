@@ -2,6 +2,7 @@ import sys
 import json
 from collections import defaultdict
 
+total = 0
 
 def merge_spans_doc(dic):
     global total
@@ -72,27 +73,28 @@ def merge_spans(jdata):
     return res
 
 
-#Test
+if __name__ == '__main__':
+    #Test
 
-#jdata=[{"tokens": ["O", "Nobre", "Rato", "roeu", "a", "roupa", "do", "rei", "de", "Roma"],
-#        "entities": [{"start":1, "end":2, "type":"PER"}, {"start":1, "end":3, "type":"PER"}, {"start":2, "end":3, "type":"PER"}, {"start":2, "end":3, "type":"PER"}, {"start":2, "end":3, "type":"PER"}, {"start":9, "end":10, "type":"LOC"}],
-#        "relations": [{"head": 0, "tail":3, "type":"lives_in"}, {"head": 1, "tail":3, "type":"lives_in"}, {"head": 2, "tail":3, "type":"lives_in"}]
-#       }
-#      ]
+    #jdata=[{"tokens": ["O", "Nobre", "Rato", "roeu", "a", "roupa", "do", "rei", "de", "Roma"],
+    #        "entities": [{"start":1, "end":2, "type":"PER"}, {"start":1, "end":3, "type":"PER"}, {"start":2, "end":3, "type":"PER"}, {"start":2, "end":3, "type":"PER"}, {"start":2, "end":3, "type":"PER"}, {"start":9, "end":10, "type":"LOC"}],
+    #        "relations": [{"head": 0, "tail":3, "type":"lives_in"}, {"head": 1, "tail":3, "type":"lives_in"}, {"head": 2, "tail":3, "type":"lives_in"}]
+    #       }
+    #      ]
 
-total = 0
-overlap_count = 0
-infile = open(sys.argv[1], encoding="utf-8")
-outfile = open(sys.argv[2], "w", encoding="utf-8")
-jdata = json.load(infile)
-infile.close()
+    total = 0
+    overlap_count = 0
+    infile = open(sys.argv[1], encoding="utf-8")
+    outfile = open(sys.argv[2], "w", encoding="utf-8")
+    jdata = json.load(infile)
+    infile.close()
 
-res = merge_spans(jdata)
+    res = merge_spans(jdata)
 
-json.dump(res, outfile, indent=4)
-outfile.close()
+    json.dump(res, outfile, indent=4)
+    outfile.close()
 
-print("overlap_count:", overlap_count, "/", total, "=", overlap_count/total)
+    print("overlap_count:", overlap_count, "/", total, "=", overlap_count/total)
 
 
 

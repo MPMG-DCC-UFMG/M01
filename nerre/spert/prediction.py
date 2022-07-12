@@ -6,6 +6,8 @@ import torch
 from spert import util
 from spert.input_reader import BaseInputReader
 
+from preprocessing.json_formater import to_char_level_format
+
 
 def convert_predictions(batch_entity_clf: torch.tensor, batch_rel_clf: torch.tensor,
                         batch_rels: torch.tensor, batch: dict, rel_filter_threshold: float,
@@ -160,7 +162,7 @@ def _adjust_rel(rel: Tuple):
     return adjusted_rel
 
 
-def store_predictions(documents, pred_entities, pred_relations, store_path):
+def format_predictions(documents, pred_entities, pred_relations):
     predictions = []
 
     for i, doc in enumerate(documents):
@@ -208,7 +210,9 @@ def store_predictions(documents, pred_entities, pred_relations, store_path):
         doc_predictions = dict(tokens=[t.phrase for t in tokens], entities=converted_entities,
                                relations=converted_relations)
         predictions.append(doc_predictions)
-
+    return predictions
     # store as json
-    with open(store_path, 'w') as predictions_file:
-        json.dump(predictions, predictions_file, indent=4)
+    #with open(store_path, 'w') as predictions_file:
+    #    if format == "char-level":
+    #        predictions = to_char_level_format(predictions, source_file=source_file, dest_file=store_path)
+     #   json.dump(predictions, predictions_file, indent=4)

@@ -1,11 +1,28 @@
 import argparse
-
+import json
+import socket
 from args import train_argparser, eval_argparser, predict_argparser
 from config_reader import process_configs
 from spert import input_reader
 from spert.spert_trainer import SpERTTrainer
 from spert.evaluator import Evaluator
 from pipeline import Pipeline
+from preprocessing.json_formater import to_char_level_format
+from postprocessing.merge_spans_score import merge_spans
+
+def my_config_parser(config_filename):
+    config_file = open(config_filename)
+    dic = {}
+    for line in config_file:
+        lin = line.strip()
+        if lin.startswith("#"):
+            continue
+        spl = lin.split("=")
+        dic[spl[0].strip()] = spl[1].strip()
+    config_file.close()
+    return dic
+
+
 
 def _train():
     arg_parser = train_argparser()
@@ -80,35 +97,64 @@ def _requests():
     process_configs(target=__requests, arg_parser=arg_parser)
 
 def __requests(run_args):
+    print("Starting MP-UFMG NERRE server")
     trainer = SpERTTrainer(run_args)
     #trainer._load_model() #Ja chama na primeira vez que faz o predict
     pipeline = Pipeline()
+    config = my_config_parser("configs/ner_service.conf")
+    port = int(config["port"])
+
+    server = socket.socket()
+    server.bind(('', port))
+    #print("socket binded to %s" % (port))
+    server.listen()
+    print("MP-UFMG NERRE server is listening")
 
     while True:
-        text = input("Digite o texto: ")
-        jdata, jdata_marked = pipeline.process(text) #Converte texto no formato de entrada do SpERT
+        c, addr = server.accept()
+        #print('Got connection from', addr)
+        msg = c.recv(1024)
+        try:
+            request = json.loads(msg.decode("utf-8"))
+        except:
+            request = {}
+        c.close()
+        print(request)
+        if "input" in request:
+            infile = open(request["input"], encoding="utf-8")
+            text = infile.read()
+            infile.close()
+            run_args.predictions_path = request["output"]
+            jdata, jdata_marked = pipeline.process(text) #Converte texto no formato de entrada do SpERT
 
-        trainer.predict(dataset_path=jdata, types_path=run_args.types_path,
-                    input_reader_cls=input_reader.JsonPredictionInputReader)
+            predictions = trainer.predict(data_or_path=jdata, types_path=run_args.types_path,
+                             input_reader_cls=input_reader.JsonPredictionInputReader)
+
+            #Post-processing
+            predictions = merge_spans(predictions)
+
+            #Conversao de formato de saida
+            predictions = to_char_level_format(predictions,
+                                               source_file=request["input"],
+                                               dest_file=run_args.predictions_path)
+
+            with open(run_args.predictions_path, "w", encoding="utf-8") as outfile:
+                json.dump(predictions, outfile, indent=4)
 
 
 if __name__ == '__main__':
     arg_parser = argparse.ArgumentParser(add_help=False)
-    arg_parser.add_argument('mode', type=str, help="Mode: 'train' or 'eval'")
+    arg_parser.add_argument('mode', type=str, help="Mode: 'train' or 'predict' or 'server'")
     args, _ = arg_parser.parse_known_args()
 
     if args.mode == 'train':
         _train()
     elif args.mode == 'eval':
         _eval()
-    elif args.mode == 'eval_prediction':
-        _eval_pred() #TODO
-    elif args.mode == 'test':
-        _test()
     elif args.mode == 'predict':
         print("INFERENCIA")
         _predict()
-    elif args.mode == 'requests':
+    elif args.mode == 'server':
         _requests()
     else:
-        raise Exception("Mode not in ['train', 'eval', 'predict', 'eval_prediction'], e.g. 'python spert.py train ...'")
+        raise Exception("Mode not in ['train', 'eval', 'predict', 'server'], e.g. 'python spert.py train ...'")

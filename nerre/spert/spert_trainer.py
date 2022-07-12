@@ -135,20 +135,20 @@ class SpERTTrainer(BaseTrainer):
         self._logger.info("Logged in: %s" % self._log_path)
         self._close_summary_writer()
 
-    def predict(self, dataset_path: str, types_path: str, input_reader_cls: Type[BaseInputReader]):
+    def predict(self, data_or_path: any, types_path: str, input_reader_cls: Type[BaseInputReader], source_file=None):
         args = self._args
 
         # read datasets
         input_reader = input_reader_cls(types_path, self._tokenizer,
                                         max_span_size=args.max_span_size,
                                         spacy_model=args.spacy_model)
-        dataset = input_reader.read(dataset_path, 'dataset')
+        dataset = input_reader.read(data_or_path, 'dataset')
 
         if self.model == None:
             self.model = self._load_model(input_reader)
             self.model.to(self._device)
 
-        self._predict(self.model, dataset, input_reader)
+        return self._predict(self.model, dataset, input_reader)
 
     def _load_model(self, input_reader):
         model_class = models.get_model(self._args.model_type)
@@ -256,8 +256,8 @@ class SpERTTrainer(BaseTrainer):
         self._log_eval(*ner_eval, *rel_eval, *rel_nec_eval,
                        epoch, iteration, global_iteration, dataset.label)
 
-        if self._args.store_predictions and not self._args.no_overlapping:
-            evaluator.store_predictions()
+        #if self._args.store_predictions and not self._args.no_overlapping:
+        #    evaluator.store_predictions()
 
         if self._args.store_examples:
             evaluator.store_examples()
@@ -295,8 +295,9 @@ class SpERTTrainer(BaseTrainer):
                 batch_pred_entities, batch_pred_relations = predictions
                 pred_entities.extend(batch_pred_entities)
                 pred_relations.extend(batch_pred_relations)
-
-        prediction.store_predictions(dataset.documents, pred_entities, pred_relations, self._args.predictions_path)
+        return prediction.format_predictions(dataset.documents, pred_entities, pred_relations)
+        #prediction.store_predictions(dataset.documents, pred_entities, pred_relations,
+        #                             self._args.predictions_path, source_file=source_file)
 
     def _get_optimizer_params(self, model):
         param_optimizer = list(model.named_parameters())
