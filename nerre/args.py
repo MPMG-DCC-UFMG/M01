@@ -2,7 +2,7 @@ import argparse
 
 
 def _add_common_args(arg_parser):
-    arg_parser.add_argument('--config', type=str, default="configs/example_train.conf")
+    arg_parser.add_argument('--config', type=str, default="configs/domg_predict.conf")
 
     # Input
     arg_parser.add_argument('--types_path', type=str, help="Path to type specifications")

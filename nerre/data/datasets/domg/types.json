@@ -1,0 +1,96 @@
+{
+    "entities": {
+        "MASP": {
+            "short": "MASP",
+            "verbose": "MASP"
+        },
+        "LOCAL": {
+            "short": "LOCAL",
+            "verbose": "LOCAL"
+        },
+        "ATO": {
+            "short": "ATO",
+            "verbose": "ATO"
+        },
+        "ORGANIZACAO": {
+            "short": "ORGANIZACAO",
+            "verbose": "ORGANIZACAO"
+        },
+        "CNPJ": {
+            "short": "CNPJ",
+            "verbose": "CNPJ"
+        },
+        "LEGISLACAO": {
+            "short": "LEGISLACAO",
+            "verbose": "LEGISLACAO"
+        },
+        "COMPETENCIA": {
+            "short": "COMPETENCIA",
+            "verbose": "COMPETENCIA"
+        },
+        "PESSOA": {
+            "short": "PESSOA",
+            "verbose": "PESSOA"
+        },
+        "CPF": {
+            "short": "CPF",
+            "verbose": "CPF"
+        },
+        "DATA": {
+            "short": "DATA",
+            "verbose": "DATA"
+        }
+    },
+    "relations": {
+        "competencia": {
+            "symmetric": false,
+            "short": "competencia",
+            "verbose": "competencia"
+        },
+        "data_inicio": {
+            "symmetric": false,
+            "short": "data_inicio",
+            "verbose": "data_inicio"
+        },
+        "cpf": {
+            "symmetric": false,
+            "short": "cpf",
+            "verbose": "cpf"
+        },
+        "local_residencia": {
+            "symmetric": false,
+            "short": "local_residenci",
+            "verbose": "local_residencia"
+        },
+        "masp": {
+            "symmetric": false,
+            "short": "masp",
+            "verbose": "masp"
+        },
+        "cnpj": {
+            "symmetric": false,
+            "short": "cnpj",
+            "verbose": "cnpj"
+        },
+        "ato_administrativo": {
+            "symmetric": false,
+            "short": "ato_administrat",
+            "verbose": "ato_administrativo"
+        },
+        "nos_termos_lei": {
+            "symmetric": false,
+            "short": "nos_termos_lei",
+            "verbose": "nos_termos_lei"
+        },
+        "lotado": {
+            "symmetric": false,
+            "short": "lotado",
+            "verbose": "lotado"
+        },
+        "localizado_em": {
+            "symmetric": false,
+            "short": "localizado_em",
+            "verbose": "localizado_em"
+        }
+    }
+}
