@@ -4,11 +4,11 @@ Este repositório contém módulos de software para tarefas que envolvem reconhe
 
 - ner: Módulo de Reconhecimento (Extração e Classificação) de Entidades
 
+- nerre: Módulo de Reconhecimento de Entidades e Relações
+
 - extrator_licit: Módulo para extração de dados de documentos referentes a licitações
 
-- outros: Módulos em desenvolvimento
-
-Instruções de instalação e uso de cada módulo podem ser encontradas no arquivo README contido em cada diretório
+Instruções de instalação e uso de cada módulo podem ser encontradas no arquivo README contido nos respectivos diretórios.
 
 
 
