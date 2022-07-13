@@ -28,7 +28,7 @@ ato_administrativo, cpf, cnpj, masp, nos_termos_lei, lotado
 
 3) Baixar e descompactar o modelo de reconhecimento de entidades do link abaixo e colocá-lo na pasta "nerre/models":
 ```
-    https://drive.google.com/u/1/uc?id=1YpHt99AqFoxHMNoXPzR4N6W2Bgg46hJO
+    gdown https://drive.google.com/u/1/uc?id=1YpHt99AqFoxHMNoXPzR4N6W2Bgg46hJO
 ```  
 
 # Como executar:
@@ -45,9 +45,9 @@ python client.py ENTRADA SAÍDA
 
 onde:
 
-ENTRADA: arquivo contendo texto livre
+ENTRADA: caminho do arquivo contendo texto livre
 
-SAÍDA: arquivo de saída, no formato descrito abaixo.
+SAÍDA: caminho do arquivo de saída, que será gerado no formato descrito abaixo.
 
 # Formato de saída
 
