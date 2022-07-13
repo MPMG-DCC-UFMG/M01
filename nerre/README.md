@@ -54,6 +54,9 @@ SAÍDA: caminho do arquivo de saída, que será gerado no formato descrito abaix
 Formato de saída: Arquivos JSON com a estrutura ilustrada no seguinte exemplo:
 ```
 {
+    "timestamp": "2022-07-12 13:31:44.996617",
+    "src_file": "data/datasets/domg/toy_example.txt",
+    "file": "data/datasets/domg/toy_predictions.json"
     "sentences": [
         {
             "text": "Jo\u00e3o da Silva mora em Belo Horizonte",
@@ -82,9 +85,6 @@ Formato de saída: Arquivos JSON com a estrutura ilustrada no seguinte exemplo:
             ]
         }
     ],
-    "timestamp": "2022-07-12 13:31:44.996617",
-    "src_file": "data/datasets/domg/toy_example.txt",
-    "file": "data/datasets/domg/toy_predictions.json"
 }
 ```
 onde:
