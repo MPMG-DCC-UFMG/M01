@@ -130,6 +130,10 @@ def __requests(run_args):
             predictions = trainer.predict(data_or_path=jdata, types_path=run_args.types_path,
                              input_reader_cls=input_reader.JsonPredictionInputReader)
 
+            #Adicionar entidades identificadas por regex
+            for i, pred in enumerate(predictions):
+                pred["entities"] += jdata[i]["entities"]
+
             #Post-processing
             predictions = merge_spans(predictions)
 

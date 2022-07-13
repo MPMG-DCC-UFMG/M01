@@ -129,7 +129,7 @@ class JsonFormater:
 
             #Entity tokens
             tokens += [ token.text for token in self.tokenizer(text[start_char:end_char].strip()) ]
-            entities.append( {"start": ind, "end": len(tokens), "type": label} )
+            entities.append( {"start": ind, "end": len(tokens), "type": label, "score": 0.999999} )
             ind_char = end_char
 
         #Tokens after last entity

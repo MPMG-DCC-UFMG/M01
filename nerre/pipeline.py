@@ -28,6 +28,7 @@ class Pipeline:
             for i in range(0, n, max_sentence_len):
                 subsent = sent[i: i+max_sentence_len]
                 ents = self.regex_ner.ner(subsent)
+                #print(ents)
                 res.append(self.json_formater.format(subsent, ents))
 
         marked = res.copy()

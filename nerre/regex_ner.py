@@ -15,12 +15,15 @@ class RegexNER:
             if lin.startswith("#"):
                 continue
             spl = lin.strip().split("\t")
+            #print(spl)
             if len(spl) < 2:
                 continue
             name = spl[0]
             expr = spl[1]
             patterns.append( (name, re.compile(expr)) )
         infile.close()
+        #for pattern in patterns:
+        #    print(pattern[0])
         return patterns
 
 
