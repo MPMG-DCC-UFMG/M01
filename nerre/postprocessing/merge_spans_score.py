@@ -3,6 +3,7 @@ import json
 from collections import defaultdict
 
 total = 0
+overlap_count = 0
 
 def merge_spans_doc(dic):
     global total

@@ -1,7 +1,7 @@
 
 import sys
 import json
-from preprocessing.text_cleaner import merge_sentences, split_sentences, clear_special_chars, replacements, tokens2sentence
+from preprocessing.text_cleaner import tokenize_sentences, clear_special_chars, replacements, tokens2sentence
 from preprocessing.json_formater import JsonFormater, to_iob
 from regex_ner import RegexNER
 import spacy
@@ -16,13 +16,9 @@ class Pipeline:
         self.json_formater = JsonFormater(self.tokenizer)
 
 
-    def process(self, text, max_sentence_len=2000):
+    def process(self, text, max_sentence_len=1500):
         text = replacements(clear_special_chars(text), self.replace_list)
-        #doc = self.tokenizer(text)
-        #sents = [ span.text for span in doc.sents ]
-        sents = split_sentences(text)
-        #print("#Number of sentences (before):", len(sents))
-        sents = merge_sentences(sents)
+        sents = tokenize_sentences(text)
         print("#Number of sentences:", len(sents))
         res = []
         print("Regex-based preprocessing...")
@@ -32,13 +28,11 @@ class Pipeline:
             for i in range(0, n, max_sentence_len):
                 subsent = sent[i: i+max_sentence_len]
                 ents = self.regex_ner.ner(subsent)
-                #print(len(subsent))
                 res.append(self.json_formater.format(subsent, ents))
 
         marked = res.copy()
         marked = self.json_formater.mark_ents(marked)
-        return res,marked
-        #return sents
+        return res, marked
 
     def process_json(self, data):
         res = []

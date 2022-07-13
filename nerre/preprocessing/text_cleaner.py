@@ -25,7 +25,7 @@ def extract_digits(string):
 def clear_special_chars(text):
     res = ""
     for c in text:
-        if (c >= "\u0020" and c <= "\u007E") or (c >= "\u00A1" and c <= "\u00FF") :
+        if (c >= "\u0020" and c <= "\u007E") or (c >= "\u00A1" and c <= "\u00FF"):
             res += c
         else:
             res += " "
@@ -56,8 +56,29 @@ def tokens2sentence(tokens):
 #@param text The text that must be split in to sentences.
 
 def split_sentences(text):
-    sentence_delimiters = re.compile(u'[\\[\\].;!?]\s')
+    sentence_delimiters = re.compile(u'[\\[\\].!\?]\s')
     sentences = sentence_delimiters.split(text)
+    return sentences
+
+
+
+def tokenize_sentences(text, approx_seg_size=600, min_seg_size=100):
+    end_of_sentence_pattern = re.compile("[\.\?][\s\n]+[A-Z]")
+    sentences = []
+    acc = ""
+    #matches = end_of_sentence_pattern.finditer(text)
+    #print("len(matches):", list(matches))
+    previous_start = 0
+    for match in end_of_sentence_pattern.finditer(text):
+        start = match.start()
+        segment = text[previous_start: start + 1]
+        acc += segment
+        prev_seg = text[:start]
+        if len(acc) > approx_seg_size and len(segment) > min_seg_size and (not is_acronym(prev_seg[-10:].strip().split()[-1])):
+            sentences.append(acc)
+            acc = ""
+        previous_start = start + 1
+    sentences.append(acc + text[previous_start:])
     return sentences
 
 
@@ -69,7 +90,7 @@ def is_acronym(token):
 def merge_sentences(sentences):
     new_sents = []
     acc = ""
-    for sent_idx,sentence in enumerate(sentences):
+    for sent_idx, sentence in enumerate(sentences):
         #print(sentence)
         if sent_idx > 0:
             prev_sent = sentences[sent_idx-1].strip()
@@ -115,23 +136,15 @@ if __name__ == "__main__":
         sys.exit(-1)
 
     rows = []
-    outfile = open(sys.argv[2], "w", encoding="utf-8")
+    #outfile = open(sys.argv[2], "w", encoding="utf-8")
     infile = open(sys.argv[1], encoding="utf-8")
 
     replace_list = [ ["-\n", ""], [" / ", "/"], ["\u00ba.", "\u00ba"], ["\u00aa.", "\u00aa"] ]
 
     text = infile.read()
     text = replacements(clear_special_chars(text), replace_list)
-    #text = clear_special_chars(text)
-    print("Cleaned text:", text)
-    #sents = merge_sentences(split_sentences(text))
-    doc = nlp(text)
-    sents = [span.text for span in doc.sents]
-    print("Before:", sents)
-    sents = merge_sentences(sents)
-    print("len(sents):", len(sents))
-    print(sents)
-    outfile.write(". ".join(sents))
-    outfile.close()
+    sents = tokenize_sentences(text)
+    print("\n===============\n".join(sents))
+    #outfile.close()
 
 

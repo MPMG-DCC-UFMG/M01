@@ -74,13 +74,14 @@ def to_char_level_format(jdata, source_file=None, dest_file=None):
         segments.append({"text": segment_text, 
                          "entities": new_entities, 
                          "relations": new_relations})
-
-        res = {"sentences": segments}
+        res = {}
         res["timestamp"] = str(datetime.now())
         if source_file != None:
             res["src_file"] = source_file
         if dest_file != None:
             res["file"] = dest_file
+        res["sentences"] = segments
+
         return res
 
 def match_tokens(ent_str, tokens, start_from=0):
