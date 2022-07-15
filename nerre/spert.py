@@ -67,8 +67,10 @@ def __predict(run_args):
         text = infile.read()
         infile.close()
         jdata,data_arg = pipeline.process(text)
-    trainer.predict(data_or_path=data_arg, types_path=run_args.types_path,
+    predictions = trainer.predict(data_or_path=data_arg, types_path=run_args.types_path,
                     input_reader_cls=input_reader.JsonPredictionInputReader)
+    with open(run_args.predictions_path, "w", encoding="utf-8") as outfile:
+        json.dump(predictions, outfile, indent=4)
 
 def _test():
     arg_parser = predict_argparser()
@@ -86,8 +88,10 @@ def __test(run_args):
              }
            ]
 
-    trainer.predict(data_or_path=data, types_path=run_args.types_path,
+    predictions = trainer.predict(data_or_path=data, types_path=run_args.types_path,
                     input_reader_cls=input_reader.JsonPredictionInputReader)
+    with open(run_args.predictions_path, "w", encoding="utf-8") as outfile:
+        json.dump(predictions, outfile, indent=4)
 
 
 
