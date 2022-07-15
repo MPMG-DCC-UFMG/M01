@@ -46,7 +46,7 @@ def _eval_pred():
 
 def __eval(run_args):
     trainer = SpERTTrainer(run_args)
-    trainer.eval(dataset_path=run_args.dataset_path, types_path=run_args.types_path,
+    trainer.eval(data_or_path=run_args.dataset_path, types_path=run_args.types_path,
                  input_reader_cls=input_reader.JsonInputReader)
 
 def __eval_pred(run_args):
@@ -67,7 +67,7 @@ def __predict(run_args):
         text = infile.read()
         infile.close()
         jdata,data_arg = pipeline.process(text)
-    trainer.predict(dataset_path=data_arg, types_path=run_args.types_path,
+    trainer.predict(data_or_path=data_arg, types_path=run_args.types_path,
                     input_reader_cls=input_reader.JsonPredictionInputReader)
 
 def _test():
@@ -86,7 +86,7 @@ def __test(run_args):
              }
            ]
 
-    trainer.predict(dataset_path=data, types_path=run_args.types_path,
+    trainer.predict(data_or_path=data, types_path=run_args.types_path,
                     input_reader_cls=input_reader.JsonPredictionInputReader)
 
 
