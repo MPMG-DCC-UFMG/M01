@@ -1,11 +1,12 @@
-from numpy import mean, sum
+import numpy as np
+import pandas as pd
 
 def ent_tuple(ent):
     return (ent["start"], ent["end"], ent["type"])
 
 def ent_tuple_typeless(ent):
     return (ent["start"], ent["end"])
- 
+
 
 def convert(jdata):
     rels = {"|micro": set()}
@@ -42,16 +43,22 @@ def evaluate(pred, gt):
     gt_ents, gt_rels = convert(gt)
     pred_ents, pred_rels = convert(pred)
     print("Entities")
-    print_metrics(pred_ents, gt_ents)
+    print(calc_metrics(pred_ents, gt_ents))
     print("Relations")
-    print_metrics(pred_rels, gt_rels)
+    print(calc_metrics(pred_rels, gt_rels))
 
 
-def print_metrics(pred, gt):
+def calc_metrics(pred, gt):
     total = 0
     precs = []
     recs = []
     f1s = []
+
+    wprecs = []
+    wrecs = []
+    wf1s = []
+    values = []
+
 
     for label,s in sorted(gt.items()):
         if label in pred:
@@ -64,20 +71,28 @@ def print_metrics(pred, gt):
         f1 = 0
         if len(p) > 0:
             prec = len(intersec) / len(p)
+            wprec = len(s) * prec
         if len(s) > 0:
             rec = len(intersec) / len(s)
+            wrec = len(intersec)
         pr = prec + rec
         if pr > 0:
             f1 = (2 * prec * rec) / pr
-        print(label, prec, rec, f1, len(s))
+            wf1 = len(s) * f1
+        values.append( (label, prec, rec, f1, len(s)) )
         if label != "|micro":
             precs.append(prec)
             recs.append(rec)
             f1s.append(f1)
             total += len(s)
+            wprecs.append(wprec)
+            wrecs.append(wrec)
+            wf1s.append(wf1)
+    values.append(("|weighted", np.sum(wprecs) / total, np.sum(wrecs) / total, np.sum(wf1s) / total, total))
+    values.append(("|macro", np.mean(precs), np.mean(recs), np.mean(f1s), total))
+    return pd.DataFrame(values, columns="Label Precision Recall F1 Support".split())
     #print("micro", sum(wprecs)/total, sum(wrecs)/total, sum(wf1s)/total, total)
-    print("|macro", mean(precs), mean(recs), mean(f1s), total)
-
+    #print("|macro", mean(precs), mean(recs), mean(f1s), total)
 
 #Main
 
@@ -90,10 +105,4 @@ pred = json.load(file1)
 gt = json.load(file2)
 
 evaluate(pred, gt)
-
-
-
-
-
-
 
