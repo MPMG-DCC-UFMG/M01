@@ -35,6 +35,7 @@ class SpERTTrainer(BaseTrainer):
                                                         do_lower_case=args.lowercase,
                                                         cache_dir=args.cache_path)
         self.model = None
+        self.input_reader = None
 
     def train(self, train_path: str, valid_path: str, types_path: str, input_reader_cls: Type[BaseInputReader]):
         args = self._args
@@ -139,16 +140,17 @@ class SpERTTrainer(BaseTrainer):
         args = self._args
 
         # read datasets
-        input_reader = input_reader_cls(types_path, self._tokenizer,
-                                        max_span_size=args.max_span_size,
-                                        spacy_model=args.spacy_model)
-        dataset = input_reader.read(data_or_path, 'dataset')
+        if self.input_reader == None:
+            self.input_reader = input_reader_cls(types_path, self._tokenizer,
+                                            max_span_size=args.max_span_size,
+                                            spacy_model=args.spacy_model)
+        dataset = self.input_reader.read(data_or_path, 'dataset')
 
         if self.model == None:
-            self.model = self._load_model(input_reader)
+            self.model = self._load_model(self.input_reader)
             self.model.to(self._device)
 
-        return self._predict(self.model, dataset, input_reader)
+        return self._predict(dataset)
 
     def _load_model(self, input_reader):
         model_class = models.get_model(self._args.model_type)
@@ -262,7 +264,9 @@ class SpERTTrainer(BaseTrainer):
         if self._args.store_examples:
             evaluator.store_examples()
 
-    def _predict(self, model: torch.nn.Module, dataset: Dataset, input_reader: BaseInputReader):
+    def _predict(self, dataset: Dataset):
+        model = self.model
+        input_reader = self.input_reader
         # create data loader
         dataset.switch_mode(Dataset.EVAL_MODE)
         data_loader = DataLoader(dataset, batch_size=self._args.eval_batch_size, shuffle=False, drop_last=False,
