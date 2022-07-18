@@ -35,8 +35,11 @@ ato_administrativo, cpf, cnpj, masp, nos_termos_lei, lotado
 
 1) Iniciar o servidor local de NER+RE (executado apenas uma vez):
 ``` 
-python spert.py server &
+python spert.py server > server.log 2> server.err &
+disown
 ```
+
+( O "> server.log 2> server.err" serve para armazenar a saída padrão (mensagens do terminal) e de erro nos arquivos "server.log" e "server.err", respectivamente. O "disown" serve para desatrelar a execução do terminal, permitindo o seu funcionamento mesmo após o fechamento do terminal )
 
 2) Enviar requisições de NER+RE para servidor. Cada requisição é feita através da seguinte linha de comando:
 ```
