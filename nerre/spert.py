@@ -8,7 +8,7 @@ from spert.spert_trainer import SpERTTrainer
 from spert.evaluator import Evaluator
 from pipeline import Pipeline
 from preprocessing.json_formater import to_char_level_format
-from postprocessing.merge_spans import merge_spans
+from postprocessing.remove_overlap import merge_spans
 
 def my_config_parser(config_filename):
     config_file = open(config_filename)
