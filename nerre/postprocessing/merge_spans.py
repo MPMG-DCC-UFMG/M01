@@ -26,6 +26,7 @@ def merge_spans_doc(dic):
     freq_end = defaultdict(int)
     ent_idx = -1
     total += len(entities)
+    prev_ent = {"start": 0, "end": 0, "type": "", "score": 0}
     for i, ent in enumerate(entities):
         overlap = False
         start = ent["start"]
@@ -34,8 +35,10 @@ def merge_spans_doc(dic):
         score = ent["score"]
         freq_start[start] += 1
         freq_end[end] += 1
+        if prev_ent["start"] == start and prev_ent["end"] == end: #Sobreposicao total
+            overlap = True
         for j in range(start, end):
-            if lab in occupied[j]:
+            if lab in occupied[j]: #Sobreposicao parcial: considera apenas quando o tipo de entidade eh igual
                 overlap = True
             occupied[j].add(lab)
         if not overlap:
@@ -49,6 +52,7 @@ def merge_spans_doc(dic):
         else:
             entmap[ent_idx] = [start, end, lab, score]
         ents2new[i] = ent_idx
+        prev_ent = ent
 
 
     for idx in range(len(entmap)):
