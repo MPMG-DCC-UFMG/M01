@@ -18,13 +18,15 @@ def merge_spans_doc(dic):
 
     #Marca os tipos de entidades que se sobrepoem em cada token
     occupied = [set() for i in range(len(tokens))]
+    occupied_ids = [{} for i in range(len(tokens))]
+
 
     #idx --> [start, end]
     entmap = {}
 
     freq_start = defaultdict(int)
     freq_end = defaultdict(int)
-    ent_idx = -1
+    ent_idx = 0
     total += len(entities)
     prev_ent = {"start": 0, "end": 0, "type": "", "score": 0}
     for i, ent in enumerate(entities):
@@ -38,20 +40,26 @@ def merge_spans_doc(dic):
         if prev_ent["start"] == start and prev_ent["end"] == end: #Sobreposicao total
             overlap = True
         for j in range(start, end):
-            if lab in occupied[j]: #Sobreposicao parcial: considera apenas quando o tipo de entidade eh igual
+            if lab in occupied[j]: #Em sobreposicoes parciais, aceita a sobreposicao se os tipos de entidade forem diferentes
                 overlap = True
             occupied[j].add(lab)
+            if lab in occupied_ids[j]:
+                idx = occupied_ids[j][lab]
+            else:
+                idx = ent_idx
+                occupied_ids[j][lab] = idx
+        if idx in entmap:
+            s,e,lab,sc = entmap[idx]
+            if score > sc:
+                entmap[idx] = [start, end, lab, score]
+        else:
+            entmap[idx] = [start, end, lab, score]
         if not overlap:
             ent_idx += 1
         else:
             overlap_count += 1
-        if ent_idx in entmap:
-            s,e,lab,sc = entmap[ent_idx]
-            if score > sc:
-                entmap[ent_idx] = [start, end, lab, score]
-        else:
-            entmap[ent_idx] = [start, end, lab, score]
-        ents2new[i] = ent_idx
+
+        ents2new[i] = idx
         prev_ent = ent
 
 
