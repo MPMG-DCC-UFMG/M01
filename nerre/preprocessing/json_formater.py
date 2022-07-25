@@ -69,7 +69,8 @@ def to_char_level_format(jdata, source_file=None, dest_file=None):
         if "relations" in dic:
             relations = dic["relations"]
             for rel in relations:
-                new_relations.append({"entities": [rel["head"], rel["tail"]],
+                new_relations.append({"head": new_entities[rel["head"]]["entity"],
+                                      "tail": new_entities[rel["tail"]]["entity"],
                                       "label": rel["type"]})
         segments.append({"text": segment_text, 
                          "entities": new_entities, 
