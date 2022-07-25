@@ -9,7 +9,10 @@ def load_webanno(filename):
         lin = line.strip()
         if lin.startswith("#"):
             continue
-        rows.append(lin.split("\t"))
+        spl = lin.split("\t")
+        if len(spl) == 4:
+            spl += ["_", "_"]
+        rows.append(spl)
     infile.close()
     return rows
 
