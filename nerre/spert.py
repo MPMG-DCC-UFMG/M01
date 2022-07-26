@@ -144,9 +144,9 @@ def __requests(run_args):
             start_time = time.time()
             predictions = trainer.predict(data_or_path=jdata, types_path=run_args.types_path,
                              input_reader_cls=input_reader.JsonPredictionInputReader)
-            out_ = open(request["output"] + "_", "w", encoding="utf-8")
-            json.dump(predictions, out_, indent=4)
-            out_.close()
+            #out_ = open(request["output"] + "_", "w", encoding="utf-8")
+            #json.dump(predictions, out_, indent=4)
+            #out_.close()
             pred_time = time.time() - start_time
 
             #Adicionar entidades identificadas por regex
