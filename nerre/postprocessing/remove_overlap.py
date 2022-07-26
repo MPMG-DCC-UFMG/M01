@@ -34,7 +34,10 @@ def merge_spans_doc(dic):
         start = ent["start"]
         end = ent["end"]
         lab = ent["type"]
-        score = ent["score"]
+        if "score" in ent:
+            score = ent["score"]
+        else:
+            score = 1
         freq_start[start] += 1
         freq_end[end] += 1
         if prev_ent["start"] == start and prev_ent["end"] == end: #Sobreposicao total

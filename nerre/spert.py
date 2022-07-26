@@ -9,6 +9,7 @@ from spert.evaluator import Evaluator
 from pipeline import Pipeline
 from preprocessing.json_formater import to_char_level_format
 from postprocessing.remove_overlap import merge_spans
+import time
 
 def my_config_parser(config_filename):
     config_file = open(config_filename)
@@ -125,27 +126,44 @@ def __requests(run_args):
         c.close()
         print(request)
         if "input" in request:
+            filename = request["input"]
             infile = open(request["input"], encoding="utf-8")
-            text = infile.read()
+            if filename.endswith(".json"):
+                input_data = json.load(infile)
+                start_time = time.time()
+                jdata, jdata_marked = pipeline.process_json(input_data, stage="predict")
+                preprocess_time = time.time() - start_time
+            else:
+                text = infile.read()
+                start_time = time.time()
+                jdata, jdata_marked = pipeline.process(text) #Converte texto no formato de entrada do SpERT
+                preprocess_time = time.time() - start_time
             infile.close()
             run_args.predictions_path = request["output"]
-            jdata, jdata_marked = pipeline.process(text) #Converte texto no formato de entrada do SpERT
 
+            start_time = time.time()
             predictions = trainer.predict(data_or_path=jdata, types_path=run_args.types_path,
                              input_reader_cls=input_reader.JsonPredictionInputReader)
+            out_ = open(request["output"] + "_", "w", encoding="utf-8")
+            json.dump(predictions, out_, indent=4)
+            out_.close()
+            pred_time = time.time() - start_time
 
             #Adicionar entidades identificadas por regex
             for i, pred in enumerate(predictions):
                 pred["entities"] += jdata[i]["entities"]
 
             #Post-processing
+            start_time = time.time()
             predictions = merge_spans(predictions)
+            postprocess_time = time.time() - start_time
 
             #Conversao de formato de saida
             predictions = to_char_level_format(predictions,
                                                source_file=request["input"],
                                                dest_file=run_args.predictions_path)
-
+            print("Execution time (s): pre-processing | prediction | post-processing:")
+            print(f"Time|{preprocess_time}|{pred_time}|{postprocess_time}")
             with open(run_args.predictions_path, "w", encoding="utf-8") as outfile:
                 json.dump(predictions, outfile, indent=4)
 

@@ -35,7 +35,7 @@ class Pipeline:
         marked = self.json_formater.mark_ents(marked)
         return res, marked
 
-    def process_json(self, data):
+    def process_json(self, data, stage="train"):
         res = []
         dif = 0
         for dic in data:
@@ -51,11 +51,12 @@ class Pipeline:
         marked = self.json_formater.mark_ents(marked)
 
         #Get original labels
-        for i,dic in enumerate(data):
-            if "entities" in dic:
-                marked[i]["entities"] = dic["entities"]
-            if "relations" in dic:
-                marked[i]["relations"] = dic["relations"]
+        if stage == "train":
+            for i,dic in enumerate(data):
+                if "entities" in dic:
+                    marked[i]["entities"] = dic["entities"]
+                if "relations" in dic:
+                    marked[i]["relations"] = dic["relations"]
             
         return res,marked
 
