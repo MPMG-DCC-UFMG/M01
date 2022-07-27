@@ -18,7 +18,7 @@ CEP	CEP.?.?.\d{2}\.?\d{3}\-\d{3}
 #LICITACAO	(LICITAÇÃO|CERTAME)\s..\s\d+/\d{4}
 ATO	(ATO)\s(ADMINISTRATIVO)?..\s?\d+/\d{4}
 
-COMPETENCIA	(?i)((sub|vice)?\-?(chefe|diretor|secretário|secretária|secretaria|diretoria|assessor|supervisor|coordenador|gerente|corregedor|procurador)(a?)(\s*[\w\u00C0-\u00FF]+){0,5})
+COMPETENCIA	(?i)((sub|vice)?\-?(chefe|diretor|secretário|secretária|secretaria|diretoria|assessor|supervisor|coordenador|gerente|corregedor|procurador|prefeito|prefeita)(a?))
 
 PROCESSO	(?i)((pl|processo|prc|procedimento)(\s*[\w\u00C0-\u00FF]+){0,4}.?.?n?(\u00b0|\u00ba)?.?.?\s?\d+\s?/[\d\.\s?]+)
 
