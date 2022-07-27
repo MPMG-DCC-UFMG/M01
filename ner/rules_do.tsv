@@ -29,8 +29,15 @@ ATO	(ATO)\s(ADMINISTRATIVO)?..\s?\d+/\d{4}
 
 COMPETENCIA	(?i)((sub|vice)?\-?(chefe|diretor|secretário|secretária|secretaria|diretoria|assessor|supervisor|coordenador|gerente|corregedor|procurador)(a?)(\s*[\w\u00C0-\u00FF]+){0,5})
 
-PROCESSO    (?i)((processo|prc|procedimento)(\slicitatório|\slicitatorio)?.?.?n?(\u00b0|\u00ba)?.?.?\s?\d+\s?/[\d\.\s?]+)
-CONTRATO    (?i)((contrato)\s?n?(\u00b0|\u00ba)?.?.?\s?\d+\s?/[\d\.\s?]+)
+
+PROCESSO	(?i)((pl|processo|prc|procedimento)(\s*[\w\u00C0-\u00FF]+){0,4}.?.?n?(\u00b0|\u00ba)?.?.?\s?\d+\s?/[\d\.\s?]+)
+
+#Modalidade de licitacao acompanhada do numero
+LICITACAO	(?i)((preg|leil|inexig|dispens|convit|tomada|registro|concorr)(\s*[\w\u00C0-\u00FF]+){0,4}(.?.?n?(\u00b0|\u00ba)?.?.?\s?\d+\s?/[\d\.\s?]+))
+
+CONTRATO	(?i)((contrato)(\s*[\w\u00C0-\u00FF]+){0,4}n?(\u00b0|\u00ba)?.?.?\s?\d+\s?/[\d\.\s?]+)
+
+
 
 #MODALIDADE_LICITACAO	[mM](ODALIDADE|odalidade).?.[\w\u00C0-\u00FF\s]+
 #TIPO_LICITACAO	[tT](IPO|ipo).?.[\w\u00C0-\u00FF\s]+
