@@ -34,6 +34,7 @@ def to_iob(jdata, outfile):
 
 def to_char_level_format(jdata, source_file=None, dest_file=None):
     segments = []
+    res = {}
     for dic in jdata:
         idx_token2char = {}
         tokens = dic["tokens"]
@@ -58,13 +59,17 @@ def to_char_level_format(jdata, source_file=None, dest_file=None):
         if "entities" in dic:
             entities = dic["entities"]
             for ent in entities:
-                start = ent["start"]
-                end = ent["end"] - 1
-                start_char = idx_token2char[start]
-                end_char = idx_token2char[end] + len(tokens[end])
-                new_entities.append({"entity": segment_text[start_char:end_char],
-                                     "start": start_char, "end": end_char,
-                                     "label": ent["type"]})
+                try:
+                    start = ent["start"]
+                    end = ent["end"] - 1
+                    start_char = idx_token2char[start]
+                    end_char = idx_token2char[end] + len(tokens[end])
+                    new_entities.append({"entity": segment_text[start_char:end_char],
+                                         "start": start_char, "end": end_char,
+                                         "label": ent["type"]})
+                except:
+                    print("tokens:", tokens)
+                    print("entity:", ent)
         new_relations = []
         if "relations" in dic:
             relations = dic["relations"]
@@ -72,18 +77,19 @@ def to_char_level_format(jdata, source_file=None, dest_file=None):
                 new_relations.append({"head": new_entities[rel["head"]]["entity"],
                                       "tail": new_entities[rel["tail"]]["entity"],
                                       "label": rel["type"]})
-        segments.append({"text": segment_text, 
-                         "entities": new_entities, 
+        segments.append({"text": segment_text,
+                         "entities": new_entities,
                          "relations": new_relations})
-        res = {}
-        res["timestamp"] = str(datetime.now())
-        if source_file != None:
-            res["src_file"] = source_file
-        if dest_file != None:
-            res["file"] = dest_file
-        res["sentences"] = segments
+    res["timestamp"] = str(datetime.now())
+    if source_file != None:
+        res["src_file"] = source_file
+    if dest_file != None:
+        res["file"] = dest_file
+    res["sentences"] = segments
 
-        return res
+    return res
+
+
 
 def match_tokens(ent_str, tokens, start_from=0):
     token_idx = start_from
