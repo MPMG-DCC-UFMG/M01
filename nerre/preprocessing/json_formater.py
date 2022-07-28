@@ -32,7 +32,7 @@ def to_iob(jdata, outfile):
         print(file=outfile)
 
 
-def to_char_level_format(jdata, source_file=None, dest_file=None):
+def to_char_level_format(jdata, source_file=None, dest_file=None, use_entity_indices=False):
     segments = []
     res = {}
     for dic in jdata:
@@ -74,8 +74,13 @@ def to_char_level_format(jdata, source_file=None, dest_file=None):
         if "relations" in dic:
             relations = dic["relations"]
             for rel in relations:
-                new_relations.append({"head": new_entities[rel["head"]]["entity"],
-                                      "tail": new_entities[rel["tail"]]["entity"],
+                if use_entity_indices:
+                    ent_a = rel["head"]
+                    ent_b = rel["tail"]
+                else:
+                    ent_a = new_entities[rel["head"]]["entity"]
+                    ent_b = new_entities[rel["tail"]]["entity"]
+                new_relations.append({"entities": [ent_a, ent_b],
                                       "label": rel["type"]})
         segments.append({"text": segment_text,
                          "entities": new_entities,

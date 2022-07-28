@@ -1,0 +1,4475 @@
+{
+    "timestamp": "2022-07-28 10:17:02.432631",
+    "sentences": [
+        {
+            "text": "Contrato n.\u00ba 289/2013 Processo Licitat\u00f3rio n.\u00ba 234/2013 Contratada: Maqtrans Ltda. Objeto: Presta\u00e7\u00e3o de servi\u00e7os Prazo: 01/01/14 a 31/12/14 Valor: R$ 1.225.800,00 Data de assinatura: 01/01/14 Santa B\u00e1rbara, 06/01/2014 A ) LERIS FELISBERTO BRAGA",
+            "entities": [
+                {
+                    "entity": "Contrato n.\u00ba 289/2013",
+                    "start": 0,
+                    "end": 21,
+                    "label": "CONTRATO"
+                },
+                {
+                    "entity": "Processo Licitat\u00f3rio n.\u00ba 234/2013",
+                    "start": 22,
+                    "end": 55,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Maqtrans Ltda",
+                    "start": 68,
+                    "end": 81,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "01/01/14",
+                    "start": 120,
+                    "end": 128,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "31/12/14",
+                    "start": 131,
+                    "end": 139,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "R$ 1.225.800,00",
+                    "start": 147,
+                    "end": 162,
+                    "label": "VALOR\\_MONETARIO"
+                },
+                {
+                    "entity": "01/01/14",
+                    "start": 183,
+                    "end": 191,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Santa B\u00e1rbara",
+                    "start": 192,
+                    "end": 205,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "06/01/2014",
+                    "start": 207,
+                    "end": 217,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "LERIS FELISBERTO BRAGA",
+                    "start": 222,
+                    "end": 244,
+                    "label": "PESSOA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "Prefeitura Municipal De Tr\u00eas Cora\u00e7\u00f5es. Departamento De Licita\u00e7\u00e3o. Preg\u00e3o Presencial Srp: N\u00ba 00022/2019. Processo: N\u00ba 0030/2019. Objeto: Aquisi\u00e7\u00e3o De Tendas 5 X 5. O Munic\u00edpio De Tr\u00eas Cora\u00e7\u00f5es / Prefeitura Municipal De Tr\u00eas Cora\u00e7\u00f5es, Com Sede Na Av. Brasil, N\u00ba 225, Bairro Jardim Am\u00e9rica, Cep 37. 410-872, Torna P\u00fablica A Licita\u00e7\u00e3o Na Modalidade Preg\u00e3o Presencial Srp. Data De Abertura Dos Envelopes: Dia 13 De Maio De 2019 \u00c0s 13h30min. Endere\u00e7o: Av. Brasil, N\u00ba 225 \u2013 Jardim Am\u00e9rica / Departamento De Licita\u00e7\u00e3o. Sob A Responsabilidade Da Secretaria Municipal De Desenvolvimento Social, Conforme Lei Federal N.\u00ba 8.666 De 21.06.1993 E Altera\u00e7\u00f5es, Lei N \u00b0 10.520/02 E Pelas Demais Condi\u00e7\u00f5es Fixadas Neste Edital. O Edital Completo, Seus Anexos, Impugna\u00e7\u00f5es, Recursos, Decis\u00f5es E Demais Atos Dever\u00e3o Ser Acompanhados Pelos Interessados Para Ci\u00eancia Atrav\u00e9s Do Site Www. Trescoracoes. Mg. Gov. Br Ou No Departamento De Licita\u00e7\u00e3o Das 09:00 \u00c0s 11:00 E Das 13:00 \u00c0s 17:00 Horas. Tr\u00eas Cora\u00e7\u00f5es, 24 De Abril De 2019. ALZIRA ARA\u00daJO DE OLIVEIRA. Pregoeira",
+            "entities": [
+                {
+                    "entity": "Prefeitura",
+                    "start": 0,
+                    "end": 10,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Tr\u00eas Cora\u00e7\u00f5es",
+                    "start": 24,
+                    "end": 37,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Preg\u00e3o Presencial Srp: N\u00ba 00022/2019",
+                    "start": 66,
+                    "end": 102,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Processo: N\u00ba 0030/2019",
+                    "start": 104,
+                    "end": 126,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Tr\u00eas Cora\u00e7\u00f5es",
+                    "start": 178,
+                    "end": 191,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Prefeitura",
+                    "start": 194,
+                    "end": 204,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Tr\u00eas Cora\u00e7\u00f5es",
+                    "start": 218,
+                    "end": 231,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Av. Brasil, N\u00ba 225, Bairro Jardim Am\u00e9rica",
+                    "start": 245,
+                    "end": 286,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "13 De Maio De 2019",
+                    "start": 404,
+                    "end": 422,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Av. Brasil, N\u00ba 225 \u2013 Jardim Am\u00e9rica",
+                    "start": 446,
+                    "end": 481,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "Lei Federal N.\u00ba 8.666",
+                    "start": 594,
+                    "end": 615,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "21.06.1993",
+                    "start": 619,
+                    "end": 629,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Lei N \u00b0 10.520/02",
+                    "start": 644,
+                    "end": 661,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "24 De Abril De 2019",
+                    "start": 985,
+                    "end": 1004,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "ALZIRA ARA\u00daJO DE OLIVEIRA",
+                    "start": 1006,
+                    "end": 1031,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Pregoeira",
+                    "start": 1033,
+                    "end": 1042,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "O Prefeito Municipal de PO\u00c7O FUNDO, MG, Renato Ferreira de Oliveira, no uso de suas atribui\u00e7\u00f5es legais, faz saber que a Prefeitura Municipal de PO\u00c7O FUNDO ( MG ), nos termos da Lei 8.666/93 e Lei 10.520 de 17/06/02, realizar\u00e1 o PROCESSO LICITAT\u00d3RIO N \u00b0 179/2017, Preg\u00e3o n\u00ba 131/17, tendo como objeto da presente licita\u00e7\u00e3o a AQUISI\u00c7\u00c3O DE EQUIPAMENTOS PARA MANUTEN\u00c7\u00c3O DAS ATIVIDADES DAS UNIDADES B\u00c1SICAS DE SA\u00daDE DO MUNIC\u00cdPIO, CONFORME DESCRITO NO EDITAL. A data para abertura deste certame ser\u00e1 dia 27 de julho de 2017, \u00e0s 13:00 horas. O edital na \u00edntegra encontra-se \u00e0 disposi\u00e7\u00e3o dos interessados na sede da Prefeitura Municipal de PO\u00c7O FUNDO ( MG ), sito a Pra\u00e7a Tancredo Neves 3.000, Centro de PO\u00c7O FUNDO ( MG ) ou no site www.pocofundo.mg.gov.br. RENATO FERREIRA DE OLIVEIRA Prefeito Municipal PATRICIA SARKIS CARNEIRO ABRAH\u00c3O Pregoeira",
+            "entities": [
+                {
+                    "entity": "Prefeito",
+                    "start": 2,
+                    "end": 10,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "PO\u00c7O FUNDO",
+                    "start": 24,
+                    "end": 34,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 36,
+                    "end": 38,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "Renato Ferreira de Oliveira",
+                    "start": 40,
+                    "end": 67,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeitura",
+                    "start": 120,
+                    "end": 130,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "PO\u00c7O FUNDO",
+                    "start": 144,
+                    "end": 154,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 157,
+                    "end": 159,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "Lei 8.666/93",
+                    "start": 177,
+                    "end": 189,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "Lei 10.520",
+                    "start": 192,
+                    "end": 202,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "17/06/02",
+                    "start": 206,
+                    "end": 214,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "PROCESSO LICITAT\u00d3RIO N \u00b0 179/2017",
+                    "start": 228,
+                    "end": 261,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Preg\u00e3o n\u00ba 131/17",
+                    "start": 263,
+                    "end": 279,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "27 de julho de 2017",
+                    "start": 497,
+                    "end": 516,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Prefeitura",
+                    "start": 607,
+                    "end": 617,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "PO\u00c7O FUNDO",
+                    "start": 631,
+                    "end": 641,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 644,
+                    "end": 646,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "Pra\u00e7a Tancredo Neves 3.000, Centro de",
+                    "start": 657,
+                    "end": 694,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "PO\u00c7O FUNDO (",
+                    "start": 695,
+                    "end": 707,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "MG )",
+                    "start": 708,
+                    "end": 712,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "RENATO FERREIRA DE OLIVEIRA",
+                    "start": 749,
+                    "end": 776,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 777,
+                    "end": 785,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "PATRICIA SARKIS CARNEIRO ABRAH\u00c3O",
+                    "start": 796,
+                    "end": 828,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Pregoeira",
+                    "start": 829,
+                    "end": 838,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "OBJETO: A presente Ata tem por objeto assegurar o compromisso de poss\u00edvel contrata\u00e7\u00e3o entre o Munic\u00edpio de Diamantina e a empresa vencedora do procedimento licitat\u00f3rio referente ao Preg\u00e3o Eletr\u00f4nico n\u00ba. 014/2018, cujo objeto \u00e9 a aquisi\u00e7\u00e3o de materiais odontol\u00f3gicos para atender as demandas da Secretaria Municipal de Sa\u00fade no ano de 2018, conforme condi\u00e7\u00f5es e especifica\u00e7\u00f5es contidas no Edital do Preg\u00e3o e seus Anexos. CONTRATANTE: MUNIC\u00cdPIO DE DIAMANTINA FORNECEDOR / PRESTADOR DE SERVI\u00c7OS: ROFEMAX IMPORTADORA DE EMBALAGENS EIRELI EPP VALOR: R$ 3.982,40 ( Tr\u00eas mil novecentos e oitenta e dois reais e quarenta centavos ) FUNDAMENTO LEGAL: Leis Federais n\u00ba. 10.520, de 17 de julho de 2002, Lei Complementar n\u00ba. 123, de 14 de dezembro de 2006, aplicando-se, subsidiariamente a Lei Federal n\u00ba. 8.666, de 21 de junho de 1993, com suas altera\u00e7\u00f5es posteriores e Decreto n \u00b0 7.892/2013, pelas condi\u00e7\u00f5es estabelecidas pelo PROCESSO N \u00b0 169/2018, PREG\u00c3O ELETR\u00d4NICO N \u00b0 014/2018 DATA DE ASSINATURA: 01/10/2018 VIG\u00caNCIA: 12 ( doze ) meses ap\u00f3s assinatura",
+            "entities": [
+                {
+                    "entity": "Diamantina",
+                    "start": 107,
+                    "end": 117,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Preg\u00e3o Eletr\u00f4nico n\u00ba. 014/2018",
+                    "start": 181,
+                    "end": 211,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Secretaria Municipal de Sa\u00fade",
+                    "start": 294,
+                    "end": 323,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "DIAMANTINA",
+                    "start": 446,
+                    "end": 456,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "ROFEMAX IMPORTADORA DE EMBALAGENS EIRELI EPP",
+                    "start": 493,
+                    "end": 537,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "R$ 3.982,40",
+                    "start": 545,
+                    "end": 556,
+                    "label": "VALOR\\_MONETARIO"
+                },
+                {
+                    "entity": "Leis Federais n\u00ba. 10.520",
+                    "start": 642,
+                    "end": 666,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "17 de julho de 2002",
+                    "start": 671,
+                    "end": 690,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Lei Complementar n\u00ba. 123",
+                    "start": 692,
+                    "end": 716,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "14 de dezembro de 2006",
+                    "start": 721,
+                    "end": 743,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Lei Federal n\u00ba. 8.666",
+                    "start": 778,
+                    "end": 799,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "21 de junho de 1993",
+                    "start": 804,
+                    "end": 823,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Decreto n \u00b0 7.892/2013",
+                    "start": 859,
+                    "end": 881,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "PROCESSO N \u00b0 169/2018",
+                    "start": 918,
+                    "end": 939,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "PREG\u00c3O ELETR\u00d4NICO N \u00b0 014/2018",
+                    "start": 941,
+                    "end": 971,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "01/10/2018",
+                    "start": 992,
+                    "end": 1002,
+                    "label": "DATA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "Processo 0302/2014 \u2013 Preg\u00e3o Eletr\u00f4nico 0133/2014 - Objeto: Registro de pre\u00e7o para aquisi\u00e7\u00e3o de bandeiras para atender as necessidades da Prefeitura Municipal de S\u00e3o Louren\u00e7o. Sess\u00e3o p\u00fablica: 14h do dia 06/10/2014. Credenciamento: a partir das 12h do dia 06/10/2014. Apresenta\u00e7\u00e3o das propostas: at\u00e9 as 13 h do dia 06/10/2014. In\u00edcio dos lances: \u00e0s 14h at\u00e9 as 14h30min do dia 06/10/2014. Para todas as refer\u00eancias de tempo ser\u00e1 observado o hor\u00e1rio de Bras\u00edlia \u2013 DF. Editais e informa\u00e7\u00f5es complementares na sede da Prefeitura Municipal, na Ger\u00eancia de Licita\u00e7\u00f5es pelo telefone ( 35 ) 3339-2781, ou no site www.saolourenco.mg.gov.br \u2013 ADALBERTO DA SILVA NOGUEIRA Pregoeiro Oficial e JULIANA RANGEL DE OLIVEIRA ASSIS Pregoeira Substituta.",
+            "entities": [
+                {
+                    "entity": "Processo 0302/2014",
+                    "start": 0,
+                    "end": 18,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Preg\u00e3o Eletr\u00f4nico 0133/2014",
+                    "start": 21,
+                    "end": 48,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Prefeitura",
+                    "start": 137,
+                    "end": 147,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "S\u00e3o Louren\u00e7o",
+                    "start": 161,
+                    "end": 173,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "06/10/2014",
+                    "start": 202,
+                    "end": 212,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "06/10/2014",
+                    "start": 254,
+                    "end": 264,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "06/10/2014",
+                    "start": 313,
+                    "end": 323,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "06/10/2014",
+                    "start": 374,
+                    "end": 384,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Prefeitura",
+                    "start": 512,
+                    "end": 522,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Ger\u00eancia de Licita\u00e7\u00f5es",
+                    "start": 537,
+                    "end": 559,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "( 35 ) 3339-2781",
+                    "start": 574,
+                    "end": 590,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "ADALBERTO DA SILVA NOGUEIRA",
+                    "start": 631,
+                    "end": 658,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Pregoeiro",
+                    "start": 659,
+                    "end": 668,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "JULIANA RANGEL DE OLIVEIRA ASSIS",
+                    "start": 679,
+                    "end": 711,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Pregoeira",
+                    "start": 712,
+                    "end": 721,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "O Sr. Prefeito Municipal de Gr\u00e3o Mogol, estado de Minas Gerais, no uso de suas atribui\u00e7\u00f5es legais, reconhecendo a validade dos atos praticados e a conveni\u00eancia da licita\u00e7\u00e3o em ep\u00edgrafe, HOMOLOGA o resultado da Comiss\u00e3o Permanente de Licita\u00e7\u00e3o da Prefeitura Municipal de Gr\u00e3o Mogol, estado de Minas Gerais, Preg\u00e3o Presencial N\u00ba. 033/2015 \u2013 Processo N\u00ba. 067/2015, Objeto: contrata\u00e7\u00e3o de empresa para fornecimento de, lanches para a Secretaria de Assist\u00eancia Social do munic\u00edpio de Gr\u00e3o Mogol, Contratado: MARIA DAS MERC\u00caS SILVA OLIVEIRA-ME, com endere\u00e7o na Pra\u00e7a Coronel Janj\u00e3o, n\u00ba. 34 \u2013 Centro, no munic\u00edpio de Gr\u00e3o Mogol-MG, inscrita no CNPJ de n\u00ba. 17.297.438/ 0001-86 - valor global R$ 20.000,00 ( vinte mil reais ). Gr\u00e3o Mogol-MG, 27 de Abril de 2015. J\u00c9FERSON AUGUSTO DE FIGUEIREDO Prefeito Municipal",
+            "entities": [
+                {
+                    "entity": "Prefeito",
+                    "start": 6,
+                    "end": 14,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Gr\u00e3o Mogol",
+                    "start": 28,
+                    "end": 38,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Minas Gerais",
+                    "start": 50,
+                    "end": 62,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "Prefeitura",
+                    "start": 246,
+                    "end": 256,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Gr\u00e3o Mogol",
+                    "start": 270,
+                    "end": 280,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Minas Gerais",
+                    "start": 292,
+                    "end": 304,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "Preg\u00e3o Presencial N\u00ba. 033/2015",
+                    "start": 306,
+                    "end": 336,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Processo N\u00ba. 067/2015",
+                    "start": 339,
+                    "end": 360,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Secretaria de Assist\u00eancia Social do munic\u00edpio de",
+                    "start": 430,
+                    "end": 478,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Gr\u00e3o Mogol",
+                    "start": 479,
+                    "end": 489,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "MARIA DAS MERC\u00caS SILVA OLIVEIRA-ME",
+                    "start": 503,
+                    "end": 537,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Pra\u00e7a Coronel Janj\u00e3o, n\u00ba. 34 \u2013 Centro, no munic\u00edpio de",
+                    "start": 555,
+                    "end": 609,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "Gr\u00e3o Mogol-MG",
+                    "start": 610,
+                    "end": 623,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "17.297.438/ 0001-86",
+                    "start": 649,
+                    "end": 668,
+                    "label": "CNPJ"
+                },
+                {
+                    "entity": "R$ 20.000,00",
+                    "start": 684,
+                    "end": 696,
+                    "label": "VALOR\\_MONETARIO"
+                },
+                {
+                    "entity": "Gr\u00e3o Mogol-MG",
+                    "start": 718,
+                    "end": 731,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "27 de Abril de 2015",
+                    "start": 733,
+                    "end": 752,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "J\u00c9FERSON AUGUSTO DE FIGUEIREDO",
+                    "start": 754,
+                    "end": 784,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 785,
+                    "end": 793,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "PROCESSO DE LICITA\u00c7\u00c3O N\u00ba 60/2017 PREG\u00c3O PRESENCIAL N\u00ba 45/2017 Aviso de licita\u00e7\u00e3o. Prefeitura Municipal de Senador Cortes / MG. A comiss\u00e3o de licita\u00e7\u00e3o torna publico a realiza\u00e7\u00e3o do Processo de Licita\u00e7\u00e3o n\u00ba 60/2017, Preg\u00e3o presencial n\u00ba 45/2017, cujo objeto \u00e9 a Contrata\u00e7\u00e3o de pessoa f\u00edsica para a presta\u00e7\u00e3o de servi\u00e7os de ornamenta\u00e7\u00e3o nas festividades do munic\u00edpio de Senador Cortes. Informa\u00e7\u00f5es pelo tel. ( 32) 3287-1153 ou na sede da prefeitura. Presidente da CPL. Senador Cortes, 17 de janeiro de 2017 Presidente da Comiss\u00e3o Permanente de Licita\u00e7\u00e3o",
+            "entities": [
+                {
+                    "entity": "PROCESSO DE LICITA\u00c7\u00c3O N\u00ba 60/2017",
+                    "start": 0,
+                    "end": 32,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "PREG\u00c3O PRESENCIAL N\u00ba 45/2017",
+                    "start": 33,
+                    "end": 61,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Prefeitura",
+                    "start": 82,
+                    "end": 92,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Senador Cortes",
+                    "start": 106,
+                    "end": 120,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 123,
+                    "end": 125,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "Processo de Licita\u00e7\u00e3o n\u00ba 60/2017",
+                    "start": 181,
+                    "end": 213,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Preg\u00e3o presencial n\u00ba 45/2017",
+                    "start": 215,
+                    "end": 243,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Senador Cortes",
+                    "start": 368,
+                    "end": 382,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "( 32) 3287-1153",
+                    "start": 406,
+                    "end": 421,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "Presidente",
+                    "start": 448,
+                    "end": 458,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "CPL",
+                    "start": 462,
+                    "end": 465,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Senador Cortes",
+                    "start": 467,
+                    "end": 481,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "17 de janeiro de 2017",
+                    "start": 483,
+                    "end": 504,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Presidente",
+                    "start": 505,
+                    "end": 515,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Comiss\u00e3o Permanente de Licita\u00e7\u00e3o",
+                    "start": 519,
+                    "end": 551,
+                    "label": "ORGANIZACAO"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "GOVERNOO PREFEITO MUNICIPAL, NO USO DE SUAS ATRIBUI\u00c7\u00d5ES LEGAIS RATIFICA A INEXIGIBILIDADE DE LICITA\u00c7\u00c3O NOS TERMOS DO ARTIGO 25, CAPUT, DA LEI N\u00ba. 8.666/93 TERMO DE RATIFICA\u00c7\u00c3O INEXIGIBILIDADE DE LICITA\u00c7\u00c3O N\u00ba 053/2018 O Prefeito Municipal, no uso de suas atribui\u00e7\u00f5es legais RATIFICA a inexigibilidade de licita\u00e7\u00e3o nos termos do artigo 25, caput, da Lei n\u00ba. 8.666/93, visando a Contrata\u00e7\u00e3o atrav\u00e9s de Credenciamento de pessoas f\u00edsicas para a presta\u00e7\u00e3o de servi\u00e7os m\u00e9dicos na categoria M\u00e9dico Cl\u00ednico Plantonista, na Unidade de Pronto Atendimento \u2013 UPA 24 h Geraldo Diniz Borges \u2013 Porte I, no munic\u00edpio de Lagoa da Prata-MG, atrav\u00e9s de Edital de Credenciamento 006/2018, no valor total de R$ 66.745,00 ( Sessenta e seis mil, setecentos e quarenta e cinco reais ) por um per\u00edodo de 06 ( seis ) meses, conforme Processo Licitat\u00f3rio n\u00ba 264/2018 e Inexigibilidade de Licita\u00e7\u00e3o n\u00ba 053/2018, compreendendo o seguinte favorecido: RAFAEL FELIX ALVES - CPF 099.865. 236-99 Lagoa da Prata, 21 de dezembro de 2018. PAULO C\u00c9SAR TEODORO Prefeito Municipal",
+            "entities": [
+                {
+                    "entity": "PREFEITO",
+                    "start": 9,
+                    "end": 17,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "ARTIGO 25, CAPUT, DA LEI N\u00ba. 8.666/93",
+                    "start": 117,
+                    "end": 154,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "INEXIGIBILIDADE DE LICITA\u00c7\u00c3O N\u00ba 053/2018",
+                    "start": 176,
+                    "end": 216,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "artigo 25, caput, da Lei n\u00ba. 8.666/93",
+                    "start": 327,
+                    "end": 364,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "Unidade de Pronto Atendimento",
+                    "start": 514,
+                    "end": 543,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Geraldo Diniz Borges",
+                    "start": 555,
+                    "end": 575,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Lagoa da Prata-MG",
+                    "start": 603,
+                    "end": 620,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "R$ 66.745,00",
+                    "start": 686,
+                    "end": 698,
+                    "label": "VALOR\\_MONETARIO"
+                },
+                {
+                    "entity": "Processo Licitat\u00f3rio n\u00ba 264/2018",
+                    "start": 806,
+                    "end": 838,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Inexigibilidade de Licita\u00e7\u00e3o n\u00ba 053/2018",
+                    "start": 841,
+                    "end": 881,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "RAFAEL FELIX ALVES",
+                    "start": 920,
+                    "end": 938,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "099.865. 236-99",
+                    "start": 945,
+                    "end": 960,
+                    "label": "CPF"
+                },
+                {
+                    "entity": "Lagoa da Prata",
+                    "start": 961,
+                    "end": 975,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "21 de dezembro de 2018",
+                    "start": 977,
+                    "end": 999,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "PAULO C\u00c9SAR TEODORO",
+                    "start": 1001,
+                    "end": 1020,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 1021,
+                    "end": 1029,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "MUNIC\u00cdPIO DE GUARANI \u2013 PUBLICA\u00c7\u00c3O DE LICITA\u00c7\u00c3O \u2013 PREG\u00c3O N.\u00ba 068/2015 \u2013 PRC N.\u00ba 098/2015. PUBLICA\u00c7\u00c3O MUNIC\u00cdPIO DE GUARANI \u2013 Publica\u00e7\u00e3o de Licita\u00e7\u00e3o \u2013 Preg\u00e3o n.\u00ba 068/2015 \u2013 PRC n.\u00ba 098/2015. Objeto: Registro de Pre\u00e7os para presta\u00e7\u00e3o de servi\u00e7os de lavagem e lubrifica\u00e7\u00e3o de ve\u00edculos da frota da Prefeitura Municipal de Guarani, pelo per\u00edodo de 12 ( doze meses ), conforme descri\u00e7\u00f5es e especifica\u00e7\u00f5es no Anexo I do edital, mediante autoriza\u00e7\u00e3o direta do respons\u00e1vel t\u00e9cnico da Administra\u00e7\u00e3o Municipal. Abertura: dia 02/12/2015 \u00e0s 13:30 horas. Local: Pra\u00e7a Ant\u00f4nio Carlos, n\u00ba 10, Centro, Guarani \u2013 MG. O Edital encontra-se dispon\u00edvel nesta Prefeitura no Setor de Compras e Licita\u00e7\u00f5es, no site www.guarani.mg.gov.br ou atrav\u00e9s de solicita\u00e7\u00e3o por e-mail licita\u00e7\u00e3o@guarani.mg.gov.br. Outras informa\u00e7\u00f5es ( 32) 3575-1214, no hor\u00e1rio de 08:00 \u00e0s 11:00 e de 13:00 \u00e0s 16:00 horas. Guarani, MG, aos 16 de novembro de 2015. CASTILHO VITAL SUTANA Pregoeiro. PAULO C\u00c9SAR SANTOS NEVES Prefeito Municipal.",
+            "entities": [
+                {
+                    "entity": "GUARANI",
+                    "start": 13,
+                    "end": 20,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "PREG\u00c3O N.\u00ba 068/2015",
+                    "start": 49,
+                    "end": 68,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "PRC N.\u00ba 098/2015",
+                    "start": 71,
+                    "end": 87,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "GUARANI",
+                    "start": 113,
+                    "end": 120,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Preg\u00e3o n.\u00ba 068/2015",
+                    "start": 149,
+                    "end": 168,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "PRC n.\u00ba 098/2015",
+                    "start": 171,
+                    "end": 187,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Prefeitura",
+                    "start": 293,
+                    "end": 303,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Guarani",
+                    "start": 317,
+                    "end": 324,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "02/12/2015",
+                    "start": 513,
+                    "end": 523,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Pra\u00e7a Ant\u00f4nio Carlos, n\u00ba 10, Centro,",
+                    "start": 547,
+                    "end": 583,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "Guarani \u2013",
+                    "start": 584,
+                    "end": 593,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "MG",
+                    "start": 594,
+                    "end": 596,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "Prefeitura",
+                    "start": 636,
+                    "end": 646,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Setor de Compras e Licita\u00e7\u00f5es",
+                    "start": 650,
+                    "end": 679,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "( 32) 3575-1214",
+                    "start": 796,
+                    "end": 811,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "Guarani",
+                    "start": 869,
+                    "end": 876,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 878,
+                    "end": 880,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "16 de novembro de 2015",
+                    "start": 886,
+                    "end": 908,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "CASTILHO VITAL SUTANA",
+                    "start": 910,
+                    "end": 931,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Pregoeiro",
+                    "start": 932,
+                    "end": 941,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "PAULO C\u00c9SAR SANTOS NEVES",
+                    "start": 943,
+                    "end": 967,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 968,
+                    "end": 976,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "O Munic\u00edpio de Cachoeira de Minas torna p\u00fablico o 2\u00ba Termo de Prorroga\u00e7\u00e3o ao Contrato n.\u00ba 024/17: Partes: Munic\u00edpio de Cachoeira de Minas X LAIS FARIA DE OLIVEIRA 11157090621. Objeto: Prorroga\u00e7\u00e3o do prazo de vig\u00eancia do contrato referente \u00e0 contrata\u00e7\u00e3o de servi\u00e7os de transporte escolar dentro do Munic\u00edpio. Processo Licitat\u00f3rio n.\u00ba 020/17 \u2013 Preg\u00e3o Presencial n.\u00ba 006/17. Vig\u00eancia: 01/01/2019 a 31/12/2019. Cachoeira de Minas, 28 de Dezembro de 2018. DIRCEU D\u2019\u00c2NGELO DE FARIA Prefeito Municipal.",
+            "entities": [
+                {
+                    "entity": "Cachoeira de Minas",
+                    "start": 15,
+                    "end": 33,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Contrato n.\u00ba 024/17",
+                    "start": 77,
+                    "end": 96,
+                    "label": "CONTRATO"
+                },
+                {
+                    "entity": "Cachoeira de Minas",
+                    "start": 119,
+                    "end": 137,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "LAIS FARIA DE OLIVEIRA",
+                    "start": 140,
+                    "end": 162,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "11157090621",
+                    "start": 163,
+                    "end": 174,
+                    "label": "CPF"
+                },
+                {
+                    "entity": "Processo Licitat\u00f3rio n.\u00ba 020/17",
+                    "start": 308,
+                    "end": 339,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Preg\u00e3o Presencial n.\u00ba 006/17",
+                    "start": 342,
+                    "end": 370,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "01/01/2019",
+                    "start": 382,
+                    "end": 392,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "31/12/2019",
+                    "start": 395,
+                    "end": 405,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Cachoeira de Minas",
+                    "start": 407,
+                    "end": 425,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "28 de Dezembro de 2018",
+                    "start": 427,
+                    "end": 449,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "DIRCEU D\u2019\u00c2NGELO DE FARIA",
+                    "start": 451,
+                    "end": 475,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 476,
+                    "end": 484,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "Contrato Administrativo / Ata Registro de Pre\u00e7os n \u00b0 5016/2015. Processo n\u00ba:20/2015. Licita\u00e7\u00e3o: Preg\u00e3o n\u00ba 10/2015, que entre si fazem, de um lado o MUNIC\u00cdPIO DE PERD\u00d5ES, CNPJ \u2013 18.244.343/ 0001-67 e de outro AUTOFAMA COM\u00c9RCIO LTDA, CNPJ / MF n\u00ba00.670.120/ 0001-04. Objeto: registro de pre\u00e7o para aquisi\u00e7\u00e3o de combust\u00edveis. Vig\u00eancia: 12 meses a contar do dia 24/03/2015. Valor total: R$ 477.700,00. FERNANDO JAQUES REZENDE DE SIQUEIRA Prefeito Municipal",
+            "entities": [
+                {
+                    "entity": "Ata Registro de Pre\u00e7os n \u00b0 5016/2015",
+                    "start": 26,
+                    "end": 62,
+                    "label": "ATA"
+                },
+                {
+                    "entity": "Processo n\u00ba:20/2015",
+                    "start": 64,
+                    "end": 83,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Preg\u00e3o n\u00ba 10/2015",
+                    "start": 96,
+                    "end": 113,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "PERD\u00d5ES",
+                    "start": 161,
+                    "end": 168,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "18.244.343/ 0001-67",
+                    "start": 177,
+                    "end": 196,
+                    "label": "CNPJ"
+                },
+                {
+                    "entity": "AUTOFAMA COM\u00c9RCIO LTDA",
+                    "start": 208,
+                    "end": 230,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "n\u00ba00.670.120/ 0001-04",
+                    "start": 242,
+                    "end": 263,
+                    "label": "CNPJ"
+                },
+                {
+                    "entity": "24/03/2015",
+                    "start": 358,
+                    "end": 368,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "R$ 477.700,00",
+                    "start": 383,
+                    "end": 396,
+                    "label": "VALOR\\_MONETARIO"
+                },
+                {
+                    "entity": "FERNANDO JAQUES REZENDE DE SIQUEIRA",
+                    "start": 398,
+                    "end": 433,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 434,
+                    "end": 442,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "Aviso de edital PROCESSO LICITAT\u00d3RIO N\u00ba154/2020 EDITAL DO PREG\u00c3O PRESENCIAL N\u00ba 050/2020 SISTEMA DE REGISTRO DE PRE\u00c7OS N\u00ba 038/2020 Objeto: Registro de Pre\u00e7o para aquisi\u00e7\u00e3o de material para lavanderia e limpeza hospitalar DATA DE ABERTURA:23/03/2020 AS13:30horas ENDERE\u00c7O: Rua Get\u00falio Vargas, 228, 3\u00ba andar, centro \u2013 Arcos / MG. es e Contratos, situado \u00e0 Rua Get\u00falio Vargas, n\u00ba 228 \u2013 centro \u2013 Arcos / MG CONSULTAS AO EDITAL: Na internet, no site www.arcos.mg.gov.br ou no Departamento de Licita\u00e7\u00f5es e Contratos supracitado ESCLARECIMENTOS: e-mail: Telefone: ( 37 ) 3359-7905 Departamento de Licita\u00e7\u00f5es e Contratos supracitado Arcos, 13 de fevereiro de 2020.arcoslicita@arcos.mg.gov.br,",
+            "entities": [
+                {
+                    "entity": "PROCESSO LICITAT\u00d3RIO N\u00ba154/2020",
+                    "start": 16,
+                    "end": 47,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "PREG\u00c3O PRESENCIAL N\u00ba 050/2020",
+                    "start": 58,
+                    "end": 87,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "ABERTURA:23/03/2020",
+                    "start": 228,
+                    "end": 247,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Rua Get\u00falio Vargas, 228, 3\u00ba andar, centro \u2013",
+                    "start": 271,
+                    "end": 314,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "Arcos /",
+                    "start": 315,
+                    "end": 322,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 323,
+                    "end": 325,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "Rua Get\u00falio Vargas, n\u00ba 228 \u2013 centro \u2013 Arcos / MG",
+                    "start": 353,
+                    "end": 401,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "Departamento de Licita\u00e7\u00f5es e Contratos",
+                    "start": 470,
+                    "end": 508,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "( 37 ) 3359-7905",
+                    "start": 556,
+                    "end": 572,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "Departamento de Licita\u00e7\u00f5es e Contratos",
+                    "start": 573,
+                    "end": 611,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "13 de fevereiro de 2020.arcoslicita@arcos.mg.gov.br",
+                    "start": 631,
+                    "end": 682,
+                    "label": "DATA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "O MUNIC\u00cdPIO DE LEOPOLDINA - Preg\u00e3o Presencial n\u00ba 011/16, PRC 051/16. Objeto: contrata\u00e7\u00e3o de microempresas - ME, empresas de pequeno porte - EPP ou equiparadas para aquisi\u00e7\u00e3o de caixas refrigeradas e filtros objetivando atender escolas municipais. Dia da Licita\u00e7\u00e3o: 23/02/2016, \u00e0s 09:00 horas. Local: P\u00e7a Prof. Botelho Reis, 28, 2\u00ba andar. \u2013 Centro \u2013 Leopoldina \u2013 MG. O Edital encontra-se dispon\u00edvel no site www.leopoldina.mg.gov.br, link Licita\u00e7\u00e3o / Preg\u00e3o, ou na sala do Preg\u00e3o ( endere\u00e7o acima ), sendo que, as empresas dever\u00e3o enviar recibo de edital para o email pregaopml@yahoo.com.br, para que possamos comunicar poss\u00edveis altera\u00e7\u00f5es que se fizerem necess\u00e1rias. Leopoldina, MG, 01 de fevereiro de 2016. KARINE LOUZADA GOMES Pregoeira Oficial.",
+            "entities": [
+                {
+                    "entity": "Preg\u00e3o Presencial n\u00ba 011/16",
+                    "start": 28,
+                    "end": 55,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "PRC 051/16",
+                    "start": 57,
+                    "end": 67,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "23/02/2016",
+                    "start": 265,
+                    "end": 275,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "P\u00e7a Prof. Botelho Reis, 28, 2\u00ba andar. \u2013 Centro \u2013",
+                    "start": 300,
+                    "end": 348,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "Leopoldina \u2013",
+                    "start": 349,
+                    "end": 361,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 362,
+                    "end": 364,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "Leopoldina",
+                    "start": 667,
+                    "end": 677,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "01 de fevereiro de 2016",
+                    "start": 683,
+                    "end": 706,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "KARINE LOUZADA GOMES",
+                    "start": 708,
+                    "end": 728,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Pregoeira",
+                    "start": 729,
+                    "end": 738,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "MEIO AMBIENTEPROCEDIMENTO LICITAT\u00d3RIO N\u00ba035/15 DISPENSA DE LICITA\u00c7\u00c3O N\u00ba 012/2015 A PREFEITURA MUNICIPAL DE JANU\u00c1RIA- MG, torna p\u00fablico o extrato de contrato referente ao procedimento Licitat\u00f3rio n\u00ba 035/2015 \u2013 Dispensa de Licita\u00e7\u00e3o n\u00ba 012/2015. OBJETO: \u201c Loca\u00e7\u00e3o de Im\u00f3vel \u201d, Vig\u00eancia: 23.02.2015 \u00e0 23.08.2015. Contratado: sociedade Oper\u00e1ria Beneficente de Janu\u00e1ria - Valor total: R$ 6.000,00 ( Seis mil reais ) MANOEL JORGE DE CASTRO Prefeito Municipal de Janu\u00e1ria",
+            "entities": [
+                {
+                    "entity": "AMBIENTEPROCEDIMENTO LICITAT\u00d3RIO N\u00ba035/15",
+                    "start": 5,
+                    "end": 46,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "DISPENSA DE LICITA\u00c7\u00c3O N\u00ba 012/2015",
+                    "start": 47,
+                    "end": 80,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "PREFEITURA",
+                    "start": 83,
+                    "end": 93,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "JANU\u00c1RIA-",
+                    "start": 107,
+                    "end": 116,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 117,
+                    "end": 119,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "procedimento Licitat\u00f3rio n\u00ba 035/2015",
+                    "start": 170,
+                    "end": 206,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Dispensa de Licita\u00e7\u00e3o n\u00ba 012/2015",
+                    "start": 209,
+                    "end": 242,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "23.02.2015",
+                    "start": 285,
+                    "end": 295,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "23.08.2015",
+                    "start": 298,
+                    "end": 308,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "sociedade Oper\u00e1ria Beneficente de Janu\u00e1ria",
+                    "start": 322,
+                    "end": 364,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "R$ 6.000,00",
+                    "start": 380,
+                    "end": 391,
+                    "label": "VALOR\\_MONETARIO"
+                },
+                {
+                    "entity": "MANOEL JORGE DE CASTRO",
+                    "start": 411,
+                    "end": 433,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 434,
+                    "end": 442,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Janu\u00e1ria",
+                    "start": 456,
+                    "end": 464,
+                    "label": "MUNICIPIO"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "SEC EXEC DE ADMIN E PLANEJAMENTO PUBLICA\u00c7\u00c3O CONTRATO 114/2018. Prefeitura Municipal de Brasil\u00e2ndia de Minas-MG / Extrato do contrato n \u00b0 114/2018 \u2013 Contratado ( a ): ROSIMAR CORREIA DA SILVA - CPF n.\u00ba 455.376. 581-00 - Objeto: Presta\u00e7\u00e3o de servi\u00e7os com pulveriza\u00e7\u00f5es, visitas casa a casa para orienta\u00e7\u00e3o, elimina\u00e7\u00e3o e recolhimento de criadouros, inspe\u00e7\u00f5es em quintais e poss\u00edveis criadouros ou terrenos para detectar e eliminar focos de mosquitos, na rotina ou atrav\u00e9s de mutir\u00e3o de limpeza em quintais, retirada de materiais inserv\u00edveis das resid\u00eancias. Vistorias em oficinas, ind\u00fastrias, com\u00e9rcios e outros para detectar e eliminar focos ou criadouros de mosquito, nebuliza\u00e7\u00e3o de inseticida e utiliza\u00e7\u00e3o de Larvicidas, assim como outros servi\u00e7os relacionados ao controle da dengue. Valor global R$ 2.750,00 ( dois mil setecentos e cinquenta reais ) - Vig\u00eancia. 31/12/2018 - Dota\u00e7\u00e3o 02.06.01.10.305.1004.2057.3.3.90.36.00 FICHA 286. PROCESSO ADMINISTRATIVO N\u00ba 01/2018. INEXIGIBILIDADE DE LICITA\u00c7\u00c3O N\u00ba 01/2018. Credenciamento N\u00ba01/2018. Brasil\u00e2ndia de Minas MG 24 de outubro de 2018 MARDEN JUNIOR TELES PEREIRA DA COSTA Prefeito Municipal. Or\u00e7amentaria \u2013",
+            "entities": [
+                {
+                    "entity": "SEC EXEC DE ADMIN E PLANEJAMENTO",
+                    "start": 0,
+                    "end": 32,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "CONTRATO 114/2018",
+                    "start": 44,
+                    "end": 61,
+                    "label": "CONTRATO"
+                },
+                {
+                    "entity": "Prefeitura",
+                    "start": 63,
+                    "end": 73,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Brasil\u00e2ndia de Minas-MG",
+                    "start": 87,
+                    "end": 110,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "contrato n \u00b0 114/2018",
+                    "start": 124,
+                    "end": 145,
+                    "label": "CONTRATO"
+                },
+                {
+                    "entity": "ROSIMAR CORREIA DA SILVA",
+                    "start": 166,
+                    "end": 190,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "455.376. 581-00",
+                    "start": 201,
+                    "end": 216,
+                    "label": "CPF"
+                },
+                {
+                    "entity": "R$ 2.750,00",
+                    "start": 797,
+                    "end": 808,
+                    "label": "VALOR\\_MONETARIO"
+                },
+                {
+                    "entity": "31/12/2018",
+                    "start": 863,
+                    "end": 873,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "02.06.01.10.305.1004.2057.3.3.90.36.00",
+                    "start": 884,
+                    "end": 922,
+                    "label": "DOTACAO\\_ORCAMENTARIA"
+                },
+                {
+                    "entity": "PROCESSO ADMINISTRATIVO N\u00ba 01/2018",
+                    "start": 934,
+                    "end": 968,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "INEXIGIBILIDADE DE LICITA\u00c7\u00c3O N\u00ba 01/2018",
+                    "start": 970,
+                    "end": 1009,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Brasil\u00e2ndia de Minas",
+                    "start": 1037,
+                    "end": 1057,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 1058,
+                    "end": 1060,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "24 de outubro de 2018",
+                    "start": 1061,
+                    "end": 1082,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "MARDEN JUNIOR TELES PEREIRA DA COSTA",
+                    "start": 1083,
+                    "end": 1119,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 1120,
+                    "end": 1128,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "Prefeitura Municipal de Dores do Indai\u00e1 - MG, Processo Licitat\u00f3rio n \u00b0 001/2018, na modalidade Credenciamento n \u00b0 001/2018. AVISO DE LICITA\u00c7\u00c3O \u2013 Objeto: Contrata\u00e7\u00e3o de m\u00e9dicos especialistas em atendimento \u00e1s de mandas da Secretaria Municipal de Sa\u00fade de Dores do Indai\u00e1, a ser realizado no dia 02/01/2018 \u00e0s 13:00 horas. Informa\u00e7\u00f5es podem ser obtidas no setor Licita\u00e7\u00f5es \u00e0 Pra\u00e7a do Ros\u00e1rio, 268, Fone ( 37 ) 3551-3570 ou por e-mail licitacao@doresdoindaia.mg.gov.br. Dores do Indai\u00e1, 13 de dezembro de 2017.",
+            "entities": [
+                {
+                    "entity": "Prefeitura",
+                    "start": 0,
+                    "end": 10,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Dores do Indai\u00e1",
+                    "start": 24,
+                    "end": 39,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 42,
+                    "end": 44,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "Processo Licitat\u00f3rio n \u00b0 001/2018",
+                    "start": 46,
+                    "end": 79,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Credenciamento n \u00b0 001/2018",
+                    "start": 95,
+                    "end": 122,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Secretaria Municipal de Sa\u00fade",
+                    "start": 221,
+                    "end": 250,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Dores do Indai\u00e1",
+                    "start": 254,
+                    "end": 269,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "02/01/2018",
+                    "start": 294,
+                    "end": 304,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Informa\u00e7\u00f5es podem",
+                    "start": 321,
+                    "end": 338,
+                    "label": "*"
+                },
+                {
+                    "entity": "Pra\u00e7a do Ros\u00e1rio, 268",
+                    "start": 373,
+                    "end": 394,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "( 37 ) 3551-3570",
+                    "start": 401,
+                    "end": 417,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "Dores do Indai\u00e1",
+                    "start": 467,
+                    "end": 482,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "13 de dezembro de 2017",
+                    "start": 484,
+                    "end": 506,
+                    "label": "DATA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "NOVA ABERTURA - PREFEITURA MUNICIPAL DE FORMIGA - MG \u2013 PROCESSO DE LICITA\u00c7\u00c3O N\u00ba. 188/19 \u2013 MOD. REGISTRO DE PRE\u00c7OS \u2013 PREG\u00c3O N\u00ba 120/2019. TIPO: Menor pre\u00e7o por Lote. OBJETO: Contrata\u00e7\u00e3o de servi\u00e7os t\u00e9cnicos profissionais de medicina do trabalho, pelo Munic\u00edpio de Formiga, Servi\u00e7o Aut\u00f4nomo de \u00c1gua e Esgoto \u2013 SAAE e Instituto de Previd\u00eancia dos Servidores P\u00fablicos Municipais de Formiga \u2013 PREVIFOR. A abertura da sess\u00e3o ser\u00e1 \u00e0s 08:00 h, dia 22/01/2020. Local: R. Bar\u00e3o de Piumhi 92-A, Diretoria de Compras P\u00fablicas, Formiga \u2013 MG. Informa\u00e7\u00f5es: telefones ( 37 ) 3329-1843 / 3329-1844; e-mail: licitacao@formiga.mg.gov.br. Edital dispon\u00edvel no site: www.formiga.mg.gov.br.",
+            "entities": [
+                {
+                    "entity": "PREFEITURA",
+                    "start": 16,
+                    "end": 26,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "FORMIGA",
+                    "start": 40,
+                    "end": 47,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 50,
+                    "end": 52,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "PROCESSO DE LICITA\u00c7\u00c3O N\u00ba. 188/19",
+                    "start": 55,
+                    "end": 87,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "PREG\u00c3O N\u00ba 120/2019",
+                    "start": 116,
+                    "end": 134,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Formiga",
+                    "start": 262,
+                    "end": 269,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Servi\u00e7o Aut\u00f4nomo de \u00c1gua e Esgoto",
+                    "start": 271,
+                    "end": 304,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "SAAE",
+                    "start": 307,
+                    "end": 311,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Instituto de Previd\u00eancia dos Servidores P\u00fablicos Municipais de Formiga",
+                    "start": 314,
+                    "end": 384,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "PREVIFOR",
+                    "start": 387,
+                    "end": 395,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "22/01/2020",
+                    "start": 439,
+                    "end": 449,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "R. Bar\u00e3o de Piumhi 92-A",
+                    "start": 458,
+                    "end": 481,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "Formiga",
+                    "start": 514,
+                    "end": 521,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 524,
+                    "end": 526,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "( 37 ) 3329-1843",
+                    "start": 551,
+                    "end": 567,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "3329-1844",
+                    "start": 570,
+                    "end": 579,
+                    "label": "TEL"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "SETOR DE LICITA\u00c7\u00d5ES CONS\u00d3RCIO INTERMUNICIPAL DE SA\u00daDE DA MATA LESTE - CISLESTE EXTRATO DE HOMOLOGA\u00c7\u00c3O / ADJUDICA\u00c7\u00c3O CREDENCIAMENTO 03/2014 PROCESSO LICITAT\u00d3RIO 03/2014 Objeto: Presta\u00e7\u00e3o de servi\u00e7os de sa\u00fade, para realiza\u00e7\u00e3o de exames complementares de diagn\u00f3stico m\u00e9dico para atendimento aos servi\u00e7os do Cons\u00f3rcio Intermunicipal de Sa\u00fade da Mata Leste, nele englobando os Munic\u00edpios associados, nos quantitativos, especifica\u00e7\u00f5es, especializa\u00e7\u00f5es e valores estabelecidos na Tabela de Profissionais do CISLESTE constante do Anexo VII; Dota\u00e7\u00e3o Or\u00e7ament\u00e1ria n\u00ba. 01.001.10.302.0004.2005 Manuten\u00e7\u00e3o Programas Especialidades \u2013 Exames / Consultas; 3.3.90.39.00 Outros servi\u00e7os de Terceiros \u2013 Pessoa Jur\u00eddica; Condi\u00e7\u00e3o de pagamento: O pagamento ser\u00e1 efetuado mensalmente, at\u00e9 o 10\u00ba ( d\u00e9cimo ) dia \u00fatil do m\u00eas subseq\u00fcente, referente aos servi\u00e7os realizados no per\u00edodo, a contar da entrega da respectiva Nota Fiscal, na Secretaria do CISLESTE; Empresa credenciada: CENTRO DE DIAGN\u00d3STICO DO HOSPITAL S\u00c3O PAULO LTDA. CNPJ n\u00ba 03.011.575/ 0001-06 Muria\u00e9, MG, 30 de junho de 2014. ALOYSIO NAVARRO DE AQUINO Presidente",
+            "entities": [
+                {
+                    "entity": "CONS\u00d3RCIO INTERMUNICIPAL DE SA\u00daDE DA MATA LESTE",
+                    "start": 20,
+                    "end": 67,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "CISLESTE",
+                    "start": 70,
+                    "end": 78,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "PROCESSO LICITAT\u00d3RIO 03/2014",
+                    "start": 139,
+                    "end": 167,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Cons\u00f3rcio Intermunicipal de Sa\u00fade da Mata Leste",
+                    "start": 304,
+                    "end": 351,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "CISLESTE",
+                    "start": 500,
+                    "end": 508,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "01.001.10.302.0004.2005",
+                    "start": 558,
+                    "end": 581,
+                    "label": "DOTACAO\\_ORCAMENTARIA"
+                },
+                {
+                    "entity": "CISLESTE",
+                    "start": 923,
+                    "end": 931,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "CENTRO DE DIAGN\u00d3STICO DO HOSPITAL S\u00c3O PAULO LTDA.",
+                    "start": 954,
+                    "end": 1003,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "03.011.575/ 0001-06",
+                    "start": 1012,
+                    "end": 1031,
+                    "label": "CNPJ"
+                },
+                {
+                    "entity": "Muria\u00e9",
+                    "start": 1032,
+                    "end": 1038,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 1040,
+                    "end": 1042,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "30 de junho de 2014",
+                    "start": 1044,
+                    "end": 1063,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "ALOYSIO NAVARRO DE AQUINO",
+                    "start": 1065,
+                    "end": 1090,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Presidente",
+                    "start": 1091,
+                    "end": 1101,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "EXTRATO DO CONTRATO N\u00ba 0156/2018; REF.: PROCESSO LICITAT\u00d3RIO 077/2018 DISPENSA 003/2018; Objeto: Aquisi\u00e7\u00e3o de g\u00eaneros aliment\u00edcios da agricultura familiar e empreendedor familiar rural ou suas Organiza\u00e7\u00f5es para atender os alunos matriculados nas escolas municipais que ofertam a Educa\u00e7\u00e3o Infantil ( creche, pr\u00e9-escola ), Ensino Fundamental, M\u00e9dio, EJA e Programa Mais Educa\u00e7\u00e3o, da Rede P\u00fablica do Munic\u00edpio de Turmalina / MG, segundo semestre de 2018, descritos no quadro previsto na Cl\u00e1usula Quarta, todos de acordo com a chamada p\u00fablica n\u00ba 003/2018, o qual integrante do presente contrato, fica independentemente de anexa\u00e7\u00e3o ou transcri\u00e7\u00e3o. CONTRATADO: ERIVALDO ALECRIM ALVES - CPF: 933.444. 226-34. VIG\u00caNCIA: 25/10/2018 A 31/12/2018.fazendo parte",
+            "entities": [
+                {
+                    "entity": "CONTRATO N\u00ba 0156/2018",
+                    "start": 11,
+                    "end": 32,
+                    "label": "CONTRATO"
+                },
+                {
+                    "entity": "PROCESSO LICITAT\u00d3RIO 077/2018",
+                    "start": 40,
+                    "end": 69,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "DISPENSA 003/2018",
+                    "start": 70,
+                    "end": 87,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Turmalina",
+                    "start": 410,
+                    "end": 419,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 422,
+                    "end": 424,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "chamada p\u00fablica n\u00ba 003/2018",
+                    "start": 523,
+                    "end": 550,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "ERIVALDO ALECRIM ALVES",
+                    "start": 655,
+                    "end": 677,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "933.444. 226-34",
+                    "start": 685,
+                    "end": 700,
+                    "label": "CPF"
+                },
+                {
+                    "entity": "25/10/2018",
+                    "start": 712,
+                    "end": 722,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "31/12/2018.fazendo",
+                    "start": 725,
+                    "end": 743,
+                    "label": "DATA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "EXTRATO DE EDITAL PREFEITURA MUNICIPAL DA CAMPANHA \u2013 MG \u2013 CNPJ n \u00b0 18.712.174/ 0001-42 - Torna P\u00fablico o Processo Licitat\u00f3rio n\u00ba 0055/2016 \u2013 Modalidade: PREG\u00c3O N\u00ba 00039/2016 Objeto: AQUISI\u00c7\u00c3O DE MOUR\u00d5ES DE CIMENTO. \u2013 Data de abertura: 24/08/2016 site: www.campanha.mg.gov.br ou na sede da Prefeitura Municipal da Campanha / Dpto de Compras \u2013 Rua Dr. Brand\u00e3o n \u00b0 59 \u2013 Centro \u2013 Campanha \u2013 MG, Cep 37400-000 \u2013 Fone / Fax: ( 35 ) 3261-1059 M\u00c1RCIA CRISTINA S. BORGES Diretora do Depto de Compras \u00e0s 14:00. Informa\u00e7\u00f5es",
+            "entities": [
+                {
+                    "entity": "PREFEITURA",
+                    "start": 18,
+                    "end": 28,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "CAMPANHA",
+                    "start": 42,
+                    "end": 50,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 53,
+                    "end": 55,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "18.712.174/ 0001-42",
+                    "start": 67,
+                    "end": 86,
+                    "label": "CNPJ"
+                },
+                {
+                    "entity": "Processo Licitat\u00f3rio n\u00ba 0055/2016",
+                    "start": 105,
+                    "end": 138,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "PREG\u00c3O N\u00ba 00039/2016",
+                    "start": 153,
+                    "end": 173,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "24/08/2016",
+                    "start": 235,
+                    "end": 245,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Prefeitura Municipal da Campanha / Dpto de Compras",
+                    "start": 289,
+                    "end": 339,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Rua Dr. Brand\u00e3o n \u00b0 59 \u2013 Centro \u2013 Campanha \u2013 MG",
+                    "start": 342,
+                    "end": 389,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "Cep 37400-000",
+                    "start": 391,
+                    "end": 404,
+                    "label": "CEP"
+                },
+                {
+                    "entity": "M\u00c1RCIA CRISTINA S. BORGES",
+                    "start": 436,
+                    "end": 461,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Diretora",
+                    "start": 462,
+                    "end": 470,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "PREFEITURA MUNICIPAL DE POUSO ALEGRE / MG \u2013 PREG\u00c3O PRESENCIAL PARA REGISTRO DE PRE\u00c7OS N\u00ba 97/18 \u2013 Objeto: \u201c AQUISI\u00c7\u00c3O DE COMBUST\u00cdVEIS, D\u00cdESEL S10, PARA OS VE\u00cdCULOS DA FROTA DA PREFEITURA MUNICIPAL DE POUSO ALEGRE-MG \u201d. A sess\u00e3o p\u00fablica ser\u00e1 realizada no dia 31 de outubro de 2018 \u00e0s 9:00 h. O Edital poder\u00e1 ser consultado e obtido, gratuitamente, em dias \u00fateis e em hor\u00e1rio comercial, mediante apresenta\u00e7\u00e3o de PEN_DRIVE, para c\u00f3pia do arquivo na Superintend\u00eancia de Gest\u00e3o de Recursos Materiais e pelo site da Prefeitura Municipal de Pouso Alegre. Informa\u00e7\u00f5es tel. ( 35 ) 3449-4023 ou email: licitapamg@gmail.com DEREK WILLIAN MOREIRA ROSA Pregoeiro Municipal Pouso Alegre 09 de outubro de 2018.",
+            "entities": [
+                {
+                    "entity": "POUSO ALEGRE",
+                    "start": 24,
+                    "end": 36,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 39,
+                    "end": 41,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "REGISTRO DE PRE\u00c7OS N\u00ba 97/18",
+                    "start": 67,
+                    "end": 94,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "POUSO",
+                    "start": 199,
+                    "end": 204,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "ALEGRE-MG",
+                    "start": 205,
+                    "end": 214,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "31 de outubro de 2018",
+                    "start": 257,
+                    "end": 278,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Superintend\u00eancia de Gest\u00e3o de Recursos Materiais",
+                    "start": 445,
+                    "end": 493,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Pouso Alegre",
+                    "start": 533,
+                    "end": 545,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "( 35 ) 3449-4023",
+                    "start": 564,
+                    "end": 580,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "DEREK WILLIAN MOREIRA ROSA",
+                    "start": 612,
+                    "end": 638,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Pouso Alegre",
+                    "start": 659,
+                    "end": 671,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "09 de outubro de 2018",
+                    "start": 672,
+                    "end": 693,
+                    "label": "ORGANIZACAO"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "PROCESSO ADMINISTRATIVO LICITAT\u00d3RIO N.\u00ba 005/2017 \u2013 PREG\u00c3O PRESENCIAL N.\u00ba 001/2017 \u2013 A Prefeitura de Cabeceira Grande, torna p\u00fablico aos interessados que far\u00e1 realizar no dia 2 de Fevereiro de 2017, \u00e0s 09:00 horas, licita\u00e7\u00e3o na modalidade de Preg\u00e3o Presencial, Tipo: menor pre\u00e7o por item, sob a reg\u00eancia da Lei Federal n.\u00ba 10.520/02, Decreto Municipal n.\u00ba 1.202, de 18/02/2009 e subsidiariamente da Lei 8.666/93 e altera\u00e7\u00f5es posteriores, para CONTRATA\u00c7\u00c3O DE PRESTA\u00c7\u00c3O DE SERVI\u00c7OS DE TRANSPORTE ESCOLAR DE ALUNOS NO \u00c2MBITO DO MUNIC\u00cdPIO DE CABECEIRA GRANDE, VINCULADO A LINHAS DE TRANSPORTE ESCOLAR \u2013 LTE \u2019S PREDETERMINADAS, destinado ao atendimento da Secretaria Municipal da Educa\u00e7\u00e3o. O edital contendo as linhas e demais especifica\u00e7\u00f5es se encontra \u00e0 disposi\u00e7\u00e3o dos interessados na sede da Prefeitura Municipal, situada na Pra\u00e7a S\u00e3o Jos\u00e9 s / n \u00b0, em Cabeceira Grande ( MG ), e poder\u00e1 ser obtido no hor\u00e1rio comercial. Maiores informa\u00e7\u00f5es poder\u00e3o ser obtidas pelo e-mail: licitacaocabeceiragrande@hotmail.com ou telefax: ( 38 ) 3677-8044/ 8093 - Cabeceira Grande ( MG ), 19 de Janeiro de 2017.LELIAN FELIPE DA SILVA Pregoeira.",
+            "entities": [
+                {
+                    "entity": "PROCESSO ADMINISTRATIVO LICITAT\u00d3RIO N.\u00ba 005/2017",
+                    "start": 0,
+                    "end": 48,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "PREG\u00c3O PRESENCIAL N.\u00ba 001/2017",
+                    "start": 51,
+                    "end": 81,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Cabeceira Grande",
+                    "start": 100,
+                    "end": 116,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "2 de Fevereiro de 2017",
+                    "start": 174,
+                    "end": 196,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Lei Federal n.\u00ba 10.520/02",
+                    "start": 306,
+                    "end": 331,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "Decreto Municipal n.\u00ba 1.202",
+                    "start": 333,
+                    "end": 360,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "18/02/2009",
+                    "start": 365,
+                    "end": 375,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Lei 8.666/93",
+                    "start": 398,
+                    "end": 410,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "CABECEIRA GRANDE",
+                    "start": 537,
+                    "end": 553,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Secretaria Municipal da Educa\u00e7\u00e3o",
+                    "start": 650,
+                    "end": 682,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Prefeitura Municipal",
+                    "start": 789,
+                    "end": 809,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Pra\u00e7a S\u00e3o Jos\u00e9 s / n \u00b0, em",
+                    "start": 822,
+                    "end": 848,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "Cabeceira Grande (",
+                    "start": 849,
+                    "end": 867,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "MG )",
+                    "start": 868,
+                    "end": 872,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "( 38 ) 3677-8044/",
+                    "start": 1018,
+                    "end": 1035,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "Cabeceira Grande",
+                    "start": 1043,
+                    "end": 1059,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 1062,
+                    "end": 1064,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "19 de Janeiro de",
+                    "start": 1068,
+                    "end": 1084,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "2017.LELIAN",
+                    "start": 1085,
+                    "end": 1096,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "FELIPE DA SILVA",
+                    "start": 1097,
+                    "end": 1112,
+                    "label": "PESSOA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "MUNIC\u00cdPIO DE OURO FINO \u2013 MG. Aviso de Licita\u00e7\u00e3o. Processo Licitat\u00f3rio n\u00ba. 110/15, modalidade Preg\u00e3o n\u00ba 080/15, Registro de Pre\u00e7os n\u00ba 051/15 do tipo menor pre\u00e7o por item, para contrata\u00e7\u00e3o de Microempresa(ME ) ou Empresa de Pequeno Porte(EPP ) para futura e eventual presta\u00e7\u00e3o de servi\u00e7os gr\u00e1ficos para os departamentos da prefeitura de Ouro Fino, conforme edital. O credenciamento e entrega dos envelopes dar-se-\u00e1 no dia 29/09/2015 at\u00e9 \u00e0s 09:00 horas. O instrumento convocat\u00f3rio em inteiro teor estar\u00e1 \u00e0 disposi\u00e7\u00e3o dos interessados de 2\u00aa a 6\u00aa feira, das 12h \u00e0s 16h, na Av. Cyro Gon\u00e7alves, 173, Ouro Fino - MG, CEP 37570-000. MAURICIO LEMES DE CARVALHO Prefeito Municipal.",
+            "entities": [
+                {
+                    "entity": "OURO FINO",
+                    "start": 13,
+                    "end": 22,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 25,
+                    "end": 27,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "Processo Licitat\u00f3rio n\u00ba. 110/15",
+                    "start": 49,
+                    "end": 80,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Preg\u00e3o n\u00ba 080/15",
+                    "start": 93,
+                    "end": 109,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Registro de Pre\u00e7os n\u00ba 051/15",
+                    "start": 111,
+                    "end": 139,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Ouro Fino",
+                    "start": 335,
+                    "end": 344,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "29/09/2015",
+                    "start": 420,
+                    "end": 430,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Av. Cyro Gon\u00e7alves, 173,",
+                    "start": 568,
+                    "end": 592,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "Ouro Fino -",
+                    "start": 593,
+                    "end": 604,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "MG",
+                    "start": 605,
+                    "end": 607,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "CEP 37570-000",
+                    "start": 609,
+                    "end": 622,
+                    "label": "CEP"
+                },
+                {
+                    "entity": "MAURICIO LEMES DE CARVALHO",
+                    "start": 624,
+                    "end": 650,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 651,
+                    "end": 659,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "O Munic\u00edpio de Campos Altos-MG, torna p\u00fablico a quem interessar possa que est\u00e1 aberta licita\u00e7\u00e3o modalidade Preg\u00e3o Presencial Registro de Pre\u00e7o n.\u00ba 35/2014, Processo n.\u00ba 51/2014, destinado a Registro de Pre\u00e7o para aquisi\u00e7\u00e3o e material de limpeza para os diversos setores das diversas secretaria do Munic\u00edpio de Campos Altos - MG, com abertura prevista para o dia 10/07/2014 \u00e0s 08:30 horas. O Edital encontra-se a disposi\u00e7\u00e3o no Setor de Licita\u00e7\u00e3o desta Prefeitura ou pelo site: www.camposaltos.mg.gov.br Campos Altos - MG, 25/06/2014 CL\u00c1UDIO DONIZETE FREIRE Prefeito Municipal.",
+            "entities": [
+                {
+                    "entity": "Campos Altos-MG",
+                    "start": 15,
+                    "end": 30,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Preg\u00e3o Presencial Registro de Pre\u00e7o n.\u00ba 35/2014",
+                    "start": 107,
+                    "end": 154,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Processo n.\u00ba 51/2014",
+                    "start": 156,
+                    "end": 176,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Campos Altos",
+                    "start": 310,
+                    "end": 322,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 325,
+                    "end": 327,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "10/07/2014",
+                    "start": 362,
+                    "end": 372,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Campos Altos",
+                    "start": 502,
+                    "end": 514,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 517,
+                    "end": 519,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "25/06/2014",
+                    "start": 521,
+                    "end": 531,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "CL\u00c1UDIO DONIZETE FREIRE",
+                    "start": 532,
+                    "end": 555,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 556,
+                    "end": 564,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "O Munic\u00edpio de Santo Ant\u00f4nio do Monte, comunica que ir\u00e1 realizar procedimento licitatorio, modalidade PREG\u00c3O Presencial N\u00ba 000005/2014, tipo Menor Pre\u00e7o - Item referente a contrata\u00e7\u00e3o de empresa para implanta\u00e7\u00e3o de infra-estrutura esportiva na comunidade rural Espraiado Veloso, munic\u00edpio de Santo Ant\u00f4nio do Monte, atendendo a solicita\u00e7\u00e3o da Secretaria Municipal de Esportes. Entrega dos envelopes: At\u00e9 2/04/2014, \u00e0s 13h00min Informa\u00e7\u00f5es / Edital: www.samonte.mg.gov.br ou Pra\u00e7a Get\u00falio Vargas, 12 \u2013 Centro em Santo Ant\u00f4nio do Monte \u2013 MG \u2013 Telefax ( 37 ) 3281.7328 Hor\u00e1rio: 12:00 as 18:00 horas. Santo Ant\u00f4nio do Monte, 14 de mar\u00e7o de 2014. AUR\u00c9LIO DE OLIVEIRA J\u00daNIOR Presidente da CPL",
+            "entities": [
+                {
+                    "entity": "Santo Ant\u00f4nio do Monte",
+                    "start": 15,
+                    "end": 37,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "PREG\u00c3O Presencial N\u00ba 000005/2014",
+                    "start": 102,
+                    "end": 134,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Santo Ant\u00f4nio do Monte",
+                    "start": 292,
+                    "end": 314,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Secretaria Municipal de Esportes",
+                    "start": 343,
+                    "end": 375,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "2/04/2014",
+                    "start": 404,
+                    "end": 413,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Pra\u00e7a Get\u00falio Vargas, 12 \u2013 Centro em",
+                    "start": 474,
+                    "end": 510,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "Santo Ant\u00f4nio do Monte \u2013",
+                    "start": 511,
+                    "end": 535,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "MG",
+                    "start": 536,
+                    "end": 538,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "( 37 ) 3281.7328",
+                    "start": 549,
+                    "end": 565,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "Santo Ant\u00f4nio do Monte",
+                    "start": 597,
+                    "end": 619,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "14 de mar\u00e7o de 2014",
+                    "start": 621,
+                    "end": 640,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "AUR\u00c9LIO DE OLIVEIRA J\u00daNIOR",
+                    "start": 642,
+                    "end": 668,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Presidente",
+                    "start": 669,
+                    "end": 679,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "CPL",
+                    "start": 683,
+                    "end": 686,
+                    "label": "ORGANIZACAO"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "EXTRATO DE ADITAMENTO AO CONTRATO DE PRESTA\u00c7\u00c3O DE SERVI\u00c7OS N\u00ba 009/2013 CONTRATANTE: MUNIC\u00cdPIO DE CONQUISTA. CONTRATADA: IVO ANT\u00d4NIO DA SILVA OBJETO: FICA ADITADA A CL\u00c1USULA PRIMEIRA DO CONTRATO ORIGIN\u00c1RIO, PASSANDO O VALOR DO KM RODADO PARA R$ 1,70 ( UM REAL E SETENTA CENTAVOS ) LICITA\u00c7\u00c3O: PROCESSO DE LICITA\u00c7\u00c3O N\u00ba 019/2013 \u2013 PREG\u00c3O PRESENCIAL N\u00ba 007/2013. CONQUISTA / MG, 01 DE JUNHO DE 2017. ANNA LUIZE FREIRE KASSABIAN Procuradora Adjunta do Munic\u00edpio",
+            "entities": [
+                {
+                    "entity": "CONTRATO DE PRESTA\u00c7\u00c3O DE SERVI\u00c7OS N\u00ba 009/2013",
+                    "start": 25,
+                    "end": 70,
+                    "label": "CONTRATO"
+                },
+                {
+                    "entity": "CONQUISTA",
+                    "start": 97,
+                    "end": 106,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "IVO ANT\u00d4NIO DA SILVA",
+                    "start": 120,
+                    "end": 140,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "R$ 1,70",
+                    "start": 241,
+                    "end": 248,
+                    "label": "VALOR\\_MONETARIO"
+                },
+                {
+                    "entity": "PROCESSO DE LICITA\u00c7\u00c3O N\u00ba 019/2013",
+                    "start": 291,
+                    "end": 324,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "PREG\u00c3O PRESENCIAL N\u00ba 007/2013",
+                    "start": 327,
+                    "end": 356,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "CONQUISTA",
+                    "start": 358,
+                    "end": 367,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 370,
+                    "end": 372,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "01 DE JUNHO DE 2017",
+                    "start": 374,
+                    "end": 393,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "ANNA LUIZE FREIRE KASSABIAN",
+                    "start": 395,
+                    "end": 422,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Procuradora",
+                    "start": 423,
+                    "end": 434,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "PREFEITURA MUNICIPAL DE PIRAPORA \u2013 Preg\u00e3o Presencial N\u00ba 010/2016 Processo Licitat\u00f3rio 014/2016 - AVISO DE RETIFICA\u00c7\u00c3O \u2013 Objeto: Presta\u00e7\u00e3o de podas de arvores nas vias publicas e diversos logradouros p\u00fablicos do municipal de Pirapora. O edital foi retificado com nova data agendada para o dia 18/03/2016 \u00e0s 09:00 Horas. O mesmo poder\u00e1 ser obtido atrav\u00e9s do site da Prefeitura, endere\u00e7o: www.pirapora.mg.gov.br. Pirapora / MG, 07/03/2016. ANTONIO CARLOS SOARES DOS SANTOS Pregoeiro.",
+            "entities": [
+                {
+                    "entity": "PIRAPORA",
+                    "start": 24,
+                    "end": 32,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Preg\u00e3o Presencial N\u00ba 010/2016",
+                    "start": 35,
+                    "end": 64,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Processo Licitat\u00f3rio 014/2016",
+                    "start": 65,
+                    "end": 94,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Pirapora",
+                    "start": 224,
+                    "end": 232,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "18/03/2016",
+                    "start": 292,
+                    "end": 302,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Pirapora",
+                    "start": 410,
+                    "end": 418,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 421,
+                    "end": 423,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "07/03/2016",
+                    "start": 425,
+                    "end": 435,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "ANTONIO CARLOS SOARES DOS SANTOS",
+                    "start": 437,
+                    "end": 469,
+                    "label": "PESSOA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "PREFEITURA MUNICIPAL DE NEPOMUCENO / MG \u2013 Aviso de Licita\u00e7\u00e3o. Preg\u00e3o Presencial n\u00ba 046/2019. Processo Licitat\u00f3rio n\u00ba 068/2019. Objeto: Aquisi\u00e7\u00e3o de 03 \u00d4nibus Urbanos Usados, ano de fabrica\u00e7\u00e3o e modelo 2000 a 2005, para uso do Servi\u00e7o Municipal de Transporte Escolar de Nepomuceno, solicitado pela Secretaria Municipal de Educa\u00e7\u00e3o. Data de abertura: 28/08/2019 \u00e0s 13:00 horas. Edital e informa\u00e7\u00f5es sala de licita\u00e7\u00f5es da Prefeitura de Nepomuceno, estabelecida Pra\u00e7a Padre Jos\u00e9, 180, centro. Tel ( 35 ) 3861-3686, e-   ma i : licitacao@nepomuceno.mg.gov. b . Nepomuce n , 07/08/20 1 . PED O RODRIGU S Secret\u00e1r o Municip l  e Administra\u00e7",
+            "entities": [
+                {
+                    "entity": "NEPOMUCENO",
+                    "start": 24,
+                    "end": 34,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 37,
+                    "end": 39,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "Preg\u00e3o Presencial n\u00ba 046/2019",
+                    "start": 62,
+                    "end": 91,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Processo Licitat\u00f3rio n\u00ba 068/2019",
+                    "start": 93,
+                    "end": 125,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Servi\u00e7o Municipal de Transporte Escolar de Nepomuceno",
+                    "start": 226,
+                    "end": 279,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Secretaria Municipal de Educa\u00e7\u00e3o",
+                    "start": 297,
+                    "end": 329,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "28/08/2019",
+                    "start": 349,
+                    "end": 359,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Prefeitura de Nepomuceno",
+                    "start": 419,
+                    "end": 443,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Pra\u00e7a Padre Jos\u00e9, 180, centro",
+                    "start": 458,
+                    "end": 487,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "Tel ( 35 ) 3861-3686",
+                    "start": 489,
+                    "end": 509,
+                    "label": "TEL"
+                },
+                {
+                    "entity": ", 07/08/20",
+                    "start": 567,
+                    "end": 577,
+                    "label": "DATA"
+                },
+                {
+                    "entity": ". PED O RODRIGU S Secret\u00e1r",
+                    "start": 580,
+                    "end": 606,
+                    "label": "PESSOA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "AMM A COMISS\u00c3O PERMANENTE DE LICITA\u00c7\u00d5ES DA PREFEITURA MUNICIPAL DE LUZ TORNA P\u00daBLICA A REALIZA\u00c7\u00c3O DE PROCESSO LICITAT\u00d3RIO PRC N\u00ba. 105/2019. PREG\u00c3O N\u00ba 026/2019. OBJETO: \" CONTRATA\u00c7\u00c3O DE EMPRESA ESPECIALIZADA NA PRESTA\u00c7\u00c3O DE SERVI\u00c7OS NA \u00c1REA DE TECNOLOGIA DA INFORMA\u00c7\u00c3O PARA ATENDER A DEMANDA DA PREFEITURA MUNICIPAL DE LUZ / MG\". CONFORME TERMO DE REFERENCIA\". TIPO: MENOR PRE\u00c7O GLOBAL. LICITA\u00c7\u00c3O: 04.09.2019 \u00e1s 13:30. LOCAL: SALA DE LICITA\u00c7\u00d5ES DA PREFEITURA M. DE LUZ-MG, SITUADA AV. LAERTON PAULINELLI, 153 BAIRRO MONSENHOR PARREIRAS- LUZ / MG. INF.: ( 37) 3421-3030, RAMAL: 32 DE 08:00 \u00c0S 17:00 HORAS. LUZ / MG. 21.08.2019. WWW.LUZ.MG.GOV.BR. VANUSA C\u00c2NDIDA DE OLIVEIRA BRITO Pregoeira",
+            "entities": [
+                {
+                    "entity": "LUZ",
+                    "start": 67,
+                    "end": 70,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "PROCESSO LICITAT\u00d3RIO PRC N\u00ba. 105/2019",
+                    "start": 101,
+                    "end": 138,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "PREG\u00c3O N\u00ba 026/2019",
+                    "start": 140,
+                    "end": 158,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "LUZ",
+                    "start": 318,
+                    "end": 321,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG\"",
+                    "start": 324,
+                    "end": 327,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "04.09.2019",
+                    "start": 397,
+                    "end": 407,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "LUZ-MG",
+                    "start": 464,
+                    "end": 470,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "AV. LAERTON PAULINELLI, 153 BAIRRO MONSENHOR PARREIRAS-",
+                    "start": 480,
+                    "end": 535,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "LUZ /",
+                    "start": 536,
+                    "end": 541,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 542,
+                    "end": 544,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "( 37) 3421-3030",
+                    "start": 552,
+                    "end": 567,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "LUZ",
+                    "start": 604,
+                    "end": 607,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 610,
+                    "end": 612,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "21.08.2019",
+                    "start": 614,
+                    "end": 624,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "VANUSA C\u00c2NDIDA DE OLIVEIRA BRITO",
+                    "start": 645,
+                    "end": 677,
+                    "label": "PESSOA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "INFERMAGEM O MUNIC\u00cdPIO DE CATAS ALTAS, torna p\u00fablico aos interessados a realiza\u00e7\u00e3o de Preg\u00e3o Presencial R.P n.\u00ba 032/2016, cujo objeto \u00e9 a aquisi\u00e7\u00e3o de material de enfermagem para atender a Secretaria Municipal de Sa\u00fade, conforme edital e seus anexos. Data de abertura das Propostas: 17 de outubro de 2016, \u00e0s 09 horas, na sala de Licita\u00e7\u00f5es da Secretaria Municipal de Esporte e Lazer, \u00e0 rua Jos\u00e9 Tom\u00e9 n\u00ba 97, Centro em Catas Altas / MG. O edital encontra-se dispon\u00edvel no site: http://www.catasaltas.mg.gov.br. Mais informa\u00e7\u00f5es dever\u00e3o ser solicitadas via email: preg\u00e3o@catasaltas.mg.gov.br. Telefones: 3832-7112/ 3832-7208/ 3832-7583. Catas Altas, 23 de setembro de 2016. SAULO MORAIS DE CASTRO Prefeito Municipal de Catas Altas.",
+            "entities": [
+                {
+                    "entity": "CATAS ALTAS",
+                    "start": 26,
+                    "end": 37,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Preg\u00e3o Presencial R.P n.\u00ba 032/2016",
+                    "start": 86,
+                    "end": 120,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Secretaria Municipal de Sa\u00fade",
+                    "start": 189,
+                    "end": 218,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "17 de outubro de 2016",
+                    "start": 283,
+                    "end": 304,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Secretaria Municipal de Esporte e Lazer",
+                    "start": 344,
+                    "end": 383,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "rua Jos\u00e9 Tom\u00e9 n\u00ba 97, Centro em",
+                    "start": 387,
+                    "end": 417,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "Catas Altas /",
+                    "start": 418,
+                    "end": 431,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "MG",
+                    "start": 432,
+                    "end": 434,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "3832-7112/",
+                    "start": 602,
+                    "end": 612,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "3832-7208/",
+                    "start": 613,
+                    "end": 623,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "3832-7583",
+                    "start": 624,
+                    "end": 633,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "Catas Altas",
+                    "start": 635,
+                    "end": 646,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "23 de setembro de 2016",
+                    "start": 648,
+                    "end": 670,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "SAULO MORAIS DE CASTRO",
+                    "start": 672,
+                    "end": 694,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 695,
+                    "end": 703,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Catas Altas",
+                    "start": 717,
+                    "end": 728,
+                    "label": "MUNICIPIO"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "MUNIC\u00cdPIO DE CARNEIRINHO / MG. PREG\u00c3O PRESENCIAL DE REGISTRO DE PRE\u00c7OS N\u00ba 24/2017. Menor Pre\u00e7o. O Munic\u00edpio de Carneirinho-MG, atrav\u00e9s da Pregoeira Oficial vem tornar p\u00fablico a abertura do certame para o registro de pre\u00e7os para futura e eventual aquisi\u00e7\u00e3o de madeiras para manuten\u00e7\u00e3o de mata burros do Munic\u00edpio de Carneirinho-MG, por solicita\u00e7\u00e3o da Secretaria Municipal de Servi\u00e7os Rurais. Credenciamento: 27/04/2017 a partir das 10:30 hs. Data / hora de abertura dos Envelopes: 27/04/2017, \u00e0s 10:45 hs. Local de retirada do Edital: Av. Ambraulino Leandro Barbosa, n \u00b0 284, Centro, Carneirinho-MG. Fone: ( 34 ) 3454-0200. Carneirinho-MG,12/04/2017. CLAUDIA APARECIDA DE ALMEIDA OLIVEIRA Pregoeira.",
+            "entities": [
+                {
+                    "entity": "CARNEIRINHO",
+                    "start": 13,
+                    "end": 24,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 27,
+                    "end": 29,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "PREG\u00c3O PRESENCIAL DE REGISTRO DE PRE\u00c7OS N\u00ba 24/2017",
+                    "start": 31,
+                    "end": 81,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Carneirinho-MG",
+                    "start": 111,
+                    "end": 125,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Carneirinho-MG",
+                    "start": 315,
+                    "end": 329,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Secretaria Municipal de Servi\u00e7os Rurais",
+                    "start": 350,
+                    "end": 389,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "27/04/2017",
+                    "start": 407,
+                    "end": 417,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "27/04/2017",
+                    "start": 480,
+                    "end": 490,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Av. Ambraulino Leandro Barbosa, n \u00b0 284, Centro,",
+                    "start": 534,
+                    "end": 582,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "Carneirinho-MG",
+                    "start": 583,
+                    "end": 597,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "( 34 ) 3454-0200",
+                    "start": 605,
+                    "end": 621,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "Carneirinho-MG,12/04/2017",
+                    "start": 623,
+                    "end": 648,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "CLAUDIA APARECIDA DE ALMEIDA OLIVEIRA",
+                    "start": 650,
+                    "end": 687,
+                    "label": "PESSOA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "O Munic\u00edpio de Cruz\u00edlia, CNPJ n\u00ba 18.008.904/ 0001-29, por seu Prefeito Municipal, Sr. Joaquim Jos\u00e9 Parana\u00edba, informa que homologou o processo licitat\u00f3rio n\u00ba 00361/2014 \u2013 Preg\u00e3o Presencial n\u00ba 00031/2014 que teve por objeto a aquisi\u00e7\u00e3o de caminh\u00e3o 0Km com coletor e compactador de res\u00edduos s\u00f3lidos. Cruz\u00edlia MG, 11 de junho de 2014. JOAQUIM JOS\u00c9 PARANA\u00cdBA.",
+            "entities": [
+                {
+                    "entity": "Cruz\u00edlia",
+                    "start": 15,
+                    "end": 23,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "18.008.904/ 0001-29",
+                    "start": 33,
+                    "end": 52,
+                    "label": "CNPJ"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 62,
+                    "end": 70,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Joaquim Jos\u00e9 Parana\u00edba",
+                    "start": 86,
+                    "end": 108,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "processo licitat\u00f3rio n\u00ba 00361/2014",
+                    "start": 134,
+                    "end": 168,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Preg\u00e3o Presencial n\u00ba 00031/2014",
+                    "start": 171,
+                    "end": 202,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Cruz\u00edlia",
+                    "start": 298,
+                    "end": 306,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 307,
+                    "end": 309,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "11 de junho de 2014",
+                    "start": 311,
+                    "end": 330,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "JOAQUIM JOS\u00c9 PARANA\u00cdBA",
+                    "start": 332,
+                    "end": 354,
+                    "label": "PESSOA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "Prefeitura Municipal de Muria\u00e9 publica adiamento do Preg\u00e3o Presencial n\u00ba 157/2019 \u2013 Processo n\u00ba 193/2019 - Requisitante: SMS \u2013 Objeto: Registro de pre\u00e7os para aquisi\u00e7\u00e3o de medicamentos Programa de Medicamentos B\u00e1sicos, para suprir a demanda de medicamentos dos usu\u00e1rios \u2013 Nova data de abertura da sess\u00e3o de licita\u00e7\u00e3o dia 08/10/2019 \u00e0s 08:30 horas, na Sala de Reuni\u00f5es do Depto. de Licita\u00e7\u00f5es, situado na Av. Maestro Sans\u00e3o, 236, 3\u00ba Andar, Ed. Centro Administrativo \u201c Pres. Tancredo Neves \u201d, Centro, Muria\u00e9, MG \u2013 Justificativa: Errata no forma de aquisi\u00e7\u00e3o na coluna UNIDADE. IOANNIS KONSTANTINOS GRAMMATIKOPOULOS Prefeito Municipal",
+            "entities": [
+                {
+                    "entity": "Muria\u00e9",
+                    "start": 24,
+                    "end": 30,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Preg\u00e3o Presencial n\u00ba 157/2019",
+                    "start": 52,
+                    "end": 81,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Processo n\u00ba 193/2019",
+                    "start": 84,
+                    "end": 104,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "SMS",
+                    "start": 121,
+                    "end": 124,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "08/10/2019",
+                    "start": 321,
+                    "end": 331,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Av. Maestro Sans\u00e3o, 236, 3\u00ba Andar, Ed. Centro Administrativo \u201c Pres. Tancredo Neves \u201d, Centro,",
+                    "start": 404,
+                    "end": 498,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "Muria\u00e9,",
+                    "start": 499,
+                    "end": 506,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "MG",
+                    "start": 507,
+                    "end": 509,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "IOANNIS KONSTANTINOS GRAMMATIKOPOULOS",
+                    "start": 575,
+                    "end": 612,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 613,
+                    "end": 621,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "O Munic\u00edpio de Jo\u00e3o Monlevade tornap\u00fablica alicita\u00e7\u00e3ona modalidade Concorr\u00eancia05/2019. Objeto: CONTRATA\u00c7\u00c3O DE EMPRESA PARA REFORMA DA QUADRA DE ESPORTES DO CENTRO EDUCACIONAL DE JO\u00c3O MONLEVADE, com fornecimento de equipamentos, m\u00e3o-de-obra, materiais e servi\u00e7os t\u00e9cnicos necess\u00e1rios \u00e0 execu\u00e7\u00e3o do objeto. Data de abertura:30/10/2019\u00e0s 14:00 horas. Editaldispon\u00edvel no Setor de Licita\u00e7\u00f5es para c\u00f3pia magn\u00e9tica e no site do munic\u00edpio ( www.pmjm.mg.gov.br ). Mais informa\u00e7\u00f5es: 31 3859-2525 ( Setor de Licita\u00e7\u00f5es ). Jo\u00e3o Monlevade,25 de Setembro de 2019. MARLENE PESSOA FERREIRA Secret\u00e1ria Municipal de Administra\u00e7\u00e3o",
+            "entities": [
+                {
+                    "entity": "Jo\u00e3o Monlevade",
+                    "start": 15,
+                    "end": 29,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Concorr\u00eancia05/2019",
+                    "start": 67,
+                    "end": 86,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "JO\u00c3O MONLEVADE",
+                    "start": 179,
+                    "end": 193,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "abertura:30/10/2019\u00e0s",
+                    "start": 314,
+                    "end": 335,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Setor de Licita\u00e7\u00f5es",
+                    "start": 369,
+                    "end": 388,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "31 3859-2525",
+                    "start": 475,
+                    "end": 487,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "Setor de Licita\u00e7\u00f5es",
+                    "start": 490,
+                    "end": 509,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Jo\u00e3o",
+                    "start": 513,
+                    "end": 517,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Monlevade,25",
+                    "start": 518,
+                    "end": 530,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "de Setembro de 2019",
+                    "start": 531,
+                    "end": 550,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "MARLENE PESSOA FERREIRA",
+                    "start": 552,
+                    "end": 575,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Secret\u00e1ria",
+                    "start": 576,
+                    "end": 586,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "Ata de Registro de Pre\u00e7o n\u00ba 020/2014. Objeto: Registro de Pre\u00e7os para futura e eventual contrata\u00e7\u00e3o de empresa para a realiza\u00e7\u00e3o de Servi\u00e7os el\u00e9tricos e Mec\u00e2nicos para manuten\u00e7\u00e3o da Frota do Munic\u00edpio de C\u00f3rrego Danta no ano de 2014. Contratante: Prefeitura Municipal de C\u00f3rrego Danta \u2013 MG. Contratada: Agnaldo Aparecido de Oliveira Paim \u2013 ME Valor da Ata de Registro de Pre\u00e7os: R$ 40.000,00 ( quarenta mil reais ). Prazo de validade: 31 de dezembro de 2014, podendo ser prorrogado. C\u00f3rrego Danta, 05 de fevereiro de 2014. CASSIANO PEREIRA DA SILVA Setor de Compras e Licita\u00e7\u00f5es",
+            "entities": [
+                {
+                    "entity": "Registro de Pre\u00e7o n\u00ba 020/2014",
+                    "start": 7,
+                    "end": 36,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "C\u00f3rrego Danta",
+                    "start": 204,
+                    "end": 217,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Prefeitura Municipal de",
+                    "start": 247,
+                    "end": 270,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "C\u00f3rrego Danta \u2013",
+                    "start": 271,
+                    "end": 286,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 287,
+                    "end": 289,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Agnaldo Aparecido de Oliveira Paim",
+                    "start": 303,
+                    "end": 337,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "\u2013 ME",
+                    "start": 338,
+                    "end": 342,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "R$ 40.000,00",
+                    "start": 379,
+                    "end": 391,
+                    "label": "VALOR\\_MONETARIO"
+                },
+                {
+                    "entity": "31 de dezembro de 2014",
+                    "start": 435,
+                    "end": 457,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "C\u00f3rrego Danta",
+                    "start": 483,
+                    "end": 496,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "05 de fevereiro de 2014",
+                    "start": 498,
+                    "end": 521,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "CASSIANO PEREIRA DA SILVA",
+                    "start": 523,
+                    "end": 548,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Setor de Compras e Licita\u00e7\u00f5es",
+                    "start": 549,
+                    "end": 578,
+                    "label": "ORGANIZACAO"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "O Prefeito Municipal de Congonhal, no uso de suas atribui\u00e7\u00f5es, HOMOLOGA o julgamento feito pela Comiss\u00e3o de Licita\u00e7\u00e3o designada pela Portaria Administrativa n \u00b0 1884 de 07 janeiro de 2019, referente ao Processo Licitat\u00f3rio n \u00b0 0076/2019 na modalidade PREG\u00c2O| PRESENCIAL n\u00ba 0041/2019 que tem como objeto o REGISTRO DE PRE\u00c7OS PARA FUTURA E EVENTUAL AQUISI\u00c7\u00c3O PARCIAL DE MARMITEX PARA OS DIVERSOS SETORES DA PREFEITURA MUNICIPAL DE CONGONHAL, CONFORME SOLICITA\u00c7\u00c3O DAS DIVERSAS SECRETARIAS DE DA PREFEITURA MUNICIPAL DE CONGONHAL / MG., conforme especificado no Edital. Congonhal-MG, 16 de setembro de 2019. RUBENS VILELA DOS SANTOS J\u00daNIOR Prefeito Municipal.",
+            "entities": [
+                {
+                    "entity": "Prefeito",
+                    "start": 2,
+                    "end": 10,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Congonhal",
+                    "start": 24,
+                    "end": 33,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Portaria Administrativa n \u00b0 1884",
+                    "start": 133,
+                    "end": 165,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "07 janeiro de 2019",
+                    "start": 169,
+                    "end": 187,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Processo Licitat\u00f3rio n \u00b0 0076/2019",
+                    "start": 202,
+                    "end": 236,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "PREG\u00c2O| PRESENCIAL n\u00ba 0041/2019",
+                    "start": 251,
+                    "end": 282,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "CONGONHAL",
+                    "start": 516,
+                    "end": 525,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 528,
+                    "end": 530,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "Congonhal-MG",
+                    "start": 566,
+                    "end": 578,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "16 de setembro de 2019",
+                    "start": 580,
+                    "end": 602,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "RUBENS VILELA DOS SANTOS J\u00daNIOR",
+                    "start": 604,
+                    "end": 635,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 636,
+                    "end": 644,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "PROCESSO LICITAT\u00d3RIO N\u00ba 075/2016 DISPENSA N\u00ba 012/2016 Pref. Mun. de Capit\u00e3o En\u00e9as / MG \u2013 torna p\u00fablico o contrato celebrado entre a Prefeitura Municipal De Capit\u00e3o En\u00e9as, Estado de Minas Gerais e o Sr. Maria De Fatima Alves Rodrigues, ( CONTRATO N\u00ba 116/2016 ). Referente \u00e0 LOCA\u00c7\u00c3O DE IMOVEL PARA ATENDER AS NECESSIDADES DA SECRETARIA MUNICIPAL DE SA\u00daDE NA INSTALA\u00c7\u00c3O DO SAMU, DEVIDO EST\u00c1 EM REFORMA A SUA BASE, NO MUNIC\u00cdPIO DE CAPIT\u00c3O EN\u00c9AS / MG. Valor Global Estimado R$ 1.500,00 ( um mil quinhentos reais ), vig\u00eancia 03 ( tr\u00eas ) m\u00eases a partir da assinatura. Quaisquer informa\u00e7\u00f5es poder\u00e3o ser obtidas no telefone ( 038 ) 3235-1001 ou pelo e-mail: licitacao.capitaoeneas@hotmail.com LUCAS FERREIRA SANTOS Presidente da CPL",
+            "entities": [
+                {
+                    "entity": "PROCESSO LICITAT\u00d3RIO N\u00ba 075/2016",
+                    "start": 0,
+                    "end": 32,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "DISPENSA N\u00ba 012/2016",
+                    "start": 33,
+                    "end": 53,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Capit\u00e3o En\u00e9as",
+                    "start": 68,
+                    "end": 81,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 84,
+                    "end": 86,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Capit\u00e3o En\u00e9as",
+                    "start": 156,
+                    "end": 169,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Minas Gerais",
+                    "start": 181,
+                    "end": 193,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "Maria De Fatima Alves Rodrigues",
+                    "start": 202,
+                    "end": 233,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "CONTRATO N\u00ba 116/2016",
+                    "start": 237,
+                    "end": 257,
+                    "label": "CONTRATO"
+                },
+                {
+                    "entity": "SECRETARIA MUNICIPAL DE SA\u00daDE",
+                    "start": 323,
+                    "end": 352,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "SAMU",
+                    "start": 370,
+                    "end": 374,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "CAPIT\u00c3O EN\u00c9AS",
+                    "start": 427,
+                    "end": 440,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 443,
+                    "end": 445,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "R$ 1.500,00",
+                    "start": 469,
+                    "end": 480,
+                    "label": "VALOR\\_MONETARIO"
+                },
+                {
+                    "entity": "( 038 ) 3235-1001",
+                    "start": 615,
+                    "end": 632,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "LUCAS FERREIRA SANTOS",
+                    "start": 684,
+                    "end": 705,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Presidente",
+                    "start": 706,
+                    "end": 716,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "CPL",
+                    "start": 720,
+                    "end": 723,
+                    "label": "ORGANIZACAO"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "AVISO DE PUBLICA\u00c7\u00c3O PROCESSO DE LICITA\u00c7\u00c3O N\u00ba 130/2019 PREG\u00c3O PRESENCIAL N\u00ba 047/2019 A Prefeitura Municipal de Mar de Espanha, torna p\u00fablico que far\u00e1 realizar licita\u00e7\u00e3o dia 13/08/2019 \u00e0s 10:00hs, na modalidade Preg\u00e3o Presencial para Contrata\u00e7\u00e3o de presta\u00e7\u00e3o de servi\u00e7o de apoio para os eventos a ser realizados no munic\u00edpio de Mar de Espanha. As informa\u00e7\u00f5es poder\u00e3o ser obtidas atrav\u00e9s do endere\u00e7o eletr\u00f4nico: licitacao@mardeespanha.mg.gov.br. Mar de Espanha, 26 de julho de 2019 RAFAEL DE SOUZA LANINI Pregoeiro",
+            "entities": [
+                {
+                    "entity": "PROCESSO DE LICITA\u00c7\u00c3O N\u00ba 130/2019",
+                    "start": 20,
+                    "end": 53,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "PREG\u00c3O PRESENCIAL N\u00ba 047/2019",
+                    "start": 54,
+                    "end": 83,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Prefeitura",
+                    "start": 86,
+                    "end": 96,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Mar de Espanha",
+                    "start": 110,
+                    "end": 124,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "13/08/2019",
+                    "start": 172,
+                    "end": 182,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "10:00hs",
+                    "start": 186,
+                    "end": 193,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Mar de Espanha",
+                    "start": 326,
+                    "end": 340,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Mar de Espanha",
+                    "start": 443,
+                    "end": 457,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "26 de julho de 2019",
+                    "start": 459,
+                    "end": 478,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "RAFAEL DE SOUZA LANINI",
+                    "start": 479,
+                    "end": 501,
+                    "label": "PESSOA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "O MUNIC\u00cdPIO DE LAGOA DA PRATA \u2013 torna p\u00fablica licita\u00e7\u00e3o na modalidade de PREG\u00c3O n\u00ba. 30/2014. OBJETO: Aquisi\u00e7\u00e3o e instala\u00e7\u00e3o de ares condicionados e cortinas de ar para o Teatro Fausto Rezende no terminal tur\u00edstico. Tipo: Menor Pre\u00e7o Unit\u00e1rio. Abertura das propostas: 25/03/2014 \u00e0s 13 horas. O edital poder\u00e1 ser adquirido na Rua Joaquim Gomes Pereira, 825, Centro, ou pelo site.www.lagoadaprata.mg.gov.br, Pregoeiro, 12/03/2014.",
+            "entities": [
+                {
+                    "entity": "LAGOA DA PRATA",
+                    "start": 15,
+                    "end": 29,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "PREG\u00c3O n\u00ba. 30/2014",
+                    "start": 73,
+                    "end": 91,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Teatro Fausto Rezende",
+                    "start": 170,
+                    "end": 191,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "25/03/2014",
+                    "start": 267,
+                    "end": 277,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Rua Joaquim Gomes Pereira, 825, Centro",
+                    "start": 324,
+                    "end": 362,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "Pregoeiro",
+                    "start": 405,
+                    "end": 414,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "12/03/2014",
+                    "start": 416,
+                    "end": 426,
+                    "label": "DATA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "PREFEITURA MUNICIPAL DE CORA\u00c7\u00c3O DE JESUS-MG - EXTRATO DE CONTRATO Contrato n\u00ba 038/2014 \u2013 Contratante: Munic\u00edpio de Cora\u00e7\u00e3o de Jesus-    G - Contrata d : CONSTRUTO A NOVA S LT A \u2013 Licita\u00e7 \u00e3 : Proces o Administrati o 041/20 4 \u2013 Modalida e Toma a  e Pre\u00e7 s 002/20 4 - Obje t : Contrata\u00e7 o  e Empre a pa a realiza\u00e7 o  e pavimenta\u00e7 o asf\u00e1lti a  e vi s urban s nes a cida e  e Cora\u00e7 o  e Jesus- G \u2013 Dota\u00e7 o Or\u00e7ament\u00e1r i : 12.1.1.15.451.31.3076.449051 0 \u2013 Vig\u00eanc a 11/06/20 4 a 11/12//20 4 \u2013 Val r  o contra t :  $ 400.066, 4 Prefeitu a Municip l  e Cora\u00e7 o  e Jes u ,  1  e jun o  e 20 4 PED O ARAU O MAGALH\u00c3 S NE O Prefei o Municip",
+            "entities": [
+                {
+                    "entity": "PREFEITURA",
+                    "start": 0,
+                    "end": 10,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "CORA\u00c7\u00c3O DE JESUS-MG",
+                    "start": 24,
+                    "end": 43,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Contrato n\u00ba 038/2014",
+                    "start": 66,
+                    "end": 86,
+                    "label": "CONTRATO"
+                },
+                {
+                    "entity": "Cora\u00e7\u00e3o de Jesus-",
+                    "start": 115,
+                    "end": 132,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": ": CONSTRUTO A NOVA S LT A",
+                    "start": 151,
+                    "end": 176,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": ": Proces o Administrati o 041/20 4",
+                    "start": 189,
+                    "end": 223,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "e Toma a  e Pre\u00e7 s 002/20 4",
+                    "start": 235,
+                    "end": 262,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "e Cora\u00e7 o  e Jesus-",
+                    "start": 369,
+                    "end": 388,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": ": 12.1.1.15.451.31.3076.449051",
+                    "start": 414,
+                    "end": 444,
+                    "label": "DOTACAO\\_ORCAMENTARIA"
+                },
+                {
+                    "entity": "a 11/06/20",
+                    "start": 456,
+                    "end": 466,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "a 11/12//20",
+                    "start": 469,
+                    "end": 480,
+                    "label": "DATA"
+                },
+                {
+                    "entity": ":  $ 400.066,",
+                    "start": 503,
+                    "end": 516,
+                    "label": "VALOR\\_MONETARIO"
+                },
+                {
+                    "entity": "e Cora\u00e7 o  e Jes u",
+                    "start": 541,
+                    "end": 559,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": ",  1  e jun o  e 20",
+                    "start": 560,
+                    "end": 579,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "4 PED O ARAU O MAGALH\u00c3 S NE O Prefei",
+                    "start": 580,
+                    "end": 616,
+                    "label": "PESSOA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "Extrato de Termo Aditivo: 3 Aditivo Para Acr\u00e9scimo do Valor Contratado Ata 049/2019 Processo .....: Prc 00031/2019 Licita\u00e7\u00e3o: Prc 0025/2019 Contratante ..: Prefeitura Municipal de Cabo Verde ( mg ) Contratada ...: D.f. Astolhpo Epp Valor ........: R$ 991,70 Assinatura ...: 02/03/2020 Objeto .......: Acr\u00e9scimo de Quantidade",
+            "entities": [
+                {
+                    "entity": "Ata 049/2019",
+                    "start": 71,
+                    "end": 83,
+                    "label": "ATA"
+                },
+                {
+                    "entity": "Prc 00031/2019",
+                    "start": 100,
+                    "end": 114,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Prc 0025/2019",
+                    "start": 126,
+                    "end": 139,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Cabo Verde",
+                    "start": 180,
+                    "end": 190,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "mg",
+                    "start": 193,
+                    "end": 195,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "D.f. Astolhpo Epp",
+                    "start": 214,
+                    "end": 231,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "R$ 991,70",
+                    "start": 248,
+                    "end": 257,
+                    "label": "VALOR\\_MONETARIO"
+                },
+                {
+                    "entity": "02/03/2020",
+                    "start": 274,
+                    "end": 284,
+                    "label": "DATA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "O Munic\u00edpio de Jequitib\u00e1 / MG, atrav\u00e9s do Setor de Licita\u00e7\u00f5es, em obedi\u00eancia ao comando das Leis Federais n\u00ba 8.666/1993, 10.520/2002, torna p\u00fablico aos interessados em geral a HOMOLOGA\u00c7\u00c3O / ADJUDICA\u00c7\u00c3O DO PROCESSO LICITAT\u00d3RIO 63/2018 \u2013 PREG\u00c3O PRESENCIAL 42/2018, conforme descrito a seguir: Licitante proponente: HZ TELECOMUNICA\u00c7\u00d5ES E INFORM\u00c1TICA LTDA \u2013 ME - Objeto: \u201c Contrata\u00e7\u00e3o de presta\u00e7\u00e3o de servi\u00e7os de conectividade de internet \u201d. Os autos se encontram com vista franqueada aos interessados. Mais informa\u00e7\u00f5es poder\u00e3o ser obtidas atrav\u00e9s do ( 31 ) 3717-6222 \u2013 telefone www.jequitiba.mg.gov.br \u2013 Helenice Jeber Machado \u2013 Pregoeira, Douglas Soares Rodrigues \u2013 Comiss\u00e3o Permanente de Licita\u00e7\u00f5es \u2013 Leis Federais n\u00bas: 8.666/93 \u2013 10.520/2002.",
+            "entities": [
+                {
+                    "entity": "Jequitib\u00e1",
+                    "start": 15,
+                    "end": 24,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 27,
+                    "end": 29,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "Leis Federais n\u00ba 8.666/1993, 10.520/2002",
+                    "start": 92,
+                    "end": 132,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "PROCESSO LICITAT\u00d3RIO 63/2018",
+                    "start": 205,
+                    "end": 233,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "PREG\u00c3O PRESENCIAL 42/2018",
+                    "start": 236,
+                    "end": 261,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "HZ TELECOMUNICA\u00c7\u00d5ES E INFORM\u00c1TICA LTDA",
+                    "start": 313,
+                    "end": 351,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "( 31 ) 3717-6222",
+                    "start": 547,
+                    "end": 563,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "Helenice Jeber Machado",
+                    "start": 601,
+                    "end": 623,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Pregoeira",
+                    "start": 626,
+                    "end": 635,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Douglas Soares Rodrigues",
+                    "start": 637,
+                    "end": 661,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Comiss\u00e3o Permanente de Licita\u00e7\u00f5es",
+                    "start": 664,
+                    "end": 697,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Leis Federais n\u00bas: 8.666/93 \u2013 10.520/2002",
+                    "start": 700,
+                    "end": 741,
+                    "label": "LEGISLACAO"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "DEMSUR - DEPARTAMENTO MUNICIPAL DE SANEAMENTO URBANO - MURIA\u00c9 - MG \u2013 PUBLICA O PREG\u00c3O PRESENCIAL N\u00ba 073/2018 \u2013 OBJETO: \u2013 CONTRATA\u00c7\u00c3O DE EMPRESA ESPECIALIZADA PARA PRESTA\u00c7\u00c3O DE SERVI\u00c7OS DE RASTREAMENTO E MONITORAMENTO ON-LINE DOS VE\u00cdCULOS PERTENCENTES A FROTA DESTA AUTARQUIA, COM O FORNECIMENTO DOS EQUIPAMENTOS EM COMODATO. ENTREGA DOS ENVELOPES DE DOCUMENTA\u00c7\u00c3O E PROPOSTA AT\u00c9 O DIA 23/07/2018 \u00c0S 13:30 HORAS COM ABERTURA NESTE MESMO DIA E HOR\u00c1RIO NO EDIF\u00cdCIO DO SETOR DE ATENDIMENTO AO P\u00daBLICO DO DEMSUR NA SALA DE LICITA\u00c7\u00d5ES. EDITAL DISPON\u00cdVEL A PARTIR DE 02/07/2018 SITE INFORMA\u00c7\u00d5ES WWW.DEMSUR.COM.BR OU PELO TELEFONE ( 32 ) 3696-3459 \u2013 GERALDO VERGILINO DE FREITAS JUNIOR Diretor Geral do DEMSUR.PELO \u2013",
+            "entities": [
+                {
+                    "entity": "DEMSUR",
+                    "start": 0,
+                    "end": 6,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "DEPARTAMENTO MUNICIPAL DE SANEAMENTO URBANO",
+                    "start": 9,
+                    "end": 52,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "MURIA\u00c9",
+                    "start": 55,
+                    "end": 61,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 64,
+                    "end": 66,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "PREG\u00c3O PRESENCIAL N\u00ba 073/2018",
+                    "start": 79,
+                    "end": 108,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "23/07/2018",
+                    "start": 384,
+                    "end": 394,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "DEMSUR",
+                    "start": 499,
+                    "end": 505,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "02/07/2018",
+                    "start": 559,
+                    "end": 569,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "( 32 ) 3696-3459",
+                    "start": 622,
+                    "end": 638,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "GERALDO VERGILINO DE FREITAS JUNIOR",
+                    "start": 641,
+                    "end": 676,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Diretor",
+                    "start": 677,
+                    "end": 684,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "A Prefeitura Municipal de Serra Azul de Minas torna p\u00fablico que far\u00e1 realizar Processo de Licita\u00e7\u00e3o N\u00ba 039/2015 \u2013 Preg\u00e3o Presencial N\u00ba 027/2015. Objeto: REGISTRO DE PRE\u00c7OS PARA EVENTUAL AQUISI\u00c7\u00c3O DE PF ( PRATOS FEITOS ) PARA OS SERVIDORES E PRESTADORES DE SERVI\u00c7O NO MUNICIPIO DE GUANH\u00c3ES. Credenciamento at\u00e9 as 09:00hs do dia 14/05/2015 abertura dia 14/05/2015 \u00e1s 09:00 horas. Aos interessados, informa\u00e7\u00f5es bem como edital completo estar\u00e1 a disposi\u00e7\u00e3o na Prefeitura Municipal de Serra Azul de Minas a Av. Geraldo Gomes de Brito N\u00ba94, centro \u2013   Ser a Az l  e Min a , telefo e (  8 ) 3547-12 2 . Ser a Az l  e Min a ,  8  e abr l  e 20 1 . TATYA A APARECI A FERREI A Pregoei",
+            "entities": [
+                {
+                    "entity": "Prefeitura",
+                    "start": 2,
+                    "end": 12,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Serra Azul de Minas",
+                    "start": 26,
+                    "end": 45,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Processo de Licita\u00e7\u00e3o N\u00ba 039/2015",
+                    "start": 78,
+                    "end": 111,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Preg\u00e3o Presencial N\u00ba 027/2015",
+                    "start": 114,
+                    "end": 143,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "14/05/2015",
+                    "start": 327,
+                    "end": 337,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "14/05/2015",
+                    "start": 351,
+                    "end": 361,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Prefeitura Municipal de Serra Azul de Minas",
+                    "start": 456,
+                    "end": 499,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Av. Geraldo Gomes de Brito N\u00ba94, centro \u2013   Ser a Az l  e Min a",
+                    "start": 502,
+                    "end": 565,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "(  8 ) 3547-12 2",
+                    "start": 577,
+                    "end": 593,
+                    "label": "TEL"
+                },
+                {
+                    "entity": ". Ser a Az l  e Min",
+                    "start": 594,
+                    "end": 613,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": ",  8  e abr l  e 20",
+                    "start": 616,
+                    "end": 635,
+                    "label": "DATA"
+                },
+                {
+                    "entity": ". TATYA A APARECI A FERREI A Pregoei",
+                    "start": 638,
+                    "end": 674,
+                    "label": "PESSOA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "PROCESSO LICITAT\u00d3RIO N \u00b0 091/2017 CONCORR\u00caNCIA N\u00ba 002/2017 PARTES: MUNIC\u00cdPIO DE ITANHOMI X GERBER JOS\u00c9 OBJETO: Delega\u00e7\u00e3o da explora\u00e7\u00e3o do servi\u00e7o de t\u00e1xi no munic\u00edpio de Itanhomi, mediante concess\u00e3o de 31 ( trinta e uma ) vagas de pontos de t\u00e1xi para pessoas f\u00edsicas e pessoas inscritas no M.E.I - Microempreendedor Individual, distribu\u00eddas em 09 ( nove ) pontos, pelo prazo 120 ( cento e vinte ) meses, renov\u00e1veis por igual per\u00edodo, conforme especifica\u00e7\u00f5es constantes do Edital. DATA: 10/07/2018 VIGENCIA: 10/07/2018 a 10/07/2028. Prefeitura Municipal de Itanhomi-MG, 10 de junho de 2018. DR. ANTONIELI COSTA MAIA Prefeito em Exerc\u00edcio",
+            "entities": [
+                {
+                    "entity": "PROCESSO LICITAT\u00d3RIO N \u00b0 091/2017",
+                    "start": 0,
+                    "end": 33,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "CONCORR\u00caNCIA N\u00ba 002/2017",
+                    "start": 34,
+                    "end": 58,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "ITANHOMI",
+                    "start": 80,
+                    "end": 88,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Itanhomi",
+                    "start": 170,
+                    "end": 178,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "M.E.I",
+                    "start": 290,
+                    "end": 295,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "10/07/2018",
+                    "start": 486,
+                    "end": 496,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "10/07/2018",
+                    "start": 507,
+                    "end": 517,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "10/07/2028",
+                    "start": 520,
+                    "end": 530,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Itanhomi-MG",
+                    "start": 556,
+                    "end": 567,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "10 de junho de 2018",
+                    "start": 569,
+                    "end": 588,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "ANTONIELI COSTA MAIA",
+                    "start": 594,
+                    "end": 614,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 615,
+                    "end": 623,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "A PREFEITURA MUNICIPAL DE S\u00c3O GOTARDO TORNA P\u00daBLICO, AVISO DE CANCELAMENTO DE LICITA\u00c7\u00c3O: PROCESSO LICITAT\u00d3RIO N\u00ba. PMSG / CPL/117/2014 \u2013 TOMADA DE PRE\u00c7OS N\u00ba 021/2014. MENOR PRE\u00c7O GLOBAL. OBJETO: CONTRATA\u00c7\u00c3O DE EMPRESA DE ENGENHARIA PARA CONSTRU\u00c7\u00c3O DE UMA UNIDADE B\u00c1SICA DE SA\u00daDE TIPO II, NO DISTRITO DE GUARDA DOS FERREIROS, MUNIC\u00cdPIO DE S\u00c3O GOTARDO, DE ACORDO COM O REPASSE ADVINDO DO MINIST\u00c9RIO DA SA\u00daDE, PROPOSTA N \u00b0 11283282000113007, EM CONFORMIDADE COM A PORTARIA N \u00b0 340 DE 04 DE MAR\u00c7O DE 2013. CANCELAMENTO DISPONIVEL NO SITE DA PREFEITURA MUNICIPAL DE S\u00c3O GOTARDO / MG ( WWW.SAOGOTARDO.MG.GOV.BR ). INFORMA\u00c7\u00d5ES: TEL ( 34 ) 3671-7103/7104 OU E-MAIL: LICITACAOSG@GMAIL.COM SEIJI EDUARDO SEKITA. Prefeito Municipal",
+            "entities": [
+                {
+                    "entity": "PREFEITURA",
+                    "start": 2,
+                    "end": 12,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "S\u00c3O GOTARDO",
+                    "start": 26,
+                    "end": 37,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "PROCESSO LICITAT\u00d3RIO N\u00ba. PMSG / CPL/117/2014",
+                    "start": 89,
+                    "end": 133,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "TOMADA DE PRE\u00c7OS N\u00ba 021/2014",
+                    "start": 136,
+                    "end": 164,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "MENOR PRE\u00c7O GLOBAL",
+                    "start": 166,
+                    "end": 184,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "S\u00c3O GOTARDO",
+                    "start": 337,
+                    "end": 348,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MINIST\u00c9RIO DA SA\u00daDE",
+                    "start": 385,
+                    "end": 404,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "PORTARIA N \u00b0 340",
+                    "start": 460,
+                    "end": 476,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "04 DE MAR\u00c7O DE 2013",
+                    "start": 480,
+                    "end": 499,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "S\u00c3O GOTARDO",
+                    "start": 560,
+                    "end": 571,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 574,
+                    "end": 576,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "( 34 ) 3671-7103/7104",
+                    "start": 624,
+                    "end": 645,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "SEIJI EDUARDO SEKITA",
+                    "start": 679,
+                    "end": 699,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 701,
+                    "end": 709,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "PROCESSO ADMINISTRATIVO 078/2018 INEXIGIBILIDADE DE LICITA\u00c7\u00c3O 009/2018 EDITAL DE CREDENCIAMENTO 002/2018 Prezado Senhor O Munic\u00edpio de S\u00e3o Jo\u00e3o da Ponte / MG, tem a satisfa\u00e7\u00e3o de convocar a BANDA FARRA DOS BROTHERS PARA APRESENTA\u00c7\u00c3O DE SHOW ART\u00cdSTICO NO EVENTO FEIRA CULTURAL, NA DATA 25 DE JULHO DE 2019, a fim de atender a solicita\u00e7\u00e3o do Secret\u00e1rio Municipal de Agricultura e Meio Ambiente e secret\u00e1rio municipal de educa\u00e7\u00e3o, integrada com o departamento municipal de cultura, esporte, lazer e turismo. Conforme \u00e0 ordem de credenciamento, a supracitada banda foi credenciada para os eventos municipais, conforme consta nos autos. Desde j\u00e1 agradecemos e nos colocamos a disposi\u00e7\u00e3o. Atenciosamente, RAFAELA ROSANA PEREIRA Presidente da CPL",
+            "entities": [
+                {
+                    "entity": "PROCESSO ADMINISTRATIVO 078/2018",
+                    "start": 0,
+                    "end": 32,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "INEXIGIBILIDADE DE LICITA\u00c7\u00c3O 009/2018",
+                    "start": 33,
+                    "end": 70,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "S\u00e3o Jo\u00e3o da Ponte",
+                    "start": 135,
+                    "end": 152,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 155,
+                    "end": 157,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "25 DE JULHO DE 2019",
+                    "start": 285,
+                    "end": 304,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Secret\u00e1rio Municipal de Agricultura e Meio Ambiente",
+                    "start": 340,
+                    "end": 391,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "secret\u00e1rio municipal de educa\u00e7\u00e3o",
+                    "start": 394,
+                    "end": 426,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "departamento municipal de cultura, esporte, lazer e turismo",
+                    "start": 444,
+                    "end": 503,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "RAFAELA ROSANA PEREIRA",
+                    "start": 699,
+                    "end": 721,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Presidente",
+                    "start": 722,
+                    "end": 732,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "CPL",
+                    "start": 736,
+                    "end": 739,
+                    "label": "ORGANIZACAO"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "AVISO DE LICITA\u00c7\u00c3O A Prefeitura Municipal de Ara\u00fajos torna p\u00fablico que ir\u00e1 realizar dia 25 de mar\u00e7o de 2015, processo licitat\u00f3rio na modalidade Preg\u00e3o n\u00ba 002/2015, que tem como objeto a contrata\u00e7\u00e3o de empresa especializada para presta\u00e7\u00e3o de servi\u00e7os de organiza\u00e7\u00e3o, produ\u00e7\u00e3o executiva e art\u00edstica para realiza\u00e7\u00e3o do 2\u00ba Ara\u00fajos Fest Cowtry. Entrega dos envelopes dia 25 de mar\u00e7o de 2015 \u00e0s 08:30 horas. Informa\u00e7\u00f5es / edital: Avenida Primeiro de Janeiro, n\u00ba 1748 \u2013 Centro \u2013 Ara\u00fajos / MG ( 37 ) 3288-3018. E-mail: licitaaraujosprefeitura@outlook.com \u2013 O edital encontra-se dispon\u00edvel no site www.araujos.mg.gov.br Ara\u00fajos ( MG ), 27 de fevereiro de 2015. S\u00d4NIA MARIA BATISTA COUTO. Prefeita Municipal. - Telefone",
+            "entities": [
+                {
+                    "entity": "Prefeitura",
+                    "start": 21,
+                    "end": 31,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Ara\u00fajos",
+                    "start": 45,
+                    "end": 52,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "25 de mar\u00e7o de 2015",
+                    "start": 88,
+                    "end": 107,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Preg\u00e3o n\u00ba 002/2015",
+                    "start": 144,
+                    "end": 162,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "25 de mar\u00e7o de 2015",
+                    "start": 366,
+                    "end": 385,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "Avenida Primeiro de Janeiro, n\u00ba 1748 \u2013 Centro \u2013",
+                    "start": 424,
+                    "end": 471,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "Ara\u00fajos /",
+                    "start": 472,
+                    "end": 481,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "MG",
+                    "start": 482,
+                    "end": 484,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "( 37 ) 3288-3018",
+                    "start": 485,
+                    "end": 501,
+                    "label": "TEL"
+                },
+                {
+                    "entity": "Ara\u00fajos",
+                    "start": 611,
+                    "end": 618,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 621,
+                    "end": 623,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "27 de fevereiro de 2015",
+                    "start": 627,
+                    "end": 650,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "S\u00d4NIA MARIA BATISTA COUTO",
+                    "start": 652,
+                    "end": 677,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeita",
+                    "start": 679,
+                    "end": 687,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "EXTRATO DE TERMO ADITIVO PROCESSO DE LICITA\u00c7\u00c3O N.\u00ba 0074/2014 PREG\u00c3O N\u00ba.: 0027/2014 Contratante: Prefeitura Municipal de Pedra Bonita - MG Trov\u00e3o Vitor de Oliveira - Prefeito Municipal Contratado: GERALDO PEREIRA DA SILVA - ME, estabelecida a Av. Jacob Dornelas Neto, n\u00ba160, no Munic\u00edpio de Pedra Bonita - MG, CNPJ n\u00ba.17.727.686/ 0001-10. Objeto: aquisi\u00e7\u00e3o de material esportivo para escolinha de futebol e secretaria de esporte do Munic\u00edpio de Pedra Bonita. O prazo de vig\u00eancia do presente Termo Aditivo \u00e9 de 31/12/2014 para 30/04/2015. Pedra Bonita, 31 de dezembro de 2014",
+            "entities": [
+                {
+                    "entity": "PROCESSO DE LICITA\u00c7\u00c3O N.\u00ba 0074/2014",
+                    "start": 25,
+                    "end": 60,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "PREG\u00c3O N\u00ba.: 0027/2014",
+                    "start": 61,
+                    "end": 82,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Prefeitura",
+                    "start": 96,
+                    "end": 106,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "Pedra Bonita",
+                    "start": 120,
+                    "end": 132,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 135,
+                    "end": 137,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "Trov\u00e3o Vitor de Oliveira",
+                    "start": 138,
+                    "end": 162,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 165,
+                    "end": 173,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "GERALDO PEREIRA DA SILVA",
+                    "start": 196,
+                    "end": 220,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "- ME",
+                    "start": 221,
+                    "end": 225,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Av. Jacob Dornelas Neto, n\u00ba160, no Munic\u00edpio de",
+                    "start": 242,
+                    "end": 289,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "Pedra Bonita -",
+                    "start": 290,
+                    "end": 304,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 305,
+                    "end": 307,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "n\u00ba.17.727.686/ 0001-10",
+                    "start": 314,
+                    "end": 336,
+                    "label": "CNPJ"
+                },
+                {
+                    "entity": "Pedra Bonita",
+                    "start": 444,
+                    "end": 456,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "31/12/2014",
+                    "start": 509,
+                    "end": 519,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "30/04/2015",
+                    "start": 525,
+                    "end": 535,
+                    "label": "LOCAL"
+                },
+                {
+                    "entity": "Pedra Bonita",
+                    "start": 537,
+                    "end": 549,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "31 de dezembro de 2014",
+                    "start": 551,
+                    "end": 573,
+                    "label": "DATA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "MUNIC\u00cdPIO DE BR\u00c1S PIRES-MG, em obedi\u00eancia ao disposto no art. 26 da Lei Federal n\u00ba 8.666/93, torna p\u00fablico nos termos do inciso XIII, do art. 6 \u00b0 da Lei n \u00b0 8.666/93, a RATIFICA\u00c7\u00c3O DA DISPENSA proveniente do processo administrativo n\u00ba 28/2019, dispensa de licita\u00e7\u00e3o n\u00ba 12/2019. RATIFICO a dispensabilidade de licita\u00e7\u00e3o pertinente contrata\u00e7\u00e3o da EMPRESA NHG TELECOMUNICA\u00c7\u00d5ES LTDA, inscrito no CNPJ sob o n\u00ba 11.105.375/ 0001-32, tendo por objeto a aquisi\u00e7\u00e3o de equipamentos de seguran\u00e7a diversos para o Munic\u00edpio de Br\u00e1s Pires, visando manuten\u00e7\u00e3o da Secretaria de Educa\u00e7\u00e3o, Cultura, Lazer e Turismo e Secretaria de Obras. Fundamento legal: Inciso II do art. 24 da Lei Federal n \u00b0 8.666/93. Itamar Cabral de Miranda. Prefeito Municipal. Informa\u00e7\u00f5es na sala de licita\u00e7\u00e3o desta Prefeitura, situada \u00e0 P\u00e7a. Capit\u00e3o Villela, 10 \u2013 Centro \u2013 Br\u00e1s Pires. Fone ( 32 ) 3534-1125 \u2013   licitabraspires@yahoo.com. b . Br s Pir e ,  2  e abr l  e 20 1 . MILT N  E ALMEI A MARTI N . Presiden e  a Comiss o  e Licita\u00e7\u00e3o",
+            "entities": [
+                {
+                    "entity": "BR\u00c1S PIRES-MG",
+                    "start": 13,
+                    "end": 26,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "art. 26 da Lei Federal n\u00ba 8.666/93",
+                    "start": 57,
+                    "end": 91,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "inciso XIII, do art. 6 \u00b0 da Lei n \u00b0 8.666/93",
+                    "start": 121,
+                    "end": 165,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "processo administrativo n\u00ba 28/2019",
+                    "start": 208,
+                    "end": 242,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "dispensa de licita\u00e7\u00e3o n\u00ba 12/2019",
+                    "start": 244,
+                    "end": 276,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "EMPRESA NHG TELECOMUNICA\u00c7\u00d5ES LTDA",
+                    "start": 345,
+                    "end": 378,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "11.105.375/ 0001-32",
+                    "start": 406,
+                    "end": 425,
+                    "label": "CNPJ"
+                },
+                {
+                    "entity": "Br\u00e1s Pires",
+                    "start": 514,
+                    "end": 524,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "Secretaria de Educa\u00e7\u00e3o, Cultura, Lazer e Turismo",
+                    "start": 548,
+                    "end": 596,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Secretaria de Obras",
+                    "start": 599,
+                    "end": 618,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "Inciso II do art. 24 da Lei Federal n \u00b0 8.666/93",
+                    "start": 638,
+                    "end": 686,
+                    "label": "LEGISLACAO"
+                },
+                {
+                    "entity": "Itamar Cabral de Miranda",
+                    "start": 688,
+                    "end": 712,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 714,
+                    "end": 722,
+                    "label": "COMPETENCIA"
+                },
+                {
+                    "entity": "sala de licita\u00e7\u00e3o desta Prefeitura",
+                    "start": 749,
+                    "end": 783,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "P\u00e7a. Capit\u00e3o Villela, 10 \u2013 Centro \u2013",
+                    "start": 795,
+                    "end": 830,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "Br\u00e1s Pires",
+                    "start": 831,
+                    "end": 841,
+                    "label": "ENDERECO"
+                },
+                {
+                    "entity": "( 32 ) 3534-1125",
+                    "start": 848,
+                    "end": 864,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": ". Br s Pir",
+                    "start": 898,
+                    "end": 908,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": ",  2  e abr l  e 20",
+                    "start": 911,
+                    "end": 930,
+                    "label": "DATA"
+                },
+                {
+                    "entity": ". MILT N  E ALMEI A MARTI",
+                    "start": 933,
+                    "end": 958,
+                    "label": "PESSOA"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "text": "O MUNICIPIO DE SILVEIR\u00c2NIA / MG, em observ\u00e2ncia aos dispositivos da Lei Federal n\u00ba 8.666/93 e Lei Federal n\u00ba 10.520/02 e tendo em vista o julgamento da Licita\u00e7\u00e3o autuada no Processo sob o n\u00ba 20/2015, na modalidade de Preg\u00e3o Presencial n\u00ba 12/2015, que tem como objeto a contrata\u00e7\u00e3o de empresa habilitada para confec\u00e7\u00e3o e fornecimento de banners e faixas em atendimento \u00e0s necessidades das Secretarias Municipais de Silveir\u00e2nia / MG, houve por bem HOMOLOGAR \u00e0 licitante: L.S. DE ALMEIDA - ME, inscrita no CNPJ sob o n\u00ba 20.746.322/ 0001-91, que venceu os itens 01 e 02, no valor total de R$ 8.000,00 ( oito mil reais ), sendo o valor global da licita\u00e7\u00e3o de R$ 8.000,00 ( oito mil reais ). Manifesto concord\u00e2ncia com o julgamento do certame em favor da licitante. Silveir\u00e2nia / MG, 03 de junho de 2015. SEBASTI\u00c3O RENATO DE OLIVEIRA Prefeito Municipal",
+            "entities": [
+                {
+                    "entity": "SILVEIR\u00c2NIA",
+                    "start": 15,
+                    "end": 26,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 29,
+                    "end": 31,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "Lei Federal n\u00ba 8.666/93",
+                    "start": 68,
+                    "end": 91,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Lei Federal n\u00ba 10.520/02",
+                    "start": 94,
+                    "end": 118,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Processo sob o n\u00ba 20/2015",
+                    "start": 173,
+                    "end": 198,
+                    "label": "PROCESSO"
+                },
+                {
+                    "entity": "Preg\u00e3o Presencial n\u00ba 12/2015",
+                    "start": 217,
+                    "end": 245,
+                    "label": "LICITACAO"
+                },
+                {
+                    "entity": "Silveir\u00e2nia",
+                    "start": 414,
+                    "end": 425,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 428,
+                    "end": 430,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "L.S. DE ALMEIDA - ME",
+                    "start": 469,
+                    "end": 489,
+                    "label": "ORGANIZACAO"
+                },
+                {
+                    "entity": "20.746.322/ 0001-91",
+                    "start": 517,
+                    "end": 536,
+                    "label": "CNPJ"
+                },
+                {
+                    "entity": "R$ 8.000,00",
+                    "start": 585,
+                    "end": 596,
+                    "label": "VALOR\\_MONETARIO"
+                },
+                {
+                    "entity": "R$ 8.000,00",
+                    "start": 654,
+                    "end": 665,
+                    "label": "VALOR\\_MONETARIO"
+                },
+                {
+                    "entity": "Silveir\u00e2nia",
+                    "start": 760,
+                    "end": 771,
+                    "label": "MUNICIPIO"
+                },
+                {
+                    "entity": "MG",
+                    "start": 774,
+                    "end": 776,
+                    "label": "ESTADO"
+                },
+                {
+                    "entity": "03 de junho de 2015",
+                    "start": 778,
+                    "end": 797,
+                    "label": "DATA"
+                },
+                {
+                    "entity": "SEBASTI\u00c3O RENATO DE OLIVEIRA",
+                    "start": 799,
+                    "end": 827,
+                    "label": "PESSOA"
+                },
+                {
+                    "entity": "Prefeito",
+                    "start": 828,
+                    "end": 836,
+                    "label": "COMPETENCIA"
+                }
+            ],
+            "relations": []
+        }
+    ]
+}
