@@ -38,7 +38,7 @@
                     "entity": "R$ 1.225.800,00",
                     "start": 147,
                     "end": 162,
-                    "label": "VALOR\\_MONETARIO"
+                    "label": "VALOR_MONETARIO"
                 },
                 {
                     "entity": "01/01/14",
@@ -350,7 +350,7 @@
                     "entity": "R$ 3.982,40",
                     "start": 545,
                     "end": 556,
-                    "label": "VALOR\\_MONETARIO"
+                    "label": "VALOR_MONETARIO"
                 },
                 {
                     "entity": "Leis Federais n\u00ba. 10.520",
@@ -602,7 +602,7 @@
                     "entity": "R$ 20.000,00",
                     "start": 684,
                     "end": 696,
-                    "label": "VALOR\\_MONETARIO"
+                    "label": "VALOR_MONETARIO"
                 },
                 {
                     "entity": "Gr\u00e3o Mogol-MG",
@@ -776,7 +776,7 @@
                     "entity": "R$ 66.745,00",
                     "start": 686,
                     "end": 698,
-                    "label": "VALOR\\_MONETARIO"
+                    "label": "VALOR_MONETARIO"
                 },
                 {
                     "entity": "Processo Licitat\u00f3rio n\u00ba 264/2018",
@@ -1106,7 +1106,7 @@
                     "entity": "R$ 477.700,00",
                     "start": 383,
                     "end": 396,
-                    "label": "VALOR\\_MONETARIO"
+                    "label": "VALOR_MONETARIO"
                 },
                 {
                     "entity": "FERNANDO JAQUES REZENDE DE SIQUEIRA",
@@ -1328,7 +1328,7 @@
                     "entity": "R$ 6.000,00",
                     "start": 380,
                     "end": 391,
-                    "label": "VALOR\\_MONETARIO"
+                    "label": "VALOR_MONETARIO"
                 },
                 {
                     "entity": "MANOEL JORGE DE CASTRO",
@@ -1400,7 +1400,7 @@
                     "entity": "R$ 2.750,00",
                     "start": 797,
                     "end": 808,
-                    "label": "VALOR\\_MONETARIO"
+                    "label": "VALOR_MONETARIO"
                 },
                 {
                     "entity": "31/12/2018",
@@ -1412,7 +1412,7 @@
                     "entity": "02.06.01.10.305.1004.2057.3.3.90.36.00",
                     "start": 884,
                     "end": 922,
-                    "label": "DOTACAO\\_ORCAMENTARIA"
+                    "label": "DOTACAO_ORCAMENTARIA"
                 },
                 {
                     "entity": "PROCESSO ADMINISTRATIVO N\u00ba 01/2018",
@@ -1682,7 +1682,7 @@
                     "entity": "01.001.10.302.0004.2005",
                     "start": 558,
                     "end": 581,
-                    "label": "DOTACAO\\_ORCAMENTARIA"
+                    "label": "DOTACAO_ORCAMENTARIA"
                 },
                 {
                     "entity": "CISLESTE",
@@ -2354,7 +2354,7 @@
                     "entity": "R$ 1,70",
                     "start": 241,
                     "end": 248,
-                    "label": "VALOR\\_MONETARIO"
+                    "label": "VALOR_MONETARIO"
                 },
                 {
                     "entity": "PROCESSO DE LICITA\u00c7\u00c3O N\u00ba 019/2013",
@@ -3080,7 +3080,7 @@
                     "entity": "R$ 40.000,00",
                     "start": 379,
                     "end": 391,
-                    "label": "VALOR\\_MONETARIO"
+                    "label": "VALOR_MONETARIO"
                 },
                 {
                     "entity": "31 de dezembro de 2014",
@@ -3272,7 +3272,7 @@
                     "entity": "R$ 1.500,00",
                     "start": 469,
                     "end": 480,
-                    "label": "VALOR\\_MONETARIO"
+                    "label": "VALOR_MONETARIO"
                 },
                 {
                     "entity": "( 038 ) 3235-1001",
@@ -3470,7 +3470,7 @@
                     "entity": ": 12.1.1.15.451.31.3076.449051",
                     "start": 414,
                     "end": 444,
-                    "label": "DOTACAO\\_ORCAMENTARIA"
+                    "label": "DOTACAO_ORCAMENTARIA"
                 },
                 {
                     "entity": "a 11/06/20",
@@ -3488,7 +3488,7 @@
                     "entity": ":  $ 400.066,",
                     "start": 503,
                     "end": 516,
-                    "label": "VALOR\\_MONETARIO"
+                    "label": "VALOR_MONETARIO"
                 },
                 {
                     "entity": "e Cora\u00e7 o  e Jes u",
@@ -3554,7 +3554,7 @@
                     "entity": "R$ 991,70",
                     "start": 248,
                     "end": 257,
-                    "label": "VALOR\\_MONETARIO"
+                    "label": "VALOR_MONETARIO"
                 },
                 {
                     "entity": "02/03/2020",
@@ -4430,13 +4430,13 @@
                     "entity": "R$ 8.000,00",
                     "start": 585,
                     "end": 596,
-                    "label": "VALOR\\_MONETARIO"
+                    "label": "VALOR_MONETARIO"
                 },
                 {
                     "entity": "R$ 8.000,00",
                     "start": 654,
                     "end": 665,
-                    "label": "VALOR\\_MONETARIO"
+                    "label": "VALOR_MONETARIO"
                 },
                 {
                     "entity": "Silveir\u00e2nia",

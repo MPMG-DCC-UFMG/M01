@@ -9,3 +9,6 @@ class Entity:
     # Funcao para deixar objetos da classe ordenaveis:
     def __lt__(self, other):
         return (self.start, self.end) < (other.start, other.end)
+
+    def to_dict(self):
+        return {"entity": self.string, "start": self.start, "end": self.end, "label": self.label, "idx": self.idx}
