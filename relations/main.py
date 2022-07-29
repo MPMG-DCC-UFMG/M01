@@ -9,14 +9,14 @@ from entity import Entity
 from relation_extractor import RelationExtractor
 import re
 
-DATE_PATTERN = re.compile("(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\-\s?\d\d?\-\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\.\s?\d\d?\.\s?\d\s?\.?\s?\d(\d\d)?)")
-MUNICIPIOS = read_lower_cased_strings("data/municipios.txt")
-WSIZE = 100
-MODALIDADES = ["convite", "tomada de preços", "concorrência", "concurso", "pregão presencial", "pregão eletrônico", "leilão"]
-TIPOS = ["melhor técnica", "menor preço", "maior lance ou oferta", "técnica e preço"]
-INF = 999999999
+#DATE_PATTERN = re.compile("(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\-\s?\d\d?\-\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\.\s?\d\d?\.\s?\d\s?\.?\s?\d(\d\d)?)")
+#MUNICIPIOS = read_lower_cased_strings("data/municipios.txt")
+#WSIZE = 100
+#MODALIDADES = ["convite", "tomada de preços", "concorrência", "concurso", "pregão presencial", "pregão eletrônico", "leilão"]
+#TIPOS = ["melhor técnica", "menor preço", "maior lance ou oferta", "técnica e preço"]
+#INF = 999999999
 
-TREE_MUNICIPIOS = make_dictionary(MUNICIPIOS)
+#TREE_MUNICIPIOS = make_dictionary(MUNICIPIOS)
 
 #TREE_MODALIDADES.print_tree()
 #TREE_TIPOS.print_tree()

@@ -7,3 +7,6 @@ class Relation:
         if use_entity_indices:
             return {"entities": [ent.idx for ent in self.entity_list], "label": self.label}
         return {"entities": [ent.string for ent in self.entity_list], "label": self.label}
+
+    def transpose(self):
+        self.entity_list.reverse()

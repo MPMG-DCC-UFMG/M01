@@ -100,42 +100,31 @@ class RelationExtractor:
             relations.append(Relation([head_entity, prev], rel_type))
         return relations
 
-
     #Retorna relacoes (list[Relation]) que têm como "head" uma entidade do tipo LICITACAO
-
     def licitacao_relations(self, entity):
         return self.relate_to_next_entity(entity, ["PROCESSO"], "licitacao-processo")
 
-
-    # Retorna relacoes (list[Relation]) que têm como "head" uma entidade do tipo COMPETENCIA
-
+    # "head": COMPETENCIA
     def competencia_relations(self, entity):
-        return self.relate_to_previous_entity(entity, ["PESSOA"], "competencia-pessoa")
-
-
-    # Retorna relacoes (list[Relation]) que têm como "head" uma entidade do tipo CONTRATO
+        res = self.relate_to_previous_entity(entity, ["PESSOA"], "competencia-pessoa")
+        res.extend(self.relate_to_next_entity(entity, ["ORGANIZACAO"], "competencia-organizacao", context_size=30))
+        return res
 
     def contrato_relations(self, entity):
         return self.relate_to_next_entity(entity, ["LICITACAO"], "contrato-licitacao")
 
-
-    # Retorna relacoes (list[Relation]) que têm como "head" uma entidade do tipo CPF
-
     def cpf_relations(self, entity):
         return self.relate_to_previous_entity(entity, ["PESSOA"], "cpf")
-
-
-    # Retorna relacoes (list[Relation]) que têm como "head" uma entidade do tipo CNPJ
 
     def cnpj_relations(self, entity):
         return self.relate_to_previous_entity(entity, ["ORGANIZACAO", "MUNICIPIO"], "cnpj")
 
-
-    # Retorna relacoes (list[Relation]) que têm como "head" uma entidade do tipo VALOR_MONETARIO
-
     def valor_relations(self, entity):
         relations = []
-        relations.extend(self.relate_to_previous_entity(entity, ["ORGANIZACAO", "PESSOA"], "valor-proposta"))
-        relations.extend(self.relate_to_previous_entity(entity, ["CONTRATO"], "valor-contrato", context_size=300))
+        relations += self.relate_to_previous_entity(entity, ["ORGANIZACAO", "PESSOA"], "proposta-valor")
+        relations += self.relate_to_previous_entity(entity, ["CONTRATO"], "contrato-valor", context_size=300)
+
+        for r in relations:
+            r.transpose()
         return relations
 
