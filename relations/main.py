@@ -1,10 +1,10 @@
 import sys
 import json
-#from nltk.metrics.distance import edit_distance
-from preprocessing.casing import title_case
-from preprocessing.text_cleaner import extract_digits, tokenize
-from inout import read_lower_cased_strings
-from prefix_tree import *
+##from nltk.metrics.distance import edit_distance
+#from preprocessing.casing import title_case
+#from preprocessing.text_cleaner import extract_digits, tokenize
+#from inout import read_lower_cased_strings
+#from prefix_tree import *
 from entity import Entity
 from relation_extractor import RelationExtractor
 import re
