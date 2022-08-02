@@ -121,7 +121,7 @@ class RelationExtractor:
 
     def valor_relations(self, entity):
         relations = []
-        relations += self.relate_to_previous_entity(entity, ["ORGANIZACAO", "PESSOA"], "proposta-valor")
+        relations += self.relate_to_previous_entity(entity, ["ORGANIZACAO", "PESSOA"], "proposta-valor", context_size=30)
         relations += self.relate_to_previous_entity(entity, ["CONTRATO"], "contrato-valor", context_size=300)
 
         for r in relations:
