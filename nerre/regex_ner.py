@@ -38,7 +38,7 @@ class RegexNER:
             for match in pattern.finditer(text):
                 start, end = match.span()
                 span = text[start:end]
-                #if self.additional_validation(ent_type, span):
-                ents.append( (start, end, ent_type) )
+                if self.additional_validation(ent_type, span):
+                    ents.append( (start, end, ent_type) )
         return ents
 

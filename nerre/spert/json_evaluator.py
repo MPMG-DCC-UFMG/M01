@@ -69,6 +69,9 @@ def calc_metrics(pred, gt):
         prec = 0
         rec = 0
         f1 = 0
+        wprec = 0
+        wrec = 0
+        wf1 = 0
         if len(p) > 0:
             prec = len(intersec) / len(p)
             wprec = len(s) * prec

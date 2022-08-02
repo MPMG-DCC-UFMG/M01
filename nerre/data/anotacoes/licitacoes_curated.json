@@ -71,7 +71,7 @@
             {
                 "start": 24,
                 "end": 26,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 30,
@@ -894,12 +894,12 @@
             {
                 "start": 87,
                 "end": 89,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 91,
                 "end": 101,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 105,
@@ -1373,12 +1373,12 @@
             {
                 "start": 121,
                 "end": 123,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 124,
                 "end": 127,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 129,
@@ -1813,7 +1813,7 @@
             {
                 "start": 121,
                 "end": 132,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 144,
@@ -2442,7 +2442,7 @@
             {
                 "start": 73,
                 "end": 75,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 76,
@@ -2978,12 +2978,12 @@
             {
                 "start": 60,
                 "end": 62,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 63,
                 "end": 66,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 67,
@@ -3231,12 +3231,12 @@
             {
                 "start": 132,
                 "end": 134,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 135,
                 "end": 141,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 145,
@@ -3246,7 +3246,7 @@
             {
                 "start": 148,
                 "end": 149,
-                "type": "DOTACAO\\_ORCAMENTARIA"
+                "type": "DOTACAO_ORCAMENTARIA"
             },
             {
                 "start": 152,
@@ -3846,7 +3846,7 @@
             {
                 "start": 80,
                 "end": 81,
-                "type": "DOTACAO\\_ORCAMENTARIA"
+                "type": "DOTACAO_ORCAMENTARIA"
             },
             {
                 "start": 137,
@@ -5395,12 +5395,12 @@
             {
                 "start": 41,
                 "end": 43,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 44,
                 "end": 49,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 52,
@@ -6995,12 +6995,12 @@
             {
                 "start": 69,
                 "end": 71,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 72,
                 "end": 75,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 81,
@@ -7406,12 +7406,12 @@
             {
                 "start": 87,
                 "end": 89,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 90,
                 "end": 94,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 114,
@@ -7840,12 +7840,12 @@
             {
                 "start": 64,
                 "end": 65,
-                "type": "DOTACAO\\_ORCAMENTARIA"
+                "type": "DOTACAO_ORCAMENTARIA"
             },
             {
                 "start": 67,
                 "end": 68,
-                "type": "DOTACAO\\_ORCAMENTARIA"
+                "type": "DOTACAO_ORCAMENTARIA"
             },
             {
                 "start": 69,
@@ -7855,7 +7855,7 @@
             {
                 "start": 75,
                 "end": 77,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 80,
@@ -7973,7 +7973,7 @@
             {
                 "start": 44,
                 "end": 46,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 49,
@@ -10034,22 +10034,22 @@
             {
                 "start": 108,
                 "end": 110,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 111,
                 "end": 114,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 123,
                 "end": 125,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 126,
                 "end": 129,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 143,
@@ -10254,7 +10254,7 @@
             {
                 "start": 106,
                 "end": 108,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             }
         ],
         "relations": []
@@ -10636,7 +10636,7 @@
             {
                 "start": 30,
                 "end": 32,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 38,
@@ -10830,12 +10830,12 @@
             {
                 "start": 55,
                 "end": 57,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 62,
                 "end": 65,
-                "type": "DOTACAO\\_ORCAMENTARIA"
+                "type": "DOTACAO_ORCAMENTARIA"
             },
             {
                 "start": 68,
@@ -10963,7 +10963,7 @@
             {
                 "start": 25,
                 "end": 27,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 30,
@@ -11230,12 +11230,12 @@
             {
                 "start": 37,
                 "end": 39,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 40,
                 "end": 47,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 74,
@@ -11947,12 +11947,12 @@
             {
                 "start": 38,
                 "end": 40,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 41,
                 "end": 43,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 47,
@@ -12277,12 +12277,12 @@
             {
                 "start": 80,
                 "end": 82,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 83,
                 "end": 90,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 96,
@@ -12802,12 +12802,12 @@
             {
                 "start": 96,
                 "end": 101,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 105,
                 "end": 111,
-                "type": "DOTACAO\\_ORCAMENTARIA"
+                "type": "DOTACAO_ORCAMENTARIA"
             },
             {
                 "start": 111,
@@ -12957,7 +12957,7 @@
             {
                 "start": 51,
                 "end": 53,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 56,
@@ -13774,12 +13774,12 @@
             {
                 "start": 89,
                 "end": 91,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 92,
                 "end": 102,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 104,
@@ -13985,12 +13985,12 @@
             {
                 "start": 84,
                 "end": 86,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 87,
                 "end": 92,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 95,
@@ -14299,7 +14299,7 @@
             {
                 "start": 52,
                 "end": 54,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             },
             {
                 "start": 63,
@@ -14552,7 +14552,7 @@
             {
                 "start": 164,
                 "end": 166,
-                "type": "VALOR\\_MONETARIO"
+                "type": "VALOR_MONETARIO"
             }
         ],
         "relations": []

@@ -10,7 +10,7 @@ ENDERECO	(?i)((av|av\.|ave\.|rua|pra\u00e7a|p\u00e7a|rodovia)\s+([,\-/\.\u00ba\u
 DATA	(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\-\s?\d\d?\-\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\.\s?\d\d?\.\s?\d\s?\.?\s?\d(\d\d)?)|(?i)(\d\d?\sde\s(jan|fev|mar|março|abr|mai|jun|jul|ago|set|out|nov|dez)\w*(\sde\s\d{4})?)
 
 VALOR_MONETARIO	(\w\$\s*\d[\d\.\s]*(,\d{2})?)|(\d[\d\.]*,\d{2})
-DOTACAO_ORCAMENTARIA	\d[\d\.\-]{20}[\d\.\-]*
+DOTACAO_ORCAMENTARIA	\d[\d\.\-\s]{20}[\d\.\-\s]*
 CEP	CEP.?.?.\d{2}\.?\d{3}\-\d{3}
 #PRAZO	\d+\s.*(dias?|semanas?|mês|meses)\scorrid\ws?
 #MUNICIPIO	(([mM](unicípio|UNICÍPIO))|((Prefeitura\sMunicipal)|(PREFEITURA\sMUNICIPAL)))\s+(de|DE)\s+[\w\u00C0-\u00FF]+(\s+[\w\u00C0-\u00FF]+){0,3}
@@ -18,11 +18,11 @@ CEP	CEP.?.?.\d{2}\.?\d{3}\-\d{3}
 #LICITACAO	(LICITAÇÃO|CERTAME)\s..\s\d+/\d{4}
 ATO	(ATO)\s(ADMINISTRATIVO)?..\s?\d+/\d{4}
 
-COMPETENCIA	(?i)((sub|vice)?\-?(chefe|diretor|secretário|secretária|secretaria|diretoria|assessor|supervisor|coordenador|gerente|corregedor|procurador|prefeito|prefeita)(a?))
+COMPETENCIA	(?i)((sub|vice)?\-?(chefe|presidente|diretor|secretári|assessor|supervisor|coordenador|gerente|corregedor|procurador|prefeito|prefeita|pregoeir)(o?)(a?))
 
-PROCESSO	(?i)((pal|pl|processo|prc|procedimento)(\s*[\w\u00C0-\u00FF]+){0,4}.?.?n?(\u00b0|\u00ba)?.?.?\s?\d+\s?/[\d\.\s?]+)
+PROCESSO	(?i)((pal|pl|processo|prc|procedimento)(\s*[\w\u00C0-\u00FF]+){0,4}.?.?n?(\u00b0|\u00ba)?.?.?\s?\d+\s?/[\d\.\s?]+\d)
 
 #Modalidade de licitacao acompanhada do numero
-LICITACAO	(?i)((pp|preg|leil|inexig|dispens|convit|tomada|registro|concorr|credenc)(\s*[\w\u00C0-\u00FF]+){0,4}(.?.?n?(\u00b0|\u00ba)?.?.?\s?\d+\s?/[\d\.\s?]+))
-CONTRATO	(?i)((contrato)(\s*[\w\u00C0-\u00FF]+){0,4}n?(\u00b0|\u00ba)?.?.?\s?\d+\s?/[\d\.\s?]+)
+LICITACAO	(?i)((pp|preg|leil|inexig|dispens|convit|tomada|registro|concorr|credenc|chamada)(\s*[\w\u00C0-\u00FF]+){0,4}(.?.?n?(\u00b0|\u00ba)?.?.?\s?\d+\s?/[\d\.\s?]+\d))
+CONTRATO	(?i)((contrato)(\s*[\w\u00C0-\u00FF]+){0,6}n?(\u00b0|\u00ba)?.?.?\s?\d+\s?/[\d\.\s?]+\d)
 

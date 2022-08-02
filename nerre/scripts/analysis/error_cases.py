@@ -109,6 +109,8 @@ file1 = open(sys.argv[1], encoding="utf-8")
 file2 = open(sys.argv[2], encoding="utf-8")
 pred = json.load(file1)
 gt = json.load(file2)
+file1.close()
+file2.close()
 
 evaluate(pred, gt)
 

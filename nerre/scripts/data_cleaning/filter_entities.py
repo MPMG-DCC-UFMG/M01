@@ -2,14 +2,14 @@ import sys
 import json
 
 
-def filter(jdata, keep="PESSOA ORGANIZACAO LEGISLACAO".split()):
+def filter(jdata, keep="PESSOA ORGANIZACAO LEGISLACAO".split(), dontkeep="MUNICIPIO ESTADO CEP ATA PRODUTO SERVICO".split()):
     res = []
     for dic in jdata:
         tokens = dic["tokens"]
         entities = dic["entities"]
         new_ents = []
         for ent in entities:
-            if ent["type"] in keep:
+            if ent["type"] not in dontkeep or ent["type"] in keep:
                 new_ents.append(ent)
         res.append({"tokens": tokens, "entities": new_ents, "relations": []})
     return res
