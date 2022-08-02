@@ -78,7 +78,7 @@ if __name__ == '__main__':
     res,marked = pipeline.process_json(text, stage="predict")
     to_iob(res, outfile_iob)
     outfile_iob.close()
-    json.dump(marked, outfile, indent=4)
+    json.dump(res, outfile, indent=4)
     outfile.close()
 
 
