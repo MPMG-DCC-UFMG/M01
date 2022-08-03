@@ -3,23 +3,26 @@ import json
 ##from nltk.metrics.distance import edit_distance
 #from preprocessing.casing import title_case
 #from preprocessing.text_cleaner import extract_digits, tokenize
-#from inout import read_lower_cased_strings
-#from prefix_tree import *
+from inout import read_lower_cased_strings
+from prefix_tree import *
 from entity import Entity
 from relation_extractor import RelationExtractor
+from municipio_matcher import MunicipioMatcher
+
+from collections import Counter
+
 import re
 
 #DATE_PATTERN = re.compile("(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\-\s?\d\d?\-\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\.\s?\d\d?\.\s?\d\s?\.?\s?\d(\d\d)?)")
-#MUNICIPIOS = read_lower_cased_strings("data/municipios.txt")
 #WSIZE = 100
 #MODALIDADES = ["convite", "tomada de preços", "concorrência", "concurso", "pregão presencial", "pregão eletrônico", "leilão"]
 #TIPOS = ["melhor técnica", "menor preço", "maior lance ou oferta", "técnica e preço"]
 #INF = 999999999
 
-#TREE_MUNICIPIOS = make_dictionary(MUNICIPIOS)
 
 #TREE_MODALIDADES.print_tree()
 #TREE_TIPOS.print_tree()
+
 
 
 if __name__ == "__main__":
@@ -34,6 +37,8 @@ if __name__ == "__main__":
     data = json.load(infile)
     infile.close()
 
+    mun_matcher = MunicipioMatcher()
+
     if "sentences" in data:
         segments = data["sentences"]
     else:
@@ -41,14 +46,19 @@ if __name__ == "__main__":
 
     for segment in segments:
 
-        # entities: vetor de entidades na ordem em que elas aparecem no texto
+        text = segment["text"]
+        municipio_ents = mun_matcher.match(text) #Adiciona municipios identificados
 
-        entities = sorted([Entity(ent["start"], ent["end"], ent["entity"], ent["label"]) for ent in segment["entities"]])
+        # entities: vetor de entidades na ordem em que elas aparecem no texto
+        entities = municipio_ents + [Entity(ent["start"], ent["end"], ent["entity"], ent["label"]) for ent in segment["entities"]]
+        entities = sorted(entities)
+
         for i, ent in enumerate(entities):
             entities[i].idx = i
-        text = segment["text"]
+
         relation_extractor = RelationExtractor(entities, text)
-        rels = [rel.to_dict() for rel in relation_extractor.extract_relations()]
+        relation_extractor.extract_relations()
+        rels = [rel.to_dict() for rel in relation_extractor.relations]
         ents = [ent.to_dict() for ent in entities]
         segment["relations"] = rels
         segment["entities"] = ents

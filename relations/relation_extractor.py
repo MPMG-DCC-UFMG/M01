@@ -1,12 +1,21 @@
 from relation import Relation
+from entity import Entity
 
 class RelationExtractor:
     def __init__(self, entities, text):
 
         # entities: vetor de entidades na ordem em que elas aparecem no texto
         self.entities = entities
-
         self.text = text
+
+        #Informacoes globais do segmento de texto atual
+        self.licitacao = None
+        self.contrato = None
+        self.contratante = None
+        self.contratado = None
+        self.data_abertura = None
+        self.vencedor = None
+        self.municipio = None
 
         # Mapeia o tipo de entidade da "head" da relacao p/ a funcao de extracao correspondente
         # (switch-case implementado por dicionario)
@@ -17,9 +26,56 @@ class RelationExtractor:
             "CONTRATO": self.contrato_relations,
             "CPF": self.cpf_relations,
             "CNPJ": self.cnpj_relations,
-            "VALOR_MONETARIO": self.valor_relations
+            "VALOR_MONETARIO": self.valor_relations,
+            "PESSOA": self.pessoa_relations,
+            "ORGANIZACAO": self.organizacao_relations,
+            "DATA": self.data_relations,
+            "MUNICIPIO": self.municipio_relations
             # ...
         }
+
+    def extract_relations(self):
+        self.relations = []
+        for entity in self.entities:
+            if entity.label in self.extraction_functions:
+                self.extraction_functions[entity.label](entity)
+        self.finalize()
+
+    # Etapa final
+    def finalize(self):
+        self.relate(self.contrato, self.contratado, "contrato-contratado")
+        self.relate(self.contratante, self.contratado, "contratante-contratado")
+        self.relate(self.licitacao, self.data_abertura, "data_abertura")
+        self.relate(self.licitacao, self.vencedor, "licitacao-vencedor")
+        if self.licitacao != None:
+            key_entity = self.licitacao
+        else:
+            key_entity = Entity(0, 0, "-", "None")
+        self.relate(self.municipio, key_entity, "municipio")
+        if self.municipio != None:
+            print("Municipio:", self.municipio.string)
+
+    def relate(self, entity1, entity2, label):
+        if entity1 != None and entity2 != None:
+            self.relations.append(Relation([entity1, entity2], label))
+
+    # Se pelo menos uma das palavras em words estiver no contexto proximo a "head_entity", retorna True
+
+    def is_in_context(self, words, head_entity, prioritize_previous=True, context_size=20):
+        window_start = max(0, head_entity.start - context_size)
+        window_end = min(len(self.text), head_entity.end + context_size)
+        for word in words:
+            if prioritize_previous:
+                if word in self.text[window_start:head_entity.start]:
+                    return True
+                if word in self.text[head_entity.end:window_end]:
+                    return True
+            else:
+                if word in self.text[head_entity.end:window_end]:
+                    return True
+                if word in self.text[window_start:head_entity.start]:
+                    return True
+        return False
 
 
     # Retorna a próxima entidade de um dos tipos em "ent_types" que ocorre depois da head_entity
@@ -61,12 +117,6 @@ class RelationExtractor:
                 return prev_entity
         return None #Nao encontrou
 
-    def extract_relations(self):
-        relations = []
-        for entity in self.entities:
-            if entity.label in self.extraction_functions:
-                relations += self.extraction_functions[entity.label](entity)
-        return relations
 
 
     # Funcao geral para retornar relacoes (list[Relation]) que têm como "head" a entidade "head_entity",
@@ -102,22 +152,22 @@ class RelationExtractor:
 
     #Retorna relacoes (list[Relation]) que têm como "head" uma entidade do tipo LICITACAO
     def licitacao_relations(self, entity):
-        return self.relate_to_next_entity(entity, ["PROCESSO"], "licitacao-processo")
+        self.relations +=  self.relate_to_next_entity(entity, ["PROCESSO"], "licitacao-processo")
 
     # "head": COMPETENCIA
     def competencia_relations(self, entity):
-        res = self.relate_to_previous_entity(entity, ["PESSOA"], "competencia-pessoa")
-        res.extend(self.relate_to_next_entity(entity, ["ORGANIZACAO"], "competencia-organizacao", context_size=30))
-        return res
+        self.relations += self.relate_to_previous_entity(entity, ["PESSOA"], "competencia-pessoa")
+        self.relations += self.relate_to_next_entity(entity, ["ORGANIZACAO"], "competencia-organizacao", context_size=30)
 
     def contrato_relations(self, entity):
-        return self.relate_to_next_entity(entity, ["LICITACAO"], "contrato-licitacao")
+        self.contrato = entity
+        self.relations += self.relate_to_next_entity(entity, ["LICITACAO"], "contrato-licitacao")
 
     def cpf_relations(self, entity):
-        return self.relate_to_previous_entity(entity, ["PESSOA"], "cpf")
+        self.relations += self.relate_to_previous_entity(entity, ["PESSOA"], "cpf")
 
     def cnpj_relations(self, entity):
-        return self.relate_to_previous_entity(entity, ["ORGANIZACAO", "MUNICIPIO"], "cnpj")
+        self.relations += self.relate_to_previous_entity(entity, ["ORGANIZACAO", "MUNICIPIO"], "cnpj")
 
     def valor_relations(self, entity):
         relations = []
@@ -126,5 +176,31 @@ class RelationExtractor:
 
         for r in relations:
             r.transpose()
-        return relations
+        self.relations += relations
 
+    def pessoa_relations(self, entity):
+        if self.is_in_context(["contratant"], entity, prioritize_previous=True):
+            self.contratante = entity
+        elif self.is_in_context(["contratad"], entity, prioritize_previous=True):
+            self.contratado = entity
+
+        if self.is_in_context(["vence"], entity, prioritize_previous=True, context_size=20):
+            self.vencedor = entity
+
+    def organizacao_relations(self, entity):
+        if self.is_in_context(["contratant"], entity, prioritize_previous=True):
+            self.contratante = entity
+        elif self.is_in_context(["contratad"], entity, prioritize_previous=True):
+            self.contratado = entity
+
+        if self.is_in_context(["vence"], entity, prioritize_previous=True, context_size=20):
+            self.vencedor = entity
+
+
+    def data_relations(self, entity):
+        if self.is_in_context(["abert", "receb", "início"], entity, prioritize_previous=True, context_size=40):
+            self.data_abertura = entity
+
+    def municipio_relations(self, entity):
+        if self.municipio == None:
+            self.municipio = entity
