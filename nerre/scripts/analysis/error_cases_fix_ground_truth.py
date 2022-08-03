@@ -113,7 +113,6 @@ def print_metrics(pred, gt, docs, verbose=False):
             recs.append(rec)
             f1s.append(f1)
             total += len(s)
-        break
     #print("micro", sum(wprecs)/total, sum(wrecs)/total, sum(wf1s)/total, total)
     for doc_idx, ents in new_entities_per_doc.items():
         docs[doc_idx]["entities"] = ents
