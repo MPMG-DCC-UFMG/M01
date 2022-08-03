@@ -2,7 +2,7 @@ import sys
 import json
 
 
-def filter(jdata, keep="PESSOA ORGANIZACAO LEGISLACAO".split(), dontkeep="MUNICIPIO ESTADO CEP ATA PRODUTO SERVICO".split()):
+def filter(jdata, keep="PESSOA ORGANIZACAO LEGISLACAO".split(), dontkeep="MUNICIPIO ESTADO CEP ATO ATA PRODUTO SERVICO".split()):
     res = []
     for dic in jdata:
         tokens = dic["tokens"]

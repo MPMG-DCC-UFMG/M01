@@ -156,7 +156,7 @@ class RelationExtractor:
 
     # "head": COMPETENCIA
     def competencia_relations(self, entity):
-        self.relations += self.relate_to_previous_entity(entity, ["PESSOA"], "competencia-pessoa")
+        self.relations += self.relate_to_previous_entity(entity, ["PESSOA"], "competencia-pessoa", context_size=30)
         self.relations += self.relate_to_next_entity(entity, ["ORGANIZACAO"], "competencia-organizacao", context_size=30)
 
     def contrato_relations(self, entity):
@@ -172,7 +172,7 @@ class RelationExtractor:
     def valor_relations(self, entity):
         relations = []
         relations += self.relate_to_previous_entity(entity, ["ORGANIZACAO", "PESSOA"], "proposta-valor", context_size=30)
-        relations += self.relate_to_previous_entity(entity, ["CONTRATO"], "contrato-valor", context_size=300)
+        relations += self.relate_to_previous_entity(entity, ["CONTRATO"], "contrato-valor", context_size=100)
 
         for r in relations:
             r.transpose()
