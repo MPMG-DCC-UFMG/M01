@@ -12,12 +12,14 @@ python main.py ENTRADA SAÍDA [--use-indices]
 onde:
  - ENTRADA: caminho do arquivo de entrada (que é a saída do NER)
  - SAÍDA: caminho do arquivo onde será produzida a saída
+ - --use-indices (opcional): na lista de relações, especificar as entidades através de índices em vez de strings
 
 # Entrada
 Arquivo .json gerado pelo extrator de entidades NER (https://github.com/MPMG-DCC-UFMG/M01/tree/master/ner)
 
 
 # Saida
-Arquivo contendo todos os dados gerados pelo NER acrescidos da lista de relações identificadas
+Arquivo contendo todos os dados gerados pelo NER acrescidos da lista de relações identificadas.
+
 Formato do arquivo: mesmo formato do NERRE (vide https://github.com/MPMG-DCC-UFMG/M01/tree/master/nerre#formato-de-sa%C3%ADda)
 
