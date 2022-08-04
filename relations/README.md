@@ -3,6 +3,7 @@ Gera, a partir de um arquivo com entidades já identificadas, uma lista de rela�
 
 # Pré-requisitos
  - Python 3
+ - NER (https://github.com/MPMG-DCC-UFMG/M01/tree/master/ner) atualizado
  - Não é necessária a instalação de nenhuma biblioteca
 
 # Como executar
