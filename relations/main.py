@@ -31,9 +31,12 @@ if __name__ == "__main__":
         sys.exit(-1)
 
     use_indices = False
+    verbose = True
     for arg in sys.argv[1:]:
         if "--use-indices" == arg:
             use_indices = True
+        if "--verbose" == arg:
+            verbose = True
     filename = sys.argv[1]
     outname = sys.argv[2]
     infile = open(filename, encoding="utf-8")
@@ -67,14 +70,9 @@ if __name__ == "__main__":
         segment["relations"] = rels
         segment["entities"] = ents
 
-        for rel in rels:
-            print(rel)
-
-    #norm_text = remover_acentos(orig_text).lower()
-    #tokenized = tokenize(norm_text)
-    #print(tokenized)
-
-
+        if verbose:
+            for rel in rels:
+                print(rel)
 
     json.dump(data, outfile, indent=4)
     outfile.close()
