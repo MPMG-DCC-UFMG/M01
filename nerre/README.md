@@ -79,8 +79,7 @@ Formato de saída: Arquivos JSON com a estrutura ilustrada no seguinte exemplo:
             ],
             "relations": [
                 {
-                    "head": "Jo\u00e3o da Silva",
-                    "tail": "Belo Horizonte",
+                    "entities": ["Jo\u00e3o da Silva", "Belo Horizonte"],
                     "label": "local_residencia"
                 }
             ]
@@ -115,8 +114,8 @@ Para cada entidade:
 
 Para cada relação:
 
-- "head" e "tail": strings das entidades que estão sendo relacionadas. No exemplo, a
- entidade "João da Silva" está relacionada à entidade "Belo Horizonte"
+- "entities": strings (ou índices, caso utilizar a opção --use-indices) das entidades que estão sendo relacionadas. No exemplo, a
+ entidade "João da Silva" (índice 0) está relacionada à entidade "Belo Horizonte" (índice 1). 
  
 - "label": tipo da relação
 
