@@ -25,3 +25,11 @@ Arquivo contendo todos os dados gerados pelo NER acrescidos da lista de relaçõ
 
 Formato do arquivo: mesmo formato do NERRE (vide https://github.com/MPMG-DCC-UFMG/M01/tree/master/nerre#formato-de-sa%C3%ADda)
 
+
+# Tipos de entidades e relações reconhecidos
+
+A Figura abaixo mostra os tipos de entidades(retângulos) e relação (setas) extraídos:
+
+![Tipos de Entidade e Relação reconhecidos](https://user-images.githubusercontent.com/28352865/182921480-1fc333c8-d8e0-4bde-81ce-cb19a8ad7a37.png)
+
+
