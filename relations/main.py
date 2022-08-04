@@ -30,6 +30,10 @@ if __name__ == "__main__":
         print ("usage: %s <input file (.json produced by NER)> <outfile (.json with relations included)>" % sys.argv[0])
         sys.exit(-1)
 
+    use_indices = False
+    for arg in sys.argv[1:]:
+        if "--use-indices" == arg:
+            use_indices = True
     filename = sys.argv[1]
     outname = sys.argv[2]
     infile = open(filename, encoding="utf-8")
@@ -58,7 +62,7 @@ if __name__ == "__main__":
 
         relation_extractor = RelationExtractor(entities, text)
         relation_extractor.extract_relations()
-        rels = [rel.to_dict() for rel in relation_extractor.relations]
+        rels = [rel.to_dict(use_entity_indices=use_indices) for rel in relation_extractor.relations]
         ents = [ent.to_dict() for ent in entities]
         segment["relations"] = rels
         segment["entities"] = ents

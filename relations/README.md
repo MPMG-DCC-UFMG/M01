@@ -6,6 +6,8 @@ Gera, a partir de um arquivo com entidades já identificadas, uma lista de rela�
  - Não é necessária a instalação de nenhuma biblioteca
 
 # Como executar
+
+Linha de comando:
 ```
 python main.py ENTRADA SAÍDA [--use-indices]
 ```
@@ -18,7 +20,7 @@ onde:
 Arquivo .json gerado pelo extrator de entidades NER (https://github.com/MPMG-DCC-UFMG/M01/tree/master/ner)
 
 
-# Saida
+# Saída
 Arquivo contendo todos os dados gerados pelo NER acrescidos da lista de relações identificadas.
 
 Formato do arquivo: mesmo formato do NERRE (vide https://github.com/MPMG-DCC-UFMG/M01/tree/master/nerre#formato-de-sa%C3%ADda)
