@@ -30,7 +30,8 @@ class RelationExtractor:
             "PESSOA": self.pessoa_relations,
             "ORGANIZACAO": self.organizacao_relations,
             "DATA": self.data_relations,
-            "MUNICIPIO": self.municipio_relations
+            "MUNICIPIO": self.municipio_relations,
+            "MASP": self.masp_relations
             # ...
         }
 
@@ -121,7 +122,7 @@ class RelationExtractor:
 
     # Funcao geral para retornar relacoes (list[Relation]) que têm como "head" a entidade "head_entity",
     # como "tail" uma entidade do tipo "ent_type" e como tipo "rel_type"
-    # A entidade relacionada "tail" aqui peferencialmente aparece depois da "head" no texto
+    # A entidade relacionada "tail" aqui preferencialmente aparece depois da "head" no texto
 
     def relate_to_next_entity(self, head_entity, ent_types, rel_type, context_size=100):
         relations = []
@@ -137,7 +138,7 @@ class RelationExtractor:
 
     # Funcao geral para retornar relacoes (list[Relation]) que têm como "head" a entidade "head_entity",
     # como "tail" uma entidade do tipo "ent_type" e como tipo "rel_type"
-    # A entidade relacionada "tail" aqui peferencialmente aparece antes da "head" no texto
+    # A entidade relacionada "tail" aqui preferencialmente aparece antes da "head" no texto
 
     def relate_to_previous_entity(self, head_entity, ent_types, rel_type, context_size=100):
         relations = []
@@ -152,7 +153,7 @@ class RelationExtractor:
 
     #Retorna relacoes (list[Relation]) que têm como "head" uma entidade do tipo LICITACAO
     def licitacao_relations(self, entity):
-        self.relations +=  self.relate_to_next_entity(entity, ["PROCESSO"], "licitacao-processo")
+        self.relations += self.relate_to_next_entity(entity, ["PROCESSO"], "licitacao-processo")
 
     # "head": COMPETENCIA
     def competencia_relations(self, entity):
@@ -164,15 +165,18 @@ class RelationExtractor:
         self.relations += self.relate_to_next_entity(entity, ["LICITACAO"], "contrato-licitacao")
 
     def cpf_relations(self, entity):
-        self.relations += self.relate_to_previous_entity(entity, ["PESSOA"], "cpf")
+        self.relations += self.relate_to_previous_entity(entity, ["PESSOA"], "cpf", context_size=30)
+
+    def masp_relations(self, entity):
+        self.relations += self.relate_to_previous_entity(entity, ["PESSOA"], "masp", context_size=30)
 
     def cnpj_relations(self, entity):
-        self.relations += self.relate_to_previous_entity(entity, ["ORGANIZACAO", "MUNICIPIO"], "cnpj")
+        self.relations += self.relate_to_previous_entity(entity, ["ORGANIZACAO", "MUNICIPIO"], "cnpj", context_size=30)
 
     def valor_relations(self, entity):
         relations = []
-        relations += self.relate_to_previous_entity(entity, ["ORGANIZACAO", "PESSOA"], "proposta-valor", context_size=30)
-        relations += self.relate_to_previous_entity(entity, ["CONTRATO"], "contrato-valor", context_size=100)
+        relations += self.relate_to_previous_entity(entity, ["ORGANIZACAO", "PESSOA"], "proposta-valor", context_size=300)
+        relations += self.relate_to_previous_entity(entity, ["CONTRATO"], "contrato-valor", context_size=500)
 
         for r in relations:
             r.transpose()
@@ -198,9 +202,9 @@ class RelationExtractor:
 
 
     def data_relations(self, entity):
-        if self.is_in_context(["abert", "receb", "início"], entity, prioritize_previous=True, context_size=40):
+        if self.is_in_context(["abert", "receb", "início", "partir", "inicia"], entity, prioritize_previous=True, context_size=40):
             self.data_abertura = entity
 
     def municipio_relations(self, entity):
-        if self.municipio == None:
+        if self.municipio == None: #Utilizar a primeira ocorrencia de MUNICIPIO
             self.municipio = entity
