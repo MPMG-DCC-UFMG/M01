@@ -15,7 +15,7 @@ python main.py ENTRADA SAÍDA [--use-indices]
 onde:
  - ENTRADA: caminho do arquivo de entrada (que é a saída do NER)
  - SAÍDA: caminho do arquivo onde será produzida a saída
- - --use-indices (opcional): na lista de relações, especificar as entidades através de índices em vez de strings
+ - --use-indices (opcional): na lista de relações, as entidades são especificdsa através de índices em vez de strings
 
 # Entrada
 Arquivo .json gerado pelo extrator de entidades NER (https://github.com/MPMG-DCC-UFMG/M01/tree/master/ner)
