@@ -6,7 +6,8 @@ import json
 from inout import read_lower_cased_strings
 from prefix_tree import *
 from entity import Entity
-from relation_extractor import RelationExtractor
+#from relation_extractor import RelationExtractor
+from relation_extractor_pairs import RelationExtractor
 from municipio_matcher import MunicipioMatcher
 
 from collections import Counter
@@ -31,7 +32,7 @@ if __name__ == "__main__":
         sys.exit(-1)
 
     use_indices = False
-    verbose = True
+    verbose = False
     for arg in sys.argv[1:]:
         if "--use-indices" == arg:
             use_indices = True
@@ -46,6 +47,7 @@ if __name__ == "__main__":
 
     mun_matcher = MunicipioMatcher()
 
+    # Trata os dois formatos - texto segmentado ou nao
     if "sentences" in data:
         segments = data["sentences"]
     else:
