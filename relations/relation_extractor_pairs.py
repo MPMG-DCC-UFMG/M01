@@ -12,11 +12,7 @@ class RelationExtractor:
 
         #Informacoes globais do segmento de texto atual
         self.licitacao = None
-        self.contrato = None
-        self.contratante = None
-        self.contratado = None
         self.data_abertura = None
-        self.vencedor = None
         self.municipio = None
 
         # Mapeia o par de tipos de entidade p/ a funcao de extracao correspondente
