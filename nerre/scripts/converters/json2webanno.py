@@ -46,7 +46,7 @@ for sent_idx,item in enumerate(data):
     if "entities" in item:
         ents = item["entities"]
         for entno,ent in enumerate(ents):
-            ent_type = ent["type"]
+            ent_type = ent["type"].replace("_", "\\_")
             start = ent["start"]
             end = ent["end"]
             entno2start[entno] = start
@@ -55,14 +55,20 @@ for sent_idx,item in enumerate(data):
             spanidx += 1
     if "relations" in item:
         for rel in item["relations"]:
-            reltype = rel["type"]
+            reltype = rel["type"].replace("_", "\\_")
             tail = rel["tail"]
             head = rel["head"]
             t = entno2start[tail]
             h = entno2start[head]
             if t not in relations:
                 relations[t] = []
-            relations[t].append( (reltype, head, tail, entities[h][1], entities[t][1]) )
+            #print("======")
+            #print(entities)
+            try:
+                relations[t].append( (reltype, head, tail, entities[h][1], entities[t][1]) )
+            except:
+                print("======")
+                print(entities)
     for i,token in enumerate(tokens):
         if token.strip() == "":
             continue

@@ -29,7 +29,10 @@ def merge_spans_doc(dic):
         start = ent["start"]
         end = ent["end"]
         lab = ent["type"]
-        score = ent["score"]
+        if "score" in ent:
+            score = ent["score"]
+        else:
+            score = 1
         freq_start[start] += 1
         freq_end[end] += 1
         for j in range(start, end):
@@ -58,7 +61,10 @@ def merge_spans_doc(dic):
         head = rel["head"]
         tail = rel["tail"]
         label = rel["type"]
-        score = rel["score"]
+        if "score" in rel:
+            score = rel["score"]
+        else:
+            score = 1
         pair = ents2new[head],ents2new[tail]
         new_relations_dic[pair] = (label, score)
     new_relations = []

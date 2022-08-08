@@ -50,14 +50,14 @@ for row in rows:
                 start2eid[rid] = eid
                 doc2eids[doc_id].append(eid)
             span_sizes[eid] += 1
-            span_labels[eid] = label
+            span_labels[eid] = label.replace("\\", "")
         else:
             eid += 1
             label = ent_type
             span_sizes[eid] = 1
             start2eid[rid] = eid
             doc2eids[doc_id].append(eid)
-            span_labels[eid] = label
+            span_labels[eid] = label.replace("\\", "")
 
 
 

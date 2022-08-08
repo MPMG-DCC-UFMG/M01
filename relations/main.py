@@ -67,7 +67,7 @@ if __name__ == "__main__":
 
         relation_extractor = RelationExtractor(entities, text)
         relation_extractor.extract_relations()
-        rels = [rel.to_dict(use_entity_indices=use_indices) for rel in relation_extractor.relations]
+        rels = [rel.to_dict(use_entity_indices=use_indices) for rel in sorted(relation_extractor.relations)]
         ents = [ent.to_dict() for ent in entities]
         segment["relations"] = rels
         segment["entities"] = ents
