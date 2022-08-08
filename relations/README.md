@@ -31,6 +31,6 @@ Formato do arquivo: mesmo formato do NERRE (vide https://github.com/MPMG-DCC-UFM
 
 A Figura abaixo mostra os tipos de entidades (retângulos) e relação (setas) extraídos:
 
-![Tipos de Entidade e Relação reconhecidos](https://user-images.githubusercontent.com/28352865/182921480-1fc333c8-d8e0-4bde-81ce-cb19a8ad7a37.png)
+![Tipos de Entidade e Relação reconhecidos](https://user-images.githubusercontent.com/28352865/183494960-dc384daa-37b9-49b0-a3ee-9b0a400bd9fc.png)
 
 
