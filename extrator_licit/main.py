@@ -7,11 +7,14 @@ from inout import read_lower_cased_strings
 from prefix_tree import *
 import re
 
+MESES = {"jan": 1, "fev": 2, "mar": 3, "abr": 4, "mai": 5, "jun": 6,
+         "jul": 7, "ago": 8, "set": 9, "out": 10, "nov": 11, "dez": 12}
+
 #DATE_PATTERN = re.compile("(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\-\s?\d\d?\-\s?\d\s?\.?\s?\d(\d\d)?)")
 DATE_PATTERN = re.compile("(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\-\s?\d\d?\-\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\.\s?\d\d?\.\s?\d\s?\.?\s?\d(\d\d)?)")
 FILENAME_MUNIC = "data/municipios.txt"
 MUNICIPIOS = read_lower_cased_strings("data/municipios.txt")
-WSIZE = 100
+WSIZE = 300
 MODALIDADES = ["convite", "tomada de preços", "concorrência", "concurso", "pregão presencial", "pregão eletrônico", "leilão"]
 TIPOS = ["melhor técnica", "menor preço", "maior lance ou oferta", "técnica e preço"]
 INF = 999999999
@@ -194,6 +197,58 @@ def extract_municipio(tokenized_text):
 
 
 
+def process_data(date_string):
+    if DATE_PATTERN.match(date_string): #numeric format
+        dia, mes, ano = transform_data_numeric(date_string)
+    else:
+        dia, mes, ano = transform_data(date_string)
+    if dia == "":
+        return ""
+    if mes == "":
+        return ""
+    if ano == "":
+        return ""
+    dd = "%02d" % (int(dia))
+    mm = "%02d" % (int(mes))
+    yyyy = ano
+    if valid_date(yyyy, mm, dd):
+        res = "-".join([yyyy, mm, dd])
+    else:
+        res = ""
+    return res
+
+
+def transform_data_numeric(date_string):
+    if ("/" in date_string):
+        spl = date_string.split("/")
+    elif ("-" in date_string):
+        spl = date_string.split("-")
+    elif ("." in date_string):
+        spl = date_string.split(".")
+    dia = extract_digits(spl[0])
+    mes = extract_digits(spl[1])
+    ano = ""
+    if len(spl) == 3:
+        ano = extract_digits(spl[2])
+        if len(ano) == 2:
+            ano = "20" + ano
+    return dia, mes, ano
+
+
+def transform_data(string):
+    mes = 0
+    mid = 0
+    for m, num in MESES.items():
+        idx = string.find(m)
+        if idx != -1:
+            mes = num
+            mid = idx
+    dia = extract_digits(string[:mid])
+    ano = extract_digits(string[mid:])
+    if len(ano) == 2:
+        ano = "20" + ano
+    return dia, mes, ano
+
 #    if "MODALIDADE_LICITACAO" not in entities:
 #        return ""
 #    ents = entities["MODALIDADE_LICITACAO"]
@@ -257,57 +312,29 @@ def extract_data_rec_doc(entities, ano):
     #dando prioridade a que tenha "receb" na string do contexto anterior
 
     N = 10
-    ind_verificado = -1
-    ok = False
     valid_times = []
-    valid_inds = []
+    valid_indices = []
+    best_times = []
  
-    for ind,tempo in enumerate(tempos):
+    for ind, tempo in enumerate(tempos):
         if ind > N:
             break
-        if not DATE_PATTERN.match(tempo[0]): #not ("/" in tempo[0] or "-" in tempo[0]):
-            continue
-        valid_times.append(tempo[0])
-        valid_inds.append(ind)
-        previous_window = tempo[1].lower()
-        if "rece" in previous_window or "abert" in previous_window or "public" in previous_window:
-            ok = True
-            ind_verificado = ind
-            break
-
-    if len(valid_times) == 0:
-        return ""
-
-    if ok:
-        print("Indice da data de recebimento", ind_verificado)
+        yyyymmdd = process_data(tempo[0].lower())
+        #print(tempo[0], "----->", yyyymmdd)
+        if yyyymmdd != "":
+            valid_times.append(yyyymmdd)
+            valid_indices.append(ind)
+            previous_window = tempo[1].lower()
+            if "receb" in previous_window or "abert" in previous_window or "public" in previous_window:
+                best_times.append(yyyymmdd)
+                break
+    if len(best_times) > 0:
+        date_string = tempos[ind][0]
+        res = best_times[0]
     else:
-        print("Nenhuma das strings \"rece\", \"abert\", \"public\" aparece no contexto de alguma data")
-        ind = valid_inds[0]
-
-
-    date_string = tempos[ind][0]
-    if ("/" in date_string):
-        spl = date_string.split("/")
-    elif ("-" in date_string):
-        spl = date_string.split("-")
-    elif ("." in date_string):
-        spl = date_string.split(".")
-    else:
-        return ""
-
-    dd = "%02d" % ( int(extract_digits(spl[0])) )
-    mm = "%02d" % ( int(extract_digits(spl[1])) )
-
-    if len(spl) == 3:
-        yyyy = extract_digits(spl[2])
-        if len(yyyy) == 2:
-            yyyy = "20" + yyyy
-    else:
-        yyyy = ano
-    if valid_date(yyyy, mm, dd):
-        res = "-".join( [yyyy, mm, dd] )
-    else:
-        res = ""
+        if len(valid_times) > 0:
+            date_string = tempos[valid_indices[0]][0]
+            res = valid_times[0]
     print("BEFORE:", date_string, "AFTER:", res)
     return res
 
