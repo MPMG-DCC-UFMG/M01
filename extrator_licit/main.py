@@ -324,7 +324,7 @@ def extract_data_rec_doc(entities, ano):
         if yyyymmdd != "":
             valid_times.append(yyyymmdd)
             valid_indices.append(ind)
-            previous_window = tempo[1].lower()
+            previous_window = tempo[1][-100:].lower()
             if "receb" in previous_window or "abert" in previous_window or "public" in previous_window:
                 best_times.append(yyyymmdd)
                 break
