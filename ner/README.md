@@ -24,7 +24,35 @@ Baixar o modelo de reconhecimento de entidades do link abaixo e colocá-lo na pa
    ```
 # Como executar:
 
+O programa pode ser executado em dois modos: (1) modo "servidor-cliente" e (2) modo "uma-execução".
+O modo "servidor-cliente" é indicado para carregar o modelo uma única vez e fazer quantas requisições quiser, sob demanda.
+O modo "uma-execução" executa o ner para um unico par entrada-saída e carrega novamente o modleo toda vez que é chamado.
+
+# Como executar (modo "servidor-cliente")
+
+1. Iniciar o servidor (uma única vez)
+```
+java -Dfile.encoding=UTF-8 -jar mp-ufmg-ner.jar
+```
+
+2. Fazer chamadas ao cliente. Cada chamada é feita através do comando:
+
+```
+java -Dfile.encoding=UTF-8 -cp mp-ufmg-ner.jar Client ENTRADA SAÍDA
+```
+
+onde:
+
+ - ENTRADA: caminho do arquivo de entrada (texto ou HTML ou PDF)
+ - SAÍDA: caminho do arquivo de saída (.JSON)
+
+
+# Como executar (modo "uma-execução")
+
+
+```
 java -Dfile.encoding=UTF-8 -jar mp-ufmg-ner.jar ENTRADA SAÍDA
+```
 
 onde:
 
@@ -32,6 +60,10 @@ onde:
 
 - SAÍDA é o nome do arquivo de saída (se ENTRADA for um arquivo) ou o nome do diretório de saída (se ENTRADA for um diretório).
 Configurações do NER
+
+
+# Configurações
+
 O arquivo config.txt apresenta algumas opções para executar o reconhecedor de entidades, entre elas a opção "segmented = true", que serve para dividir o texto em partes na saída. Normalmente não é necessário alterar nenhuma opção, mas em algumas situações isto pode ser útil. A lista de opções encontra-se abaixo:
 
 - removeNewLines: Remover (true) ou não (false) quebras de linha do texto
