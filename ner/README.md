@@ -26,7 +26,7 @@ Baixar o modelo de reconhecimento de entidades do link abaixo e colocá-lo na pa
 
 O programa pode ser executado em dois modos: (1) modo "servidor-cliente" e (2) modo "uma-execução".
 O modo "servidor-cliente" é indicado para carregar o modelo uma única vez e fazer quantas requisições quiser, sob demanda.
-O modo "uma-execução" executa o ner para um unico par entrada-saída e carrega novamente o modleo toda vez que é chamado.
+O modo "uma-execução" executa o ner para um unico par entrada-saída e carrega novamente o modelo toda vez que é chamado.
 
 # Como executar (modo "servidor-cliente")
 
