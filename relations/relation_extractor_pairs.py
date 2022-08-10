@@ -34,8 +34,8 @@ class RelationExtractor:
         }
 
         self.extraction_functions_2nd_step = {
-            ("PESSOA", "VALOR_MONETARIO"): self.pessoa_valor,
-            ("ORGANIZACAO", "VALOR_MONETARIO"): self.organizacao_valor,
+            ("VALOR_MONETARIO", "PESSOA", ): self.valor_pessoa,
+            ("VALOR_MONETARIO", "ORGANIZACAO"): self.valor_organizacao,
             ("ORGANIZACAO", "ORGANIZACAO"): self.contratante_contratado,
             ("ORGANIZACAO", "PESSOA"): self.contratante_contratado,
             ("PESSOA", "PESSOA"): self.contratante_contratado
@@ -113,6 +113,9 @@ class RelationExtractor:
         if d is not None:
             e1.add_candidate(e2, d, "competencia-pessoa")
             e2.has_competencia = True
+            for ent in self.type2entities["PESSOA"]:
+                if ent.lower_string == e2.lower_string:
+                    ent.has_competencia = True
 
     def competencia_organizacao(self, e1, e2):
         d = self.proximity_score(e1, e2, context_size=30, prioritize_e1_before_e2=True)
@@ -154,23 +157,23 @@ class RelationExtractor:
                 e1.add_candidate(e2, d, "licitacao-municipio")
 
 
-    def pessoa_valor(self, e1, e2):
-        if e1.has_competencia:  #Considerar que cargos publicos nao disputam uma licitacao
+    def valor_pessoa(self, e1, e2):
+        if e2.has_competencia:  #Considerar que cargos publicos nao disputam uma licitacao
             return
-        if e1.start > e2.end:
+        if e1.start < e2.end:
             return
-        d = self.proximity_score(e1, e2, context_size=400, prioritize_e1_before_e2=True)
+        d = self.proximity_score(e1, e2, context_size=400, prioritize_e1_before_e2=False)
         if d is not None:
-            e1.add_candidate(e2, d, "proposta-valor")
+            e1.add_candidate(e2, d, "valor-proposta")
 
-    def organizacao_valor(self, e1, e2):
-        if e1.is_public_org():   #Considerar que orgaos publicos nao disputam uma licitacao
+    def valor_organizacao(self, e1, e2):
+        if e2.is_public_org():   #Considerar que orgaos publicos nao disputam uma licitacao
             return
-        if e1.start > e2.end:
+        if e1.start < e2.end:
             return
-        d = self.proximity_score(e1, e2, context_size=400, prioritize_e1_before_e2=True)
+        d = self.proximity_score(e1, e2, context_size=400, prioritize_e1_before_e2=False)
         if d is not None:
-            e1.add_candidate(e2, d, "proposta-valor")
+            e1.add_candidate(e2, d, "valor-proposta")
 
 
     def organizacao_endereco(self, e1, e2):

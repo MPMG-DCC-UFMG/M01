@@ -78,6 +78,27 @@ def extract_num_processo(entities):
 
     modalid = None
 
+    if "LICITACAO" not in entities:
+        return "", "", None
+
+    #Formato de codigos[i]: [string_entidade, contexto_anterior, contexto_posterior]
+    codigos = entities["LICITACAO"]
+
+    part1, part2 = codigos[0][0].split("/")
+
+    part1 = str(int(extract_digits(part1)))
+    part2 = str(extract_digits(part2))
+    if len(part2) == 2:
+        part2 = "20" + part2
+    print("BEFORE:", codigos[0][0], "AFTER: %s/%s" % (part1, part2))
+
+    return part1, part2, modalid
+
+
+def extract_num_processo_old(entities):
+
+    modalid = None
+
     if "NUM_LICIT_OU_MODALID" not in entities:
         return "", "", None
 

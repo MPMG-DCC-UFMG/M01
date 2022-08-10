@@ -26,3 +26,4 @@ PROCESSO	(?i)((pal|pl|processo|prc|procedimento)(\s*[\w\u00C0-\u00FF]+){0,4}.?.?
 LICITACAO	(?i)((pp|preg|leil|inexig|dispens|convit|tomada|registro|concorr|credenc|chamada)(\s*[\w\u00C0-\u00FF]+){0,4}(.?.?n?(\u00b0|\u00ba)?.?.?\s?\d+\s?/[\d\.\s?]+\d))
 CONTRATO	(?i)((contrato)(\s*[\w\u00C0-\u00FF]+){0,6}n?(\u00b0|\u00ba)?.?.?\s?\d+\s?/[\d\.\s?]+\d)
 
+#NUM_LICIT_OU_MODALID	(\u00b0|\u00ba)\s?\d+\s?/[\d\.\s?]+
