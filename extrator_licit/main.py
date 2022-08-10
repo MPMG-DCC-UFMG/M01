@@ -15,7 +15,7 @@ DATE_PATTERN = re.compile("(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?
 FILENAME_MUNIC = "data/municipios.txt"
 MUNICIPIOS = read_lower_cased_strings("data/municipios.txt")
 WSIZE = 300
-MODALIDADES = ["convite", "tomada de preços", "concorrência", "concurso", "pregão presencial", "pregão eletrônico", "leilão"]
+MODALIDADES = ["convite", "tomada de preços", "concorrência", "concurso", "pregão presencial", "pregão eletrônico", "pregão", "leilão"]
 TIPOS = ["melhor técnica", "menor preço", "maior lance ou oferta", "técnica e preço"]
 INF = 999999999
 
