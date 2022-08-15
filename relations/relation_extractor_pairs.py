@@ -145,7 +145,7 @@ class RelationExtractor:
     def licitacao_data(self, e1, e2):
         if self.is_in_context(["abert", "receb", "início", "partir", "inicia"], e2, left_context_size=40, right_context_size=0):
             self.data_abertura = e2
-            d = self.proximity_score(e1, e2, context_size=30, prioritize_e1_before_e2=True)
+            d = self.proximity_score(e1, e2, context_size=400, prioritize_e1_before_e2=True)
             if d is not None:
                 e1.add_candidate(e2, d, "data_abertura")
 

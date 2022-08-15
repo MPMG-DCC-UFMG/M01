@@ -35,7 +35,7 @@ class MunicipioMatcher:
                 start_char, end_char = m.span()
                 window_start = max(0, start_char - context_size)
                 context = text_lower[window_start:start_char]
-                if "municip" in context or "prefeit" in context:
+                if "municip" in context or "prefeit" in context or "municíp" in context:
                     context_municipios.add(name)
                 res.append( (name, Entity(start_char, end_char, name.upper(), "MUNICIPIO")) )
         return [ent for (name, ent) in res if name in context_municipios]

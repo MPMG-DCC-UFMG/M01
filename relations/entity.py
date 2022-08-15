@@ -25,7 +25,8 @@ class Entity:
         return {"entity": self.string, "start": self.start, "end": self.end, "label": self.label, "idx": self.idx}
 
     def is_public_org(self):
-        words = ["públic", "public", "municip", "municíp", "estadual", "federal", "secretaria", "fundação", "conselho", "diretoria"]
+        words = ["públic", "public", "municip", "municíp", "estadual", "federal", "secretaria", "fundação",
+                 "conselho", "diretoria", "minist"]
         for word in words:
             if word in self.lower_string:
                 return True
