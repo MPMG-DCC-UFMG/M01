@@ -38,13 +38,11 @@ java -Dfile.encoding=UTF-8 -jar mp-ufmg-ner.jar
 2. Fazer chamadas ao cliente. Cada chamada é feita através do comando:
 
 ```
-java -Dfile.encoding=UTF-8 -cp mp-ufmg-ner.jar Client ENTRADA SAÍDA
+java -Dfile.encoding=UTF-8 -cp mp-ufmg-ner.jar Client [ENTRADA] [SAÍDA]
 ```
 
-onde:
-
- - ENTRADA: caminho do arquivo de entrada (texto ou HTML ou PDF)
- - SAÍDA: caminho do arquivo de saída (.JSON)
+onde ENTRADA e SAIDA são argumentos opcionais e indicam os arquivos de entrada e saída, respectivamente.
+Caso não forem fornecidos esses argumentos, serão utilizados a entrada e a saída padrão
 
 
 # Como executar (modo "uma-execução")
