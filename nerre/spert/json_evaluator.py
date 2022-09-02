@@ -8,12 +8,18 @@ def ent_tuple_typeless(ent):
     return (ent["start"], ent["end"])
 
 
-def convert(jdata):
+def convert(jdata, min_score=0):
     rels = {"|micro": set()}
     ents = {"|micro": set()}
     for i,dic in enumerate(jdata):
         entities = dic["entities"]
         for ent in entities:
+            if "score" in ent:
+                score = ent["score"]
+            else:
+                score = 1
+            if score < min_score:
+                continue
             start = ent["start"]
             end = ent["end"]
             label = ent["type"]
@@ -25,6 +31,12 @@ def convert(jdata):
         if "relations" not in dic:
             continue
         for rel in dic["relations"]:
+            if "score" in rel:
+                score = rel["score"]
+            else:
+                score = 1
+            if score < min_score:
+                continue
             head = rel["head"]
             tail = rel["tail"]
             if head > tail:
@@ -39,8 +51,8 @@ def convert(jdata):
             rels["|micro"].add(cls)
     return ents,rels
 
-def evaluate(pred, gt):
-    gt_ents, gt_rels = convert(gt)
+def evaluate(pred, gt, min_score=0):
+    gt_ents, gt_rels = convert(gt, min_score=min_score)
     pred_ents, pred_rels = convert(pred)
     print("Entities")
     print(calc_metrics(pred_ents, gt_ents))
@@ -107,5 +119,9 @@ file2 = open(sys.argv[2], encoding="utf-8")
 pred = json.load(file1)
 gt = json.load(file2)
 
-evaluate(pred, gt)
+min_score = 0
+if len(sys.argv) == 4:
+    min_score = float(sys.argv[3])
+
+evaluate(pred, gt, min_score=min_score)
 

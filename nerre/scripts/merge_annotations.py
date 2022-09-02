@@ -1,5 +1,6 @@
 import sys
 import json
+import os
 from operator import itemgetter
 
 def process_relations(relations, entities, res):
@@ -48,17 +49,16 @@ def merge_jsons(jdatas):
                     new_entmap_reverse[etuple] = ent_idx
                     ent2scores[etuple] = 0 #voting score
                 ent2scores[etuple] += sc
-            if "relations" not in dic:
-                continue
-            for rel in dic["relations"]:
+
+            for rel in annot["relations"]:
                 if "score" in rel:
                     sc = rel["score"]
                 else:
                     sc = 1 #default value
                 rtuple = (entmap[rel["head"]], entmap[rel["tail"]], rel["type"])
                 if rtuple not in rel2scores:
-                    rel2score[rtuple] = 0 #voting score
-                rel2score[rtuple] += sc
+                    rel2scores[rtuple] = 0 #voting score
+                rel2scores[rtuple] += sc
         new_entities = [None for j in range(len(new_entmap))]
         idmap = {}
         sorted_entities = sorted(new_entmap.items(), key=itemgetter(1))
@@ -85,8 +85,9 @@ def merge_jsons(jdatas):
 #Main
 
 
-outfile = open(sys.argv[1], "w", encoding="utf-8")
-infiles = [open(x, encoding="utf-8") for x in sys.argv[2:]]
+outfile = open(sys.argv[2], "w", encoding="utf-8")
+indir = sys.argv[1]
+infiles = [open(indir + os.sep + x, encoding="utf-8") for x in os.listdir(indir)]
 jdatas = [ json.load(infile) for infile in infiles ]
 
 for infile in infiles:
