@@ -35,8 +35,19 @@ O modo "uma-execução" executa o ner para um unico par entrada-saída e carrega
 java -Dfile.encoding=UTF-8 -jar mp-ufmg-ner.jar
 ```
 
-2. Fazer chamadas ao cliente. Cada chamada é feita através do comando:
+2. Fazer chamadas ao cliente. Há dois modos de uso do cliente:
+(1) passagem direta do texto de entrada pela linha de comando; e
+(2) passagem de arquivos
 
+Modo (1):
+
+```
+java -Dfile.encoding=UTF-8 -cp mp-ufmg-ner.jar Client TEXTO
+```
+
+onde TEXTO é a string do texto de entrada. Nesse modo, a resposta é gerada na saída padrão do cliente.
+
+Modo (2):
 ```
 java -Dfile.encoding=UTF-8 -cp mp-ufmg-ner.jar Client [ENTRADA] [SAÍDA]
 ```
