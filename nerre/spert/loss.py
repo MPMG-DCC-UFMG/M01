@@ -30,8 +30,7 @@ class SpERTLoss(Loss):
         rel_sample_masks = rel_sample_masks.view(-1).float()
         rel_count = rel_sample_masks.sum()
 
-        if rel_count.item() != 0:
-        #if rel_logits.shape[-1] != 0:
+        if rel_count.item() != 0 and rel_logits.shape[-1] != 0:
             rel_logits = rel_logits.view(-1, rel_logits.shape[-1])
             rel_types = rel_types.view(-1, rel_types.shape[-1])
 
