@@ -118,14 +118,50 @@ def to_json(jdata):
     return res
 
 
+
+def txt2json(data):
+    res = []
+    lines = data.split("\n")
+    i = 0
+    answer = None
+    for line in lines:
+        lin = line.strip()
+        if lin == "":
+            continue
+        #print(lin)
+        if lin.startswith("[Text]:"):
+            if answer != None:
+                dic = {"input": text, "output": answer}
+                #print(dic)
+                res.append(dic)
+            text = lin[8:]
+            answer = ""
+        else: #Continuacao do texto ou da resposta
+            if lin.startswith("["):
+                if not lin.startswith("[ID]"):
+                    answer += (lin + "\n")
+            else:
+                text += (lin + "\n")
+
+    res.append({"input": text, "output": answer})
+    return to_json(res)
+
+
+
+
 if __name__ == "__main__":
 
     infile = open(sys.argv[1], encoding="utf-8")
     output = open(sys.argv[2], "w", encoding="utf-8")
-    data = json.load(infile)
-    infile.close()
 
-    res = to_json(data)
+    if infile.name.endswith(".json"):
+        data = json.load(infile)
+        res = to_json(data)
+    else:
+        data = infile.read()
+        res = txt2json(data)
+
     json.dump(res, output, indent=4)
+    infile.close()
     output.close()
 

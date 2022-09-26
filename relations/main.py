@@ -25,6 +25,38 @@ import re
 #TREE_TIPOS.print_tree()
 
 
+def extract_relations(data, use_indices=True, verbose=False):
+    infile.close()
+    mun_matcher = MunicipioMatcher()
+    # Trata os dois formatos - texto segmentado ou nao
+    if "sentences" in data:
+        segments = data["sentences"]
+    else:
+        segments = [data]
+
+    for segment in segments:
+        text = segment["text"]
+        municipio_ents = mun_matcher.match(text)  # Adiciona municipios identificados
+
+        # entities: vetor de entidades na ordem em que elas aparecem no texto
+        entities = municipio_ents + [Entity(ent["start"], ent["end"], ent["entity"], ent["label"]) for ent in
+                                     segment["entities"]]
+        entities = sorted(entities)
+
+        for i, ent in enumerate(entities):
+            entities[i].idx = i
+
+        relation_extractor = RelationExtractor(entities, text)
+        relation_extractor.extract_relations()
+        rels = [rel.to_dict(use_entity_indices=use_indices) for rel in sorted(relation_extractor.relations)]
+        ents = [ent.to_dict() for ent in entities]
+        segment["relations"] = rels
+        segment["entities"] = ents
+
+        if verbose:
+            for rel in rels:
+                print(rel)
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
@@ -44,38 +76,8 @@ if __name__ == "__main__":
     outfile = open(outname, "w", encoding="utf-8")
     data = json.load(infile)
     infile.close()
-
-    mun_matcher = MunicipioMatcher()
-
-    # Trata os dois formatos - texto segmentado ou nao
-    if "sentences" in data:
-        segments = data["sentences"]
-    else:
-        segments = [data]
-
-    for segment in segments:
-
-        text = segment["text"]
-        municipio_ents = mun_matcher.match(text) #Adiciona municipios identificados
-
-        # entities: vetor de entidades na ordem em que elas aparecem no texto
-        entities = municipio_ents + [Entity(ent["start"], ent["end"], ent["entity"], ent["label"]) for ent in segment["entities"]]
-        entities = sorted(entities)
-
-        for i, ent in enumerate(entities):
-            entities[i].idx = i
-
-        relation_extractor = RelationExtractor(entities, text)
-        relation_extractor.extract_relations()
-        rels = [rel.to_dict(use_entity_indices=use_indices) for rel in sorted(relation_extractor.relations)]
-        ents = [ent.to_dict() for ent in entities]
-        segment["relations"] = rels
-        segment["entities"] = ents
-
-        if verbose:
-            for rel in rels:
-                print(rel)
-
+    #data é modificado, acrescentando-se as relações
+    extract_relations(data, use_indices=use_indices, verbose=verbose)
     json.dump(data, outfile, indent=4)
     outfile.close()
 
