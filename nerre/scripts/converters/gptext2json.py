@@ -99,7 +99,7 @@ def to_json(jdata):
                     continue
                 label = spl[0].strip()
                 span = spl[1].strip()
-                if span in labels or span == "nenhum" or span == "none":
+                if span in labels or span.lower() == "nenhum" or span == "none":
                     continue
                 if label not in labels:
                     continue
