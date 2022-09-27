@@ -230,16 +230,6 @@
                 "start": 192,
                 "end": 193,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 162,
-                "end": 163,
-                "type": "PESSOA"
-            },
-            {
-                "start": 162,
-                "end": 163,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -2961,11 +2951,6 @@
                 "start": 312,
                 "end": 313,
                 "type": "PESSOA"
-            },
-            {
-                "start": 264,
-                "end": 265,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -3166,16 +3151,6 @@
                 "start": 28,
                 "end": 29,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 34,
-                "end": 35,
-                "type": "PESSOA"
-            },
-            {
-                "start": 34,
-                "end": 35,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -3940,16 +3915,6 @@
                 "start": 381,
                 "end": 382,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 230,
-                "end": 231,
-                "type": "PESSOA"
-            },
-            {
-                "start": 230,
-                "end": 231,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -4700,26 +4665,6 @@
                 "start": 90,
                 "end": 91,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 78,
-                "end": 79,
-                "type": "PESSOA"
-            },
-            {
-                "start": 86,
-                "end": 87,
-                "type": "PESSOA"
-            },
-            {
-                "start": 78,
-                "end": 79,
-                "type": "LOCAL"
-            },
-            {
-                "start": 86,
-                "end": 87,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -5289,11 +5234,6 @@
                 "start": 8,
                 "end": 13,
                 "type": "PESSOA"
-            },
-            {
-                "start": 485,
-                "end": 486,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -6359,11 +6299,6 @@
                 "start": 57,
                 "end": 59,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 204,
-                "end": 205,
-                "type": "PESSOA"
             }
         ],
         "relations": []
@@ -7180,18 +7115,7 @@
             "prote\u00e7\u00e3o",
             "."
         ],
-        "entities": [
-            {
-                "start": 13,
-                "end": 14,
-                "type": "PESSOA"
-            },
-            {
-                "start": 13,
-                "end": 14,
-                "type": "LOCAL"
-            }
-        ],
+        "entities": [],
         "relations": []
     },
     {
@@ -7666,26 +7590,6 @@
                 "start": 89,
                 "end": 92,
                 "type": "PESSOA"
-            },
-            {
-                "start": 54,
-                "end": 55,
-                "type": "LOCAL"
-            },
-            {
-                "start": 116,
-                "end": 117,
-                "type": "LOCAL"
-            },
-            {
-                "start": 143,
-                "end": 144,
-                "type": "LOCAL"
-            },
-            {
-                "start": 176,
-                "end": 177,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -7973,16 +7877,6 @@
                 "start": 180,
                 "end": 181,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 210,
-                "end": 211,
-                "type": "PESSOA"
-            },
-            {
-                "start": 210,
-                "end": 211,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -8682,16 +8576,6 @@
                 "start": 405,
                 "end": 406,
                 "type": "PESSOA"
-            },
-            {
-                "start": 351,
-                "end": 352,
-                "type": "LOCAL"
-            },
-            {
-                "start": 439,
-                "end": 440,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -9708,16 +9592,6 @@
                 "start": 9,
                 "end": 10,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 37,
-                "end": 38,
-                "type": "PESSOA"
-            },
-            {
-                "start": 37,
-                "end": 38,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -11626,36 +11500,6 @@
                 "start": 278,
                 "end": 279,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 164,
-                "end": 165,
-                "type": "PESSOA"
-            },
-            {
-                "start": 195,
-                "end": 196,
-                "type": "PESSOA"
-            },
-            {
-                "start": 301,
-                "end": 302,
-                "type": "PESSOA"
-            },
-            {
-                "start": 164,
-                "end": 165,
-                "type": "LOCAL"
-            },
-            {
-                "start": 195,
-                "end": 196,
-                "type": "LOCAL"
-            },
-            {
-                "start": 301,
-                "end": 302,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -21080,16 +20924,6 @@
                 "start": 182,
                 "end": 184,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 306,
-                "end": 307,
-                "type": "PESSOA"
-            },
-            {
-                "start": 306,
-                "end": 307,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -21567,11 +21401,6 @@
                 "start": 189,
                 "end": 190,
                 "type": "PESSOA"
-            },
-            {
-                "start": 61,
-                "end": 62,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -22155,16 +21984,6 @@
                 "start": 8,
                 "end": 10,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 101,
-                "end": 102,
-                "type": "PESSOA"
-            },
-            {
-                "start": 101,
-                "end": 102,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -22498,16 +22317,6 @@
                 "start": 142,
                 "end": 145,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 82,
-                "end": 83,
-                "type": "PESSOA"
-            },
-            {
-                "start": 82,
-                "end": 83,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -24005,16 +23814,6 @@
                 "start": 185,
                 "end": 186,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 178,
-                "end": 179,
-                "type": "PESSOA"
-            },
-            {
-                "start": 178,
-                "end": 179,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -24819,16 +24618,6 @@
                 "start": 121,
                 "end": 122,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 140,
-                "end": 141,
-                "type": "PESSOA"
-            },
-            {
-                "start": 140,
-                "end": 141,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -25848,16 +25637,6 @@
                 "start": 194,
                 "end": 195,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 534,
-                "end": 535,
-                "type": "PESSOA"
-            },
-            {
-                "start": 534,
-                "end": 535,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -26353,16 +26132,6 @@
                 "start": 377,
                 "end": 378,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 25,
-                "end": 26,
-                "type": "PESSOA"
-            },
-            {
-                "start": 25,
-                "end": 26,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -27455,18 +27224,7 @@
             "abusivas",
             "."
         ],
-        "entities": [
-            {
-                "start": 103,
-                "end": 104,
-                "type": "PESSOA"
-            },
-            {
-                "start": 103,
-                "end": 104,
-                "type": "LOCAL"
-            }
-        ],
+        "entities": [],
         "relations": []
     },
     {
@@ -29771,18 +29529,7 @@
             "anteriormente",
             "."
         ],
-        "entities": [
-            {
-                "start": 60,
-                "end": 61,
-                "type": "PESSOA"
-            },
-            {
-                "start": 60,
-                "end": 61,
-                "type": "LOCAL"
-            }
-        ],
+        "entities": [],
         "relations": []
     },
     {
@@ -32231,11 +31978,6 @@
                 "start": 97,
                 "end": 98,
                 "type": "PESSOA"
-            },
-            {
-                "start": 175,
-                "end": 176,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -34220,18 +33962,7 @@
             "pagamento",
             "."
         ],
-        "entities": [
-            {
-                "start": 19,
-                "end": 20,
-                "type": "PESSOA"
-            },
-            {
-                "start": 19,
-                "end": 20,
-                "type": "LOCAL"
-            }
-        ],
+        "entities": [],
         "relations": []
     },
     {
@@ -36845,28 +36576,7 @@
             "n\u00e3o",
             "conhecidos"
         ],
-        "entities": [
-            {
-                "start": 14,
-                "end": 15,
-                "type": "PESSOA"
-            },
-            {
-                "start": 20,
-                "end": 21,
-                "type": "PESSOA"
-            },
-            {
-                "start": 14,
-                "end": 15,
-                "type": "LOCAL"
-            },
-            {
-                "start": 20,
-                "end": 21,
-                "type": "LOCAL"
-            }
-        ],
+        "entities": [],
         "relations": []
     },
     {
@@ -39934,16 +39644,6 @@
                 "start": 132,
                 "end": 133,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 140,
-                "end": 141,
-                "type": "PESSOA"
-            },
-            {
-                "start": 140,
-                "end": 141,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -40698,16 +40398,6 @@
                 "start": 224,
                 "end": 225,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 157,
-                "end": 158,
-                "type": "PESSOA"
-            },
-            {
-                "start": 157,
-                "end": 158,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -41747,11 +41437,6 @@
                 "start": 21,
                 "end": 25,
                 "type": "PESSOA"
-            },
-            {
-                "start": 394,
-                "end": 395,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -41996,16 +41681,6 @@
                 "start": 11,
                 "end": 12,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 119,
-                "end": 120,
-                "type": "PESSOA"
-            },
-            {
-                "start": 119,
-                "end": 120,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -45838,16 +45513,6 @@
                 "start": 214,
                 "end": 219,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 367,
-                "end": 368,
-                "type": "PESSOA"
-            },
-            {
-                "start": 367,
-                "end": 368,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -47188,11 +46853,6 @@
                 "start": 477,
                 "end": 479,
                 "type": "PESSOA"
-            },
-            {
-                "start": 234,
-                "end": 235,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -47722,16 +47382,6 @@
                 "start": 14,
                 "end": 16,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 65,
-                "end": 66,
-                "type": "PESSOA"
-            },
-            {
-                "start": 65,
-                "end": 66,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -48960,16 +48610,6 @@
                 "start": 71,
                 "end": 73,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 99,
-                "end": 100,
-                "type": "PESSOA"
-            },
-            {
-                "start": 99,
-                "end": 100,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -49071,16 +48711,6 @@
                 "start": 70,
                 "end": 71,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 35,
-                "end": 36,
-                "type": "PESSOA"
-            },
-            {
-                "start": 35,
-                "end": 36,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -50409,16 +50039,6 @@
                 "start": 10,
                 "end": 11,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 16,
-                "end": 17,
-                "type": "PESSOA"
-            },
-            {
-                "start": 16,
-                "end": 17,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -51611,11 +51231,6 @@
                 "start": 392,
                 "end": 397,
                 "type": "PESSOA"
-            },
-            {
-                "start": 144,
-                "end": 145,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -52710,26 +52325,6 @@
                 "start": 69,
                 "end": 70,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 60,
-                "end": 61,
-                "type": "PESSOA"
-            },
-            {
-                "start": 104,
-                "end": 105,
-                "type": "PESSOA"
-            },
-            {
-                "start": 60,
-                "end": 61,
-                "type": "LOCAL"
-            },
-            {
-                "start": 104,
-                "end": 105,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -52910,26 +52505,6 @@
                 "start": 15,
                 "end": 16,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 109,
-                "end": 110,
-                "type": "PESSOA"
-            },
-            {
-                "start": 109,
-                "end": 110,
-                "type": "LOCAL"
-            },
-            {
-                "start": 109,
-                "end": 110,
-                "type": "PESSOA"
-            },
-            {
-                "start": 109,
-                "end": 110,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -54386,16 +53961,6 @@
                 "start": 2,
                 "end": 3,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 11,
-                "end": 12,
-                "type": "PESSOA"
-            },
-            {
-                "start": 11,
-                "end": 12,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -55259,16 +54824,6 @@
                 "start": 69,
                 "end": 70,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 76,
-                "end": 77,
-                "type": "PESSOA"
-            },
-            {
-                "start": 76,
-                "end": 77,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -57929,11 +57484,6 @@
                 "start": 222,
                 "end": 225,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 89,
-                "end": 90,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -58158,18 +57708,7 @@
             "faculdade",
             "."
         ],
-        "entities": [
-            {
-                "start": 39,
-                "end": 40,
-                "type": "PESSOA"
-            },
-            {
-                "start": 39,
-                "end": 40,
-                "type": "LOCAL"
-            }
-        ],
+        "entities": [],
         "relations": []
     },
     {
@@ -59934,11 +59473,6 @@
                 "start": 43,
                 "end": 51,
                 "type": "PESSOA"
-            },
-            {
-                "start": 54,
-                "end": 55,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -60367,16 +59901,6 @@
                 "start": 9,
                 "end": 10,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 58,
-                "end": 59,
-                "type": "PESSOA"
-            },
-            {
-                "start": 58,
-                "end": 59,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -62063,16 +61587,6 @@
                 "start": 73,
                 "end": 79,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 121,
-                "end": 122,
-                "type": "PESSOA"
-            },
-            {
-                "start": 121,
-                "end": 122,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -62706,16 +62220,6 @@
                 "start": 51,
                 "end": 52,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 65,
-                "end": 66,
-                "type": "PESSOA"
-            },
-            {
-                "start": 65,
-                "end": 66,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -63149,26 +62653,6 @@
                 "start": 27,
                 "end": 28,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 97,
-                "end": 98,
-                "type": "PESSOA"
-            },
-            {
-                "start": 151,
-                "end": 152,
-                "type": "PESSOA"
-            },
-            {
-                "start": 97,
-                "end": 98,
-                "type": "LOCAL"
-            },
-            {
-                "start": 151,
-                "end": 152,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -63949,16 +63433,6 @@
                 "start": 20,
                 "end": 22,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 80,
-                "end": 81,
-                "type": "PESSOA"
-            },
-            {
-                "start": 80,
-                "end": 81,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -64545,16 +64019,6 @@
                 "start": 59,
                 "end": 60,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 54,
-                "end": 55,
-                "type": "PESSOA"
-            },
-            {
-                "start": 54,
-                "end": 55,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -67305,28 +66769,7 @@
             "desaparecidos",
             "."
         ],
-        "entities": [
-            {
-                "start": 41,
-                "end": 42,
-                "type": "PESSOA"
-            },
-            {
-                "start": 48,
-                "end": 49,
-                "type": "PESSOA"
-            },
-            {
-                "start": 41,
-                "end": 42,
-                "type": "LOCAL"
-            },
-            {
-                "start": 48,
-                "end": 49,
-                "type": "LOCAL"
-            }
-        ],
+        "entities": [],
         "relations": []
     },
     {
@@ -68466,28 +67909,7 @@
             "etiqueta",
             "."
         ],
-        "entities": [
-            {
-                "start": 25,
-                "end": 26,
-                "type": "PRODUTO_OU_SERVICO"
-            },
-            {
-                "start": 25,
-                "end": 26,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 25,
-                "end": 26,
-                "type": "PESSOA"
-            },
-            {
-                "start": 25,
-                "end": 26,
-                "type": "LOCAL"
-            }
-        ],
+        "entities": [],
         "relations": []
     },
     {
@@ -68830,26 +68252,6 @@
                 "start": 76,
                 "end": 77,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 67,
-                "end": 68,
-                "type": "PESSOA"
-            },
-            {
-                "start": 67,
-                "end": 68,
-                "type": "LOCAL"
-            },
-            {
-                "start": 67,
-                "end": 68,
-                "type": "PESSOA"
-            },
-            {
-                "start": 67,
-                "end": 68,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -69045,26 +68447,6 @@
                 "start": 23,
                 "end": 26,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 66,
-                "end": 67,
-                "type": "PESSOA"
-            },
-            {
-                "start": 74,
-                "end": 75,
-                "type": "PESSOA"
-            },
-            {
-                "start": 66,
-                "end": 67,
-                "type": "LOCAL"
-            },
-            {
-                "start": 74,
-                "end": 75,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -72181,16 +71563,6 @@
                 "start": 63,
                 "end": 65,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 107,
-                "end": 108,
-                "type": "PESSOA"
-            },
-            {
-                "start": 107,
-                "end": 108,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -73092,11 +72464,6 @@
                 "start": 127,
                 "end": 132,
                 "type": "PESSOA"
-            },
-            {
-                "start": 168,
-                "end": 169,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -77191,16 +76558,6 @@
                 "start": 10,
                 "end": 12,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 160,
-                "end": 161,
-                "type": "PESSOA"
-            },
-            {
-                "start": 160,
-                "end": 161,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -81232,16 +80589,6 @@
                 "start": 67,
                 "end": 69,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 181,
-                "end": 182,
-                "type": "PESSOA"
-            },
-            {
-                "start": 181,
-                "end": 182,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -81895,11 +81242,6 @@
                 "start": 212,
                 "end": 213,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 260,
-                "end": 261,
-                "type": "PESSOA"
             },
             {
                 "start": 12,
@@ -82988,16 +82330,6 @@
                 "start": 62,
                 "end": 63,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 13,
-                "end": 14,
-                "type": "PESSOA"
-            },
-            {
-                "start": 13,
-                "end": 14,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -84776,26 +84108,6 @@
                 "start": 8,
                 "end": 9,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 225,
-                "end": 226,
-                "type": "PESSOA"
-            },
-            {
-                "start": 290,
-                "end": 291,
-                "type": "PESSOA"
-            },
-            {
-                "start": 225,
-                "end": 226,
-                "type": "LOCAL"
-            },
-            {
-                "start": 290,
-                "end": 291,
-                "type": "LOCAL"
             }
         ],
         "relations": []
@@ -85477,13 +84789,7 @@
             "consumidor",
             "."
         ],
-        "entities": [
-            {
-                "start": 268,
-                "end": 269,
-                "type": "PESSOA"
-            }
-        ],
+        "entities": [],
         "relations": []
     },
     {
@@ -85822,28 +85128,7 @@
             "MERCADORIA",
             "."
         ],
-        "entities": [
-            {
-                "start": 25,
-                "end": 26,
-                "type": "PRODUTO_OU_SERVICO"
-            },
-            {
-                "start": 25,
-                "end": 26,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 25,
-                "end": 26,
-                "type": "PESSOA"
-            },
-            {
-                "start": 25,
-                "end": 26,
-                "type": "LOCAL"
-            }
-        ],
+        "entities": [],
         "relations": []
     },
     {
@@ -88943,16 +88228,6 @@
                 "start": 34,
                 "end": 35,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 4,
-                "end": 5,
-                "type": "PESSOA"
-            },
-            {
-                "start": 4,
-                "end": 5,
-                "type": "LOCAL"
             }
         ],
         "relations": []
