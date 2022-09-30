@@ -18,7 +18,7 @@ public class TextSegmenter {
 
 	public List<String> split(String text) {
 		List<String> sentences = new LinkedList<String>();
-		Pattern endOfSentence = Pattern.compile("[\\.\\?!][\s\n]+[A-Z]");
+		Pattern endOfSentence = Pattern.compile("[\\.\\?!][\\s\n]+[A-Z]");
 		int previousStart = 0;
 		//String prevSegment = "";
 		Matcher matcher = endOfSentence.matcher(text);
