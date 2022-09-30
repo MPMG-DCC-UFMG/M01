@@ -37,7 +37,7 @@ public class CpfCnpjUtils {
     }
 
     public static boolean isValidCNPJ(String cnpj) {
-        cnpj = cnpj.trim().replaceAll("[.\s]", "").replace("-", "").replace("/", "");
+        cnpj = cnpj.trim().replaceAll("[.\\s]", "").replace("-", "").replace("/", "");
         if ((cnpj==null)||(cnpj.length()!=14)) return false;
 
         Integer digito1 = calcularDigito(cnpj.substring(0,12), pesoCNPJ);

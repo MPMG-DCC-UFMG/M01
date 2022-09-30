@@ -24,7 +24,8 @@ public class PostProcessor {
 	        add("rodovia");
 	        add("jd");
 	        add("jd.");
-	        add("pra�a");
+	        add("praça");
+	        add("pç");
 	        add("ilha");
 	        add("travessia");
 	    }
@@ -33,7 +34,7 @@ public class PostProcessor {
 	public static Triple<String, Integer, Integer> correct(Triple<String, Integer, Integer> triple, String text) {
 		int st = triple.second - 15;
 		int begin = Math.max(0, st);
-		String[] prefix = text.substring(begin, triple.second).toLowerCase().split("\s+");
+		String[] prefix = text.substring(begin, triple.second).toLowerCase().split("\\s+");
 		if(prefix.length == 0)
 			return triple;
 		String lastWord = prefix[prefix.length - 1];

@@ -19,7 +19,7 @@ public class Client {
 	public static void main(String[] args) throws UnknownHostException, IOException {
 		
 //		if (args.length < 2) {
-//			System.err.println("uso: java -jar mp-ufmg-ner.jar <arquivo de entrada> <arquivo de saída>");
+//			System.err.println("uso: java -jar mp-ufmg-ner.jar <arquivo de entrada> <arquivo de saida>");
 //			System.exit(1);
 //		}
 		
