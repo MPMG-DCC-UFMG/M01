@@ -1,0 +1,116 @@
+{
+    "entities": {
+        "PROCESSO": {
+            "short": "PROCESSO",
+            "verbose": "PROCESSO"
+        },
+        "TEL": {
+            "short": "TEL",
+            "verbose": "TEL"
+        },
+        "ORGANIZACAO": {
+            "short": "ORGANIZACAO",
+            "verbose": "ORGANIZACAO"
+        },
+        "CONTRATO": {
+            "short": "CONTRATO",
+            "verbose": "CONTRATO"
+        },
+        "PESSOA": {
+            "short": "PESSOA",
+            "verbose": "PESSOA"
+        },
+        "MUNICIPIO": {
+            "short": "MUNICIPIO",
+            "verbose": "MUNICIPIO"
+        },
+        "COMPETENCIA": {
+            "short": "COMPETENCIA",
+            "verbose": "COMPETENCIA"
+        },
+        "DOTACAO_ORCAMENTARIA": {
+            "short": "DOTACAO_ORCAMEN",
+            "verbose": "DOTACAO_ORCAMENTARIA"
+        },
+        "DATA": {
+            "short": "DATA",
+            "verbose": "DATA"
+        },
+        "VALOR_MONETARIO": {
+            "short": "VALOR_MONETARIO",
+            "verbose": "VALOR_MONETARIO"
+        },
+        "ENDERECO": {
+            "short": "ENDERECO",
+            "verbose": "ENDERECO"
+        },
+        "LICITACAO": {
+            "short": "LICITACAO",
+            "verbose": "LICITACAO"
+        },
+        "CPF": {
+            "short": "CPF",
+            "verbose": "CPF"
+        },
+        "CNPJ": {
+            "short": "CNPJ",
+            "verbose": "CNPJ"
+        },
+        "LEGISLACAO": {
+            "short": "LEGISLACAO",
+            "verbose": "LEGISLACAO"
+        }
+    },
+    "relations": {
+        "cpf": {
+            "short": "cpf",
+            "verbose": "cpf",
+            "symmetric": false
+        },
+        "licitacao-municipio": {
+            "short": "licitacao-munic",
+            "verbose": "licitacao-municipio",
+            "symmetric": false
+        },
+        "cnpj": {
+            "short": "cnpj",
+            "verbose": "cnpj",
+            "symmetric": false
+        },
+        "competencia-pessoa": {
+            "short": "competencia-pes",
+            "verbose": "competencia-pessoa",
+            "symmetric": false
+        },
+        "competencia-organizacao": {
+            "short": "competencia-org",
+            "verbose": "competencia-organizacao",
+            "symmetric": false
+        },
+        "localizado_em": {
+            "short": "localizado_em",
+            "verbose": "localizado_em",
+            "symmetric": false
+        },
+        "contratante-contratado": {
+            "short": "contratante-con",
+            "verbose": "contratante-contratado",
+            "symmetric": false
+        },
+        "contrato-licitacao": {
+            "short": "contrato-licita",
+            "verbose": "contrato-licitacao",
+            "symmetric": false
+        },
+        "licitacao-processo": {
+            "short": "licitacao-proce",
+            "verbose": "licitacao-processo",
+            "symmetric": false
+        },
+        "valor-proposta": {
+            "short": "valor-proposta",
+            "verbose": "valor-proposta",
+            "symmetric": false
+        }
+    }
+}
