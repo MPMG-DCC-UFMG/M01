@@ -33,7 +33,7 @@ for i in range(0, len(data), foldsize):
 for i in range(nfolds):
     train = []
     for j in range(nfolds):
-        if j != i and j != (i + 1) % nfolds:
+        if j != i : # and j != (i + 1) % nfolds:
             train += tests[j]
     trains.append(train)
 
