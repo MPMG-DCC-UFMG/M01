@@ -13,13 +13,13 @@ for item in data:
     ents = item["entities"]
     rels = item["relations"]
 
-    new_tokens = tokens[:max_size+1]
+    new_tokens = tokens[:max_size]
     new_ents = []
     new_rels = []
     to_exclude = set()
     for i, ent in enumerate(ents):
-        start = ent["start"]
-        if start < max_size:
+        end = ent["end"]
+        if end < max_size:
             new_ents.append(ent)
         else:
             to_exclude.add(i)

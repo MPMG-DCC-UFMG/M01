@@ -150,8 +150,7 @@
             ",",
             "10",
             "\u2013",
-            "Centro",
-            "\u2013"
+            "Centro"
         ],
         "entities": [
             {
@@ -725,8 +724,7 @@
             ",",
             "03",
             "de",
-            "junho",
-            "de"
+            "junho"
         ],
         "entities": [
             {
@@ -778,11 +776,6 @@
                 "start": 126,
                 "end": 129,
                 "type": "VALOR_MONETARIO"
-            },
-            {
-                "start": 147,
-                "end": 152,
-                "type": "DATA"
             }
         ],
         "relations": [
@@ -1545,8 +1538,7 @@
             "de",
             "13:00",
             "\u00e0s",
-            "16:00",
-            "horas"
+            "16:00"
         ],
         "entities": [
             {
@@ -3826,8 +3818,7 @@
             "Demais",
             "Atos",
             "Dever\u00e3o",
-            "Ser",
-            "Acompanhados"
+            "Ser"
         ],
         "entities": [
             {
@@ -6375,8 +6366,7 @@
             "n\u00ba",
             "264/2018",
             "e",
-            "Inexigibilidade",
-            "de"
+            "Inexigibilidade"
         ],
         "entities": [
             {
@@ -6443,11 +6433,6 @@
                 "start": 144,
                 "end": 148,
                 "type": "PROCESSO"
-            },
-            {
-                "start": 149,
-                "end": 154,
-                "type": "LICITACAO"
             }
         ],
         "relations": [
@@ -6460,11 +6445,6 @@
                 "head": 11,
                 "tail": 6,
                 "type": "valor-proposta"
-            },
-            {
-                "head": 13,
-                "tail": 12,
-                "type": "licitacao-processo"
             }
         ]
     },
@@ -6837,8 +6817,7 @@
             "Prefeito",
             "Municipal",
             "PATRICIA",
-            "SARKIS",
-            "CARNEIRO"
+            "SARKIS"
         ],
         "entities": [
             {
@@ -6900,11 +6879,6 @@
                 "start": 146,
                 "end": 147,
                 "type": "COMPETENCIA"
-            },
-            {
-                "start": 148,
-                "end": 152,
-                "type": "PESSOA"
             }
         ],
         "relations": [
@@ -6917,11 +6891,6 @@
                 "head": 7,
                 "tail": 6,
                 "type": "licitacao-processo"
-            },
-            {
-                "head": 11,
-                "tail": 12,
-                "type": "competencia-pessoa"
             }
         ]
     },
