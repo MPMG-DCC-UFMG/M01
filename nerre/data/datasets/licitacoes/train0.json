@@ -615,7 +615,8 @@
             "licitacao@patrocinio.mg.gov",
             ".",
             "b",
-            "Tel"
+            "Tel",
+            ":"
         ],
         "entities": [
             {
@@ -1437,7 +1438,8 @@
             "Cabeceira",
             "Grande",
             "(",
-            "MG"
+            "MG",
+            ")"
         ],
         "entities": [
             {
@@ -4711,7 +4713,8 @@
             "Itens",
             "declarados",
             "Vencedores",
-            "("
+            "(",
+            "cfe"
         ],
         "entities": [
             {
@@ -6688,7 +6691,8 @@
             "Licita\u00e7\u00e3o",
             "da",
             "C\u00c2MARA",
-            "MUNICIPAL"
+            "MUNICIPAL",
+            "DE"
         ],
         "entities": [
             {
@@ -7164,7 +7168,8 @@
             "DIAGN\u00d3STICO",
             "DO",
             "HOSPITAL",
-            "S\u00c3O"
+            "S\u00c3O",
+            "PAULO"
         ],
         "entities": [
             {
@@ -8102,7 +8107,8 @@
             "suas",
             "altera\u00e7\u00f5es",
             "posteriores",
-            "e"
+            "e",
+            "Decreto"
         ],
         "entities": [
             {

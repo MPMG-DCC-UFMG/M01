@@ -13,7 +13,7 @@ for item in data:
     ents = item["entities"]
     rels = item["relations"]
 
-    new_tokens = tokens[:max_size]
+    new_tokens = tokens[:max_size+1]
     new_ents = []
     new_rels = []
     to_exclude = set()

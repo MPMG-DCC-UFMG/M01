@@ -150,7 +150,8 @@
             ",",
             "10",
             "\u2013",
-            "Centro"
+            "Centro",
+            "\u2013"
         ],
         "entities": [
             {
@@ -724,7 +725,8 @@
             ",",
             "03",
             "de",
-            "junho"
+            "junho",
+            "de"
         ],
         "entities": [
             {
@@ -1543,7 +1545,8 @@
             "de",
             "13:00",
             "\u00e0s",
-            "16:00"
+            "16:00",
+            "horas"
         ],
         "entities": [
             {
@@ -3823,7 +3826,8 @@
             "Demais",
             "Atos",
             "Dever\u00e3o",
-            "Ser"
+            "Ser",
+            "Acompanhados"
         ],
         "entities": [
             {
@@ -6371,7 +6375,8 @@
             "n\u00ba",
             "264/2018",
             "e",
-            "Inexigibilidade"
+            "Inexigibilidade",
+            "de"
         ],
         "entities": [
             {
@@ -6832,7 +6837,8 @@
             "Prefeito",
             "Municipal",
             "PATRICIA",
-            "SARKIS"
+            "SARKIS",
+            "CARNEIRO"
         ],
         "entities": [
             {
