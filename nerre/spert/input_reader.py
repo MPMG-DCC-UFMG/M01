@@ -255,7 +255,8 @@ def _parse_tokens(jtokens, dataset, tokenizer):
 
         doc_tokens.append(token)
         doc_encoding += token_encoding
-        #if len(doc_encoding) > 510:
+        if len(doc_encoding) > 510:
+            print("warning: too long text segment")
         #    break
 
     doc_encoding += [tokenizer.convert_tokens_to_ids('[SEP]')]
