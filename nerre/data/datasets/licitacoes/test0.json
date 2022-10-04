@@ -1,600 +1,544 @@
 [
     {
         "tokens": [
-            "Contrato",
-            "n.\u00ba",
-            "070/2018",
-            ",",
-            "Processo",
-            "Licitat\u00f3rio",
-            "n.\u00ba",
-            "052/2018",
-            ".",
-            "Objeto",
-            ":",
-            "Aquisi\u00e7\u00e3o",
-            "Pneus",
-            "e",
-            "C\u00e2maras",
-            "de",
-            "ar",
-            "para",
-            "a",
-            "frota",
-            "municipal",
-            ".",
-            "Contratado",
-            ":",
-            "FJ",
-            "Pneus",
-            "Ltda",
-            ".",
-            "Valor",
-            ":",
-            "R$",
-            "140.980,00",
-            ".",
-            "Assinatura",
-            "entre",
-            "as",
-            "partes",
-            ":",
-            "13/07/2018",
-            ".",
-            "Abadia",
-            "dos",
-            "Dourados-MG",
-            ",",
-            "13",
-            "de",
-            "setembro",
-            "de",
-            "2.018",
-            ".",
-            "WANDERLEI",
-            "LEMES",
-            "SANTOS",
-            "Prefeito",
-            "Municipal"
-        ],
-        "entities": [
-            {
-                "start": 0,
-                "end": 3,
-                "type": "CONTRATO"
-            },
-            {
-                "start": 4,
-                "end": 8,
-                "type": "PROCESSO"
-            },
-            {
-                "start": 24,
-                "end": 27,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 24,
-                "end": 28,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 30,
-                "end": 32,
-                "type": "VALOR_MONETARIO"
-            },
-            {
-                "start": 38,
-                "end": 39,
-                "type": "DATA"
-            },
-            {
-                "start": 44,
-                "end": 47,
-                "type": "DATA"
-            },
-            {
-                "start": 44,
-                "end": 49,
-                "type": "DATA"
-            },
-            {
-                "start": 50,
-                "end": 53,
-                "type": "PESSOA"
-            },
-            {
-                "start": 53,
-                "end": 54,
-                "type": "COMPETENCIA"
-            }
-        ],
-        "relations": [
-            {
-                "head": 4,
-                "tail": 3,
-                "type": "valor-proposta"
-            },
-            {
-                "head": 9,
-                "tail": 8,
-                "type": "competencia-pessoa"
-            }
-        ]
-    },
-    {
-        "tokens": [
-            "A",
-            "Prefeitura",
-            "Municipal",
-            "de",
-            "Serra",
-            "Azul",
-            "de",
-            "Minas",
+            "CIMAMS",
+            "-",
+            "CONS\u00d3RCIO",
+            "INTERMUNICIPAL",
+            "MULTIFINALIT\u00c1RIO",
+            "DA",
+            "AREA",
+            "MINEIRA",
+            "DA",
+            "SUDENE",
+            "CONTRATO",
+            "DE",
+            "PROGRAMA",
+            "EXTRATO",
+            "DE",
+            "CONTRATO",
+            "DE",
+            "PROGRAMA",
+            "O",
+            "CIMAMS",
+            "\u2013",
+            "Cons\u00f3rcio",
+            "Intermunicipal",
+            "Multifinalit\u00e1rio",
+            "da",
+            "\u00c1rea",
+            "Mineira",
+            "da",
+            "Sudene",
+            "\u2013",
             "torna",
             "p\u00fablico",
-            "que",
-            "far\u00e1",
-            "realizar",
-            "Processo",
+            "o",
+            "Contrato",
             "de",
-            "Licita\u00e7\u00e3o",
-            "N\u00ba",
-            "039/2015",
-            "\u2013",
-            "Preg\u00e3o",
-            "Presencial",
-            "N\u00ba",
-            "027/2015",
-            ".",
-            "Objeto",
-            ":",
-            "REGISTRO",
-            "DE",
-            "PRE\u00c7OS",
-            "PARA",
-            "EVENTUAL",
-            "AQUISI\u00c7\u00c3O",
-            "DE",
-            "PF",
+            "Programa",
+            "celebrado",
+            "entre",
+            "o",
+            "CIMAMS",
+            "e",
+            "o",
+            "Munic\u00edpio",
+            "de",
+            "Pint\u00f3polis",
+            ",",
             "(",
-            "PRATOS",
-            "FEITOS",
+            "CONTRATO",
+            "N\u00ba",
+            "013/2018",
             ")",
-            "PARA",
-            "OS",
-            "SERVIDORES",
-            "E",
-            "PRESTADORES",
-            "DE",
-            "SERVI\u00c7O",
-            "NO",
-            "MUNICIPIO",
-            "DE",
-            "GUANH\u00c3ES",
-            ".",
-            "Credenciamento",
-            "at\u00e9",
-            "as",
-            "09:00hs",
+            ";",
+            "Referente",
+            "a",
+            "Manuten\u00e7\u00e3o",
+            "Corretiva",
+            "e",
+            "Preventiva",
             "do",
-            "dia",
-            "14/05/2015",
-            "abertura",
-            "dia",
-            "14/05/2015",
-            "\u00e1s",
-            "09:00",
-            "horas",
+            "Sistema",
+            "de",
+            "Ilumina\u00e7\u00e3o",
+            "P\u00fablica",
+            "para",
+            "atender",
+            "o",
+            "Munic\u00edpio",
+            "de",
+            "Pint\u00f3polis",
+            "/",
+            "MG",
             ".",
-            "Aos",
-            "interessados",
-            ",",
-            "informa\u00e7\u00f5es",
-            "bem",
-            "como",
-            "edital",
-            "completo",
-            "estar\u00e1",
-            "a",
-            "disposi\u00e7\u00e3o",
-            "na",
-            "Prefeitura",
-            "Municipal",
-            "de",
-            "Serra",
-            "Azul",
-            "de",
-            "Minas",
-            "a",
-            "Av.",
-            "Geraldo",
-            "Gomes",
-            "de",
-            "Brito",
-            "N\u00ba94",
-            ",",
-            "centro",
-            "\u2013",
-            "Serra",
-            "Azul",
-            "de",
-            "Minas",
-            ",",
+            "Informa\u00e7\u00f5es",
+            "pelo",
             "telefone",
             ":",
             "(",
             "38",
             ")",
-            "3547-1200",
+            "9",
+            "9970-3832",
+            "ou",
+            "(",
+            "38",
+            ")",
+            "3221-0841",
             ",",
-            "Serra",
-            "Azul",
+            "e-mail",
+            ":",
+            "licitacaocimams@yahoo.com.br",
+            ".",
+            "Edmarcio",
+            "Moura",
+            "Leal",
+            "(",
+            "Presidente",
+            "do",
+            "CIMAMS",
+            ")",
+            ".",
+            "Efeitos",
             "de",
-            "Minas",
-            ",",
-            "8",
+            "Publica\u00e7\u00e3o",
+            "14",
             "de",
-            "abril",
+            "Mar\u00e7o",
             "de",
-            "2020",
-            ",",
-            "TATYANA",
-            "APARECIDA",
-            "FERREIRA",
-            "Pregoeira"
+            "2018",
+            "."
         ],
         "entities": [
             {
-                "start": 1,
-                "end": 8,
+                "start": 0,
+                "end": 10,
                 "type": "ORGANIZACAO"
             },
             {
-                "start": 4,
-                "end": 8,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 4,
-                "end": 8,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 4,
-                "end": 8,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 4,
-                "end": 8,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 13,
-                "end": 18,
-                "type": "PROCESSO"
-            },
-            {
                 "start": 19,
-                "end": 23,
-                "type": "LICITACAO"
+                "end": 29,
+                "type": "ORGANIZACAO"
             },
             {
-                "start": 56,
-                "end": 57,
-                "type": "DATA"
+                "start": 21,
+                "end": 29,
+                "type": "ORGANIZACAO"
             },
             {
-                "start": 59,
-                "end": 60,
-                "type": "DATA"
+                "start": 39,
+                "end": 40,
+                "type": "ORGANIZACAO"
             },
             {
-                "start": 79,
-                "end": 82,
-                "type": "MUNICIPIO"
+                "start": 47,
+                "end": 50,
+                "type": "CONTRATO"
             },
             {
-                "start": 79,
-                "end": 82,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 79,
-                "end": 82,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 79,
-                "end": 82,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 84,
-                "end": 92,
-                "type": "ENDERECO"
-            },
-            {
-                "start": 92,
-                "end": 96,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 92,
-                "end": 96,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 92,
-                "end": 96,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 92,
-                "end": 96,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 100,
-                "end": 104,
+                "start": 76,
+                "end": 81,
                 "type": "TEL"
             },
             {
-                "start": 104,
-                "end": 108,
-                "type": "MUNICIPIO"
+                "start": 82,
+                "end": 86,
+                "type": "TEL"
             },
             {
-                "start": 104,
-                "end": 108,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 104,
-                "end": 108,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 104,
-                "end": 108,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 110,
-                "end": 115,
-                "type": "DATA"
-            },
-            {
-                "start": 116,
-                "end": 119,
+                "start": 91,
+                "end": 94,
                 "type": "PESSOA"
             },
             {
-                "start": 119,
-                "end": 120,
+                "start": 95,
+                "end": 96,
                 "type": "COMPETENCIA"
+            },
+            {
+                "start": 97,
+                "end": 98,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 103,
+                "end": 108,
+                "type": "DATA"
             }
         ],
         "relations": [
             {
-                "head": 6,
-                "tail": 5,
-                "type": "licitacao-processo"
+                "head": 8,
+                "tail": 7,
+                "type": "competencia-pessoa"
             },
             {
-                "head": 25,
-                "tail": 24,
-                "type": "competencia-pessoa"
+                "head": 8,
+                "tail": 9,
+                "type": "competencia-organizacao"
             }
         ]
     },
     {
         "tokens": [
-            "PROCESSO",
-            "LICITAT\u00d3RIO",
-            "N",
-            "\u00b0",
-            "091/2017",
-            "CONCORR\u00caNCIA",
-            "N\u00ba",
-            "002/2017",
-            "PARTES",
-            ":",
-            "MUNIC\u00cdPIO",
+            "PROCEDIMENTO",
+            "ADMINISTRATIVO",
             "DE",
-            "ITANHOMI",
-            "X",
-            "GERBER",
-            "JOS\u00c9",
-            "OBJETO",
-            ":",
-            "Delega\u00e7\u00e3o",
-            "da",
-            "explora\u00e7\u00e3o",
-            "do",
-            "servi\u00e7o",
-            "de",
-            "t\u00e1xi",
-            "no",
-            "munic\u00edpio",
-            "de",
-            "Itanhomi",
-            ",",
-            "mediante",
-            "concess\u00e3o",
-            "de",
-            "31",
-            "(",
-            "trinta",
-            "e",
-            "uma",
-            ")",
-            "vagas",
-            "de",
-            "pontos",
-            "de",
-            "t\u00e1xi",
-            "para",
-            "pessoas",
-            "f\u00edsicas",
-            "e",
-            "pessoas",
-            "inscritas",
-            "no",
-            "M.E.I",
+            "LICITA\u00c7\u00c3O",
+            "\u2013",
+            "PAL",
+            "\u2013",
+            "131/2019",
+            "\u2013",
+            "PREG\u00c3O",
             "-",
-            "Microempreendedor",
-            "Individual",
-            ",",
-            "distribu\u00eddas",
-            "em",
-            "09",
-            "(",
-            "nove",
-            ")",
-            "pontos",
-            ",",
-            "pelo",
-            "prazo",
-            "120",
-            "(",
-            "cento",
-            "e",
-            "vinte",
-            ")",
-            "meses",
-            ",",
-            "renov\u00e1veis",
-            "por",
-            "igual",
-            "per\u00edodo",
-            ",",
-            "conforme",
-            "especifica\u00e7\u00f5es",
-            "constantes",
-            "do",
-            "Edital",
-            ".",
-            "DATA",
+            "064/2019",
+            "\u2013",
+            "REGISTRO",
+            "DE",
+            "PRE\u00c7O",
+            "047/2019",
+            "\u2013",
+            "Contratante",
             ":",
-            "10/07/2018",
-            "VIGENCIA",
-            ":",
-            "10/07/2018",
-            "a",
-            "10/07/2028",
-            ".",
             "Prefeitura",
             "Municipal",
             "de",
-            "Itanhomi",
+            "Pitangui",
+            ".",
+            "Contratado",
+            ":",
+            "XAVIER",
+            "E",
+            "FONSECA",
+            "COMERCIO",
+            "LTDA",
+            "\u2013",
+            "ME",
+            "\u2013",
+            "Valor",
+            ":",
+            "R$",
+            "41.500,00",
+            "(",
+            "quarenta",
+            "e",
+            "um",
+            "mil",
+            "e",
+            "quinhentos",
+            "reais",
+            ")",
             ",",
-            "10",
+            "destinado",
+            "ao",
+            "fornecimento",
             "de",
-            "junho",
-            "de",
-            "2018",
-            ".",
-            "DR",
-            ".",
-            "ANTONIELI",
-            "COSTA",
-            "MAIA",
-            "Prefeito",
+            "g\u00eaneros",
+            "aliment\u00edcios",
+            ",",
+            "para",
+            "empresas",
+            "com",
+            "sede",
             "em",
-            "Exerc\u00edcio"
+            "um",
+            "raio",
+            "de",
+            "at\u00e9",
+            "08",
+            "(",
+            "oito",
+            ")",
+            "quil\u00f4metros",
+            "da",
+            "Prefeitura",
+            "Municipal",
+            "de",
+            "Pitangui",
+            ",",
+            "para",
+            "atender",
+            "a",
+            "todas",
+            "as",
+            "Secretarias",
+            "Municipais",
+            "e",
+            "entes",
+            "Conveniados",
+            ".",
+            "Pelo",
+            "Per\u00edodo",
+            "contratual",
+            "de",
+            "01",
+            "(",
+            "um",
+            ")",
+            "ano",
+            "de",
+            "01/02/2020",
+            "\u00e0",
+            "31/01/2021",
+            "."
         ],
         "entities": [
             {
-                "start": 0,
-                "end": 5,
+                "start": 5,
+                "end": 8,
                 "type": "PROCESSO"
             },
             {
-                "start": 5,
-                "end": 8,
+                "start": 9,
+                "end": 12,
                 "type": "LICITACAO"
             },
             {
-                "start": 12,
-                "end": 12,
+                "start": 13,
+                "end": 17,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 21,
+                "end": 23,
                 "type": "MUNICIPIO"
             },
             {
-                "start": 12,
-                "end": 12,
+                "start": 21,
+                "end": 23,
                 "type": "MUNICIPIO"
             },
             {
-                "start": 12,
-                "end": 12,
+                "start": 27,
+                "end": 32,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 37,
+                "end": 39,
+                "type": "VALOR_MONETARIO"
+            },
+            {
+                "start": 40,
+                "end": 47,
+                "type": "VALOR_MONETARIO"
+            },
+            {
+                "start": 71,
+                "end": 75,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 72,
+                "end": 74,
                 "type": "MUNICIPIO"
             },
             {
-                "start": 14,
-                "end": 16,
-                "type": "PESSOA"
-            },
-            {
-                "start": 28,
-                "end": 28,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 28,
-                "end": 28,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 28,
-                "end": 28,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 87,
-                "end": 88,
-                "type": "DATA"
-            },
-            {
-                "start": 90,
-                "end": 91,
-                "type": "DATA"
-            },
-            {
-                "start": 92,
-                "end": 93,
-                "type": "DATA"
-            },
-            {
-                "start": 97,
-                "end": 97,
+                "start": 72,
+                "end": 74,
                 "type": "MUNICIPIO"
             },
             {
                 "start": 97,
-                "end": 97,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 97,
-                "end": 97,
-                "type": "MUNICIPIO"
+                "end": 98,
+                "type": "DATA"
             },
             {
                 "start": 99,
-                "end": 104,
+                "end": 100,
+                "type": "DATA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 1,
+                "tail": 0,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 2,
+                "tail": 0,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 6,
+                "tail": 5,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 7,
+                "tail": 5,
+                "type": "valor-proposta"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "AVISO",
+            "DE",
+            "PUBLICA\u00c7\u00c3O",
+            "PROCESSO",
+            "DE",
+            "LICITA\u00c7\u00c3O",
+            "N\u00ba",
+            "130/2019",
+            "PREG\u00c3O",
+            "PRESENCIAL",
+            "N\u00ba",
+            "047/2019",
+            "A",
+            "Prefeitura",
+            "Municipal",
+            "de",
+            "Mar",
+            "de",
+            "Espanha",
+            ",",
+            "torna",
+            "p\u00fablico",
+            "que",
+            "far\u00e1",
+            "realizar",
+            "licita\u00e7\u00e3o",
+            "dia",
+            "13/08/2019",
+            "\u00e0s",
+            "10:00hs",
+            ",",
+            "na",
+            "modalidade",
+            "Preg\u00e3o",
+            "Presencial",
+            "para",
+            "Contrata\u00e7\u00e3o",
+            "de",
+            "presta\u00e7\u00e3o",
+            "de",
+            "servi\u00e7o",
+            "de",
+            "apoio",
+            "para",
+            "os",
+            "eventos",
+            "a",
+            "ser",
+            "realizados",
+            "no",
+            "munic\u00edpio",
+            "de",
+            "Mar",
+            "de",
+            "Espanha",
+            ".",
+            "As",
+            "informa\u00e7\u00f5es",
+            "poder\u00e3o",
+            "ser",
+            "obtidas",
+            "atrav\u00e9s",
+            "do",
+            "endere\u00e7o",
+            "eletr\u00f4nico",
+            ":",
+            "licitacao@mardeespanha.mg.gov.br",
+            ".",
+            "Mar",
+            "de",
+            "Espanha",
+            ",",
+            "26",
+            "de",
+            "julho",
+            "de",
+            "2019",
+            "RAFAEL",
+            "DE",
+            "SOUZA",
+            "LANINI",
+            "Pregoeiro"
+        ],
+        "entities": [
+            {
+                "start": 3,
+                "end": 8,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 8,
+                "end": 12,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 13,
+                "end": 19,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 16,
+                "end": 19,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 16,
+                "end": 19,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 16,
+                "end": 19,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 27,
+                "end": 28,
                 "type": "DATA"
             },
             {
-                "start": 107,
-                "end": 110,
+                "start": 52,
+                "end": 55,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 52,
+                "end": 55,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 52,
+                "end": 55,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 68,
+                "end": 71,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 68,
+                "end": 71,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 68,
+                "end": 71,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 72,
+                "end": 77,
+                "type": "DATA"
+            },
+            {
+                "start": 77,
+                "end": 81,
                 "type": "PESSOA"
             },
             {
-                "start": 110,
-                "end": 111,
+                "start": 81,
+                "end": 82,
                 "type": "COMPETENCIA"
             }
         ],
@@ -606,12 +550,541 @@
             },
             {
                 "head": 1,
-                "tail": 2,
+                "tail": 3,
                 "type": "licitacao-municipio"
             },
             {
-                "head": 17,
-                "tail": 16,
+                "head": 15,
+                "tail": 14,
+                "type": "competencia-pessoa"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "O",
+            "Munic\u00edpio",
+            "de",
+            "Jo\u00e3o",
+            "Monlevade",
+            "tornap\u00fablica",
+            "alicita\u00e7\u00e3ona",
+            "modalidade",
+            "Concorr\u00eancia05/2019",
+            ".",
+            "Objeto",
+            ":",
+            "CONTRATA\u00c7\u00c3O",
+            "DE",
+            "EMPRESA",
+            "PARA",
+            "REFORMA",
+            "DA",
+            "QUADRA",
+            "DE",
+            "ESPORTES",
+            "DO",
+            "CENTRO",
+            "EDUCACIONAL",
+            "DE",
+            "JO\u00c3O",
+            "MONLEVADE",
+            ",",
+            "com",
+            "fornecimento",
+            "de",
+            "equipamentos",
+            ",",
+            "m\u00e3o-de-obra",
+            ",",
+            "materiais",
+            "e",
+            "servi\u00e7os",
+            "t\u00e9cnicos",
+            "necess\u00e1rios",
+            "\u00e0",
+            "execu\u00e7\u00e3o",
+            "do",
+            "objeto",
+            ".",
+            "Data",
+            "de",
+            "abertura:30/10/2019\u00e0s",
+            "14:00",
+            "horas",
+            ".",
+            "Editaldispon\u00edvel",
+            "no",
+            "Setor",
+            "de",
+            "Licita\u00e7\u00f5es",
+            "para",
+            "c\u00f3pia",
+            "magn\u00e9tica",
+            "e",
+            "no",
+            "site",
+            "do",
+            "munic\u00edpio",
+            "(",
+            "www.pmjm.mg.gov.br",
+            ")",
+            ".",
+            "Mais",
+            "informa\u00e7\u00f5es",
+            ":",
+            "31",
+            "3859-2525",
+            "(",
+            "Setor",
+            "de",
+            "Licita\u00e7\u00f5es",
+            ")",
+            ".",
+            "Jo\u00e3o",
+            "Monlevade",
+            "25",
+            "de",
+            "Setembro",
+            "2019",
+            ".",
+            "MARLENE",
+            "PESSOA",
+            "FERREIRA",
+            "Secret\u00e1ria",
+            "Municipal",
+            "de",
+            "Administra\u00e7\u00e3o"
+        ],
+        "entities": [
+            {
+                "start": 8,
+                "end": 9,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 47,
+                "end": 48,
+                "type": "DATA"
+            },
+            {
+                "start": 71,
+                "end": 73,
+                "type": "TEL"
+            },
+            {
+                "start": 74,
+                "end": 77,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 81,
+                "end": 84,
+                "type": "DATA"
+            },
+            {
+                "start": 81,
+                "end": 85,
+                "type": "DATA"
+            },
+            {
+                "start": 86,
+                "end": 89,
+                "type": "PESSOA"
+            },
+            {
+                "start": 89,
+                "end": 90,
+                "type": "COMPETENCIA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 7,
+                "tail": 6,
+                "type": "competencia-pessoa"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "O",
+            "MUNIC\u00cdPIO",
+            "DE",
+            "LEOPOLDINA",
+            "-",
+            "Preg\u00e3o",
+            "Presencial",
+            "n\u00ba",
+            "011/16",
+            ",",
+            "PRC",
+            "051/16",
+            ".",
+            "Objeto",
+            ":",
+            "contrata\u00e7\u00e3o",
+            "de",
+            "microempresas",
+            "-",
+            "ME",
+            ",",
+            "empresas",
+            "de",
+            "pequeno",
+            "porte",
+            "-",
+            "EPP",
+            "ou",
+            "equiparadas",
+            "para",
+            "aquisi\u00e7\u00e3o",
+            "de",
+            "caixas",
+            "refrigeradas",
+            "e",
+            "filtros",
+            "objetivando",
+            "atender",
+            "escolas",
+            "municipais",
+            ".",
+            "Dia",
+            "da",
+            "Licita\u00e7\u00e3o",
+            ":",
+            "23/02/2016",
+            ",",
+            "\u00e0s",
+            "09:00",
+            "horas",
+            ".",
+            "Local",
+            ":",
+            "P\u00e7a",
+            "Prof",
+            ".",
+            "Botelho",
+            "Reis",
+            ",",
+            "28",
+            ",",
+            "2\u00ba",
+            "andar",
+            ".",
+            "\u2013",
+            "Centro",
+            "\u2013",
+            "Leopoldina",
+            "\u2013",
+            "MG",
+            ".",
+            "O",
+            "Edital",
+            "encontra-se",
+            "dispon\u00edvel",
+            "no",
+            "site",
+            "www.leopoldina.mg.gov.br",
+            ",",
+            "link",
+            "Licita\u00e7\u00e3o",
+            "/",
+            "Preg\u00e3o",
+            ",",
+            "ou",
+            "na",
+            "sala",
+            "do",
+            "Preg\u00e3o",
+            "(",
+            "endere\u00e7o",
+            "acima",
+            ")",
+            ",",
+            "sendo",
+            "que",
+            ",",
+            "as",
+            "empresas",
+            "dever\u00e3o",
+            "enviar",
+            "recibo",
+            "de",
+            "edital",
+            "para",
+            "o",
+            "email",
+            "pregaopml@yahoo.com.br",
+            ",",
+            "para",
+            "que",
+            "possamos",
+            "comunicar",
+            "poss\u00edveis",
+            "altera\u00e7\u00f5es",
+            "que",
+            "se",
+            "fizerem",
+            "necess\u00e1rias",
+            ".",
+            "Leopoldina",
+            ",",
+            "MG",
+            ",",
+            "01",
+            "de",
+            "fevereiro",
+            "de",
+            "2016",
+            ".",
+            "KARINE",
+            "LOUZADA",
+            "GOMES",
+            "Pregoeira",
+            "Oficial",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 3,
+                "end": 4,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 3,
+                "end": 4,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 3,
+                "end": 4,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 3,
+                "end": 4,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 10,
+                "end": 12,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 45,
+                "end": 46,
+                "type": "DATA"
+            },
+            {
+                "start": 53,
+                "end": 64,
+                "type": "ENDERECO"
+            },
+            {
+                "start": 56,
+                "end": 58,
+                "type": "PESSOA"
+            },
+            {
+                "start": 66,
+                "end": 67,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 66,
+                "end": 67,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 66,
+                "end": 67,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 66,
+                "end": 67,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 77,
+                "end": 77,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 77,
+                "end": 77,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 77,
+                "end": 77,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 77,
+                "end": 77,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 118,
+                "end": 120,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 118,
+                "end": 120,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 118,
+                "end": 120,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 118,
+                "end": 120,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 124,
+                "end": 129,
+                "type": "DATA"
+            },
+            {
+                "start": 130,
+                "end": 133,
+                "type": "PESSOA"
+            },
+            {
+                "start": 133,
+                "end": 134,
+                "type": "COMPETENCIA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 4,
+                "tail": 0,
+                "type": "licitacao-municipio"
+            },
+            {
+                "head": 4,
+                "tail": 5,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 23,
+                "tail": 22,
+                "type": "competencia-pessoa"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "Processo",
+            "Licitat\u00f3rio",
+            "n\u00ba.",
+            "157/14",
+            "\u2013",
+            "Preg\u00e3o",
+            "n\u00ba.",
+            "120/14",
+            "\u2013",
+            "Contratada",
+            ":",
+            "FEA",
+            "FOODS",
+            "COMERCIO",
+            "E",
+            "IND\u00daSTRIA",
+            "DE",
+            "PRODUTOS",
+            "ALIMEN",
+            ".",
+            "LTDA",
+            "\u2013",
+            "ME",
+            "=",
+            ">",
+            "R$",
+            "46.864,45",
+            ".",
+            "Vig\u00eancia",
+            ":",
+            "03/09/2014",
+            "a",
+            "03/09/2015",
+            ".",
+            "MOACIR",
+            "RIBEIRO",
+            "DA",
+            "SILVA",
+            "Prefeito",
+            "Municipal",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 0,
+                "end": 4,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 5,
+                "end": 8,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 11,
+                "end": 21,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 25,
+                "end": 27,
+                "type": "VALOR_MONETARIO"
+            },
+            {
+                "start": 30,
+                "end": 31,
+                "type": "DATA"
+            },
+            {
+                "start": 32,
+                "end": 33,
+                "type": "DATA"
+            },
+            {
+                "start": 34,
+                "end": 38,
+                "type": "PESSOA"
+            },
+            {
+                "start": 38,
+                "end": 39,
+                "type": "COMPETENCIA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 1,
+                "tail": 0,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 3,
+                "tail": 2,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 7,
+                "tail": 6,
                 "type": "competencia-pessoa"
             }
         ]
@@ -620,272 +1093,353 @@
         "tokens": [
             "EXTRATO",
             "DE",
-            "ADITAMENTO",
-            "AO",
             "CONTRATO",
-            "DE",
-            "PRESTA\u00c7\u00c3O",
-            "DE",
-            "SERVI\u00c7OS",
             "N\u00ba",
-            "009/2013",
-            "CONTRATANTE",
-            ":",
-            "MUNIC\u00cdPIO",
-            "DE",
-            "CONQUISTA",
-            ".",
-            "CONTRATADA",
-            ":",
-            "IVO",
-            "ANT\u00d4NIO",
-            "DA",
-            "SILVA",
-            "OBJETO",
-            ":",
-            "FICA",
-            "ADITADA",
-            "A",
-            "CL\u00c1USULA",
-            "PRIMEIRA",
-            "DO",
-            "CONTRATO",
-            "ORIGIN\u00c1RIO",
-            ",",
-            "PASSANDO",
-            "O",
-            "VALOR",
-            "DO",
-            "KM",
-            "RODADO",
-            "PARA",
-            "R$",
-            "1,70",
-            "(",
-            "UM",
-            "REAL",
-            "E",
-            "SETENTA",
-            "CENTAVOS",
-            ")",
-            "LICITA\u00c7\u00c3O",
-            ":",
+            "041/2015",
+            "-",
             "PROCESSO",
-            "DE",
-            "LICITA\u00c7\u00c3O",
+            "LICITAT\u00d3RIO",
             "N\u00ba",
-            "019/2013",
-            "\u2013",
+            "096/2015",
+            "-",
             "PREG\u00c3O",
             "PRESENCIAL",
             "N\u00ba",
-            "007/2013",
+            "017/2015",
+            "\u2013",
+            "Objeto",
+            ":",
+            "Aquisi\u00e7\u00e3o",
+            "de",
+            "materiais",
+            "de",
+            "consumo",
+            "e",
+            "permanente",
+            "de",
+            "uso",
+            "ambulatorial",
             ".",
-            "CONQUISTA",
+            "A",
+            "Prefeitura",
+            "Municipal",
+            "de",
+            "Japara\u00edba",
+            "/",
+            "MG",
+            "torna",
+            "p\u00fablico",
+            "que",
+            "celebrou",
+            "Contrato",
+            "com",
+            "a",
+            "empresa",
+            "Med",
+            "Center",
+            "Comercial",
+            "Ltda",
+            "ao",
+            "pre\u00e7o",
+            "de",
+            "R$",
+            "45.189,90",
+            "pelo",
+            "per\u00edodo",
+            "at\u00e9",
+            "31/12/2015",
+            ".",
+            "Japara\u00edba",
             "/",
             "MG",
             ",",
-            "01",
-            "DE",
-            "JUNHO",
-            "DE",
-            "2017",
+            "04",
+            "de",
+            "maio",
+            "de",
+            "2015",
             ".",
-            "ANNA",
-            "LUIZE",
-            "FREIRE",
-            "KASSABIAN",
-            "Procuradora",
-            "Adjunta",
-            "do",
-            "Munic\u00edpio"
+            "ROBERTO",
+            "EMILIO",
+            "LOPES",
+            "Prefeito",
+            "Municipal"
         ],
         "entities": [
             {
-                "start": 4,
-                "end": 11,
+                "start": 2,
+                "end": 5,
                 "type": "CONTRATO"
             },
             {
-                "start": 15,
-                "end": 16,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 15,
-                "end": 16,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 19,
-                "end": 23,
-                "type": "PESSOA"
-            },
-            {
-                "start": 41,
-                "end": 43,
-                "type": "VALOR_MONETARIO"
-            },
-            {
-                "start": 44,
-                "end": 49,
-                "type": "VALOR_MONETARIO"
-            },
-            {
-                "start": 52,
-                "end": 57,
+                "start": 6,
+                "end": 10,
                 "type": "PROCESSO"
             },
             {
-                "start": 58,
-                "end": 62,
+                "start": 11,
+                "end": 15,
                 "type": "LICITACAO"
             },
             {
-                "start": 63,
-                "end": 63,
-                "type": "MUNICIPIO"
+                "start": 44,
+                "end": 48,
+                "type": "ORGANIZACAO"
             },
             {
-                "start": 63,
-                "end": 63,
-                "type": "MUNICIPIO"
+                "start": 51,
+                "end": 53,
+                "type": "VALOR_MONETARIO"
             },
             {
-                "start": 67,
-                "end": 72,
+                "start": 56,
+                "end": 57,
                 "type": "DATA"
             },
             {
-                "start": 73,
-                "end": 77,
+                "start": 62,
+                "end": 67,
+                "type": "DATA"
+            },
+            {
+                "start": 68,
+                "end": 71,
                 "type": "PESSOA"
             },
             {
-                "start": 77,
-                "end": 78,
+                "start": 71,
+                "end": 72,
                 "type": "COMPETENCIA"
             }
         ],
         "relations": [
+            {
+                "head": 0,
+                "tail": 2,
+                "type": "contrato-licitacao"
+            },
+            {
+                "head": 2,
+                "tail": 1,
+                "type": "licitacao-processo"
+            },
             {
                 "head": 4,
                 "tail": 3,
                 "type": "valor-proposta"
             },
             {
-                "head": 5,
-                "tail": 3,
-                "type": "valor-proposta"
-            },
-            {
-                "head": 7,
-                "tail": 6,
-                "type": "licitacao-processo"
-            },
-            {
-                "head": 12,
-                "tail": 11,
+                "head": 8,
+                "tail": 7,
                 "type": "competencia-pessoa"
             }
         ]
     },
     {
         "tokens": [
-            "Extrato",
-            "de",
-            "Termo",
-            "Aditivo",
-            ":",
-            "3",
-            "Aditivo",
-            "Para",
-            "Acr\u00e9scimo",
-            "do",
-            "Valor",
-            "Contratado",
-            "Ata",
-            "049/2019",
-            "Processo",
-            ".....",
-            ":",
-            "Prc",
-            "00031/2019",
-            "Licita\u00e7\u00e3o",
-            ":",
-            "Prc",
-            "0025/2019",
+            "PREFEITURA",
+            "MUNICIPAL",
+            "DE",
+            "CORA\u00c7\u00c3O",
+            "DE",
+            "JESUS",
+            "-",
+            "EXTRATO",
+            "DE",
+            "CONTRATO",
+            "Contrato",
+            "n\u00ba",
+            "038/2014",
+            "\u2013",
             "Contratante",
-            "..",
             ":",
+            "Munic\u00edpio",
+            "de",
+            "Cora\u00e7\u00e3o",
+            "de",
+            "Jesus",
+            "-",
+            "MG",
+            "Contratado",
+            ":",
+            "CONSTRUTORA",
+            "NOVAES",
+            "LTDA",
+            ",",
+            "\u2013",
+            "Licita\u00e7",
+            "\u00e3",
+            "Processo",
+            "Administrativo",
+            "N",
+            "041/2014",
+            ",",
+            "Modalidade",
+            "Tomada",
+            "de",
+            "Pre\u00e7os",
+            "002/2014",
+            ",",
+            "Objeto",
+            ":",
+            "Contrata\u00e7ao",
+            "de",
+            "Empresa",
+            "para",
+            "a",
+            "realiza\u00e7ao",
+            "de",
+            "pavimenta\u00e7ao",
+            "de",
+            "vias",
+            "urbanas",
+            "nesta",
+            "cidade",
+            ",",
+            "Tres",
+            "Cora\u00e7ao",
+            "de",
+            "Jesus",
+            "MG",
+            "Dota\u00e7ao",
+            "Or\u00e7ament\u00e1ria",
+            ":",
+            "12.1.1.15.451.31.3076.449051",
+            ",",
+            "Vig\u00eancia",
+            "11/06/2014",
+            "a",
+            "11/12/2014",
+            ",",
+            "Valor",
+            ":",
+            "do",
+            "contrato",
+            ":",
+            "R$",
+            "400.066,00",
             "Prefeitura",
             "Municipal",
             "de",
-            "Cabo",
-            "Verde",
-            "(",
-            "mg",
-            ")",
-            "Contratada",
-            "...",
-            ":",
-            "D.f",
-            ".",
-            "Astolhpo",
-            "Epp",
-            "Valor",
-            "........",
-            ":",
-            "R$",
-            "991,70",
-            "Assinatura",
-            "...",
-            ":",
-            "02/03/2020",
-            "Objeto",
-            ".......",
-            ":",
-            "Acr\u00e9scimo",
+            " ",
+            "Cora\u00e7ao",
             "de",
-            "Quantidade"
+            "Jesus",
+            ",",
+            "01",
+            "de",
+            "junho",
+            "de",
+            "2014",
+            "PEDRO",
+            "ARAUJO",
+            "MAGALHAES",
+            ",",
+            "Prefeito",
+            "Municipal"
         ],
         "entities": [
             {
-                "start": 17,
-                "end": 19,
-                "type": "PROCESSO"
+                "start": 9,
+                "end": 13,
+                "type": "CONTRATO"
             },
             {
-                "start": 21,
-                "end": 23,
-                "type": "PROCESSO"
+                "start": 10,
+                "end": 13,
+                "type": "CONTRATO"
             },
             {
-                "start": 29,
-                "end": 31,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 37,
-                "end": 41,
+                "start": 16,
+                "end": 21,
                 "type": "ORGANIZACAO"
             },
             {
-                "start": 44,
-                "end": 46,
+                "start": 25,
+                "end": 29,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 32,
+                "end": 36,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 32,
+                "end": 37,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 38,
+                "end": 42,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 67,
+                "end": 68,
+                "type": "DOTACAO_ORCAMENTARIA"
+            },
+            {
+                "start": 70,
+                "end": 71,
+                "type": "DATA"
+            },
+            {
+                "start": 72,
+                "end": 73,
+                "type": "DATA"
+            },
+            {
+                "start": 78,
+                "end": 81,
                 "type": "VALOR_MONETARIO"
             },
             {
-                "start": 49,
-                "end": 50,
+                "start": 79,
+                "end": 81,
+                "type": "VALOR_MONETARIO"
+            },
+            {
+                "start": 89,
+                "end": 94,
                 "type": "DATA"
+            },
+            {
+                "start": 94,
+                "end": 97,
+                "type": "PESSOA"
+            },
+            {
+                "start": 98,
+                "end": 99,
+                "type": "COMPETENCIA"
             }
         ],
         "relations": [
             {
-                "head": 4,
+                "head": 2,
+                "tail": 3,
+                "type": "contratante-contratado"
+            },
+            {
+                "head": 6,
+                "tail": 5,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 10,
                 "tail": 3,
                 "type": "valor-proposta"
+            },
+            {
+                "head": 11,
+                "tail": 3,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 14,
+                "tail": 13,
+                "type": "competencia-pessoa"
             }
         ]
     },
@@ -1067,6 +1621,1574 @@
                 "head": 7,
                 "tail": 8,
                 "type": "competencia-organizacao"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "AVISO",
+            "DE",
+            "LICITA\u00c7\u00c3O",
+            "\u2013",
+            "PREG\u00c3O",
+            "PRESENCIAL",
+            "N\u00ba",
+            "068/2019",
+            ".",
+            "O",
+            "Munic\u00edpio",
+            "de",
+            "Te\u00f3filo",
+            "Otoni",
+            "/",
+            "MG",
+            "torna",
+            "p\u00fablica",
+            "a",
+            "realiza\u00e7\u00e3o",
+            "do",
+            "Preg\u00e3o",
+            "Presencial",
+            "n\u00ba",
+            "068/2019",
+            ",",
+            "no",
+            "dia",
+            "08/10/2019",
+            ",",
+            "\u00e0s",
+            "09h",
+            ".",
+            "Objeto",
+            ":",
+            "Contrata\u00e7\u00e3o",
+            "de",
+            "empresa",
+            "especializada",
+            "para",
+            "presta\u00e7\u00e3o",
+            "de",
+            "servi\u00e7os",
+            "de",
+            "limpeza",
+            "urbana",
+            "e",
+            "multitarefa",
+            ",",
+            "para",
+            "atender",
+            "as",
+            "demandas",
+            "do",
+            "munic\u00edpio",
+            "de",
+            "Te\u00f3filo",
+            "Otoni",
+            ".",
+            "\u00cdntegra",
+            "do",
+            "edital",
+            "e",
+            "demais",
+            "informa\u00e7\u00f5es",
+            "atinentes",
+            "ao",
+            "certame",
+            "encontram-se",
+            "\u00e0",
+            "disposi\u00e7\u00e3o",
+            "dos",
+            "interessados",
+            "na",
+            "sala",
+            "da",
+            "Divis\u00e3o",
+            "de",
+            "Licita\u00e7\u00e3o",
+            ",",
+            "situada",
+            "na",
+            "Av.",
+            "Dr.",
+            "Luiz",
+            "Boali",
+            "Porto",
+            "Salman",
+            ",",
+            "n\u00ba",
+            "230",
+            ",",
+            "Centro",
+            ",",
+            "nos",
+            "dias",
+            "\u00fateis",
+            ",",
+            "no",
+            "hor\u00e1rio",
+            "de",
+            "8h",
+            "\u00e0s",
+            "16h",
+            ",",
+            "ou",
+            "atrav\u00e9s",
+            "do",
+            "site",
+            ":",
+            "e-mail",
+            ":",
+            "transparencia.teofilootoni.mg.gov.br",
+            "licitacao@teofilootoni.mg.gov.br",
+            ".",
+            "Te\u00f3filo",
+            "Otoni",
+            "/",
+            "MG",
+            ",",
+            "25/09/2019",
+            ".",
+            "KATIANE",
+            "EMANUELE",
+            "LEMOS",
+            "NETO",
+            "Secret\u00e1ria",
+            "Municipal",
+            "de",
+            "Administra\u00e7\u00e3o",
+            ".",
+            "pelo",
+            "ou"
+        ],
+        "entities": [
+            {
+                "start": 4,
+                "end": 8,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 21,
+                "end": 25,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 28,
+                "end": 29,
+                "type": "DATA"
+            },
+            {
+                "start": 82,
+                "end": 96,
+                "type": "ENDERECO"
+            },
+            {
+                "start": 84,
+                "end": 88,
+                "type": "PESSOA"
+            },
+            {
+                "start": 120,
+                "end": 121,
+                "type": "DATA"
+            },
+            {
+                "start": 122,
+                "end": 126,
+                "type": "PESSOA"
+            },
+            {
+                "start": 126,
+                "end": 127,
+                "type": "COMPETENCIA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 7,
+                "tail": 6,
+                "type": "competencia-pessoa"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "Prefeitura",
+            "Municipal",
+            "de",
+            "Dores",
+            "do",
+            "Indai\u00e1",
+            "-",
+            "MG",
+            ",",
+            "Processo",
+            "Licitat\u00f3rio",
+            "n",
+            "\u00b0",
+            "001/2018",
+            ",",
+            "na",
+            "modalidade",
+            "Credenciamento",
+            "n",
+            "\u00b0",
+            "001/2018",
+            ".",
+            "AVISO",
+            "DE",
+            "LICITA\u00c7\u00c3O",
+            "\u2013",
+            "Objeto",
+            ":",
+            "Contrata\u00e7\u00e3o",
+            "de",
+            "m\u00e9dicos",
+            "especialistas",
+            "em",
+            "atendimento",
+            "\u00e1s",
+            "de",
+            "mandas",
+            "da",
+            "Secretaria",
+            "Municipal",
+            "de",
+            "Sa\u00fade",
+            "de",
+            "Dores",
+            "do",
+            "Indai\u00e1",
+            ",",
+            "a",
+            "ser",
+            "realizado",
+            "no",
+            "dia",
+            "02/01/2018",
+            "\u00e0s",
+            "13:00",
+            "horas",
+            ".",
+            "Informa\u00e7\u00f5es",
+            "podem",
+            "ser",
+            "obtidas",
+            "no",
+            "setor",
+            "Licita\u00e7\u00f5es",
+            "\u00e0",
+            "Pra\u00e7a",
+            "do",
+            "Ros\u00e1rio",
+            ",",
+            "268",
+            ",",
+            "Fone",
+            "(",
+            "37",
+            ")",
+            "3551-3570",
+            "ou",
+            "por",
+            "e-mail",
+            "licitacao@doresdoindaia.mg.gov.br",
+            ".",
+            "Dores",
+            "do",
+            "Indai\u00e1",
+            ",",
+            "13",
+            "de",
+            "dezembro",
+            "de",
+            "2017",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 0,
+                "end": 6,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 9,
+                "end": 14,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 17,
+                "end": 21,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 38,
+                "end": 42,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 38,
+                "end": 46,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 52,
+                "end": 53,
+                "type": "DATA"
+            },
+            {
+                "start": 72,
+                "end": 76,
+                "type": "TEL"
+            },
+            {
+                "start": 85,
+                "end": 90,
+                "type": "DATA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 2,
+                "tail": 1,
+                "type": "licitacao-processo"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "O",
+            "Munic\u00edpio",
+            "de",
+            "Jequitib\u00e1",
+            "/",
+            "MG",
+            ",",
+            "atrav\u00e9s",
+            "do",
+            "Setor",
+            "de",
+            "Licita\u00e7\u00f5es",
+            ",",
+            "em",
+            "obedi\u00eancia",
+            "ao",
+            "comando",
+            "das",
+            "Leis",
+            "Federais",
+            "n\u00ba",
+            "8.666/1993",
+            ",",
+            "10.520/2002",
+            ",",
+            "torna",
+            "p\u00fablico",
+            "aos",
+            "interessados",
+            "em",
+            "geral",
+            "a",
+            "HOMOLOGA\u00c7\u00c3O",
+            "/",
+            "ADJUDICA\u00c7\u00c3O",
+            "DO",
+            "PROCESSO",
+            "LICITAT\u00d3RIO",
+            "63/2018",
+            "\u2013",
+            "PREG\u00c3O",
+            "PRESENCIAL",
+            "42/2018",
+            ",",
+            "conforme",
+            "descrito",
+            "a",
+            "seguir",
+            ":",
+            "Licitante",
+            "proponente",
+            ":",
+            "HZ",
+            "TELECOMUNICA\u00c7\u00d5ES",
+            "E",
+            "INFORM\u00c1TICA",
+            "LTDA",
+            "\u2013",
+            "ME",
+            "-",
+            "Objeto",
+            ":",
+            "\u201c",
+            "Contrata\u00e7\u00e3o",
+            "de",
+            "presta\u00e7\u00e3o",
+            "de",
+            "servi\u00e7os",
+            "de",
+            "conectividade",
+            "de",
+            "internet",
+            "\u201d",
+            ".",
+            "Os",
+            "autos",
+            "se",
+            "encontram",
+            "com",
+            "vista",
+            "franqueada",
+            "aos",
+            "interessados",
+            ".",
+            "Mais",
+            "informa\u00e7\u00f5es",
+            "poder\u00e3o",
+            "ser",
+            "obtidas",
+            "atrav\u00e9s",
+            "do",
+            "(",
+            "31",
+            ")",
+            "3717-6222",
+            "\u2013",
+            "telefone",
+            "www.jequitiba.mg.gov.br",
+            "\u2013",
+            "Helenice",
+            "Jeber",
+            "Machado",
+            "\u2013",
+            "Pregoeira",
+            ",",
+            "Douglas",
+            "Soares",
+            "Rodrigues",
+            "\u2013",
+            "Comiss\u00e3o",
+            "Permanente",
+            "de",
+            "Licita\u00e7\u00f5es",
+            "\u2013",
+            "Leis",
+            "Federais",
+            "n\u00bas",
+            ":",
+            "8.666/93",
+            "\u2013",
+            "10.520/2002",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 18,
+                "end": 22,
+                "type": "LEGISLACAO"
+            },
+            {
+                "start": 18,
+                "end": 24,
+                "type": "LEGISLACAO"
+            },
+            {
+                "start": 36,
+                "end": 39,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 40,
+                "end": 43,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 52,
+                "end": 57,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 91,
+                "end": 95,
+                "type": "TEL"
+            },
+            {
+                "start": 99,
+                "end": 102,
+                "type": "PESSOA"
+            },
+            {
+                "start": 103,
+                "end": 104,
+                "type": "COMPETENCIA"
+            },
+            {
+                "start": 105,
+                "end": 108,
+                "type": "PESSOA"
+            },
+            {
+                "start": 109,
+                "end": 113,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 114,
+                "end": 119,
+                "type": "LEGISLACAO"
+            },
+            {
+                "start": 114,
+                "end": 121,
+                "type": "LEGISLACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 3,
+                "tail": 2,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 7,
+                "tail": 8,
+                "type": "competencia-pessoa"
+            },
+            {
+                "head": 7,
+                "tail": 9,
+                "type": "competencia-organizacao"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "O",
+            "MUNIC\u00cdPIO",
+            "DE",
+            "LAGOA",
+            "DA",
+            "PRATA",
+            "\u2013",
+            "torna",
+            "p\u00fablica",
+            "licita\u00e7\u00e3o",
+            "na",
+            "modalidade",
+            "de",
+            "PREG\u00c3O",
+            "n\u00ba.",
+            "30/2014",
+            ".",
+            "OBJETO",
+            ":",
+            "Aquisi\u00e7\u00e3o",
+            "e",
+            "instala\u00e7\u00e3o",
+            "de",
+            "ares",
+            "condicionados",
+            "e",
+            "cortinas",
+            "de",
+            "ar",
+            "para",
+            "o",
+            "Teatro",
+            "Fausto",
+            "Rezende",
+            "no",
+            "terminal",
+            "tur\u00edstico",
+            ".",
+            "Tipo",
+            ":",
+            "Menor",
+            "Pre\u00e7o",
+            "Unit\u00e1rio",
+            ".",
+            "Abertura",
+            "das",
+            "propostas",
+            ":",
+            "25/03/2014",
+            "\u00e0s",
+            "13",
+            "horas",
+            ".",
+            "O",
+            "edital",
+            "poder\u00e1",
+            "ser",
+            "adquirido",
+            "na",
+            "Rua",
+            "Joaquim",
+            "Gomes",
+            "Pereira",
+            ",",
+            "825",
+            ",",
+            "Centro",
+            ",",
+            "ou",
+            "pelo",
+            "site.www.lagoadaprata.mg.gov.br",
+            ",",
+            "Pregoeiro",
+            ",",
+            "12/03/2014",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 3,
+                "end": 6,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 13,
+                "end": 16,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 31,
+                "end": 34,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 48,
+                "end": 49,
+                "type": "DATA"
+            },
+            {
+                "start": 60,
+                "end": 63,
+                "type": "PESSOA"
+            },
+            {
+                "start": 72,
+                "end": 73,
+                "type": "COMPETENCIA"
+            }
+        ],
+        "relations": []
+    },
+    {
+        "tokens": [
+            "AMM",
+            "A",
+            "COMISS\u00c3O",
+            "PERMANENTE",
+            "DE",
+            "LICITA\u00c7\u00d5ES",
+            "DA",
+            "PREFEITURA",
+            "MUNICIPAL",
+            "DE",
+            "LUZ",
+            "TORNA",
+            "P\u00daBLICA",
+            "A",
+            "REALIZA\u00c7\u00c3O",
+            "DE",
+            "PROCESSO",
+            "LICITAT\u00d3RIO",
+            "PRC",
+            "N\u00ba.",
+            "105/2019",
+            ".",
+            "PREG\u00c3O",
+            "N\u00ba",
+            "026/2019",
+            ".",
+            "OBJETO",
+            ":",
+            "\"",
+            "CONTRATA\u00c7\u00c3O",
+            "DE",
+            "EMPRESA",
+            "ESPECIALIZADA",
+            "NA",
+            "PRESTA\u00c7\u00c3O",
+            "DE",
+            "SERVI\u00c7OS",
+            "NA",
+            "\u00c1REA",
+            "DE",
+            "TECNOLOGIA",
+            "DA",
+            "INFORMA\u00c7\u00c3O",
+            "PARA",
+            "ATENDER",
+            "A",
+            "DEMANDA",
+            "DA",
+            "PREFEITURA",
+            "MUNICIPAL",
+            "DE",
+            "LUZ",
+            "/",
+            "MG",
+            "\"",
+            ".",
+            "CONFORME",
+            "TERMO",
+            "DE",
+            "REFERENCIA",
+            "\"",
+            ".",
+            "TIPO",
+            ":",
+            "MENOR",
+            "PRE\u00c7O",
+            "GLOBAL",
+            ".",
+            "LICITA\u00c7\u00c3O",
+            ":",
+            "04.09.2019",
+            "\u00e1s",
+            "13:30",
+            ".",
+            "LOCAL",
+            ":",
+            "SALA",
+            "DE",
+            "LICITA\u00c7\u00d5ES",
+            "DA",
+            "PREFEITURA",
+            "M.",
+            "DE",
+            "LUZ",
+            ",",
+            "SITUADA",
+            "AV",
+            ".",
+            "LAERTON",
+            "PAULINELLI",
+            ",",
+            "153",
+            "BAIRRO",
+            "MONSENHOR",
+            "PARREIRAS-",
+            "LUZ",
+            "/",
+            "MG",
+            ".",
+            "INF",
+            ".",
+            ":",
+            "(",
+            "37",
+            ")",
+            "3421-3030",
+            ",",
+            "RAMAL",
+            ":",
+            "32",
+            "DE",
+            "08:00",
+            "\u00c0S",
+            "17:00",
+            "HORAS",
+            ".",
+            "LUZ",
+            "/",
+            "MG",
+            ".",
+            "21.08.2019",
+            ".",
+            "WWW.LUZ.MG.GOV.BR",
+            ".",
+            "VANUSA",
+            "C\u00c2NDIDA",
+            "DE",
+            "OLIVEIRA",
+            "BRITO",
+            "Pregoeira"
+        ],
+        "entities": [
+            {
+                "start": 10,
+                "end": 11,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 10,
+                "end": 11,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 10,
+                "end": 11,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 10,
+                "end": 11,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 10,
+                "end": 11,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 10,
+                "end": 11,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 16,
+                "end": 21,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 22,
+                "end": 25,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 51,
+                "end": 52,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 51,
+                "end": 52,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 51,
+                "end": 52,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 51,
+                "end": 52,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 51,
+                "end": 52,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 51,
+                "end": 52,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 70,
+                "end": 71,
+                "type": "DATA"
+            },
+            {
+                "start": 83,
+                "end": 84,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 83,
+                "end": 84,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 83,
+                "end": 84,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 83,
+                "end": 84,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 83,
+                "end": 84,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 83,
+                "end": 84,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 86,
+                "end": 101,
+                "type": "ENDERECO"
+            },
+            {
+                "start": 88,
+                "end": 90,
+                "type": "PESSOA"
+            },
+            {
+                "start": 95,
+                "end": 96,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 95,
+                "end": 96,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 95,
+                "end": 96,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 95,
+                "end": 96,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 95,
+                "end": 96,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 95,
+                "end": 96,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 102,
+                "end": 106,
+                "type": "TEL"
+            },
+            {
+                "start": 116,
+                "end": 117,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 116,
+                "end": 117,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 116,
+                "end": 117,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 116,
+                "end": 117,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 116,
+                "end": 117,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 116,
+                "end": 117,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 120,
+                "end": 121,
+                "type": "DATA"
+            },
+            {
+                "start": 122,
+                "end": 122,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 122,
+                "end": 122,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 122,
+                "end": 122,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 122,
+                "end": 122,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 122,
+                "end": 122,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 122,
+                "end": 122,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 124,
+                "end": 129,
+                "type": "PESSOA"
+            },
+            {
+                "start": 129,
+                "end": 130,
+                "type": "COMPETENCIA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 7,
+                "tail": 6,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 44,
+                "tail": 43,
+                "type": "competencia-pessoa"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "PREFEITURA",
+            "MUNICIPAL",
+            "DE",
+            "PIRAPORA",
+            "\u2013",
+            "Preg\u00e3o",
+            "Presencial",
+            "N\u00ba",
+            "010/2016",
+            "Processo",
+            "Licitat\u00f3rio",
+            "014/2016",
+            "-",
+            "AVISO",
+            "DE",
+            "RETIFICA\u00c7\u00c3O",
+            "\u2013",
+            "Objeto",
+            ":",
+            "Presta\u00e7\u00e3o",
+            "de",
+            "podas",
+            "de",
+            "arvores",
+            "nas",
+            "vias",
+            "publicas",
+            "e",
+            "diversos",
+            "logradouros",
+            "p\u00fablicos",
+            "do",
+            "municipal",
+            "de",
+            "Pirapora",
+            ".",
+            "O",
+            "edital",
+            "foi",
+            "retificado",
+            "com",
+            "nova",
+            "data",
+            "agendada",
+            "para",
+            "o",
+            "dia",
+            "18/03/2016",
+            "\u00e0s",
+            "09:00",
+            "Horas",
+            ".",
+            "O",
+            "mesmo",
+            "poder\u00e1",
+            "ser",
+            "obtido",
+            "atrav\u00e9s",
+            "do",
+            "site",
+            "da",
+            "Prefeitura",
+            ",",
+            "endere\u00e7o",
+            ":",
+            "www.pirapora.mg.gov.br",
+            ".",
+            "Pirapora",
+            "/",
+            "MG",
+            ",",
+            "07/03/2016",
+            ".",
+            "ANTONIO",
+            "CARLOS",
+            "SOARES",
+            "DOS",
+            "SANTOS",
+            "Pregoeiro",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 3,
+                "end": 4,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 3,
+                "end": 4,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 3,
+                "end": 4,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 3,
+                "end": 4,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 5,
+                "end": 9,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 9,
+                "end": 12,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 33,
+                "end": 34,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 33,
+                "end": 34,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 33,
+                "end": 34,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 33,
+                "end": 34,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 47,
+                "end": 48,
+                "type": "DATA"
+            },
+            {
+                "start": 65,
+                "end": 65,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 65,
+                "end": 65,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 65,
+                "end": 65,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 65,
+                "end": 65,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 66,
+                "end": 67,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 66,
+                "end": 67,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 66,
+                "end": 67,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 66,
+                "end": 67,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 71,
+                "end": 72,
+                "type": "DATA"
+            },
+            {
+                "start": 73,
+                "end": 78,
+                "type": "PESSOA"
+            },
+            {
+                "start": 78,
+                "end": 79,
+                "type": "COMPETENCIA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 4,
+                "tail": 0,
+                "type": "licitacao-municipio"
+            },
+            {
+                "head": 4,
+                "tail": 5,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 21,
+                "tail": 20,
+                "type": "competencia-pessoa"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "Origem",
+            ":",
+            "Preg\u00e3o",
+            "Presencial",
+            "\u2013",
+            "Registro",
+            "de",
+            "Pre\u00e7o",
+            "043/2016",
+            "Objeto",
+            ":",
+            "Registro",
+            "de",
+            "pre\u00e7os",
+            "para",
+            "futuras",
+            "e",
+            "eventuais",
+            "contrata\u00e7\u00f5es",
+            "de",
+            "microempresas",
+            "\u2013",
+            "ME",
+            "e",
+            "empresas",
+            "de",
+            "pequeno",
+            "porte",
+            "\u2013",
+            "EPP",
+            ",",
+            "visando",
+            "a",
+            "presta\u00e7\u00e3o",
+            "de",
+            "servi\u00e7os",
+            "de",
+            "hospedagem",
+            "no",
+            "munic\u00edpio",
+            "de",
+            "Ibi\u00e1",
+            ",",
+            "incluindo",
+            "caf\u00e9",
+            "da",
+            "manh\u00e3",
+            ",",
+            "conforme",
+            "especifica\u00e7\u00f5es",
+            "constantes",
+            "do",
+            "Termo",
+            "de",
+            "Refer\u00eancia",
+            ",",
+            "anexo",
+            "I",
+            ",",
+            "do",
+            "edital",
+            ".",
+            "Contratante",
+            ":",
+            "Munic\u00edpio",
+            "de",
+            "Ibi\u00e1",
+            ",",
+            "Vencedor",
+            ":",
+            "LUIZ",
+            "CUST\u00d3DIO",
+            "ME",
+            "-",
+            "CNPJ",
+            "17.476.045/",
+            "0001-30",
+            "Valor",
+            "total",
+            ":",
+            "R$",
+            "46.400,00",
+            "(",
+            "quarenta",
+            "e",
+            "seis",
+            "mil",
+            "e",
+            "quatrocentos",
+            "reais",
+            ")",
+            ".",
+            "Acolhendo",
+            "os",
+            "pareceres",
+            "da",
+            "Secretaria",
+            "Municipal",
+            "de",
+            "Assuntos",
+            "Jur\u00eddicos",
+            ",",
+            "desta",
+            "Prefeitura",
+            ",",
+            "homologo",
+            "para",
+            "os",
+            "devidos",
+            "fins",
+            "legais",
+            "a",
+            "licita\u00e7\u00e3o",
+            "supra",
+            "e",
+            "adjudico",
+            "seu",
+            "objeto",
+            "ao",
+            "licitante",
+            "vitorioso",
+            "sobredito",
+            ",",
+            "determinando",
+            "a",
+            "lavratura",
+            "do",
+            "competente",
+            "contrato",
+            ".",
+            "Ibi\u00e1(MG",
+            ")",
+            ",",
+            "14",
+            "de",
+            "setembro",
+            "de",
+            "2016",
+            "H\u00c9LIO",
+            "PAIVA",
+            "DA",
+            "SILVEIRA",
+            "Prefeito",
+            "Municipal",
+            "Publique-se"
+        ],
+        "entities": [
+            {
+                "start": 5,
+                "end": 9,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 70,
+                "end": 73,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 75,
+                "end": 77,
+                "type": "CNPJ"
+            },
+            {
+                "start": 80,
+                "end": 82,
+                "type": "VALOR_MONETARIO"
+            },
+            {
+                "start": 83,
+                "end": 90,
+                "type": "VALOR_MONETARIO"
+            },
+            {
+                "start": 96,
+                "end": 101,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 133,
+                "end": 138,
+                "type": "DATA"
+            },
+            {
+                "start": 138,
+                "end": 142,
+                "type": "PESSOA"
+            },
+            {
+                "start": 142,
+                "end": 143,
+                "type": "COMPETENCIA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 2,
+                "tail": 1,
+                "type": "cnpj"
+            },
+            {
+                "head": 3,
+                "tail": 1,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 4,
+                "tail": 1,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 8,
+                "tail": 7,
+                "type": "competencia-pessoa"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "O",
+            "Munic\u00edpio",
+            "de",
+            "Cruz\u00edlia",
+            ",",
+            "CNPJ",
+            "n\u00ba",
+            "18.008.904/",
+            "0001-29",
+            ",",
+            "por",
+            "seu",
+            "Prefeito",
+            "Municipal",
+            ",",
+            "Sr.",
+            "Joaquim",
+            "Jos\u00e9",
+            "Parana\u00edba",
+            ",",
+            "informa",
+            "que",
+            "homologou",
+            "o",
+            "processo",
+            "licitat\u00f3rio",
+            "n\u00ba",
+            "00361/2014",
+            "\u2013",
+            "Preg\u00e3o",
+            "Presencial",
+            "n\u00ba",
+            "00031/2014",
+            "que",
+            "teve",
+            "por",
+            "objeto",
+            "a",
+            "aquisi\u00e7\u00e3o",
+            "de",
+            "caminh\u00e3o",
+            "0Km",
+            "com",
+            "coletor",
+            "e",
+            "compactador",
+            "de",
+            "res\u00edduos",
+            "s\u00f3lidos",
+            ".",
+            "Cruz\u00edlia",
+            "MG",
+            ",",
+            "11",
+            "de",
+            "junho",
+            "de",
+            "2014",
+            ".",
+            "JOAQUIM",
+            "JOS\u00c9",
+            "PARANA\u00cdBA",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 7,
+                "end": 9,
+                "type": "CNPJ"
+            },
+            {
+                "start": 12,
+                "end": 13,
+                "type": "COMPETENCIA"
+            },
+            {
+                "start": 16,
+                "end": 19,
+                "type": "PESSOA"
+            },
+            {
+                "start": 24,
+                "end": 28,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 29,
+                "end": 33,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 53,
+                "end": 58,
+                "type": "DATA"
+            },
+            {
+                "start": 59,
+                "end": 62,
+                "type": "PESSOA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 1,
+                "tail": 2,
+                "type": "competencia-pessoa"
+            },
+            {
+                "head": 4,
+                "tail": 3,
+                "type": "licitacao-processo"
             }
         ]
     },
@@ -1382,146 +3504,364 @@
     },
     {
         "tokens": [
-            "EXTRATO",
-            "DE",
-            "CONTRATO",
-            "N\u00ba",
-            "041/2015",
-            "-",
-            "PROCESSO",
-            "LICITAT\u00d3RIO",
-            "N\u00ba",
-            "096/2015",
-            "-",
-            "PREG\u00c3O",
-            "PRESENCIAL",
-            "N\u00ba",
-            "017/2015",
-            "\u2013",
+            "Contrato",
+            "n.\u00ba",
+            "070/2018",
+            ",",
+            "Processo",
+            "Licitat\u00f3rio",
+            "n.\u00ba",
+            "052/2018",
+            ".",
             "Objeto",
             ":",
             "Aquisi\u00e7\u00e3o",
-            "de",
-            "materiais",
-            "de",
-            "consumo",
+            "Pneus",
             "e",
-            "permanente",
+            "C\u00e2maras",
             "de",
-            "uso",
-            "ambulatorial",
-            ".",
-            "A",
-            "Prefeitura",
-            "Municipal",
-            "de",
-            "Japara\u00edba",
-            "/",
-            "MG",
-            "torna",
-            "p\u00fablico",
-            "que",
-            "celebrou",
-            "Contrato",
-            "com",
+            "ar",
+            "para",
             "a",
-            "empresa",
-            "Med",
-            "Center",
-            "Comercial",
+            "frota",
+            "municipal",
+            ".",
+            "Contratado",
+            ":",
+            "FJ",
+            "Pneus",
             "Ltda",
-            "ao",
-            "pre\u00e7o",
-            "de",
+            ".",
+            "Valor",
+            ":",
             "R$",
-            "45.189,90",
-            "pelo",
-            "per\u00edodo",
-            "at\u00e9",
-            "31/12/2015",
+            "140.980,00",
             ".",
-            "Japara\u00edba",
-            "/",
-            "MG",
+            "Assinatura",
+            "entre",
+            "as",
+            "partes",
+            ":",
+            "13/07/2018",
+            ".",
+            "Abadia",
+            "dos",
+            "Dourados-MG",
             ",",
-            "04",
+            "13",
             "de",
-            "maio",
+            "setembro",
             "de",
-            "2015",
+            "2.018",
             ".",
-            "ROBERTO",
-            "EMILIO",
-            "LOPES",
+            "WANDERLEI",
+            "LEMES",
+            "SANTOS",
             "Prefeito",
             "Municipal"
         ],
         "entities": [
             {
-                "start": 2,
-                "end": 5,
+                "start": 0,
+                "end": 3,
                 "type": "CONTRATO"
             },
             {
-                "start": 6,
-                "end": 10,
+                "start": 4,
+                "end": 8,
                 "type": "PROCESSO"
             },
             {
-                "start": 11,
-                "end": 15,
-                "type": "LICITACAO"
-            },
-            {
-                "start": 44,
-                "end": 48,
+                "start": 24,
+                "end": 27,
                 "type": "ORGANIZACAO"
             },
             {
-                "start": 51,
-                "end": 53,
+                "start": 24,
+                "end": 28,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 30,
+                "end": 32,
                 "type": "VALOR_MONETARIO"
             },
             {
-                "start": 56,
-                "end": 57,
+                "start": 38,
+                "end": 39,
                 "type": "DATA"
             },
             {
-                "start": 62,
-                "end": 67,
+                "start": 44,
+                "end": 47,
                 "type": "DATA"
             },
             {
-                "start": 68,
-                "end": 71,
+                "start": 44,
+                "end": 49,
+                "type": "DATA"
+            },
+            {
+                "start": 50,
+                "end": 53,
                 "type": "PESSOA"
             },
             {
-                "start": 71,
-                "end": 72,
+                "start": 53,
+                "end": 54,
                 "type": "COMPETENCIA"
             }
         ],
         "relations": [
-            {
-                "head": 0,
-                "tail": 2,
-                "type": "contrato-licitacao"
-            },
-            {
-                "head": 2,
-                "tail": 1,
-                "type": "licitacao-processo"
-            },
             {
                 "head": 4,
                 "tail": 3,
                 "type": "valor-proposta"
             },
             {
-                "head": 8,
-                "tail": 7,
+                "head": 9,
+                "tail": 8,
+                "type": "competencia-pessoa"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "EXTRATO",
+            "DA",
+            "ADJUDICA\u00c7\u00c3O",
+            "E",
+            "HOMOLOGA\u00c7\u00c3O",
+            "\u2013",
+            "A",
+            "Prefeitura",
+            "Municipal",
+            "de",
+            "Tupaciguara",
+            "torna",
+            "p\u00fablico",
+            "a",
+            "homologa\u00e7\u00e3o",
+            "e",
+            "Adjudica\u00e7\u00e3o",
+            "do",
+            "processo",
+            "licitat\u00f3rio",
+            "n\u00ba.",
+            "0076/2017",
+            ",",
+            "Preg\u00e3o",
+            "Presencial",
+            "n\u00ba.",
+            "0048/2017",
+            ",",
+            "objetivando",
+            "a",
+            "Contrata\u00e7\u00e3o",
+            "de",
+            "pessoa",
+            "jur\u00eddica",
+            "para",
+            "confec\u00e7\u00e3o",
+            "de",
+            "camisetas",
+            "para",
+            "a",
+            "\u201c",
+            "5\u00aa",
+            "ETAPA",
+            "DO",
+            "CAMPEONATO",
+            "BRASILEIRO",
+            "DE",
+            "MOTOCROSS",
+            "2017",
+            "\u201d",
+            ",",
+            "oriundo",
+            "do",
+            "conv\u00eanio",
+            "n",
+            "\u00b0",
+            ".850958/2017",
+            ",",
+            "entre",
+            "o",
+            "Minist\u00e9rio",
+            "dos",
+            "Esportes",
+            "e",
+            "Munic\u00edpio",
+            "de",
+            "Tupaciguara",
+            ",",
+            "nas",
+            "quantidades",
+            "e",
+            "especifica\u00e7\u00f5es",
+            "consta",
+            "no",
+            "Termo",
+            "de",
+            "Refer\u00eancia",
+            ",",
+            "Empresa",
+            ":",
+            "CELINA",
+            "PRUDENTE",
+            "E",
+            "GON\u00c7ALVES",
+            "E",
+            "CASTRO",
+            "\u2013",
+            "ME",
+            ",",
+            "R$",
+            "4.036,50",
+            "(",
+            "quatro",
+            "mil",
+            "e",
+            "trinta",
+            "e",
+            "seis",
+            "reais",
+            "e",
+            "cinq\u00fcenta",
+            "centavos",
+            ")",
+            ".",
+            "Tupaciguara",
+            "24",
+            "de",
+            "outubro",
+            "de",
+            "2017",
+            ".",
+            "CARLOS",
+            "ALVES",
+            "DE",
+            "OLIVEIRA",
+            ".",
+            "Prefeito",
+            "Municipal"
+        ],
+        "entities": [
+            {
+                "start": 10,
+                "end": 10,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 10,
+                "end": 10,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 10,
+                "end": 10,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 18,
+                "end": 22,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 23,
+                "end": 27,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 60,
+                "end": 63,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 60,
+                "end": 67,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 65,
+                "end": 66,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 65,
+                "end": 66,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 65,
+                "end": 66,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 80,
+                "end": 88,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 89,
+                "end": 91,
+                "type": "VALOR_MONETARIO"
+            },
+            {
+                "start": 92,
+                "end": 102,
+                "type": "VALOR_MONETARIO"
+            },
+            {
+                "start": 101,
+                "end": 104,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 101,
+                "end": 104,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 101,
+                "end": 104,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 105,
+                "end": 110,
+                "type": "DATA"
+            },
+            {
+                "start": 111,
+                "end": 115,
+                "type": "PESSOA"
+            },
+            {
+                "start": 116,
+                "end": 117,
+                "type": "COMPETENCIA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 4,
+                "tail": 3,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 11,
+                "tail": 10,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 12,
+                "tail": 10,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 18,
+                "tail": 17,
                 "type": "competencia-pessoa"
             }
         ]
@@ -1823,147 +4163,456 @@
     },
     {
         "tokens": [
-            "Contrato",
-            "Administrativo",
-            "/",
-            "Ata",
-            "Registro",
-            "de",
-            "Pre\u00e7os",
-            "n",
-            "\u00b0",
-            "5016/2015",
-            ".",
-            "Processo",
-            "n\u00ba:20/2015",
-            ".",
-            "Licita\u00e7\u00e3o",
-            ":",
-            "Preg\u00e3o",
-            "n\u00ba",
-            "10/2015",
-            ",",
-            "que",
-            "entre",
-            "si",
-            "fazem",
-            ",",
-            "de",
-            "um",
-            "lado",
-            "o",
             "MUNIC\u00cdPIO",
             "DE",
-            "PERD\u00d5ES",
-            ",",
-            "CNPJ",
-            "\u2013",
-            "18.244.343/",
-            "0001-67",
-            "e",
-            "de",
-            "outro",
-            "AUTOFAMA",
-            "COM\u00c9RCIO",
-            "LTDA",
-            ",",
-            "CNPJ",
+            "CARNEIRINHO",
             "/",
-            "MF",
-            "00.670.120/",
-            "0001-04",
+            "MG",
             ".",
-            "Objeto",
-            ":",
+            "PREG\u00c3O",
+            "PRESENCIAL",
+            "DE",
+            "REGISTRO",
+            "DE",
+            "PRE\u00c7OS",
+            "N\u00ba",
+            "24/2017",
+            ".",
+            "Menor",
+            "Pre\u00e7o",
+            ".",
+            "O",
+            "Munic\u00edpio",
+            "de",
+            "Carneirinho",
+            ",",
+            "atrav\u00e9s",
+            "da",
+            "Pregoeira",
+            "Oficial",
+            "vem",
+            "tornar",
+            "p\u00fablico",
+            "a",
+            "abertura",
+            "do",
+            "certame",
+            "para",
+            "o",
             "registro",
             "de",
-            "pre\u00e7o",
+            "pre\u00e7os",
             "para",
+            "futura",
+            "e",
+            "eventual",
             "aquisi\u00e7\u00e3o",
             "de",
-            "combust\u00edveis",
-            ".",
-            "Vig\u00eancia",
-            ":",
-            "12",
-            "meses",
-            "a",
-            "contar",
+            "madeiras",
+            "para",
+            "manuten\u00e7\u00e3o",
+            "de",
+            "mata",
+            "burros",
             "do",
-            "dia",
-            "24/03/2015",
+            "Munic\u00edpio",
+            "de",
+            "Carneirinho",
+            ",",
+            "por",
+            "solicita\u00e7\u00e3o",
+            "da",
+            "Secretaria",
+            "Municipal",
+            "de",
+            "Servi\u00e7os",
+            "Rurais",
             ".",
-            "Valor",
-            "total",
+            "Credenciamento",
             ":",
-            "R$",
-            "477.700,00",
+            "27/04/2017",
+            "a",
+            "partir",
+            "das",
+            "10:30",
+            "hs",
             ".",
-            "FERNANDO",
-            "JAQUES",
-            "REZENDE",
+            "Data",
+            "/",
+            "hora",
+            "de",
+            "abertura",
+            "dos",
+            "Envelopes",
+            ":",
+            "27/04/2017",
+            ",",
+            "\u00e0s",
+            "10:45",
+            "hs",
+            ".",
+            "Local",
+            "de",
+            "retirada",
+            "do",
+            "Edital",
+            ":",
+            "Av.",
+            "Ambraulino",
+            "Leandro",
+            "Barbosa",
+            ",",
+            "n",
+            "\u00b0",
+            "284",
+            ",",
+            "Centro",
+            ",",
+            "Carneirinho-MG",
+            ".",
+            "Fone",
+            ":",
+            "(",
+            "34",
+            ")",
+            "3454-0200",
+            ".",
+            "12/04/2017",
+            ".",
+            "CLAUDIA",
+            "APARECIDA",
             "DE",
-            "SIQUEIRA",
-            "Prefeito",
-            "Municipal"
+            "ALMEIDA",
+            "OLIVEIRA",
+            "Pregoeira",
+            "."
         ],
         "entities": [
             {
-                "start": 4,
-                "end": 10,
+                "start": 2,
+                "end": 3,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 2,
+                "end": 3,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 2,
+                "end": 3,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 6,
+                "end": 14,
                 "type": "LICITACAO"
             },
             {
-                "start": 11,
-                "end": 13,
-                "type": "PROCESSO"
-            },
-            {
-                "start": 16,
-                "end": 19,
+                "start": 9,
+                "end": 14,
                 "type": "LICITACAO"
             },
             {
-                "start": 35,
-                "end": 37,
-                "type": "CNPJ"
+                "start": 21,
+                "end": 22,
+                "type": "MUNICIPIO"
             },
             {
-                "start": 40,
-                "end": 43,
+                "start": 21,
+                "end": 22,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 21,
+                "end": 22,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 25,
+                "end": 26,
+                "type": "COMPETENCIA"
+            },
+            {
+                "start": 54,
+                "end": 55,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 54,
+                "end": 55,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 54,
+                "end": 55,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 59,
+                "end": 64,
                 "type": "ORGANIZACAO"
             },
             {
-                "start": 47,
-                "end": 49,
-                "type": "CNPJ"
+                "start": 65,
+                "end": 68,
+                "type": "LICITACAO"
             },
             {
-                "start": 68,
-                "end": 69,
+                "start": 82,
+                "end": 83,
                 "type": "DATA"
             },
             {
-                "start": 73,
-                "end": 75,
-                "type": "VALOR_MONETARIO"
+                "start": 94,
+                "end": 108,
+                "type": "ENDERECO"
             },
             {
-                "start": 76,
-                "end": 81,
+                "start": 95,
+                "end": 98,
                 "type": "PESSOA"
             },
             {
-                "start": 81,
-                "end": 82,
+                "start": 105,
+                "end": 105,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 105,
+                "end": 105,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 105,
+                "end": 105,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 109,
+                "end": 113,
+                "type": "TEL"
+            },
+            {
+                "start": 114,
+                "end": 115,
+                "type": "DATA"
+            },
+            {
+                "start": 116,
+                "end": 121,
+                "type": "PESSOA"
+            },
+            {
+                "start": 116,
+                "end": 122,
+                "type": "PESSOA"
+            },
+            {
+                "start": 121,
+                "end": 122,
                 "type": "COMPETENCIA"
             }
         ],
         "relations": [
             {
+                "head": 3,
+                "tail": 0,
+                "type": "licitacao-municipio"
+            },
+            {
+                "head": 24,
+                "tail": 23,
+                "type": "competencia-pessoa"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "EXTRATO",
+            "DO",
+            "CONTRATO",
+            "N\u00ba",
+            "0156/2018",
+            ";",
+            "REF",
+            ".",
+            ":",
+            "PROCESSO",
+            "LICITAT\u00d3RIO",
+            "077/2018",
+            "DISPENSA",
+            "003/2018",
+            ";",
+            "Objeto",
+            ":",
+            "Aquisi\u00e7\u00e3o",
+            "de",
+            "g\u00eaneros",
+            "aliment\u00edcios",
+            "da",
+            "agricultura",
+            "familiar",
+            "e",
+            "empreendedor",
+            "familiar",
+            "rural",
+            "ou",
+            "suas",
+            "Organiza\u00e7\u00f5es",
+            "para",
+            "atender",
+            "os",
+            "alunos",
+            "matriculados",
+            "nas",
+            "escolas",
+            "municipais",
+            "que",
+            "ofertam",
+            "a",
+            "Educa\u00e7\u00e3o",
+            "Infantil",
+            "(",
+            "creche",
+            ",",
+            "pr\u00e9-escola",
+            ")",
+            ",",
+            "Ensino",
+            "Fundamental",
+            ",",
+            "M\u00e9dio",
+            ",",
+            "EJA",
+            "e",
+            "Programa",
+            "Mais",
+            "Educa\u00e7\u00e3o",
+            ",",
+            "da",
+            "Rede",
+            "P\u00fablica",
+            "do",
+            "Munic\u00edpio",
+            "de",
+            "Turmalina",
+            "/",
+            "MG",
+            ",",
+            "segundo",
+            "semestre",
+            "de",
+            "2018",
+            ",",
+            "descritos",
+            "no",
+            "quadro",
+            "previsto",
+            "na",
+            "Cl\u00e1usula",
+            "Quarta",
+            ",",
+            "todos",
+            "de",
+            "acordo",
+            "com",
+            "a",
+            "chamada",
+            "p\u00fablica",
+            "n\u00ba",
+            "003/2018",
+            ",",
+            "o",
+            "qual",
+            "integrante",
+            "do",
+            "presente",
+            "contrato",
+            ",",
+            "fica",
+            "independentemente",
+            "de",
+            "anexa\u00e7\u00e3o",
+            "ou",
+            "transcri\u00e7\u00e3o",
+            ".",
+            "CONTRATADO",
+            ":",
+            "ERIVALDO",
+            "ALECRIM",
+            "ALVES",
+            "-",
+            "CPF",
+            ":",
+            "933.444",
+            ".",
+            "226-34",
+            ".",
+            "VIG\u00caNCIA",
+            ":",
+            "25/10/2018",
+            "A",
+            "31/12/2018",
+            "parte"
+        ],
+        "entities": [
+            {
+                "start": 2,
+                "end": 5,
+                "type": "CONTRATO"
+            },
+            {
+                "start": 9,
+                "end": 12,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 12,
+                "end": 14,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 62,
+                "end": 70,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 67,
+                "end": 68,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 89,
+                "end": 93,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 110,
+                "end": 113,
+                "type": "PESSOA"
+            },
+            {
+                "start": 116,
+                "end": 119,
+                "type": "CPF"
+            },
+            {
+                "start": 122,
+                "end": 123,
+                "type": "DATA"
+            },
+            {
+                "start": 124,
+                "end": 125,
+                "type": "DATA"
+            }
+        ],
+        "relations": [
+            {
                 "head": 0,
-                "tail": 1,
-                "type": "licitacao-processo"
+                "tail": 2,
+                "type": "contrato-licitacao"
             },
             {
                 "head": 2,
@@ -1971,23 +4620,358 @@
                 "type": "licitacao-processo"
             },
             {
-                "head": 3,
-                "tail": 4,
-                "type": "cnpj"
-            },
-            {
-                "head": 5,
-                "tail": 4,
-                "type": "cnpj"
-            },
-            {
                 "head": 7,
-                "tail": 4,
-                "type": "valor-proposta"
+                "tail": 6,
+                "type": "cpf"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "AVISO",
+            "DE",
+            "LICITA\u00c7\u00c3O",
+            "A",
+            "Prefeitura",
+            "Municipal",
+            "de",
+            "Ara\u00fajos",
+            "torna",
+            "p\u00fablico",
+            "que",
+            "ir\u00e1",
+            "realizar",
+            "dia",
+            "25",
+            "de",
+            "mar\u00e7o",
+            "de",
+            "2015",
+            ",",
+            "processo",
+            "licitat\u00f3rio",
+            "na",
+            "modalidade",
+            "Preg\u00e3o",
+            "n\u00ba",
+            "002/2015",
+            ",",
+            "que",
+            "tem",
+            "como",
+            "objeto",
+            "a",
+            "contrata\u00e7\u00e3o",
+            "de",
+            "empresa",
+            "especializada",
+            "para",
+            "presta\u00e7\u00e3o",
+            "de",
+            "servi\u00e7os",
+            "de",
+            "organiza\u00e7\u00e3o",
+            ",",
+            "produ\u00e7\u00e3o",
+            "executiva",
+            "e",
+            "art\u00edstica",
+            "para",
+            "realiza\u00e7\u00e3o",
+            "do",
+            "2\u00ba",
+            "Ara\u00fajos",
+            "Fest",
+            "Cowtry",
+            ".",
+            "Entrega",
+            "dos",
+            "envelopes",
+            "dia",
+            "25",
+            "de",
+            "mar\u00e7o",
+            "de",
+            "2015",
+            "\u00e0s",
+            "08:30",
+            "horas",
+            ".",
+            "Informa\u00e7\u00f5es",
+            "/",
+            "edital",
+            ":",
+            "Avenida",
+            "Primeiro",
+            "de",
+            "Janeiro",
+            ",",
+            "n\u00ba",
+            "1748",
+            "\u2013",
+            "Centro",
+            "\u2013",
+            "Ara\u00fajos",
+            "/",
+            "MG",
+            "(",
+            "37",
+            ")",
+            "3288-3018",
+            ".",
+            "E-mail",
+            ":",
+            "licitaaraujosprefeitura@outlook.com",
+            "\u2013",
+            "O",
+            "edital",
+            "encontra-se",
+            "dispon\u00edvel",
+            "no",
+            "site",
+            "www.araujos.mg.gov.br",
+            "Ara\u00fajos",
+            "(",
+            "MG",
+            ")",
+            ",",
+            "27",
+            "de",
+            "fevereiro",
+            "de",
+            "2015",
+            ".",
+            "S\u00d4NIA",
+            "MARIA",
+            "BATISTA",
+            "COUTO",
+            ".",
+            "Prefeita",
+            "Municipal",
+            ".",
+            "-",
+            "Telefone"
+        ],
+        "entities": [
+            {
+                "start": 14,
+                "end": 19,
+                "type": "DATA"
             },
             {
-                "head": 9,
-                "tail": 8,
+                "start": 24,
+                "end": 27,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 60,
+                "end": 65,
+                "type": "DATA"
+            },
+            {
+                "start": 86,
+                "end": 90,
+                "type": "TEL"
+            },
+            {
+                "start": 107,
+                "end": 112,
+                "type": "DATA"
+            },
+            {
+                "start": 113,
+                "end": 117,
+                "type": "PESSOA"
+            },
+            {
+                "start": 118,
+                "end": 119,
+                "type": "COMPETENCIA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 6,
+                "tail": 5,
+                "type": "competencia-pessoa"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "PREFEITURA",
+            "MUNICIPAL",
+            "DE",
+            "CAMPESTRE",
+            "\u2013",
+            "MG",
+            "-",
+            "Extrato",
+            "de",
+            "Segundo",
+            "Termo",
+            "Aditivo",
+            "-",
+            "Processo",
+            "Licitat\u00f3rio",
+            "037/017",
+            "\u2013",
+            "Dispensa",
+            "003/017",
+            "\u2013",
+            "Objeto",
+            ":",
+            "Prorrogar",
+            "a",
+            "vig\u00eancia",
+            "do",
+            "contrato",
+            "n\u00ba",
+            "SL",
+            "033/017",
+            "do",
+            "dia",
+            "01/01/2019",
+            "\u00e0",
+            "28/02/2019",
+            ".",
+            "Extrato",
+            "de",
+            "Segundo",
+            "Termo",
+            "Aditivo",
+            "_",
+            "SL",
+            "033/017",
+            "_",
+            "ARCA",
+            "\u2013",
+            "ASSOCIA\u00c7\u00c3O",
+            "DOS",
+            "RECICLADORES",
+            "DE",
+            "CAMPESTRE",
+            ",",
+            "inscrito",
+            "no",
+            "CNPJ",
+            ":",
+            "21.138.041/",
+            "0001-19",
+            ".",
+            "Vig\u00eancia",
+            ":",
+            "do",
+            "dia",
+            "01/01/2019",
+            "at\u00e9",
+            "o",
+            "dia",
+            "28/02/2019",
+            ".",
+            "NIVALDO",
+            "DONIZETE",
+            "MUNIZ",
+            "Prefeito",
+            "Municipal",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 3,
+                "end": 4,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 3,
+                "end": 4,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 13,
+                "end": 16,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 17,
+                "end": 19,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 26,
+                "end": 30,
+                "type": "CONTRATO"
+            },
+            {
+                "start": 32,
+                "end": 33,
+                "type": "DATA"
+            },
+            {
+                "start": 34,
+                "end": 35,
+                "type": "DATA"
+            },
+            {
+                "start": 47,
+                "end": 52,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 50,
+                "end": 51,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 50,
+                "end": 51,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 57,
+                "end": 59,
+                "type": "CNPJ"
+            },
+            {
+                "start": 64,
+                "end": 65,
+                "type": "DATA"
+            },
+            {
+                "start": 68,
+                "end": 69,
+                "type": "DATA"
+            },
+            {
+                "start": 70,
+                "end": 73,
+                "type": "PESSOA"
+            },
+            {
+                "start": 73,
+                "end": 74,
+                "type": "COMPETENCIA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 3,
+                "tail": 2,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 4,
+                "tail": 3,
+                "type": "contrato-licitacao"
+            },
+            {
+                "head": 10,
+                "tail": 7,
+                "type": "cnpj"
+            },
+            {
+                "head": 14,
+                "tail": 13,
                 "type": "competencia-pessoa"
             }
         ]
@@ -2164,1604 +5148,6 @@
                 "head": 9,
                 "tail": 10,
                 "type": "contratante-contratado"
-            }
-        ]
-    },
-    {
-        "tokens": [
-            "Aviso",
-            "de",
-            "edital",
-            "PROCESSO",
-            "LICITAT\u00d3RIO",
-            "N\u00ba154/2020",
-            "EDITAL",
-            "DO",
-            "PREG\u00c3O",
-            "PRESENCIAL",
-            "N\u00ba",
-            "050/2020",
-            "SISTEMA",
-            "DE",
-            "REGISTRO",
-            "DE",
-            "PRE\u00c7OS",
-            "N\u00ba",
-            "038/2020",
-            "Objeto",
-            ":",
-            "Registro",
-            "de",
-            "Pre\u00e7o",
-            "para",
-            "aquisi\u00e7\u00e3o",
-            "de",
-            "material",
-            "para",
-            "lavanderia",
-            "e",
-            "limpeza",
-            "hospitalar",
-            "DATA",
-            "ABERTURA",
-            "23/03/2020",
-            "AS13:30horas",
-            "ENDERE\u00c7O",
-            ":",
-            "Rua",
-            "Get\u00falio",
-            "Vargas",
-            ",",
-            "228",
-            ",",
-            "3\u00ba",
-            "andar",
-            ",",
-            "centro",
-            "\u2013",
-            "Arcos",
-            "/",
-            "MG",
-            ".",
-            "es",
-            "e",
-            "Contratos",
-            ",",
-            "situado",
-            "\u00e0",
-            "Rua",
-            "Get\u00falio",
-            "Vargas",
-            ",",
-            "n\u00ba",
-            "228",
-            "\u2013",
-            "centro",
-            "\u2013",
-            "Arcos",
-            "/",
-            "MG",
-            "CONSULTAS",
-            "AO",
-            "EDITAL",
-            ":",
-            "Na",
-            "internet",
-            ",",
-            "no",
-            "site",
-            "www.arcos.mg.gov.br",
-            "ou",
-            "no",
-            "Departamento",
-            "de",
-            "Licita\u00e7\u00f5es",
-            "e",
-            "Contratos",
-            "supracitado",
-            "ESCLARECIMENTOS",
-            ":",
-            "e-mail",
-            ":",
-            "Telefone",
-            ":",
-            "(",
-            "37",
-            ")",
-            "3359-7905",
-            "Departamento",
-            "de",
-            "Licita\u00e7\u00f5es",
-            "e",
-            "Contratos",
-            "supracitado",
-            "Arcos",
-            ",",
-            "13",
-            "de",
-            "fevereiro",
-            "de",
-            "2020",
-            "."
-        ],
-        "entities": [
-            {
-                "start": 3,
-                "end": 6,
-                "type": "PROCESSO"
-            },
-            {
-                "start": 8,
-                "end": 12,
-                "type": "LICITACAO"
-            },
-            {
-                "start": 14,
-                "end": 19,
-                "type": "LICITACAO"
-            },
-            {
-                "start": 35,
-                "end": 36,
-                "type": "DATA"
-            },
-            {
-                "start": 39,
-                "end": 49,
-                "type": "ENDERECO"
-            },
-            {
-                "start": 60,
-                "end": 66,
-                "type": "ENDERECO"
-            },
-            {
-                "start": 84,
-                "end": 89,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 96,
-                "end": 100,
-                "type": "TEL"
-            },
-            {
-                "start": 100,
-                "end": 105,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 108,
-                "end": 113,
-                "type": "DATA"
-            }
-        ],
-        "relations": [
-            {
-                "head": 1,
-                "tail": 0,
-                "type": "licitacao-processo"
-            }
-        ]
-    },
-    {
-        "tokens": [
-            "FUNDA\u00c7\u00c3O",
-            "MUNICIPAL",
-            "DE",
-            "SA\u00daDE",
-            "DE",
-            "PEDRIN\u00d3POLIS",
-            "-",
-            "MG",
-            "-",
-            "EXTRATO",
-            "DE",
-            "CONTRATO",
-            "N\u00ba",
-            "010/2017",
-            "Para",
-            "presta\u00e7\u00e3o",
-            "de",
-            "servi\u00e7os",
-            ",",
-            "Celebrado",
-            "entre",
-            "a",
-            "Funda\u00e7\u00e3o",
-            "Municipal",
-            "de",
-            "Sa\u00fade",
-            "de",
-            "Pedrin\u00f3polis",
-            "-",
-            "MG",
-            "e",
-            "LUCIANO",
-            "SILVA",
-            "RUFINO",
-            ",",
-            "inscrita",
-            "no",
-            "CPF",
-            "n\u00ba",
-            "080.021",
-            ".",
-            "446-35",
-            ",",
-            "Objeto",
-            ":",
-            "presta\u00e7\u00e3o",
-            "de",
-            "servi\u00e7os",
-            "t\u00e9cnicos",
-            "de",
-            "assessoria",
-            "e",
-            "consultoria",
-            "em",
-            "direito",
-            "administrativo",
-            "para",
-            "atender",
-            "as",
-            "necessidades",
-            "da",
-            "Funda\u00e7\u00e3o",
-            "Municipal",
-            "de",
-            "Sa\u00fade",
-            "de",
-            "Pedrin\u00f3polis",
-            "MG",
-            "conforme",
-            "Processo",
-            "Licitat\u00f3rio",
-            "n\u00ba",
-            "003/2017",
-            ",",
-            "na",
-            "modalidade",
-            "Preg\u00e3o",
-            "Presencial",
-            "n\u00ba",
-            "001/2017",
-            ".",
-            "Valor",
-            "total",
-            "estimado",
-            ":",
-            "R$",
-            "45.000,00",
-            "(",
-            "Quarenta",
-            "e",
-            "cinco",
-            "mil",
-            "reais",
-            ")",
-            "Vig\u00eancia",
-            ":",
-            "31",
-            "de",
-            "mar\u00e7o",
-            "a",
-            "31",
-            "de",
-            "dezembro",
-            "do",
-            "ano",
-            "2017",
-            ",",
-            "Pedrin\u00f3polis",
-            ",",
-            "05",
-            "de",
-            "abril",
-            "de",
-            "2017",
-            "."
-        ],
-        "entities": [
-            {
-                "start": 11,
-                "end": 14,
-                "type": "CONTRATO"
-            },
-            {
-                "start": 22,
-                "end": 28,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 31,
-                "end": 34,
-                "type": "PESSOA"
-            },
-            {
-                "start": 39,
-                "end": 42,
-                "type": "CPF"
-            },
-            {
-                "start": 50,
-                "end": 51,
-                "type": "COMPETENCIA"
-            },
-            {
-                "start": 61,
-                "end": 65,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 69,
-                "end": 73,
-                "type": "PROCESSO"
-            },
-            {
-                "start": 76,
-                "end": 80,
-                "type": "LICITACAO"
-            },
-            {
-                "start": 85,
-                "end": 87,
-                "type": "VALOR_MONETARIO"
-            },
-            {
-                "start": 88,
-                "end": 93,
-                "type": "VALOR_MONETARIO"
-            },
-            {
-                "start": 96,
-                "end": 99,
-                "type": "DATA"
-            },
-            {
-                "start": 100,
-                "end": 103,
-                "type": "DATA"
-            },
-            {
-                "start": 100,
-                "end": 106,
-                "type": "DATA"
-            },
-            {
-                "start": 109,
-                "end": 114,
-                "type": "DATA"
-            }
-        ],
-        "relations": [
-            {
-                "head": 1,
-                "tail": 2,
-                "type": "contratante-contratado"
-            },
-            {
-                "head": 3,
-                "tail": 2,
-                "type": "cpf"
-            },
-            {
-                "head": 7,
-                "tail": 6,
-                "type": "licitacao-processo"
-            },
-            {
-                "head": 8,
-                "tail": 2,
-                "type": "valor-proposta"
-            },
-            {
-                "head": 9,
-                "tail": 2,
-                "type": "valor-proposta"
-            }
-        ]
-    },
-    {
-        "tokens": [
-            "CNPJ",
-            "17.730.011/",
-            "0001-20",
-            "Pregao",
-            "Presencial",
-            "30/2017",
-            "A",
-            "COMISS\u00c3O",
-            "DE",
-            "LICITA\u00c7\u00c3O",
-            "DA",
-            "Prefeitura",
-            "Municipal",
-            "de",
-            "Argirita",
-            "-",
-            "MG",
-            ",",
-            "no",
-            "uso",
-            "de",
-            "suas",
-            "atribui\u00e7\u00f5es",
-            "legais",
-            "e",
-            "em",
-            "conformidade",
-            "com",
-            "o",
-            "Art.",
-            "43",
-            "inciso",
-            "VI",
-            "da",
-            "Lei",
-            "8.666/93",
-            "e",
-            "suas",
-            "posteriores",
-            "altera\u00e7\u00f5es",
-            ".",
-            "ADJUDICA",
-            "a",
-            "presente",
-            "Licita\u00e7\u00e3o",
-            "\u00e0(s",
-            ")",
-            "empresa(s",
-            ")",
-            "Licitante(s",
-            "):",
-            "Participante(s",
-            ")",
-            "e",
-            "vencedora(s",
-            ")",
-            "da",
-            "3118",
-            "APOIO",
-            "LOGISTICA",
-            "CONSTRUCAO",
-            "E",
-            "SERVICOS",
-            "EIRELI",
-            "ME",
-            "TOTAL",
-            "DO",
-            "VENCEDOR",
-            "Objeto",
-            "CONTRATACAO",
-            "DE",
-            "EMPRESA",
-            "ESPECIALIZADA",
-            "PARA",
-            "ORGANIZACAO",
-            "DA",
-            "45",
-            "EXPOSICAO",
-            "AGROPECUARIA",
-            "E",
-            "CONCURSO",
-            "LEITEIRO",
-            "DE",
-            "ARGIRITA",
-            "ARGIRITA",
-            "-",
-            "MG",
-            ",",
-            "quinta-feira",
-            ",",
-            "6",
-            "de",
-            "julho",
-            "de",
-            "2017",
-            "SILVIO",
-            "PEDRO",
-            "DO",
-            "CARMO",
-            "JUNIOR",
-            "Pregoeiro",
-            "VALQUIRIA",
-            "IRIA",
-            "SILVEIRA",
-            "04.494.594/",
-            "0001-95",
-            "R$",
-            "87.000,000"
-        ],
-        "entities": [
-            {
-                "start": 1,
-                "end": 3,
-                "type": "CNPJ"
-            },
-            {
-                "start": 3,
-                "end": 6,
-                "type": "LICITACAO"
-            },
-            {
-                "start": 11,
-                "end": 15,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 14,
-                "end": 15,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 14,
-                "end": 15,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 29,
-                "end": 36,
-                "type": "LEGISLACAO"
-            },
-            {
-                "start": 58,
-                "end": 65,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 83,
-                "end": 84,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 83,
-                "end": 84,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 84,
-                "end": 85,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 84,
-                "end": 85,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 90,
-                "end": 95,
-                "type": "DATA"
-            },
-            {
-                "start": 95,
-                "end": 100,
-                "type": "PESSOA"
-            },
-            {
-                "start": 100,
-                "end": 101,
-                "type": "COMPETENCIA"
-            },
-            {
-                "start": 101,
-                "end": 104,
-                "type": "PESSOA"
-            },
-            {
-                "start": 104,
-                "end": 106,
-                "type": "CNPJ"
-            },
-            {
-                "start": 106,
-                "end": 108,
-                "type": "VALOR_MONETARIO"
-            }
-        ],
-        "relations": [
-            {
-                "head": 13,
-                "tail": 14,
-                "type": "competencia-pessoa"
-            },
-            {
-                "head": 16,
-                "tail": 6,
-                "type": "valor-proposta"
-            }
-        ]
-    },
-    {
-        "tokens": [
-            "PREFEITURA",
-            "MUNICIPAL",
-            "DE",
-            "PIRAPORA",
-            "\u2013",
-            "Preg\u00e3o",
-            "Presencial",
-            "N\u00ba",
-            "010/2016",
-            "Processo",
-            "Licitat\u00f3rio",
-            "014/2016",
-            "-",
-            "AVISO",
-            "DE",
-            "RETIFICA\u00c7\u00c3O",
-            "\u2013",
-            "Objeto",
-            ":",
-            "Presta\u00e7\u00e3o",
-            "de",
-            "podas",
-            "de",
-            "arvores",
-            "nas",
-            "vias",
-            "publicas",
-            "e",
-            "diversos",
-            "logradouros",
-            "p\u00fablicos",
-            "do",
-            "municipal",
-            "de",
-            "Pirapora",
-            ".",
-            "O",
-            "edital",
-            "foi",
-            "retificado",
-            "com",
-            "nova",
-            "data",
-            "agendada",
-            "para",
-            "o",
-            "dia",
-            "18/03/2016",
-            "\u00e0s",
-            "09:00",
-            "Horas",
-            ".",
-            "O",
-            "mesmo",
-            "poder\u00e1",
-            "ser",
-            "obtido",
-            "atrav\u00e9s",
-            "do",
-            "site",
-            "da",
-            "Prefeitura",
-            ",",
-            "endere\u00e7o",
-            ":",
-            "www.pirapora.mg.gov.br",
-            ".",
-            "Pirapora",
-            "/",
-            "MG",
-            ",",
-            "07/03/2016",
-            ".",
-            "ANTONIO",
-            "CARLOS",
-            "SOARES",
-            "DOS",
-            "SANTOS",
-            "Pregoeiro",
-            "."
-        ],
-        "entities": [
-            {
-                "start": 3,
-                "end": 4,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 3,
-                "end": 4,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 3,
-                "end": 4,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 3,
-                "end": 4,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 5,
-                "end": 9,
-                "type": "LICITACAO"
-            },
-            {
-                "start": 9,
-                "end": 12,
-                "type": "PROCESSO"
-            },
-            {
-                "start": 33,
-                "end": 34,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 33,
-                "end": 34,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 33,
-                "end": 34,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 33,
-                "end": 34,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 47,
-                "end": 48,
-                "type": "DATA"
-            },
-            {
-                "start": 65,
-                "end": 65,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 65,
-                "end": 65,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 65,
-                "end": 65,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 65,
-                "end": 65,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 66,
-                "end": 67,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 66,
-                "end": 67,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 66,
-                "end": 67,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 66,
-                "end": 67,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 71,
-                "end": 72,
-                "type": "DATA"
-            },
-            {
-                "start": 73,
-                "end": 78,
-                "type": "PESSOA"
-            },
-            {
-                "start": 78,
-                "end": 79,
-                "type": "COMPETENCIA"
-            }
-        ],
-        "relations": [
-            {
-                "head": 4,
-                "tail": 0,
-                "type": "licitacao-municipio"
-            },
-            {
-                "head": 4,
-                "tail": 5,
-                "type": "licitacao-processo"
-            },
-            {
-                "head": 21,
-                "tail": 20,
-                "type": "competencia-pessoa"
-            }
-        ]
-    },
-    {
-        "tokens": [
-            "PROCEDIMENTO",
-            "ADMINISTRATIVO",
-            "DE",
-            "LICITA\u00c7\u00c3O",
-            "\u2013",
-            "PAL",
-            "\u2013",
-            "131/2019",
-            "\u2013",
-            "PREG\u00c3O",
-            "-",
-            "064/2019",
-            "\u2013",
-            "REGISTRO",
-            "DE",
-            "PRE\u00c7O",
-            "047/2019",
-            "\u2013",
-            "Contratante",
-            ":",
-            "Prefeitura",
-            "Municipal",
-            "de",
-            "Pitangui",
-            ".",
-            "Contratado",
-            ":",
-            "XAVIER",
-            "E",
-            "FONSECA",
-            "COMERCIO",
-            "LTDA",
-            "\u2013",
-            "ME",
-            "\u2013",
-            "Valor",
-            ":",
-            "R$",
-            "41.500,00",
-            "(",
-            "quarenta",
-            "e",
-            "um",
-            "mil",
-            "e",
-            "quinhentos",
-            "reais",
-            ")",
-            ",",
-            "destinado",
-            "ao",
-            "fornecimento",
-            "de",
-            "g\u00eaneros",
-            "aliment\u00edcios",
-            ",",
-            "para",
-            "empresas",
-            "com",
-            "sede",
-            "em",
-            "um",
-            "raio",
-            "de",
-            "at\u00e9",
-            "08",
-            "(",
-            "oito",
-            ")",
-            "quil\u00f4metros",
-            "da",
-            "Prefeitura",
-            "Municipal",
-            "de",
-            "Pitangui",
-            ",",
-            "para",
-            "atender",
-            "a",
-            "todas",
-            "as",
-            "Secretarias",
-            "Municipais",
-            "e",
-            "entes",
-            "Conveniados",
-            ".",
-            "Pelo",
-            "Per\u00edodo",
-            "contratual",
-            "de",
-            "01",
-            "(",
-            "um",
-            ")",
-            "ano",
-            "de",
-            "01/02/2020",
-            "\u00e0",
-            "31/01/2021",
-            "."
-        ],
-        "entities": [
-            {
-                "start": 5,
-                "end": 8,
-                "type": "PROCESSO"
-            },
-            {
-                "start": 9,
-                "end": 12,
-                "type": "LICITACAO"
-            },
-            {
-                "start": 13,
-                "end": 17,
-                "type": "LICITACAO"
-            },
-            {
-                "start": 21,
-                "end": 23,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 21,
-                "end": 23,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 27,
-                "end": 32,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 37,
-                "end": 39,
-                "type": "VALOR_MONETARIO"
-            },
-            {
-                "start": 40,
-                "end": 47,
-                "type": "VALOR_MONETARIO"
-            },
-            {
-                "start": 71,
-                "end": 75,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 72,
-                "end": 74,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 72,
-                "end": 74,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 97,
-                "end": 98,
-                "type": "DATA"
-            },
-            {
-                "start": 99,
-                "end": 100,
-                "type": "DATA"
-            }
-        ],
-        "relations": [
-            {
-                "head": 1,
-                "tail": 0,
-                "type": "licitacao-processo"
-            },
-            {
-                "head": 2,
-                "tail": 0,
-                "type": "licitacao-processo"
-            },
-            {
-                "head": 6,
-                "tail": 5,
-                "type": "valor-proposta"
-            },
-            {
-                "head": 7,
-                "tail": 5,
-                "type": "valor-proposta"
-            }
-        ]
-    },
-    {
-        "tokens": [
-            "Processo",
-            "00037/2016",
-            "\u2013",
-            "Preg\u00e3o",
-            "Presencial",
-            "n\u00ba",
-            "00025/2016",
-            "\u2013",
-            "Objeto",
-            ":",
-            "CONTRATA\u00c7\u00c3O",
-            "DE",
-            "EMPRESA",
-            "PARA",
-            "GERENCIAMENTO",
-            "DE",
-            "PESSOAL",
-            "EM",
-            "SERVI\u00c7O",
-            "DE",
-            "DESENVOLVIMENTO",
-            "URBAN\u00cdSTICO",
-            ",",
-            "PARA",
-            "EXECU\u00c7\u00c3O",
-            "DE",
-            "ATIVIDADES",
-            "GERAIS",
-            "COMO",
-            ":",
-            "RO\u00c7ADA",
-            ",",
-            "CAPINA\u00c7\u00c3O",
-            "MANUAL",
-            "DE",
-            "CAL\u00c7ADAS",
-            "E",
-            "MEIO",
-            "FIO",
-            ",",
-            "DESPRAGUEJAMENTO",
-            ",",
-            "LIMPEZA",
-            "E",
-            "PINTURA",
-            "DE",
-            "MEIO",
-            "FIO",
-            ",",
-            "JARDINAGEM",
-            "E",
-            "LIMPEZA",
-            "DAS",
-            "PRA\u00c7AS",
-            ",",
-            "NO",
-            "PER\u00cdMETRO",
-            "URBANO",
-            "E",
-            "PONTOS",
-            "TUR\u00cdSTICOS",
-            "DO",
-            "MUNIC\u00cdPIO",
-            "DE",
-            "LAMBARI",
-            ".",
-            "Credenciamento",
-            ":",
-            "19/04/2016",
-            "\u00e0s",
-            "13h15min",
-            ".",
-            "Sess\u00e3o",
-            "de",
-            "lances",
-            ":",
-            "19/04/2016",
-            "\u00e0s",
-            "13h30min",
-            ".",
-            "Edital",
-            "e",
-            "informa\u00e7\u00f5es",
-            ":",
-            "www.lambari.mg.gov.br",
-            ",",
-            "compraselicitacao@lambari.mg.gov.br",
-            "ou",
-            "35-3271-6515",
-            ".",
-            "CELIANE",
-            "PAPANDR\u00c9A",
-            "BORGES",
-            "Pregoeira",
-            "Municipal"
-        ],
-        "entities": [
-            {
-                "start": 0,
-                "end": 2,
-                "type": "PROCESSO"
-            },
-            {
-                "start": 3,
-                "end": 7,
-                "type": "LICITACAO"
-            },
-            {
-                "start": 63,
-                "end": 64,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 63,
-                "end": 64,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 66,
-                "end": 69,
-                "type": "LICITACAO"
-            },
-            {
-                "start": 68,
-                "end": 69,
-                "type": "DATA"
-            },
-            {
-                "start": 76,
-                "end": 77,
-                "type": "DATA"
-            },
-            {
-                "start": 84,
-                "end": 84,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 84,
-                "end": 84,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 86,
-                "end": 86,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 86,
-                "end": 86,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 88,
-                "end": 89,
-                "type": "TEL"
-            },
-            {
-                "start": 90,
-                "end": 93,
-                "type": "PESSOA"
-            },
-            {
-                "start": 93,
-                "end": 94,
-                "type": "COMPETENCIA"
-            }
-        ],
-        "relations": [
-            {
-                "head": 1,
-                "tail": 0,
-                "type": "licitacao-processo"
-            },
-            {
-                "head": 13,
-                "tail": 12,
-                "type": "competencia-pessoa"
-            }
-        ]
-    },
-    {
-        "tokens": [
-            "A",
-            "PREFEITURA",
-            "MUNICIPAL",
-            "DE",
-            "ARACUA\u00cd",
-            "\u2013",
-            "MG",
-            "TORNA",
-            "P\u00daBLICO",
-            "NOS",
-            "TERMOS",
-            "DAS",
-            "LEIS",
-            "8.666/93",
-            "E",
-            "10.520/02",
-            ",",
-            "PAL",
-            "051/2015",
-            "PP",
-            "037/2015",
-            ".",
-            "CONSTITUI",
-            "OBJETO",
-            "DA",
-            "PRESENTE",
-            "LICITA\u00c7\u00c3O",
-            "REGISTRO",
-            "DE",
-            "PRE\u00c7OS",
-            "PARA",
-            "FUTURA",
-            "E",
-            "EVENTUAL",
-            "AQUISI\u00c7\u00c3O",
-            "DE",
-            "UTENS\u00cdLIOS",
-            "DOM\u00c9STICOS",
-            "EM",
-            "ATENDIMENTO",
-            "A",
-            "SECRETARIA",
-            "MUNICIPAL",
-            "DE",
-            "EDUCA\u00c7\u00c3O",
-            ".",
-            "ABERTURA",
-            "11/05/2015",
-            "AS",
-            "14:00",
-            "HORAS",
-            ".",
-            "MAIORES",
-            "INFORMA\u00c7\u00d5ES",
-            "(",
-            "033",
-            ")",
-            "3731-2133",
-            ".",
-            "DAS",
-            "12:00",
-            "AS",
-            "18:00",
-            "HORAS",
-            "."
-        ],
-        "entities": [
-            {
-                "start": 12,
-                "end": 14,
-                "type": "LEGISLACAO"
-            },
-            {
-                "start": 12,
-                "end": 16,
-                "type": "LEGISLACAO"
-            },
-            {
-                "start": 17,
-                "end": 19,
-                "type": "PROCESSO"
-            },
-            {
-                "start": 19,
-                "end": 21,
-                "type": "LICITACAO"
-            },
-            {
-                "start": 41,
-                "end": 45,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 47,
-                "end": 48,
-                "type": "DATA"
-            },
-            {
-                "start": 54,
-                "end": 58,
-                "type": "TEL"
-            }
-        ],
-        "relations": [
-            {
-                "head": 3,
-                "tail": 2,
-                "type": "licitacao-processo"
-            }
-        ]
-    },
-    {
-        "tokens": [
-            "AVISO",
-            "DE",
-            "PUBLICA\u00c7\u00c3O",
-            "PROCESSO",
-            "DE",
-            "LICITA\u00c7\u00c3O",
-            "N\u00ba",
-            "130/2019",
-            "PREG\u00c3O",
-            "PRESENCIAL",
-            "N\u00ba",
-            "047/2019",
-            "A",
-            "Prefeitura",
-            "Municipal",
-            "de",
-            "Mar",
-            "de",
-            "Espanha",
-            ",",
-            "torna",
-            "p\u00fablico",
-            "que",
-            "far\u00e1",
-            "realizar",
-            "licita\u00e7\u00e3o",
-            "dia",
-            "13/08/2019",
-            "\u00e0s",
-            "10:00hs",
-            ",",
-            "na",
-            "modalidade",
-            "Preg\u00e3o",
-            "Presencial",
-            "para",
-            "Contrata\u00e7\u00e3o",
-            "de",
-            "presta\u00e7\u00e3o",
-            "de",
-            "servi\u00e7o",
-            "de",
-            "apoio",
-            "para",
-            "os",
-            "eventos",
-            "a",
-            "ser",
-            "realizados",
-            "no",
-            "munic\u00edpio",
-            "de",
-            "Mar",
-            "de",
-            "Espanha",
-            ".",
-            "As",
-            "informa\u00e7\u00f5es",
-            "poder\u00e3o",
-            "ser",
-            "obtidas",
-            "atrav\u00e9s",
-            "do",
-            "endere\u00e7o",
-            "eletr\u00f4nico",
-            ":",
-            "licitacao@mardeespanha.mg.gov.br",
-            ".",
-            "Mar",
-            "de",
-            "Espanha",
-            ",",
-            "26",
-            "de",
-            "julho",
-            "de",
-            "2019",
-            "RAFAEL",
-            "DE",
-            "SOUZA",
-            "LANINI",
-            "Pregoeiro"
-        ],
-        "entities": [
-            {
-                "start": 3,
-                "end": 8,
-                "type": "PROCESSO"
-            },
-            {
-                "start": 8,
-                "end": 12,
-                "type": "LICITACAO"
-            },
-            {
-                "start": 13,
-                "end": 19,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 16,
-                "end": 19,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 16,
-                "end": 19,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 16,
-                "end": 19,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 27,
-                "end": 28,
-                "type": "DATA"
-            },
-            {
-                "start": 52,
-                "end": 55,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 52,
-                "end": 55,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 52,
-                "end": 55,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 68,
-                "end": 71,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 68,
-                "end": 71,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 68,
-                "end": 71,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 72,
-                "end": 77,
-                "type": "DATA"
-            },
-            {
-                "start": 77,
-                "end": 81,
-                "type": "PESSOA"
-            },
-            {
-                "start": 81,
-                "end": 82,
-                "type": "COMPETENCIA"
-            }
-        ],
-        "relations": [
-            {
-                "head": 1,
-                "tail": 0,
-                "type": "licitacao-processo"
-            },
-            {
-                "head": 1,
-                "tail": 3,
-                "type": "licitacao-municipio"
-            },
-            {
-                "head": 15,
-                "tail": 14,
-                "type": "competencia-pessoa"
-            }
-        ]
-    },
-    {
-        "tokens": [
-            "Processo",
-            "Licitat\u00f3rio",
-            "n\u00ba.",
-            "157/14",
-            "\u2013",
-            "Preg\u00e3o",
-            "n\u00ba.",
-            "120/14",
-            "\u2013",
-            "Contratada",
-            ":",
-            "FEA",
-            "FOODS",
-            "COMERCIO",
-            "E",
-            "IND\u00daSTRIA",
-            "DE",
-            "PRODUTOS",
-            "ALIMEN",
-            ".",
-            "LTDA",
-            "\u2013",
-            "ME",
-            "=",
-            ">",
-            "R$",
-            "46.864,45",
-            ".",
-            "Vig\u00eancia",
-            ":",
-            "03/09/2014",
-            "a",
-            "03/09/2015",
-            ".",
-            "MOACIR",
-            "RIBEIRO",
-            "DA",
-            "SILVA",
-            "Prefeito",
-            "Municipal",
-            "."
-        ],
-        "entities": [
-            {
-                "start": 0,
-                "end": 4,
-                "type": "PROCESSO"
-            },
-            {
-                "start": 5,
-                "end": 8,
-                "type": "LICITACAO"
-            },
-            {
-                "start": 11,
-                "end": 21,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 25,
-                "end": 27,
-                "type": "VALOR_MONETARIO"
-            },
-            {
-                "start": 30,
-                "end": 31,
-                "type": "DATA"
-            },
-            {
-                "start": 32,
-                "end": 33,
-                "type": "DATA"
-            },
-            {
-                "start": 34,
-                "end": 38,
-                "type": "PESSOA"
-            },
-            {
-                "start": 38,
-                "end": 39,
-                "type": "COMPETENCIA"
-            }
-        ],
-        "relations": [
-            {
-                "head": 1,
-                "tail": 0,
-                "type": "licitacao-processo"
-            },
-            {
-                "head": 3,
-                "tail": 2,
-                "type": "valor-proposta"
-            },
-            {
-                "head": 7,
-                "tail": 6,
-                "type": "competencia-pessoa"
             }
         ]
     },
@@ -3992,244 +5378,1013 @@
     },
     {
         "tokens": [
-            "PREFEITURA",
-            "MUNICIPAL",
+            "EXTRATO",
             "DE",
-            "CARMO",
-            "DO",
-            "CAJURU",
-            "AVISO",
+            "TERMO",
+            "ADITIVO",
+            "PROCESSO",
             "DE",
             "LICITA\u00c7\u00c3O",
-            "PL",
+            "N.\u00ba",
+            "0074/2014",
+            "PREG\u00c3O",
             "N\u00ba.",
-            "159/19",
+            ":",
+            "0027/2014",
+            "Contratante",
+            ":",
+            "Prefeitura",
+            "Municipal",
+            "de",
+            "Pedra",
+            "Bonita",
             "-",
-            "PP",
-            "N\u00ba.",
-            "59/19",
+            "MG",
+            "Trov\u00e3o",
+            "Vitor",
+            "de",
+            "Oliveira",
+            "-",
+            "Prefeito",
+            "Municipal",
+            "Contratado",
+            ":",
+            "GERALDO",
+            "PEREIRA",
+            "DA",
+            "SILVA",
+            "-",
+            "ME",
+            ",",
+            "estabelecida",
+            "a",
+            "Av.",
+            "Jacob",
+            "Dornelas",
+            "Neto",
+            ",",
+            "n\u00ba160",
+            ",",
+            "no",
+            "Munic\u00edpio",
+            "de",
+            "Pedra",
+            "Bonita",
+            "-",
+            "MG",
+            ",",
+            "CNPJ",
+            "17.727.686/",
+            "0001-10",
             ".",
             "Objeto",
             ":",
-            "Loca\u00e7\u00e3o",
+            "aquisi\u00e7\u00e3o",
             "de",
-            "trator",
+            "material",
+            "esportivo",
+            "para",
+            "escolinha",
             "de",
-            "esteira",
-            ",",
-            "com",
-            "peso",
-            "entre",
-            "11",
-            "a",
-            "14",
-            "toneladas",
-            ",",
-            "com",
-            "operador",
-            "por",
-            "conta",
+            "futebol",
+            "e",
+            "secretaria",
+            "de",
+            "esporte",
             "do",
-            "contratado",
+            "Munic\u00edpio",
+            "de",
+            "Pedra",
+            "Bonita",
+            ".",
+            "O",
+            "prazo",
+            "de",
+            "vig\u00eancia",
+            "do",
+            "presente",
+            "Termo",
+            "Aditivo",
+            "\u00e9",
+            "de",
+            "31/12/2014",
+            "para",
+            "30/04/2015",
+            ".",
+            "Pedra",
+            "Bonita",
+            ",",
+            "31",
+            "de",
+            "dezembro",
+            "de",
+            "2014"
+        ],
+        "entities": [
+            {
+                "start": 4,
+                "end": 9,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 9,
+                "end": 13,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 15,
+                "end": 20,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 18,
+                "end": 20,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 18,
+                "end": 20,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 18,
+                "end": 20,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 18,
+                "end": 20,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 22,
+                "end": 26,
+                "type": "PESSOA"
+            },
+            {
+                "start": 27,
+                "end": 28,
+                "type": "COMPETENCIA"
+            },
+            {
+                "start": 31,
+                "end": 35,
+                "type": "PESSOA"
+            },
+            {
+                "start": 40,
+                "end": 53,
+                "type": "ENDERECO"
+            },
+            {
+                "start": 41,
+                "end": 44,
+                "type": "PESSOA"
+            },
+            {
+                "start": 50,
+                "end": 52,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 50,
+                "end": 52,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 50,
+                "end": 52,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 50,
+                "end": 52,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 56,
+                "end": 58,
+                "type": "CNPJ"
+            },
+            {
+                "start": 76,
+                "end": 78,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 76,
+                "end": 78,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 76,
+                "end": 78,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 76,
+                "end": 78,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 89,
+                "end": 90,
+                "type": "DATA"
+            },
+            {
+                "start": 91,
+                "end": 92,
+                "type": "DATA"
+            },
+            {
+                "start": 93,
+                "end": 95,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 93,
+                "end": 95,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 93,
+                "end": 95,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 93,
+                "end": 95,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 96,
+                "end": 101,
+                "type": "DATA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 1,
+                "tail": 0,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 2,
+                "tail": 7,
+                "type": "contratante-contratado"
+            },
+            {
+                "head": 8,
+                "tail": 9,
+                "type": "competencia-pessoa"
+            },
+            {
+                "head": 16,
+                "tail": 12,
+                "type": "cnpj"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "Prefeitura",
+            "Municipal",
+            "de",
+            "Muria\u00e9",
+            "publica",
+            "adiamento",
+            "do",
+            "Preg\u00e3o",
+            "Presencial",
+            "n\u00ba",
+            "157/2019",
+            "\u2013",
+            "Processo",
+            "n\u00ba",
+            "193/2019",
+            "-",
+            "Requisitante",
+            ":",
+            "SMS",
+            "\u2013",
+            "Objeto",
+            ":",
+            "Registro",
+            "de",
+            "pre\u00e7os",
+            "para",
+            "aquisi\u00e7\u00e3o",
+            "de",
+            "medicamentos",
+            "Programa",
+            "de",
+            "Medicamentos",
+            "B\u00e1sicos",
             ",",
             "para",
-            "presta\u00e7\u00e3o",
+            "suprir",
+            "a",
+            "demanda",
+            "de",
+            "medicamentos",
+            "dos",
+            "usu\u00e1rios",
+            "\u2013",
+            "Nova",
+            "data",
+            "de",
+            "abertura",
+            "da",
+            "sess\u00e3o",
+            "de",
+            "licita\u00e7\u00e3o",
+            "dia",
+            "08/10/2019",
+            "\u00e0s",
+            "08:30",
+            "horas",
+            ",",
+            "na",
+            "Sala",
+            "de",
+            "Reuni\u00f5es",
+            "do",
+            "Depto",
+            ".",
+            "de",
+            "Licita\u00e7\u00f5es",
+            ",",
+            "situado",
+            "na",
+            "Av.",
+            "Maestro",
+            "Sans\u00e3o",
+            ",",
+            "236",
+            ",",
+            "3\u00ba",
+            "Andar",
+            ",",
+            "Ed",
+            ".",
+            "Centro",
+            "Administrativo",
+            "\u201c",
+            "Pres",
+            ".",
+            "Tancredo",
+            "Neves",
+            "\u201d",
+            ",",
+            "Centro",
+            ",",
+            "Muria\u00e9",
+            ",",
+            "MG",
+            "\u2013",
+            "Justificativa",
+            ":",
+            "Errata",
+            "no",
+            "forma",
+            "de",
+            "aquisi\u00e7\u00e3o",
+            "na",
+            "coluna",
+            "UNIDADE",
+            ".",
+            "IOANNIS",
+            "KONSTANTINOS",
+            "GRAMMATIKOPOULOS",
+            "Prefeito",
+            "Municipal"
+        ],
+        "entities": [
+            {
+                "start": 7,
+                "end": 11,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 12,
+                "end": 15,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 52,
+                "end": 53,
+                "type": "DATA"
+            },
+            {
+                "start": 69,
+                "end": 82,
+                "type": "ENDERECO"
+            },
+            {
+                "start": 70,
+                "end": 72,
+                "type": "PESSOA"
+            },
+            {
+                "start": 106,
+                "end": 109,
+                "type": "PESSOA"
+            },
+            {
+                "start": 109,
+                "end": 110,
+                "type": "COMPETENCIA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 6,
+                "tail": 5,
+                "type": "competencia-pessoa"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "PREFEITURA",
+            "MUNICIPAL",
+            "DE",
+            "PERDIG\u00c3O",
+            ",",
+            "torna",
+            "p\u00fablico",
+            "a",
+            "homologa\u00e7\u00e3o",
+            "do",
+            "Processo",
+            "Licitat\u00f3rio",
+            "n\u00ba",
+            ":",
+            "000015/2020",
+            ",",
+            "Tomada",
+            "de",
+            "Pre\u00e7o",
+            "n\u00ba",
+            ":",
+            "000003/2020",
+            ".",
+            "Objeto",
+            ":",
+            "CONTRATA\u00c7\u00c3O",
+            "DE",
+            "EMPRESA",
+            "ESPECIALIZADA",
+            "PARA",
+            "EXECU\u00c7\u00c3O",
+            "DE",
+            "OBRA",
+            "DE",
+            "RECAPEAMENTO",
+            "SOBRE",
+            "POLI\u00c9DRICO",
+            "EM",
+            "CONCRETO",
+            "BETUMINOSO",
+            "USINADO",
+            "A",
+            "QUENTE",
+            "NAS",
+            "VIAS",
+            "URBANAS",
+            "E",
+            "DO",
+            "PARQUE",
+            "DE",
+            "EXPOSI\u00c7\u00d5ES",
+            "DO",
+            "MUNIC\u00cdPIO",
+            "DE",
+            "PERDIG\u00c3O",
+            ".",
+            "Foi",
+            "vencedora",
+            "a",
+            "empresa",
+            ":",
+            "EMPRESER",
+            "-",
+            "EMP",
+            ".",
+            "DE",
+            "PREST",
+            ".",
+            "DE",
+            "SERV",
+            ".",
+            "LTDA",
+            "no",
+            "valor",
+            "de",
+            "R$",
+            "772.274,62",
+            ",",
+            "CNPJ",
+            ":",
+            "19.268.374/",
+            "0001-10",
+            "...................",
+            "GILMAR",
+            "TEODORO",
+            "Prefeito",
+            "Municipal"
+        ],
+        "entities": [
+            {
+                "start": 10,
+                "end": 15,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 16,
+                "end": 22,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 61,
+                "end": 72,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 75,
+                "end": 77,
+                "type": "VALOR_MONETARIO"
+            },
+            {
+                "start": 80,
+                "end": 82,
+                "type": "CNPJ"
+            },
+            {
+                "start": 83,
+                "end": 85,
+                "type": "PESSOA"
+            },
+            {
+                "start": 85,
+                "end": 86,
+                "type": "COMPETENCIA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 1,
+                "tail": 0,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 3,
+                "tail": 2,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 6,
+                "tail": 5,
+                "type": "competencia-pessoa"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "O",
+            "Munic\u00edpio",
+            "de",
+            "Cachoeira",
+            "de",
+            "Minas",
+            "torna",
+            "p\u00fablico",
+            "o",
+            "2\u00ba",
+            "Termo",
+            "de",
+            "Prorroga\u00e7\u00e3o",
+            "ao",
+            "Contrato",
+            "n.\u00ba",
+            "024/17",
+            ":",
+            "Partes",
+            ":",
+            "Munic\u00edpio",
+            "de",
+            "Cachoeira",
+            "de",
+            "Minas",
+            ",",
+            "LAIS",
+            "FARIA",
+            "DE",
+            "OLIVEIRA",
+            "11157090621",
+            ".",
+            "Objeto",
+            ":",
+            "Prorroga\u00e7\u00e3o",
+            "do",
+            "prazo",
+            "de",
+            "vig\u00eancia",
+            "do",
+            "contrato",
+            "referente",
+            "\u00e0",
+            "contrata\u00e7\u00e3o",
             "de",
             "servi\u00e7os",
-            "no",
-            "Aterro",
-            "Sanit\u00e1rio",
+            "de",
+            "transporte",
+            "escolar",
+            "dentro",
             "do",
             "Munic\u00edpio",
             ".",
-            "Credenciamento",
-            ",",
-            "entrega",
-            "e",
-            "abertura",
-            "dos",
-            "envelopes",
-            ":",
-            "dia",
-            "09/08/19",
-            "\u00e0s",
-            "13h00min",
+            "Processo",
+            "Licitat\u00f3rio",
+            "n.\u00ba",
+            "020/17",
+            "\u2013",
+            "Preg\u00e3o",
+            "Presencial",
+            "n.\u00ba",
+            "006/17",
             ".",
-            "Info",
-            "tel",
-            "(",
-            "037",
-            ")",
-            "3244-0704",
-            "e-mail",
-            "contratos@carmodocajuru.mg.gov.br",
+            "Vig\u00eancia",
+            ":",
+            "01/01/2019",
+            "a",
+            "31/12/2019",
+            ".",
+            "Cachoeira",
+            "de",
+            "Minas",
+            ",",
+            "28",
+            "de",
+            "Dezembro",
+            "de",
+            "2018",
+            ".",
+            "DIRCEU",
+            "D\u2019\u00c2NGELO",
+            "DE",
+            "FARIA",
+            "Prefeito",
+            "Municipal",
             "."
         ],
         "entities": [
+            {
+                "start": 1,
+                "end": 6,
+                "type": "ORGANIZACAO"
+            },
             {
                 "start": 3,
                 "end": 6,
                 "type": "MUNICIPIO"
             },
             {
-                "start": 9,
-                "end": 12,
-                "type": "PROCESSO"
-            },
-            {
-                "start": 13,
-                "end": 16,
-                "type": "LICITACAO"
-            },
-            {
-                "start": 59,
-                "end": 60,
-                "type": "DATA"
-            },
-            {
-                "start": 65,
-                "end": 69,
-                "type": "TEL"
-            }
-        ],
-        "relations": [
-            {
-                "head": 2,
-                "tail": 1,
-                "type": "licitacao-processo"
-            }
-        ]
-    },
-    {
-        "tokens": [
-            "EXTRATO",
-            "DE",
-            "PUBLICA\u00c7\u00c3O",
-            "A",
-            "Prefeitura",
-            "Municipal",
-            "de",
-            "Santa",
-            "Margarida",
-            "torna",
-            "p\u00fablico",
-            "a",
-            "realiza\u00e7\u00e3o",
-            "de",
-            "licita\u00e7\u00e3o",
-            "na",
-            "modalidade",
-            "preg\u00e3o",
-            "nos",
-            "termos",
-            "da",
-            "Lei",
-            "8666/93",
-            "PRC",
-            "041",
-            "/",
-            "Preg\u00e3o",
-            "031/2016",
-            "para",
-            "aquisi\u00e7\u00e3o",
-            "de",
-            "medicamentos",
-            "frustrados",
-            "nos",
-            "processos",
-            "anteriores",
-            ".",
-            "Sess\u00e3o",
-            "dia",
-            ":",
-            "19",
-            "de",
-            "maio",
-            "de",
-            "2016",
-            "as",
-            "14hs00mim",
-            ".",
-            "Santa",
-            "Margarida",
-            "06",
-            "de",
-            "maio",
-            "de",
-            "2016",
-            "TATIANE",
-            "DE",
-            "F\u00c1TIMA",
-            "CASTRO",
-            "ABREU",
-            "Pregoeira"
-        ],
-        "entities": [
-            {
-                "start": 7,
-                "end": 9,
+                "start": 3,
+                "end": 6,
                 "type": "MUNICIPIO"
             },
             {
-                "start": 7,
-                "end": 9,
+                "start": 3,
+                "end": 6,
                 "type": "MUNICIPIO"
             },
             {
-                "start": 21,
-                "end": 23,
-                "type": "LEGISLACAO"
+                "start": 14,
+                "end": 17,
+                "type": "CONTRATO"
             },
             {
-                "start": 23,
+                "start": 22,
                 "end": 25,
-                "type": "PROCESSO"
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 22,
+                "end": 25,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 22,
+                "end": 25,
+                "type": "MUNICIPIO"
             },
             {
                 "start": 26,
-                "end": 28,
-                "type": "LICITACAO"
-            },
-            {
-                "start": 40,
-                "end": 45,
-                "type": "DATA"
-            },
-            {
-                "start": 48,
-                "end": 50,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 48,
-                "end": 50,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 50,
-                "end": 55,
-                "type": "DATA"
-            },
-            {
-                "start": 55,
-                "end": 60,
+                "end": 30,
                 "type": "PESSOA"
             },
             {
-                "start": 60,
-                "end": 61,
+                "start": 30,
+                "end": 31,
+                "type": "CPF"
+            },
+            {
+                "start": 53,
+                "end": 57,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 58,
+                "end": 62,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 65,
+                "end": 66,
+                "type": "DATA"
+            },
+            {
+                "start": 67,
+                "end": 68,
+                "type": "DATA"
+            },
+            {
+                "start": 69,
+                "end": 71,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 69,
+                "end": 71,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 69,
+                "end": 71,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 73,
+                "end": 78,
+                "type": "DATA"
+            },
+            {
+                "start": 79,
+                "end": 83,
+                "type": "PESSOA"
+            },
+            {
+                "start": 83,
+                "end": 84,
                 "type": "COMPETENCIA"
             }
         ],
         "relations": [
             {
-                "head": 4,
-                "tail": 3,
+                "head": 9,
+                "tail": 8,
+                "type": "cpf"
+            },
+            {
+                "head": 11,
+                "tail": 10,
                 "type": "licitacao-processo"
             },
             {
-                "head": 10,
-                "tail": 9,
+                "head": 19,
+                "tail": 18,
+                "type": "competencia-pessoa"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "PROCESSO",
+            "LICITAT\u00d3RIO",
+            "N",
+            "\u00b0",
+            "091/2017",
+            "CONCORR\u00caNCIA",
+            "N\u00ba",
+            "002/2017",
+            "PARTES",
+            ":",
+            "MUNIC\u00cdPIO",
+            "DE",
+            "ITANHOMI",
+            "X",
+            "GERBER",
+            "JOS\u00c9",
+            "OBJETO",
+            ":",
+            "Delega\u00e7\u00e3o",
+            "da",
+            "explora\u00e7\u00e3o",
+            "do",
+            "servi\u00e7o",
+            "de",
+            "t\u00e1xi",
+            "no",
+            "munic\u00edpio",
+            "de",
+            "Itanhomi",
+            ",",
+            "mediante",
+            "concess\u00e3o",
+            "de",
+            "31",
+            "(",
+            "trinta",
+            "e",
+            "uma",
+            ")",
+            "vagas",
+            "de",
+            "pontos",
+            "de",
+            "t\u00e1xi",
+            "para",
+            "pessoas",
+            "f\u00edsicas",
+            "e",
+            "pessoas",
+            "inscritas",
+            "no",
+            "M.E.I",
+            "-",
+            "Microempreendedor",
+            "Individual",
+            ",",
+            "distribu\u00eddas",
+            "em",
+            "09",
+            "(",
+            "nove",
+            ")",
+            "pontos",
+            ",",
+            "pelo",
+            "prazo",
+            "120",
+            "(",
+            "cento",
+            "e",
+            "vinte",
+            ")",
+            "meses",
+            ",",
+            "renov\u00e1veis",
+            "por",
+            "igual",
+            "per\u00edodo",
+            ",",
+            "conforme",
+            "especifica\u00e7\u00f5es",
+            "constantes",
+            "do",
+            "Edital",
+            ".",
+            "DATA",
+            ":",
+            "10/07/2018",
+            "VIGENCIA",
+            ":",
+            "10/07/2018",
+            "a",
+            "10/07/2028",
+            ".",
+            "Prefeitura",
+            "Municipal",
+            "de",
+            "Itanhomi",
+            ",",
+            "10",
+            "de",
+            "junho",
+            "de",
+            "2018",
+            ".",
+            "DR",
+            ".",
+            "ANTONIELI",
+            "COSTA",
+            "MAIA",
+            "Prefeito",
+            "em",
+            "Exerc\u00edcio"
+        ],
+        "entities": [
+            {
+                "start": 0,
+                "end": 5,
+                "type": "PROCESSO"
+            },
+            {
+                "start": 5,
+                "end": 8,
+                "type": "LICITACAO"
+            },
+            {
+                "start": 12,
+                "end": 12,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 12,
+                "end": 12,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 12,
+                "end": 12,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 14,
+                "end": 16,
+                "type": "PESSOA"
+            },
+            {
+                "start": 28,
+                "end": 28,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 28,
+                "end": 28,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 28,
+                "end": 28,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 87,
+                "end": 88,
+                "type": "DATA"
+            },
+            {
+                "start": 90,
+                "end": 91,
+                "type": "DATA"
+            },
+            {
+                "start": 92,
+                "end": 93,
+                "type": "DATA"
+            },
+            {
+                "start": 97,
+                "end": 97,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 97,
+                "end": 97,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 97,
+                "end": 97,
+                "type": "MUNICIPIO"
+            },
+            {
+                "start": 99,
+                "end": 104,
+                "type": "DATA"
+            },
+            {
+                "start": 107,
+                "end": 110,
+                "type": "PESSOA"
+            },
+            {
+                "start": 110,
+                "end": 111,
+                "type": "COMPETENCIA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 1,
+                "tail": 0,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 1,
+                "tail": 2,
+                "type": "licitacao-municipio"
+            },
+            {
+                "head": 17,
+                "tail": 16,
                 "type": "competencia-pessoa"
             }
         ]
