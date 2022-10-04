@@ -246,7 +246,7 @@ def _parse_tokens(jtokens, dataset, tokenizer):
     doc_encoding = [tokenizer.convert_tokens_to_ids('[CLS]')]
 
     # parse tokens
-    seqlen = 0
+
     for i, token_phrase in enumerate(jtokens):
         token_encoding = tokenizer.encode(token_phrase, add_special_tokens=False)
         span_start, span_end = (len(doc_encoding), len(doc_encoding) + len(token_encoding))
@@ -255,8 +255,8 @@ def _parse_tokens(jtokens, dataset, tokenizer):
 
         doc_tokens.append(token)
         doc_encoding += token_encoding
-        if len(doc_encoding) > 510:
-            break
+        #if len(doc_encoding) > 510:
+        #    break
 
     doc_encoding += [tokenizer.convert_tokens_to_ids('[SEP]')]
 

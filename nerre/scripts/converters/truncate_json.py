@@ -6,7 +6,7 @@ outfile = open(sys.argv[2], "w", encoding="utf-8")
 data = json.load(infile)
 res = []
 
-max_size = 150
+max_size = 120
 
 for item in data:
     tokens = item["tokens"]
