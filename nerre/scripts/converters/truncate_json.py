@@ -6,14 +6,16 @@ outfile = open(sys.argv[2], "w", encoding="utf-8")
 data = json.load(infile)
 res = []
 
-max_size = 120
+max_size = 110
+total = 0
+total_new = 0
 
 for item in data:
     tokens = item["tokens"]
     ents = item["entities"]
     rels = item["relations"]
-
-    new_tokens = tokens[:max_size]
+    total += len(ents)
+    new_tokens = tokens[:max_size + 1]
     new_ents = []
     new_rels = []
     to_exclude = set()
@@ -29,7 +31,9 @@ for item in data:
         if not (head in to_exclude or tail in to_exclude):
             new_rels.append(rel)
     res.append({"tokens": new_tokens, "entities": new_ents, "relations": new_rels})
+    total_new += len(new_ents)
 
-print("%%filtered:", len(res) / len(data))
+print("%%kept instances:", len(res) / len(data))
+print("%%kept entities:", total_new / total)
 json.dump(res, outfile, indent=4)
 

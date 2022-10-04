@@ -111,46 +111,7 @@
             "Obras",
             ".",
             "Fundamento",
-            "legal",
-            ":",
-            "Inciso",
-            "II",
-            "do",
-            "art.",
-            "24",
-            "da",
-            "Lei",
-            "Federal",
-            "n",
-            "\u00b0",
-            "8.666/93",
-            ".",
-            "Itamar",
-            "Cabral",
-            "de",
-            "Miranda",
-            ".",
-            "Prefeito",
-            "Municipal",
-            ".",
-            "Informa\u00e7\u00f5es",
-            "na",
-            "sala",
-            "de",
-            "licita\u00e7\u00e3o",
-            "desta",
-            "Prefeitura",
-            ",",
-            "situada",
-            "\u00e0",
-            "P\u00e7a",
-            ".",
-            "Capit\u00e3o",
-            "Villela",
-            ",",
-            "10",
-            "\u2013",
-            "Centro"
+            "legal"
         ],
         "entities": [
             {
@@ -197,26 +158,6 @@
                 "start": 105,
                 "end": 108,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 112,
-                "end": 123,
-                "type": "LEGISLACAO"
-            },
-            {
-                "start": 124,
-                "end": 128,
-                "type": "PESSOA"
-            },
-            {
-                "start": 129,
-                "end": 130,
-                "type": "COMPETENCIA"
-            },
-            {
-                "start": 144,
-                "end": 146,
-                "type": "PESSOA"
             }
         ],
         "relations": [
@@ -234,11 +175,6 @@
                 "head": 6,
                 "tail": 5,
                 "type": "cnpj"
-            },
-            {
-                "head": 11,
-                "tail": 10,
-                "type": "competencia-pessoa"
             }
         ]
     },
@@ -685,46 +621,7 @@
             "de",
             "R$",
             "8.000,00",
-            "(",
-            "oito",
-            "mil",
-            "reais",
-            ")",
-            ",",
-            "sendo",
-            "o",
-            "valor",
-            "global",
-            "da",
-            "licita\u00e7\u00e3o",
-            "de",
-            "R$",
-            "8.000,00",
-            "(",
-            "oito",
-            "mil",
-            "reais",
-            ")",
-            ".",
-            "Manifesto",
-            "concord\u00e2ncia",
-            "com",
-            "o",
-            "julgamento",
-            "do",
-            "certame",
-            "em",
-            "favor",
-            "da",
-            "licitante",
-            ".",
-            "Silveir\u00e2nia",
-            "/",
-            "MG",
-            ",",
-            "03",
-            "de",
-            "junho"
+            "("
         ],
         "entities": [
             {
@@ -756,26 +653,6 @@
                 "start": 93,
                 "end": 95,
                 "type": "CNPJ"
-            },
-            {
-                "start": 108,
-                "end": 110,
-                "type": "VALOR_MONETARIO"
-            },
-            {
-                "start": 111,
-                "end": 114,
-                "type": "VALOR_MONETARIO"
-            },
-            {
-                "start": 123,
-                "end": 125,
-                "type": "VALOR_MONETARIO"
-            },
-            {
-                "start": 126,
-                "end": 129,
-                "type": "VALOR_MONETARIO"
             }
         ],
         "relations": [
@@ -788,26 +665,6 @@
                 "head": 5,
                 "tail": 4,
                 "type": "cnpj"
-            },
-            {
-                "head": 6,
-                "tail": 4,
-                "type": "valor-proposta"
-            },
-            {
-                "head": 7,
-                "tail": 4,
-                "type": "valor-proposta"
-            },
-            {
-                "head": 8,
-                "tail": 4,
-                "type": "valor-proposta"
-            },
-            {
-                "head": 9,
-                "tail": 4,
-                "type": "valor-proposta"
             }
         ]
     },
@@ -923,19 +780,7 @@
             "Fone",
             ":",
             "(",
-            "34",
-            ")",
-            "3454-0200",
-            ".",
-            "12/04/2017",
-            ".",
-            "CLAUDIA",
-            "APARECIDA",
-            "DE",
-            "ALMEIDA",
-            "OLIVEIRA",
-            "Pregoeira",
-            "."
+            "34"
         ],
         "entities": [
             {
@@ -1037,31 +882,6 @@
                 "start": 105,
                 "end": 105,
                 "type": "MUNICIPIO"
-            },
-            {
-                "start": 109,
-                "end": 113,
-                "type": "TEL"
-            },
-            {
-                "start": 114,
-                "end": 115,
-                "type": "DATA"
-            },
-            {
-                "start": 116,
-                "end": 121,
-                "type": "PESSOA"
-            },
-            {
-                "start": 116,
-                "end": 122,
-                "type": "PESSOA"
-            },
-            {
-                "start": 121,
-                "end": 122,
-                "type": "COMPETENCIA"
             }
         ],
         "relations": [
@@ -1069,11 +889,6 @@
                 "head": 3,
                 "tail": 0,
                 "type": "licitacao-municipio"
-            },
-            {
-                "head": 24,
-                "tail": 23,
-                "type": "competencia-pessoa"
             }
         ]
     },
@@ -1189,13 +1004,7 @@
             "\u2013",
             "Prefeito",
             "de",
-            "Astolfo",
-            "Dutra",
-            "Nilza",
-            "Martins",
-            "Soares",
-            "-",
-            "Locadora"
+            "Astolfo"
         ],
         "entities": [
             {
@@ -1337,31 +1146,6 @@
                 "start": 108,
                 "end": 109,
                 "type": "COMPETENCIA"
-            },
-            {
-                "start": 109,
-                "end": 111,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 109,
-                "end": 111,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 109,
-                "end": 111,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 109,
-                "end": 111,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 112,
-                "end": 115,
-                "type": "PESSOA"
             }
         ],
         "relations": [
@@ -1379,11 +1163,6 @@
                 "head": 24,
                 "tail": 22,
                 "type": "licitacao-processo"
-            },
-            {
-                "head": 27,
-                "tail": 32,
-                "type": "competencia-pessoa"
             }
         ]
     },
@@ -1499,46 +1278,7 @@
             ".",
             "O",
             "Edital",
-            "encontra-se",
-            "dispon\u00edvel",
-            "nesta",
-            "Prefeitura",
-            "no",
-            "Setor",
-            "de",
-            "Compras",
-            "e",
-            "Licita\u00e7\u00f5es",
-            ",",
-            "no",
-            "site",
-            "www.guarani.mg.gov.br",
-            "ou",
-            "atrav\u00e9s",
-            "de",
-            "solicita\u00e7\u00e3o",
-            "por",
-            "e-mail",
-            "licita\u00e7\u00e3o@guarani.mg.gov.br",
-            ".",
-            "Outras",
-            "informa\u00e7\u00f5es",
-            "(",
-            "32",
-            ")",
-            "3575-1214",
-            ",",
-            "no",
-            "hor\u00e1rio",
-            "de",
-            "08:00",
-            "\u00e0s",
-            "11:00",
-            "e",
-            "de",
-            "13:00",
-            "\u00e0s",
-            "16:00"
+            "encontra-se"
         ],
         "entities": [
             {
@@ -1695,76 +1435,6 @@
                 "start": 102,
                 "end": 104,
                 "type": "MUNICIPIO"
-            },
-            {
-                "start": 115,
-                "end": 120,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 122,
-                "end": 123,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 122,
-                "end": 123,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 122,
-                "end": 123,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 122,
-                "end": 123,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 122,
-                "end": 123,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 122,
-                "end": 123,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 130,
-                "end": 130,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 130,
-                "end": 130,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 130,
-                "end": 130,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 130,
-                "end": 130,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 130,
-                "end": 130,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 130,
-                "end": 130,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 134,
-                "end": 138,
-                "type": "TEL"
             }
         ],
         "relations": [
@@ -1897,19 +1567,7 @@
             "j\u00e1",
             "agradecemos",
             "e",
-            "nos",
-            "colocamos",
-            "a",
-            "disposi\u00e7\u00e3o",
-            ".",
-            "Atenciosamente",
-            ",",
-            "RAFAELA",
-            "ROSANA",
-            "PEREIRA",
-            "Presidente",
-            "da",
-            "CPL"
+            "nos"
         ],
         "entities": [
             {
@@ -1951,21 +1609,6 @@
                 "start": 66,
                 "end": 67,
                 "type": "COMPETENCIA"
-            },
-            {
-                "start": 117,
-                "end": 120,
-                "type": "PESSOA"
-            },
-            {
-                "start": 120,
-                "end": 121,
-                "type": "COMPETENCIA"
-            },
-            {
-                "start": 122,
-                "end": 123,
-                "type": "ORGANIZACAO"
             }
         ],
         "relations": [
@@ -1973,16 +1616,6 @@
                 "head": 1,
                 "tail": 0,
                 "type": "licitacao-processo"
-            },
-            {
-                "head": 9,
-                "tail": 8,
-                "type": "competencia-pessoa"
-            },
-            {
-                "head": 9,
-                "tail": 10,
-                "type": "competencia-organizacao"
             }
         ]
     },
@@ -2706,29 +2339,7 @@
             "do",
             "site",
             ":",
-            "e-mail",
-            ":",
-            "transparencia.teofilootoni.mg.gov.br",
-            "licitacao@teofilootoni.mg.gov.br",
-            ".",
-            "Te\u00f3filo",
-            "Otoni",
-            "/",
-            "MG",
-            ",",
-            "25/09/2019",
-            ".",
-            "KATIANE",
-            "EMANUELE",
-            "LEMOS",
-            "NETO",
-            "Secret\u00e1ria",
-            "Municipal",
-            "de",
-            "Administra\u00e7\u00e3o",
-            ".",
-            "pelo",
-            "ou"
+            "e-mail"
         ],
         "entities": [
             {
@@ -2755,30 +2366,9 @@
                 "start": 84,
                 "end": 88,
                 "type": "PESSOA"
-            },
-            {
-                "start": 120,
-                "end": 121,
-                "type": "DATA"
-            },
-            {
-                "start": 122,
-                "end": 126,
-                "type": "PESSOA"
-            },
-            {
-                "start": 126,
-                "end": 127,
-                "type": "COMPETENCIA"
             }
         ],
-        "relations": [
-            {
-                "head": 7,
-                "tail": 6,
-                "type": "competencia-pessoa"
-            }
-        ]
+        "relations": []
     },
     {
         "tokens": [
@@ -3005,10 +2595,7 @@
             "FREITAS",
             "JUNIOR",
             "Diretor",
-            "Geral",
-            "do",
-            "DEMSUR.PELO",
-            "\u2013"
+            "Geral"
         ],
         "entities": [
             {
@@ -3050,20 +2637,9 @@
                 "start": 104,
                 "end": 109,
                 "type": "PESSOA"
-            },
-            {
-                "start": 109,
-                "end": 110,
-                "type": "COMPETENCIA"
             }
         ],
-        "relations": [
-            {
-                "head": 8,
-                "tail": 7,
-                "type": "competencia-pessoa"
-            }
-        ]
+        "relations": []
     },
     {
         "tokens": [
@@ -3779,46 +3355,7 @@
             "De",
             "Desenvolvimento",
             "Social",
-            ",",
-            "Conforme",
-            "Lei",
-            "Federal",
-            "N.\u00ba",
-            "8.666",
-            "De",
-            "21.06.1993",
-            "E",
-            "Altera\u00e7\u00f5es",
-            ",",
-            "Lei",
-            "N",
-            "\u00b0",
-            "10.520/02",
-            "E",
-            "Pelas",
-            "Demais",
-            "Condi\u00e7\u00f5es",
-            "Fixadas",
-            "Neste",
-            "Edital",
-            ".",
-            "O",
-            "Edital",
-            "Completo",
-            ",",
-            "Seus",
-            "Anexos",
-            ",",
-            "Impugna\u00e7\u00f5es",
-            ",",
-            "Recursos",
-            ",",
-            "Decis\u00f5es",
-            "E",
-            "Demais",
-            "Atos",
-            "Dever\u00e3o",
-            "Ser"
+            ","
         ],
         "entities": [
             {
@@ -3855,26 +3392,6 @@
                 "start": 88,
                 "end": 96,
                 "type": "ENDERECO"
-            },
-            {
-                "start": 105,
-                "end": 110,
-                "type": "ORGANIZACAO"
-            },
-            {
-                "start": 112,
-                "end": 118,
-                "type": "LEGISLACAO"
-            },
-            {
-                "start": 117,
-                "end": 118,
-                "type": "DATA"
-            },
-            {
-                "start": 121,
-                "end": 125,
-                "type": "LEGISLACAO"
             }
         ],
         "relations": [
@@ -4294,22 +3811,7 @@
             ".",
             "CONTRATADO",
             ":",
-            "ERIVALDO",
-            "ALECRIM",
-            "ALVES",
-            "-",
-            "CPF",
-            ":",
-            "933.444",
-            ".",
-            "226-34",
-            ".",
-            "VIG\u00caNCIA",
-            ":",
-            "25/10/2018",
-            "A",
-            "31/12/2018",
-            "parte"
+            "ERIVALDO"
         ],
         "entities": [
             {
@@ -4341,26 +3843,6 @@
                 "start": 89,
                 "end": 93,
                 "type": "LICITACAO"
-            },
-            {
-                "start": 110,
-                "end": 113,
-                "type": "PESSOA"
-            },
-            {
-                "start": 116,
-                "end": 119,
-                "type": "CPF"
-            },
-            {
-                "start": 122,
-                "end": 123,
-                "type": "DATA"
-            },
-            {
-                "start": 124,
-                "end": 125,
-                "type": "DATA"
             }
         ],
         "relations": [
@@ -4373,11 +3855,6 @@
                 "head": 2,
                 "tail": 1,
                 "type": "licitacao-processo"
-            },
-            {
-                "head": 7,
-                "tail": 6,
-                "type": "cpf"
             }
         ]
     },
@@ -4493,22 +3970,7 @@
             "Naque",
             "ou",
             "pelo",
-            "site",
-            ":",
-            "www.naque.mg.gov.br",
-            ".",
-            "24",
-            "de",
-            "Abril",
-            "de",
-            "2019",
-            ".",
-            "H\u00c9LIO",
-            "PINTO",
-            "DE",
-            "CARVALHO",
-            "Prefeito",
-            "Municipal"
+            "site"
         ],
         "entities": [
             {
@@ -4745,56 +4207,6 @@
                 "start": 105,
                 "end": 107,
                 "type": "MUNICIPIO"
-            },
-            {
-                "start": 112,
-                "end": 112,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 112,
-                "end": 112,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 112,
-                "end": 112,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 112,
-                "end": 112,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 112,
-                "end": 112,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 112,
-                "end": 112,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 112,
-                "end": 112,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 114,
-                "end": 119,
-                "type": "DATA"
-            },
-            {
-                "start": 120,
-                "end": 124,
-                "type": "PESSOA"
-            },
-            {
-                "start": 124,
-                "end": 125,
-                "type": "COMPETENCIA"
             }
         ],
         "relations": [
@@ -4802,11 +4214,6 @@
                 "head": 7,
                 "tail": 0,
                 "type": "licitacao-municipio"
-            },
-            {
-                "head": 56,
-                "tail": 55,
-                "type": "competencia-pessoa"
             }
         ]
     },
@@ -5171,19 +4578,7 @@
             ":",
             "licitapamg@gmail.com",
             "DEREK",
-            "WILLIAN",
-            "MOREIRA",
-            "ROSA",
-            "Pregoeiro",
-            "Municipal",
-            "Pouso",
-            "Alegre",
-            "09",
-            "de",
-            "outubro",
-            "de",
-            "2018",
-            "."
+            "WILLIAN"
         ],
         "entities": [
             {
@@ -5250,45 +4645,9 @@
                 "start": 101,
                 "end": 105,
                 "type": "TEL"
-            },
-            {
-                "start": 109,
-                "end": 113,
-                "type": "PESSOA"
-            },
-            {
-                "start": 113,
-                "end": 114,
-                "type": "COMPETENCIA"
-            },
-            {
-                "start": 114,
-                "end": 116,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 114,
-                "end": 116,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 114,
-                "end": 116,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 117,
-                "end": 122,
-                "type": "DATA"
             }
         ],
-        "relations": [
-            {
-                "head": 14,
-                "tail": 13,
-                "type": "competencia-pessoa"
-            }
-        ]
+        "relations": []
     },
     {
         "tokens": [
@@ -5402,16 +4761,7 @@
             "de",
             "Minas",
             ",",
-            "8",
-            "de",
-            "abril",
-            "de",
-            "2020",
-            ",",
-            "TATYANA",
-            "APARECIDA",
-            "FERREIRA",
-            "Pregoeira"
+            "8"
         ],
         "entities": [
             {
@@ -5528,21 +4878,6 @@
                 "start": 104,
                 "end": 108,
                 "type": "MUNICIPIO"
-            },
-            {
-                "start": 110,
-                "end": 115,
-                "type": "DATA"
-            },
-            {
-                "start": 116,
-                "end": 119,
-                "type": "PESSOA"
-            },
-            {
-                "start": 119,
-                "end": 120,
-                "type": "COMPETENCIA"
             }
         ],
         "relations": [
@@ -5550,11 +4885,6 @@
                 "head": 6,
                 "tail": 5,
                 "type": "licitacao-processo"
-            },
-            {
-                "head": 25,
-                "tail": 24,
-                "type": "competencia-pessoa"
             }
         ]
     },
@@ -5670,19 +5000,7 @@
             "27",
             "de",
             "fevereiro",
-            "de",
-            "2015",
-            ".",
-            "S\u00d4NIA",
-            "MARIA",
-            "BATISTA",
-            "COUTO",
-            ".",
-            "Prefeita",
-            "Municipal",
-            ".",
-            "-",
-            "Telefone"
+            "de"
         ],
         "entities": [
             {
@@ -5704,30 +5022,9 @@
                 "start": 86,
                 "end": 90,
                 "type": "TEL"
-            },
-            {
-                "start": 107,
-                "end": 112,
-                "type": "DATA"
-            },
-            {
-                "start": 113,
-                "end": 117,
-                "type": "PESSOA"
-            },
-            {
-                "start": 118,
-                "end": 119,
-                "type": "COMPETENCIA"
             }
         ],
-        "relations": [
-            {
-                "head": 6,
-                "tail": 5,
-                "type": "competencia-pessoa"
-            }
-        ]
+        "relations": []
     },
     {
         "tokens": [
@@ -6195,11 +5492,6 @@
                 "start": 106,
                 "end": 109,
                 "type": "PESSOA"
-            },
-            {
-                "start": 109,
-                "end": 110,
-                "type": "COMPETENCIA"
             }
         ],
         "relations": [
@@ -6207,11 +5499,6 @@
                 "head": 0,
                 "tail": 1,
                 "type": "licitacao-processo"
-            },
-            {
-                "head": 6,
-                "tail": 5,
-                "type": "competencia-pessoa"
             }
         ]
     },
@@ -6327,46 +5614,7 @@
             "atrav\u00e9s",
             "de",
             "Edital",
-            "de",
-            "Credenciamento",
-            "006/2018",
-            ",",
-            "no",
-            "valor",
-            "total",
-            "de",
-            "R$",
-            "66.745,00",
-            "(",
-            "Sessenta",
-            "e",
-            "seis",
-            "mil",
-            ",",
-            "setecentos",
-            "e",
-            "quarenta",
-            "e",
-            "cinco",
-            "reais",
-            ")",
-            "por",
-            "um",
-            "per\u00edodo",
-            "de",
-            "06",
-            "(",
-            "seis",
-            ")",
-            "meses",
-            ",",
-            "conforme",
-            "Processo",
-            "Licitat\u00f3rio",
-            "n\u00ba",
-            "264/2018",
-            "e",
-            "Inexigibilidade"
+            "de"
         ],
         "entities": [
             {
@@ -6413,40 +5661,9 @@
                 "start": 102,
                 "end": 105,
                 "type": "MUNICIPIO"
-            },
-            {
-                "start": 111,
-                "end": 113,
-                "type": "LICITACAO"
-            },
-            {
-                "start": 118,
-                "end": 120,
-                "type": "VALOR_MONETARIO"
-            },
-            {
-                "start": 121,
-                "end": 132,
-                "type": "VALOR_MONETARIO"
-            },
-            {
-                "start": 144,
-                "end": 148,
-                "type": "PROCESSO"
             }
         ],
-        "relations": [
-            {
-                "head": 10,
-                "tail": 6,
-                "type": "valor-proposta"
-            },
-            {
-                "head": 11,
-                "tail": 6,
-                "type": "valor-proposta"
-            }
-        ]
+        "relations": []
     },
     {
         "tokens": [
@@ -6560,41 +5777,7 @@
             "os",
             "devidos",
             "fins",
-            "legais",
-            "a",
-            "licita\u00e7\u00e3o",
-            "supra",
-            "e",
-            "adjudico",
-            "seu",
-            "objeto",
-            "ao",
-            "licitante",
-            "vitorioso",
-            "sobredito",
-            ",",
-            "determinando",
-            "a",
-            "lavratura",
-            "do",
-            "competente",
-            "contrato",
-            ".",
-            "Ibi\u00e1(MG",
-            ")",
-            ",",
-            "14",
-            "de",
-            "setembro",
-            "de",
-            "2016",
-            "H\u00c9LIO",
-            "PAIVA",
-            "DA",
-            "SILVEIRA",
-            "Prefeito",
-            "Municipal",
-            "Publique-se"
+            "legais"
         ],
         "entities": [
             {
@@ -6626,21 +5809,6 @@
                 "start": 96,
                 "end": 101,
                 "type": "ORGANIZACAO"
-            },
-            {
-                "start": 133,
-                "end": 138,
-                "type": "DATA"
-            },
-            {
-                "start": 138,
-                "end": 142,
-                "type": "PESSOA"
-            },
-            {
-                "start": 142,
-                "end": 143,
-                "type": "COMPETENCIA"
             }
         ],
         "relations": [
@@ -6658,11 +5826,6 @@
                 "head": 4,
                 "tail": 1,
                 "type": "valor-proposta"
-            },
-            {
-                "head": 8,
-                "tail": 7,
-                "type": "competencia-pessoa"
             }
         ]
     },
@@ -6778,46 +5941,7 @@
             "\u00e0",
             "disposi\u00e7\u00e3o",
             "dos",
-            "interessados",
-            "na",
-            "sede",
-            "da",
-            "Prefeitura",
-            "Municipal",
-            "de",
-            "PO\u00c7O",
-            "FUNDO",
-            "(",
-            "MG",
-            ")",
-            ",",
-            "sito",
-            "a",
-            "Pra\u00e7a",
-            "Tancredo",
-            "Neves",
-            "3.000",
-            ",",
-            "Centro",
-            "de",
-            "PO\u00c7O",
-            "FUNDO",
-            "(",
-            "MG",
-            ")",
-            "ou",
-            "no",
-            "site",
-            "www.pocofundo.mg.gov.br",
-            ".",
-            "RENATO",
-            "FERREIRA",
-            "DE",
-            "OLIVEIRA",
-            "Prefeito",
-            "Municipal",
-            "PATRICIA",
-            "SARKIS"
+            "interessados"
         ],
         "entities": [
             {
@@ -6864,21 +5988,6 @@
                 "start": 92,
                 "end": 97,
                 "type": "DATA"
-            },
-            {
-                "start": 125,
-                "end": 134,
-                "type": "ENDERECO"
-            },
-            {
-                "start": 142,
-                "end": 146,
-                "type": "PESSOA"
-            },
-            {
-                "start": 146,
-                "end": 147,
-                "type": "COMPETENCIA"
             }
         ],
         "relations": [
@@ -7006,17 +6115,7 @@
             "/",
             "3329-1844",
             ";",
-            "e-mail",
-            ":",
-            "licitacao@formiga.mg.gov.br",
-            ".",
-            "Edital",
-            "dispon\u00edvel",
-            "no",
-            "site",
-            ":",
-            "www.formiga.mg.gov.br",
-            "."
+            "e-mail"
         ],
         "entities": [
             {
@@ -7163,56 +6262,6 @@
                 "start": 108,
                 "end": 109,
                 "type": "TEL"
-            },
-            {
-                "start": 112,
-                "end": 112,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 112,
-                "end": 112,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 112,
-                "end": 112,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 112,
-                "end": 112,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 112,
-                "end": 112,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 118,
-                "end": 119,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 118,
-                "end": 119,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 118,
-                "end": 119,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 118,
-                "end": 119,
-                "type": "MUNICIPIO"
-            },
-            {
-                "start": 118,
-                "end": 119,
-                "type": "MUNICIPIO"
             }
         ],
         "relations": [
@@ -7335,25 +6384,7 @@
             "Quaisquer",
             "informa\u00e7\u00f5es",
             "poder\u00e3o",
-            "ser",
-            "obtidas",
-            "no",
-            "telefone",
-            "(",
-            "038",
-            ")",
-            "3235-1001",
-            "ou",
-            "pelo",
-            "e-mail",
-            ":",
-            "licitacao.capitaoeneas@hotmail.com",
-            "LUCAS",
-            "FERREIRA",
-            "SANTOS",
-            "Presidente",
-            "da",
-            "CPL"
+            "ser"
         ],
         "entities": [
             {
@@ -7395,26 +6426,6 @@
                 "start": 90,
                 "end": 94,
                 "type": "VALOR_MONETARIO"
-            },
-            {
-                "start": 114,
-                "end": 118,
-                "type": "TEL"
-            },
-            {
-                "start": 123,
-                "end": 126,
-                "type": "PESSOA"
-            },
-            {
-                "start": 126,
-                "end": 127,
-                "type": "COMPETENCIA"
-            },
-            {
-                "start": 128,
-                "end": 129,
-                "type": "ORGANIZACAO"
             }
         ],
         "relations": [
@@ -7432,16 +6443,6 @@
                 "head": 7,
                 "tail": 5,
                 "type": "valor-proposta"
-            },
-            {
-                "head": 10,
-                "tail": 9,
-                "type": "competencia-pessoa"
-            },
-            {
-                "head": 10,
-                "tail": 11,
-                "type": "competencia-organizacao"
             }
         ]
     },
@@ -7557,19 +6558,7 @@
             ",",
             "Ouro",
             "Fino",
-            "-",
-            "MG",
-            ",",
-            "CEP",
-            "37570-000",
-            ".",
-            "MAURICIO",
-            "LEMES",
-            "DE",
-            "CARVALHO",
-            "Prefeito",
-            "Municipal",
-            "."
+            "-"
         ],
         "entities": [
             {
@@ -7623,11 +6612,6 @@
                 "type": "DATA"
             },
             {
-                "start": 102,
-                "end": 117,
-                "type": "ENDERECO"
-            },
-            {
                 "start": 103,
                 "end": 105,
                 "type": "PESSOA"
@@ -7646,16 +6630,6 @@
                 "start": 108,
                 "end": 109,
                 "type": "MUNICIPIO"
-            },
-            {
-                "start": 116,
-                "end": 120,
-                "type": "PESSOA"
-            },
-            {
-                "start": 120,
-                "end": 121,
-                "type": "COMPETENCIA"
             }
         ],
         "relations": [
@@ -7663,11 +6637,6 @@
                 "head": 4,
                 "tail": 3,
                 "type": "licitacao-processo"
-            },
-            {
-                "head": 16,
-                "tail": 15,
-                "type": "competencia-pessoa"
             }
         ]
     },
@@ -7882,14 +6851,7 @@
             "mar\u00e7o",
             "de",
             "2014",
-            ".",
-            "AUR\u00c9LIO",
-            "DE",
-            "OLIVEIRA",
-            "J\u00daNIOR",
-            "Presidente",
-            "da",
-            "CPL"
+            "."
         ],
         "entities": [
             {
@@ -7916,39 +6878,8 @@
                 "start": 89,
                 "end": 93,
                 "type": "TEL"
-            },
-            {
-                "start": 105,
-                "end": 110,
-                "type": "DATA"
-            },
-            {
-                "start": 111,
-                "end": 115,
-                "type": "PESSOA"
-            },
-            {
-                "start": 115,
-                "end": 116,
-                "type": "COMPETENCIA"
-            },
-            {
-                "start": 117,
-                "end": 118,
-                "type": "ORGANIZACAO"
             }
         ],
-        "relations": [
-            {
-                "head": 7,
-                "tail": 6,
-                "type": "competencia-pessoa"
-            },
-            {
-                "head": 7,
-                "tail": 8,
-                "type": "competencia-organizacao"
-            }
-        ]
+        "relations": []
     }
 ]
