@@ -9,7 +9,7 @@ res = []
 for item in data:
     tokens = item["tokens"]
 #    print(len(tokens))
-    if len(tokens) > 160:
+    if len(tokens) > 120:
         continue
     res.append( item )
 
