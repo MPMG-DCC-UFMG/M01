@@ -39,8 +39,9 @@ def extract_relations(data, use_indices=True, verbose=False):
         municipio_ents = mun_matcher.match(text)  # Adiciona municipios identificados
 
         # entities: vetor de entidades na ordem em que elas aparecem no texto
-        entities = municipio_ents + [Entity(ent["start"], ent["end"], ent["entity"], ent["label"]) for ent in
-                                     segment["entities"]]
+        #entities = municipio_ents + [Entity(ent["start"], ent["end"], ent["entity"], ent["label"]) for ent in
+                                     #segment["entities"]]
+        entities = [Entity(ent["start"], ent["end"], ent["entity"], ent["label"]) for ent in segment["entities"]]
         entities = sorted(entities)
 
         for i, ent in enumerate(entities):

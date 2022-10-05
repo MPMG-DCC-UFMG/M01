@@ -28,7 +28,7 @@ class RelationExtractor:
             ("CNPJ", "ORGANIZACAO"): self.cnpj,
             ("CNPJ", "MUNICIPIO"): self.cnpj,
             ("LICITACAO", "DATA"): self.licitacao_data,
-            ("LICITACAO", "MUNICIPIO"): self.licitacao_municipio,
+            #("LICITACAO", "MUNICIPIO"): self.licitacao_municipio,
             ("ORGANIZACAO", "ENDERECO"): self.organizacao_endereco
             # ...
         }
