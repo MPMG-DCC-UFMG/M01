@@ -25,6 +25,7 @@ import re
 #TREE_TIPOS.print_tree()
 
 
+
 def extract_relations(data, use_indices=True, verbose=False):
     infile.close()
     mun_matcher = MunicipioMatcher()
