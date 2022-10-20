@@ -1,0 +1,21 @@
+{
+    "entities": {
+        "LEGISLACAO": {
+            "short": "LEGISLACAO",
+            "verbose": "LEGISLACAO"
+        },
+        "LOCAL": {
+            "short": "LOCAL",
+            "verbose": "LOCAL"
+        },
+        "ORGANIZACAO": {
+            "short": "ORGANIZACAO",
+            "verbose": "ORGANIZACAO"
+        },
+        "PESSOA": {
+            "short": "PESSOA",
+            "verbose": "PESSOA"
+        }
+    },
+    "relations": {}
+}
