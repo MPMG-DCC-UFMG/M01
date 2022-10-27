@@ -1,0 +1,21 @@
+{
+    "entities": {
+        "PESSOA": {
+            "short": "PESSOA",
+            "verbose": "PESSOA"
+        },
+        "PRODUTO_OU_SERVICO": {
+            "short": "PRODUTO_OU_SERV",
+            "verbose": "PRODUTO_OU_SERVICO"
+        },
+        "LOCAL": {
+            "short": "LOCAL",
+            "verbose": "LOCAL"
+        },
+        "ORGANIZACAO": {
+            "short": "ORGANIZACAO",
+            "verbose": "ORGANIZACAO"
+        }
+    },
+    "relations": {}
+}
