@@ -1,0 +1,9 @@
+{
+    "entities": {
+        "PRODUTO_OU_SERVICO": {
+            "short": "PRODUTO_OU_SERV",
+            "verbose": "PRODUTO_OU_SERVICO"
+        }
+    },
+    "relations": {}
+}
