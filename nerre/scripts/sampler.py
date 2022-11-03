@@ -16,6 +16,7 @@ def complementarity_score(data, candidates, covered_rel_types):
         item_types = set([rel["type"] for rel in relations])
         diff = item_types - covered_rel_types
         scores.append((len(diff), i))
+    return scores
 
 def rank(data):
     selected = []
@@ -43,5 +44,5 @@ selected = rank(data)
 
 res = [data[s] for s in selected]
 
-json.dump(res, indent=4)
+json.dump(res, outfile, indent=4)
 

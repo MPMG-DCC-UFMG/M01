@@ -19,13 +19,14 @@ def convert(data):
     res = []
     for dic in data:
         rows = []
-        text = tokens2sentence(dic["tokens"])
+        tokens = dic["tokens"]
+        text = tokens2sentence(tokens)
         rows.append(f"[Texto]: {text}")
         ent_strs = []
         added_ents = set()
         for ent in dic["entities"]:
             label = ent["type"].lower()
-            ent_str = " ".join(tokens[ent["start"]:ent["end"]])
+            ent_str = tokens2sentence(tokens[ent["start"]:ent["end"]])
             ent_strs.append(ent_str)
             ent_str_low = ent_str.lower()
             if ent_str_low not in added_ents:
@@ -37,8 +38,7 @@ def convert(data):
             tail = ent_strs[rel["tail"]]
             rows.append(f"[relação]: {head}; {label}; {tail}")
         res.append("\n".join(rows))
-    return "###".join(res)
-
+    return "\n###\n".join(res)
 
 
 infile = open(sys.argv[1], encoding="utf-8")
