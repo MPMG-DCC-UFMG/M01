@@ -77,6 +77,7 @@ labels = {"[Produto ou Serviço]": "PRODUTO_OU_SERVICO",
           "[Local]": "LOCAL",
           "[Pessoa]": "PESSOA",
           "[PRODUTO_OU_SERVICO]": "PRODUTO_OU_SERVICO",
+          "[PRODUTO OU SERVIÇO]": "PRODUTO_OU_SERVICO",
           "[ORGANIZACAO]": "ORGANIZACAO",
           "[LOCAL]": "LOCAL",
           "[PESSOA]": "PESSOA"
@@ -93,16 +94,20 @@ def to_json(jdata):
         ents = []
         for line in out_lines:
             lin = line.strip()
+            if lin.startswith("###"):
+                break
             if lin.startswith("["):
                 spl = lin.split(":")
                 if len(spl) < 2:
                     continue
                 label = spl[0].strip()
+                #print(label)
                 span = spl[1].strip()
-                if span in labels or span.lower() == "nenhum" or span.lower() == "none":
+                if span in labels or span.lower() == "nenhum" or span.lower() == "none" or span.lower() == "nada":
                     continue
                 if label not in labels:
                     continue
+                print(span)
                 ents.append( (labels[label], span) )
 
         entities = []
