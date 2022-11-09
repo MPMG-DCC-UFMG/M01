@@ -87,6 +87,10 @@ def to_json(jdata):
     nlp = spacy.load("pt_core_news_sm")
     res = []
     for item in jdata:
+        if item["input"] == None:
+            continue
+        if item["output"] == None:
+            continue
         text = item["input"].strip()
         tokens = [x.text for x in nlp(text)]
         tokens_low = [x.lower() for x in tokens]
