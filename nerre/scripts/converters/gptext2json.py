@@ -123,7 +123,8 @@ def to_json(jdata):
 
             for start, end in matches:
                 entities.append({"start": start, "end": end, "type": label})
-        res.append({"tokens": tokens, "entities": entities, "relations": []})
+        if len(entities) > 0:
+            res.append({"tokens": tokens, "entities": entities, "relations": []})
     return res
 
 
