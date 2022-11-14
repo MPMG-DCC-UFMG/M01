@@ -111,7 +111,7 @@ def to_json(jdata):
                     continue
                 if label not in labels:
                     continue
-                print(span)
+                #print(span)
                 ents.append( (labels[label], span) )
 
         entities = []
