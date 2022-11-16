@@ -11,7 +11,7 @@ idx = 0
 res = []
 current_ent = "O"
 
-sents, labels = load_conll(infilename, col=3)
+sents, labels = load_conll(infilename, col=2)
 
 for idx in range(len(sents)):
     sent = sents[idx]

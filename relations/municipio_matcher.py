@@ -27,15 +27,18 @@ class MunicipioMatcher:
         matches = self.matcher.exact_matches(tokens)
         res = []
         context_municipios = set() #Conjunto de nomes que, neste contexto, sao municipios
-
+        processed_names = set()
         for start, end, name in matches:
-            char_level_matches = re.finditer(name, text_lower)
+            if name in processed_names:
+                continue
+            processed_names.add(name)
+            char_level_matches = re.finditer(remover_acentos(name.lower()), text_lower)
             for m in char_level_matches:
                 #print("Match:", name)
                 start_char, end_char = m.span()
                 window_start = max(0, start_char - context_size)
                 context = text_lower[window_start:start_char]
-                if "municip" in context or "prefeit" in context or "municíp" in context:
-                    context_municipios.add(name)
-                res.append( (name, Entity(start_char, end_char, name.upper(), "MUNICIPIO")) )
-        return [ent for (name, ent) in res if name in context_municipios]
+                if "municip" in context or "prefeit" in context:
+                    #context_municipios.add(name)
+                    res.append( (name, Entity(start_char, end_char, name.upper(), "MUNICIPIO")) )
+        return [ent for (name, ent) in res] #if name in context_municipios]
