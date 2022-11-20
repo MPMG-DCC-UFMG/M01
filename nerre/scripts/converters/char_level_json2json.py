@@ -18,7 +18,10 @@ def convert(jdata):
 def convert_doc(dic):
     text = dic["text"]
     entities = dic["entities"]
-    relations = dic["relations"]
+    if "relations" in dic:
+        relations = dic["relations"]
+    else:
+        relations = []
 
     tokens = tokenizer(text)
     tokens_text = [tok.text for tok in tokens]
