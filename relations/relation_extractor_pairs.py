@@ -169,9 +169,9 @@ class RelationExtractor:
     def licitacao_municipio(self, e1, e2):
         if self.municipio == None: #Utilizar a primeira ocorrencia de MUNICIPIO
             self.municipio = e2
-            d = self.proximity_score(e1, e2, context_size=30, prioritize_e1_before_e2=False)
-            if d is not None:
-                e1.add_candidate(e2, d, "licitacao-municipio")
+        d = self.proximity_score(e1, e2, context_size=300, prioritize_e1_before_e2=False)
+        if d is not None:
+            e1.add_candidate(e2, d, "licitacao-municipio")
 
 
     def valor_pessoa(self, e1, e2):
