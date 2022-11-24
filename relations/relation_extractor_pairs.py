@@ -1,6 +1,10 @@
 from relation import Relation
 from entity import Entity
 from collections import defaultdict
+import re
+
+p_pai = re.compile("(nome do)?\s+pai[:\s]+", flags=re.IGNORECASE)
+p_mae = re.compile("(nome da)?\s+m[ãa]e[:\s]+", flags=re.IGNORECASE)
 
 class RelationExtractor:
     def __init__(self, entities, text):
@@ -28,8 +32,11 @@ class RelationExtractor:
             ("CNPJ", "ORGANIZACAO"): self.cnpj,
             ("CNPJ", "MUNICIPIO"): self.cnpj,
             ("LICITACAO", "DATA"): self.licitacao_data,
-            #("LICITACAO", "MUNICIPIO"): self.licitacao_municipio,
-            ("ORGANIZACAO", "ENDERECO"): self.organizacao_endereco
+            ("LICITACAO", "MUNICIPIO"): self.licitacao_municipio,
+            ("ORGANIZACAO", "ENDERECO"): self.organizacao_endereco,
+            ("PESSOA", "ENDERECO"): self.pessoa_endereco,
+            ("PESSOA", "PESSOA"): self.pessoa_pessoa,
+            ("PESSOA", "DATA"): self.pessoa_data
             # ...
         }
 
@@ -99,6 +106,16 @@ class RelationExtractor:
             if word in self.lower_cased_text[head_entity.end:window_end]:
                 return True
         return False
+
+    def pattern_is_in_context(self, pattern, head_entity, left_context_size=20, right_context_size=20):
+        window_start = max(0, head_entity.start - left_context_size)
+        window_end = min(len(self.lower_cased_text), head_entity.end + right_context_size)
+        if pattern.search(self.lower_cased_text[window_start:head_entity.start]):
+            return True
+        if pattern.search(self.lower_cased_text[head_entity.end:window_end]):
+            return True
+        return False
+
 
     def licitacao_processo(self, e1, e2, context_size=30):
         d = self.dist(e1, e2)
@@ -190,4 +207,52 @@ class RelationExtractor:
         d = self.proximity_score(e1, e2, context_size=100, prioritize_e1_before_e2=True)
         if d is not None:
             e1.add_candidate(e2, d, "contratante-contratado")
+
+    def pessoa_pessoa(self, e1, e2):
+        global p_pai
+        global p_mae
+
+        if e1.start > e2.end:
+            return
+
+        e2_is_pai = self.pattern_is_in_context(p_pai, e2, left_context_size=15, right_context_size=0)
+        e2_is_mae = self.pattern_is_in_context(p_mae, e2, left_context_size=15, right_context_size=0)
+        if not (e2_is_pai or e2_is_mae):
+            return
+
+        e1_is_pai = self.pattern_is_in_context(p_pai, e1, left_context_size=15, right_context_size=0)
+        e1_is_mae = self.pattern_is_in_context(p_mae, e1, left_context_size=15, right_context_size=0)
+
+        if e1_is_pai or e1_is_mae:
+            return
+
+        d = e2.start - e1.end
+        if e2_is_pai:
+            e1.add_candidate(e2, d, "pessoa-pai")
+        elif e2_is_mae:
+            e1.add_candidate(e2, d, "pessoa-mae")
+
+    def pessoa_endereco(self, e1, e2):
+        if not self.is_in_context(["reside", "mora", "domicil"],
+                                  e2, left_context_size=40, right_context_size=0):
+            return
+        d = self.proximity_score(e1, e2, context_size=100, prioritize_e1_before_e2=True)
+        if d is not None:
+            e1.add_candidate(e2, d, "reside_em")
+
+    def pessoa_data(self, e1, e2):
+        if not self.is_in_context(["nasc"],
+                                  e2, left_context_size=20, right_context_size=0):
+            return
+
+        e1_is_pai = self.pattern_is_in_context(p_pai, e1, left_context_size=15, right_context_size=0)
+        e1_is_mae = self.pattern_is_in_context(p_mae, e1, left_context_size=15, right_context_size=0)
+
+        if e1_is_pai or e1_is_mae:
+            return
+
+        d = self.proximity_score(e1, e2, context_size=200, prioritize_e1_before_e2=True)
+        if d is not None:
+            e1.add_candidate(e2, d, "data_nascimento")
+
 
