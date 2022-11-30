@@ -32,7 +32,7 @@ def merge_spans_doc(dic):
         if "score" in ent:
             score = ent["score"]
         else:
-            score = 1
+            score = end - start
         freq_start[start] += 1
         freq_end[end] += 1
         for j in range(start, end):

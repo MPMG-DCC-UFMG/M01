@@ -5,13 +5,12 @@ infile = open(sys.argv[1], encoding="utf-8")
 outfile = open(sys.argv[2], "w", encoding="utf-8")
 data = json.load(infile)
 
-allowed = ["PRODUTO_OU_SERVICO"]
-
+allowed_ents = "PESSOA DATA ENDERECO COMPETENCIA".split()
 for item in data:
     new_ents = []
     ents = item["entities"]
     for ent in ents:
-        if ent["type"] in allowed:
+        if ent["type"] in allowed_ents:
             new_ents.append(ent)
     item["entities"] = new_ents
 

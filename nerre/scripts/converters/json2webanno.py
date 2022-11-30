@@ -36,16 +36,16 @@ print(header, file=outfile)
 
 spanidx = 0
 char_start = -1
-for sent_idx,item in enumerate(data):
+for sent_idx, item in enumerate(data):
     char_start += 1
     tokens = item["tokens"]
-    print("\n#Text=%s" % tokens2sentence(tokens), file=outfile)
+    print("\n#Text=%s" % tokens2sentence(tokens).replace("\n", " ").replace("\t", " ").strip(), file=outfile)
     entities = {}
     relations = {}
     entno2start = {}
     if "entities" in item:
         ents = item["entities"]
-        for entno,ent in enumerate(ents):
+        for entno, ent in enumerate(ents):
             ent_type = ent["type"].replace("_", "\\_")
             start = ent["start"]
             end = ent["end"]
@@ -69,7 +69,7 @@ for sent_idx,item in enumerate(data):
             except:
                 print("======")
                 print(entities)
-    for i,token in enumerate(tokens):
+    for i, token in enumerate(tokens):
         if token.strip() == "":
             continue
 
