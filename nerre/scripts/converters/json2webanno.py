@@ -5,6 +5,9 @@ PUNCT=".,;:!?"
 
 #Junta novamente palavras que foram separadas pelo tokenizer
 def tokens2sentence(tokens):
+
+    return " ".join(tokens)
+
     tokens_with_spaces = []
     for token in tokens:
         if token not in PUNCT:
@@ -39,7 +42,7 @@ char_start = -1
 for sent_idx, item in enumerate(data):
     char_start += 1
     tokens = item["tokens"]
-    print("\n#Text=%s" % tokens2sentence(tokens).replace("\n", " ").replace("\t", " ").strip(), file=outfile)
+    print("\n#Text=%s" % tokens2sentence(tokens), file=outfile)
     entities = {}
     relations = {}
     entno2start = {}
@@ -73,8 +76,8 @@ for sent_idx, item in enumerate(data):
         if token.strip() == "":
             continue
 
-        if token in PUNCT and i > 0:
-            char_start -= 1
+        #if token in PUNCT and i > 0:
+        #    char_start -= 1
         char_end = char_start + len(token)
         tid = str(sent_idx+1) + "-" + str(i+1)
         cid = str(char_start) + "-" + str(char_end)

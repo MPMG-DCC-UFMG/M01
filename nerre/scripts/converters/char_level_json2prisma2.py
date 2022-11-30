@@ -1,18 +1,19 @@
 import sys
 import json
 import spacy
+import uuid
 
 tokenizer = spacy.load("pt_core_news_sm")
 
-def convert(jdata):
-    res = []
+def convert(jdata, title=""):
+    res_segments = []
     if "sentences" in jdata:
         dics = jdata["sentences"]
     else:
         dics = [jdata]
     for dic in dics:
-        res.append(convert_doc(dic))
-    return res
+        res_segments.append(convert_doc(dic))
+    return {"sentences": res_segments}
 
 
 def convert_doc(dic):
@@ -23,29 +24,24 @@ def convert_doc(dic):
     else:
         relations = []
 
-    tokens = tokenizer(text)
-    tokens_text = [tok.text for tok in tokens]
-    char2token = map_chars2tokens(text, tokens)
-
     converted_entities = []
     converted_relations = []
-
+    ent_uuids = []
     for ent in entities:
+        eid = str(uuid.uuid4())
+        ent_uuids.append(eid)
         start_char = ent["start"]
         end_char = ent["end"]
         label = ent["label"]
-        start_token = char2token[start_char]
-        end_token = char2token[end_char]
-        if end_token == start_token:
-            end_token +=1
-        converted_entities.append({"start": start_token, "end": end_token, "type": label})
+        converted_entities.append({"id": eid, "start": start_char, "end": end_char,
+                                   "entity": text[start_char:end_char], "label": label})
     for rel in relations:
         ents = rel["entities"]
-        head = ents[0]
-        tail = ents[1]
+        head = ent_uuids[ents[0]]
+        tail = ent_uuids[ents[1]]
         label = rel["label"]
-        converted_relations.append({"head": head, "tail": tail, "type": label})
-    return {"tokens": tokens_text, "entities":converted_entities, "relations": converted_relations}
+        converted_relations.append({"from_annotation_id": head, "to_annotation_id": tail, "label": label})
+    return {"text": text, "entities": converted_entities, "relationships": converted_relations}
 
 def map_chars2tokens(text, tokens):
     res = {}
@@ -68,7 +64,7 @@ outfile = open(sys.argv[2], "w", encoding="utf-8")
 jdata = json.load(infile)
 infile.close()
 
-jdata_new = convert(jdata)
+jdata_new = convert(jdata, title=outfile.name)
 json.dump(jdata_new, outfile, indent=4)
 
 outfile.close()

@@ -28,7 +28,7 @@ def merge_spans_doc(dic):
         overlap = False
         start = ent["start"]
         end = ent["end"]
-        lab = ent["type"]
+        label = ent["type"]
         if "score" in ent:
             score = ent["score"]
         else:
@@ -46,9 +46,9 @@ def merge_spans_doc(dic):
         if ent_idx in entmap:
             s,e,lab,sc = entmap[ent_idx]
             if score > sc:
-                entmap[ent_idx] = [start, end, lab, score]
+                entmap[ent_idx] = [start, end, label, score]
         else:
-            entmap[ent_idx] = [start, end, lab, score]
+            entmap[ent_idx] = [start, end, label, score]
         ents2new[i] = ent_idx
 
 
