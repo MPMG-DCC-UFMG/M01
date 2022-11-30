@@ -2,7 +2,7 @@ removeNewLines = false
 segmented = false
 aproxSegmentSize = 100
 minSegmentSize = 20
-model = models/lener_model.ser.gz
+model = models/mixed_4ents.ser.gz,models/bloom_prods_licit.ser.gz
 regexFile = rules.tsv
 
 
