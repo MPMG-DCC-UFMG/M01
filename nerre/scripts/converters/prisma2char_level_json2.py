@@ -29,10 +29,13 @@ def convert_doc(dic):
     for rel in relations:
         h = rel["from_annotation_id"]
         t = rel["to_annotation_id"]
-        head = mapping[h]
-        tail = mapping[t]
-        label = rel["label"]
-        converted_relations.append({"entities": [head, tail], "label": label})
+        try:
+            head = mapping[h]
+            tail = mapping[t]
+            label = rel["label"]
+            converted_relations.append({"entities": [head, tail], "label": label})
+        except:
+            print("Warning: uuid not found:", h, "or", t)
     return {"text": text, "entities": entities, "relations": converted_relations}
 
 

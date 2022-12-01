@@ -27,10 +27,10 @@ class RelationExtractor:
             ("COMPETENCIA", "PESSOA"): self.competencia_pessoa,
             ("COMPETENCIA", "ORGANIZACAO"): self.competencia_organizacao,
             ("CONTRATO", "LICITACAO"): self.contrato_licitacao,
-            ("CPF", "PESSOA"): self.cpf,
-            ("MASP", "PESSOA"): self.masp,
-            ("CNPJ", "ORGANIZACAO"): self.cnpj,
-            ("CNPJ", "MUNICIPIO"): self.cnpj,
+            ("PESSOA", "CPF"): self.cpf,
+            ("PESSOA", "MASP"): self.masp,
+            ("ORGANIZACAO", "CNPJ"): self.cnpj,
+            ("MUNICIPIO", "CNPJ"): self.cnpj,
             ("LICITACAO", "DATA"): self.licitacao_data,
             ("LICITACAO", "MUNICIPIO"): self.licitacao_municipio,
             ("ORGANIZACAO", "ENDERECO"): self.organizacao_endereco,
@@ -145,17 +145,17 @@ class RelationExtractor:
             e1.add_candidate(e2, d, "contrato-licitacao")
 
     def cpf(self, e1, e2):
-        d = self.proximity_score(e1, e2, context_size=30, prioritize_e1_before_e2=False)
+        d = self.proximity_score(e1, e2, context_size=100, prioritize_e1_before_e2=True)
         if d is not None:
             e1.add_candidate(e2, d, "cpf")
 
     def masp(self, e1, e2):
-        d = self.proximity_score(e1, e2, context_size=30, prioritize_e1_before_e2=True)
+        d = self.proximity_score(e1, e2, context_size=30, prioritize_e1_before_e2=False)
         if d is not None:
             e1.add_candidate(e2, d, "masp")
 
     def cnpj(self, e1, e2):
-        d = self.proximity_score(e1, e2, context_size=30, prioritize_e1_before_e2=False)
+        d = self.proximity_score(e1, e2, context_size=100, prioritize_e1_before_e2=True)
         if d is not None:
             e1.add_candidate(e2, d, "cnpj")
 
@@ -241,7 +241,7 @@ class RelationExtractor:
             e1.add_candidate(e2, d, "reside_em")
 
     def pessoa_data(self, e1, e2):
-        if not self.is_in_context(["nasc"],
+        if not self.is_in_context([" nasc"],
                                   e2, left_context_size=20, right_context_size=0):
             return
 
