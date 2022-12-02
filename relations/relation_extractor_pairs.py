@@ -145,8 +145,15 @@ class RelationExtractor:
             e1.add_candidate(e2, d, "contrato-licitacao")
 
     def cpf(self, e1, e2):
-        d = self.proximity_score(e1, e2, context_size=100, prioritize_e1_before_e2=True)
-        if d is not None:
+        #d = self.proximity_score(e1, e2, context_size=40, prioritize_e1_before_e2=True)
+        d = e2.start - e1.end
+        if d < 0:
+            return
+        e1_is_pai = self.pattern_is_in_context(p_pai, e1, left_context_size=15, right_context_size=0)
+        e1_is_mae = self.pattern_is_in_context(p_mae, e1, left_context_size=15, right_context_size=0)
+        if e1_is_pai or e1_is_mae:
+            return
+        if d < 200:
             e1.add_candidate(e2, d, "cpf")
 
     def masp(self, e1, e2):
@@ -215,6 +222,10 @@ class RelationExtractor:
         if e1.start > e2.end:
             return
 
+        d = e2.start - e1.end
+        #if d < 300:
+        #    return
+
         e2_is_pai = self.pattern_is_in_context(p_pai, e2, left_context_size=15, right_context_size=0)
         e2_is_mae = self.pattern_is_in_context(p_mae, e2, left_context_size=15, right_context_size=0)
         if not (e2_is_pai or e2_is_mae):
@@ -226,19 +237,29 @@ class RelationExtractor:
         if e1_is_pai or e1_is_mae:
             return
 
-        d = e2.start - e1.end
         if e2_is_pai:
             e1.add_candidate(e2, d, "pessoa-pai")
         elif e2_is_mae:
             e1.add_candidate(e2, d, "pessoa-mae")
 
     def pessoa_endereco(self, e1, e2):
-        if not self.is_in_context(["reside", "mora", "domicil"],
-                                  e2, left_context_size=40, right_context_size=0):
+        d = e2.start - e1.end
+        if d < 0:
             return
-        d = self.proximity_score(e1, e2, context_size=100, prioritize_e1_before_e2=True)
-        if d is not None:
+        if not self.is_in_context(["reside", "mora", "domicil", "endereç", "end."],
+                                  e2, left_context_size=120, right_context_size=0):
+            return
+
+        e1_is_pai = self.pattern_is_in_context(p_pai, e1, left_context_size=15, right_context_size=0)
+        e1_is_mae = self.pattern_is_in_context(p_mae, e1, left_context_size=15, right_context_size=0)
+
+        if e1_is_pai or e1_is_mae:
+            return
+
+        #d = self.proximity_score(e1, e2, context_size=200, prioritize_e1_before_e2=True)
+        if d < 200:
             e1.add_candidate(e2, d, "reside_em")
+
 
     def pessoa_data(self, e1, e2):
         if not self.is_in_context([" nasc"],
@@ -251,8 +272,11 @@ class RelationExtractor:
         if e1_is_pai or e1_is_mae:
             return
 
-        d = self.proximity_score(e1, e2, context_size=200, prioritize_e1_before_e2=True)
-        if d is not None:
+        d = e2.start - e1.end
+        if d < 0:
+            return
+        #d = self.proximity_score(e1, e2, context_size=200, prioritize_e1_before_e2=True)
+        if d < 200:
             e1.add_candidate(e2, d, "data_nascimento")
 
 

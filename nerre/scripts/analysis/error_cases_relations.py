@@ -1,25 +1,18 @@
-import numpy as np
-import pandas as pd
+from numpy import mean, sum
 
 def ent_tuple(ent):
     return (ent["start"], ent["end"], ent["type"])
 
 def ent_tuple_typeless(ent):
     return (ent["start"], ent["end"])
+ 
 
-
-def convert(jdata, min_score=0):
+def convert(jdata):
     rels = {"|micro": set()}
     ents = {"|micro": set()}
     for i,dic in enumerate(jdata):
         entities = dic["entities"]
         for ent in entities:
-            if "score" in ent:
-                score = ent["score"]
-            else:
-                score = 1
-            if score < min_score:
-                continue
             start = ent["start"]
             end = ent["end"]
             label = ent["type"]
@@ -28,15 +21,10 @@ def convert(jdata, min_score=0):
             cls = (i, ent_tuple(ent))
             ents[label].add(cls)
             ents["|micro"].add(cls)
+
         if "relations" not in dic:
             continue
         for rel in dic["relations"]:
-            if "score" in rel:
-                score = rel["score"]
-            else:
-                score = 1
-            if score < min_score:
-                continue
             head = rel["head"]
             tail = rel["tail"]
             pair1 = ent_tuple_typeless(entities[head])
@@ -51,28 +39,22 @@ def convert(jdata, min_score=0):
             cls = (i, pair1, pair2, label)
             rels[label].add(cls)
             rels["|micro"].add(cls)
-    return ents,rels
+    return ents, rels
 
-def evaluate(pred, gt, min_score=0):
-    gt_ents, gt_rels = convert(gt, min_score=min_score)
+def evaluate(pred, gt):
+    gt_ents, gt_rels = convert(gt)
     pred_ents, pred_rels = convert(pred)
-    print("Entities")
-    print(calc_metrics(pred_ents, gt_ents))
+    #print("Entities")
+    #print_metrics(pred_ents, gt_ents, gt, verbose=True, relation=False)
     print("Relations")
-    print(calc_metrics(pred_rels, gt_rels))
+    print_metrics(pred_rels, gt_rels, gt, verbose=True, relation=True)
 
 
-def calc_metrics(pred, gt):
+def print_metrics(pred, gt, docs, verbose=False, relation=False):
     total = 0
     precs = []
     recs = []
     f1s = []
-
-    wprecs = []
-    wrecs = []
-    wf1s = []
-    values = []
-
 
     for label,s in sorted(gt.items()):
         if label in pred:
@@ -83,33 +65,55 @@ def calc_metrics(pred, gt):
         prec = 0
         rec = 0
         f1 = 0
-        wprec = 0
-        wrec = 0
-        wf1 = 0
         if len(p) > 0:
             prec = len(intersec) / len(p)
-            wprec = len(s) * prec
         if len(s) > 0:
             rec = len(intersec) / len(s)
-            wrec = len(intersec)
         pr = prec + rec
         if pr > 0:
             f1 = (2 * prec * rec) / pr
-            wf1 = len(s) * f1
-        values.append( (label, prec, rec, f1, len(s)) )
+        print(label, prec, rec, f1, len(s))
+
+        if verbose:
+            print("Not retrieved:")
+            for elem in sorted(list(s)):
+                if elem not in p:
+                    if not relation:
+                        doc_idx, (start, end, label) = elem
+                        tokens = docs[doc_idx]["tokens"]
+                        print("\t" + " ".join(tokens[start:end]))
+                    else:
+                        doc_idx, head, tail, label = elem
+                        tokens = docs[doc_idx]["tokens"]
+                        start_h, end_h = head
+                        start_t, end_t = tail
+                        print("\t" + label, ":", " ".join(tokens[start_h:end_h]), "---", " ".join(tokens[start_t:end_t]))
+                        print(" ".join(tokens))
+                        print("=====")
+
+            print("Wrong retrieval:")
+            for elem in sorted(list(p)):
+                if elem not in s:
+                    if not relation:
+                        doc_idx, (start, end, label) = elem
+                        tokens = docs[doc_idx]["tokens"]
+                        print("\t" + " ".join(tokens[start:end]))
+                    else:
+                        doc_idx, head, tail, label = elem
+                        tokens = docs[doc_idx]["tokens"]
+                        start_h, end_h = head
+                        start_t, end_t = tail
+                        print("\t" + label, ":",  " ".join(tokens[start_h:end_h]), "---", " ".join(tokens[start_t:end_t]))
+                        print(" ".join(tokens))
+                        print("=====")
         if label != "|micro":
             precs.append(prec)
             recs.append(rec)
             f1s.append(f1)
             total += len(s)
-            wprecs.append(wprec)
-            wrecs.append(wrec)
-            wf1s.append(wf1)
-    values.append(("|weighted", np.sum(wprecs) / total, np.sum(wrecs) / total, np.sum(wf1s) / total, total))
-    values.append(("|macro", np.mean(precs), np.mean(recs), np.mean(f1s), total))
-    return pd.DataFrame(values, columns="Label Precision Recall F1 Support".split())
     #print("micro", sum(wprecs)/total, sum(wrecs)/total, sum(wf1s)/total, total)
-    #print("|macro", mean(precs), mean(recs), mean(f1s), total)
+    print("|macro", mean(precs), mean(recs), mean(f1s), total)
+
 
 #Main
 
@@ -120,10 +124,14 @@ file1 = open(sys.argv[1], encoding="utf-8")
 file2 = open(sys.argv[2], encoding="utf-8")
 pred = json.load(file1)
 gt = json.load(file2)
+file1.close()
+file2.close()
 
-min_score = 0
-if len(sys.argv) == 4:
-    min_score = float(sys.argv[3])
+evaluate(pred, gt)
 
-evaluate(pred[:30], gt[:30], min_score=min_score)
+
+
+
+
+
 
