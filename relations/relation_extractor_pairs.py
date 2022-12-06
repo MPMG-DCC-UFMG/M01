@@ -5,6 +5,7 @@ import re
 
 p_pai = re.compile("(nome do)?\s+pai[:\s]+", flags=re.IGNORECASE)
 p_mae = re.compile("(nome da)?\s+m[ãa]e[:\s]+", flags=re.IGNORECASE)
+p_filiacao = re.compile("filia[çc][aã]o", flags=re.IGNORECASE)
 
 class RelationExtractor:
     def __init__(self, entities, text):
@@ -226,21 +227,31 @@ class RelationExtractor:
         #if d < 300:
         #    return
 
-        e2_is_pai = self.pattern_is_in_context(p_pai, e2, left_context_size=15, right_context_size=0)
-        e2_is_mae = self.pattern_is_in_context(p_mae, e2, left_context_size=15, right_context_size=0)
-        if not (e2_is_pai or e2_is_mae):
+        self.check_pai_mae(e2)
+        if not (e2.is_pai or e2.is_mae):
             return
 
-        e1_is_pai = self.pattern_is_in_context(p_pai, e1, left_context_size=15, right_context_size=0)
-        e1_is_mae = self.pattern_is_in_context(p_mae, e1, left_context_size=15, right_context_size=0)
-
-        if e1_is_pai or e1_is_mae:
+        self.check_pai_mae(e1)
+        if e1.is_pai or e1.is_mae:
             return
 
-        if e2_is_pai:
+        if e2.is_pai:
             e1.add_candidate(e2, d, "pessoa-pai")
-        elif e2_is_mae:
+        elif e2.is_mae:
             e1.add_candidate(e2, d, "pessoa-mae")
+
+    #Verifica se eh nome de pai ou mae, se essa informacao jah nao estiver disponivel na entidade
+    def check_pai_mae(self, e):
+        if e.parent_is_set:
+            return
+        e.is_pai = self.pattern_is_in_context(p_pai, e, left_context_size=15, right_context_size=0)
+        if not e.is_pai:
+            e.is_mae = self.pattern_is_in_context(p_mae, e, left_context_size=15, right_context_size=0)
+
+        if not (e.is_pai or e.is_mae):
+            if self.pattern_is_in_context(p_filiacao, e, left_context_size=60, right_context_size=0):
+                pass
+        e.parent_is_set = True
 
     def pessoa_endereco(self, e1, e2):
         d = e2.start - e1.end
@@ -250,10 +261,8 @@ class RelationExtractor:
                                   e2, left_context_size=120, right_context_size=0):
             return
 
-        e1_is_pai = self.pattern_is_in_context(p_pai, e1, left_context_size=15, right_context_size=0)
-        e1_is_mae = self.pattern_is_in_context(p_mae, e1, left_context_size=15, right_context_size=0)
-
-        if e1_is_pai or e1_is_mae:
+        self.check_pai_mae(e1)
+        if e1.is_pai or e1.is_mae:
             return
 
         #d = self.proximity_score(e1, e2, context_size=200, prioritize_e1_before_e2=True)
@@ -265,11 +274,8 @@ class RelationExtractor:
         if not self.is_in_context([" nasc"],
                                   e2, left_context_size=20, right_context_size=0):
             return
-
-        e1_is_pai = self.pattern_is_in_context(p_pai, e1, left_context_size=15, right_context_size=0)
-        e1_is_mae = self.pattern_is_in_context(p_mae, e1, left_context_size=15, right_context_size=0)
-
-        if e1_is_pai or e1_is_mae:
+        self.check_pai_mae(e1)
+        if e1.is_pai or e1.is_mae:
             return
 
         d = e2.start - e1.end

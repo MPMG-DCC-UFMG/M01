@@ -16,6 +16,9 @@ class Entity:
 
         # Variaveis para auxiliar nas regras para relacionar entidades:
         self.has_competencia = False
+        self.parent_is_set = False
+        self.is_pai = None
+        self.is_mae = None
 
     # Funcao para deixar objetos da classe ordenaveis:
     def __lt__(self, other):
