@@ -2,18 +2,29 @@ from relation import Relation
 from entity import Entity
 from collections import defaultdict
 import re
+import joblib
+#from name_gender import NameGenderClassifier
+
 
 p_pai = re.compile("(nome do)?\s+pai[:\s]+", flags=re.IGNORECASE)
 p_mae = re.compile("(nome da)?\s+m[ãa]e[:\s]+", flags=re.IGNORECASE)
 p_filiacao = re.compile("filia[çc][aã]o", flags=re.IGNORECASE)
 
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.svm import SVC
+from sklearn.naive_bayes import GaussianNB, MultinomialNB, BernoulliNB
+from sklearn.model_selection import cross_validate
+
+
 class RelationExtractor:
-    def __init__(self, entities, text):
+    def __init__(self, entities, text, name_gender_classifier):
 
         # entities: vetor de entidades na ordem em que elas aparecem no texto
         self.entities = entities
         self.text = text
         self.lower_cased_text = self.text.lower()
+
+        self.name_gender_classifier = name_gender_classifier
 
         #Informacoes globais do segmento de texto atual
         self.licitacao = None
@@ -247,10 +258,16 @@ class RelationExtractor:
         e.is_pai = self.pattern_is_in_context(p_pai, e, left_context_size=15, right_context_size=0)
         if not e.is_pai:
             e.is_mae = self.pattern_is_in_context(p_mae, e, left_context_size=15, right_context_size=0)
+        else:
+            e.is_mae = False
 
         if not (e.is_pai or e.is_mae):
             if self.pattern_is_in_context(p_filiacao, e, left_context_size=60, right_context_size=0):
-                pass
+                first_name = e.string.split()[0]
+                if self.name_gender_classifier.predict(first_name) == 1:
+                    e.is_pai = True
+                else:
+                    e.is_mae = True
         e.parent_is_set = True
 
     def pessoa_endereco(self, e1, e2):

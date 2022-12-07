@@ -9,7 +9,8 @@ from entity import Entity
 #from relation_extractor import RelationExtractor
 from relation_extractor_pairs import RelationExtractor
 from municipio_matcher import MunicipioMatcher
-
+from name_gender import NameGenderClassifier
+import joblib
 from collections import Counter
 
 import re
@@ -27,7 +28,7 @@ import re
 
 
 def extract_relations(data, use_indices=True, verbose=False):
-    infile.close()
+    global ngc
     mun_matcher = MunicipioMatcher()
     # Trata os dois formatos - texto segmentado ou nao
     if "sentences" in data:
@@ -51,7 +52,7 @@ def extract_relations(data, use_indices=True, verbose=False):
         for i, ent in enumerate(entities):
             entities[i].idx = i
 
-        relation_extractor = RelationExtractor(entities, text)
+        relation_extractor = RelationExtractor(entities, text, ngc)
         relation_extractor.extract_relations()
         rels = [rel.to_dict(use_entity_indices=use_indices) for rel in sorted(relation_extractor.relations)]
         ents = [ent.to_dict() for ent in entities]
@@ -68,6 +69,7 @@ if __name__ == "__main__":
         print ("usage: %s <input file (.json produced by NER)> <outfile (.json with relations included)>" % sys.argv[0])
         sys.exit(-1)
 
+    ngc = joblib.load("data/name_gender.joblib")
     use_indices = False
     verbose = False
     for arg in sys.argv[1:]:
