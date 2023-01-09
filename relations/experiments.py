@@ -73,7 +73,7 @@ if __name__ == "__main__":
         X_train, y_train = feature_enc.transform(features_train)
         X_test, y_test = feature_enc.transform(features_test)
 
-        sample_indices = negative_sampling(y_train, frac=0.1)
+        sample_indices = negative_sampling(y_train, frac=0.2)
         X_train = X_train[sample_indices]
         y_train = y_train[sample_indices]
 
