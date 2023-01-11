@@ -16,8 +16,8 @@ from name_gender import NameGenderClassifier
 ngc = joblib.load("data/name_gender.joblib")
 
 #labels_to_use = set("cpf pessoa-pai pessoa-mae data_nascimento".split())
-#labels_to_use = set("cpf cnpj processo-licitacao proposta-valor pessoa-competencia".split())
-labels_to_use = None
+labels_to_use = set("cpf cnpj licitacao-processo valor-proposta competencia-organizacao competencia-pessoa".split())
+#labels_to_use = None
 
 def segments2features(segments):
     X = []
@@ -81,7 +81,7 @@ if __name__ == "__main__":
         X_train, y_train = feature_enc.transform(features_train)
         X_test, y_test = feature_enc.transform(features_test)
 
-        sample_indices = negative_sampling(y_train, frac=0.1)
+        sample_indices = negative_sampling(y_train, frac=0.5)
         X_train = X_train[sample_indices]
         y_train = y_train[sample_indices]
 
