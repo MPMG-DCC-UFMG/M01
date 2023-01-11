@@ -4,12 +4,20 @@ from feature_encoder import FeatureEncoder
 from entity import Entity
 import numpy as np
 from sklearn.neural_network import MLPClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
 from sklearn.model_selection import KFold
 from sklearn.metrics import classification_report
 import json
 import sys
+import joblib
+from name_gender import NameGenderClassifier
 
+ngc = joblib.load("data/name_gender.joblib")
 
+#labels_to_use = set("cpf pessoa-pai pessoa-mae data_nascimento".split())
+#labels_to_use = set("cpf cnpj processo-licitacao proposta-valor pessoa-competencia".split())
+labels_to_use = None
 
 def segments2features(segments):
     X = []
@@ -26,7 +34,7 @@ def segments2features(segments):
             e2 = entities[rel_ents[1]]
             tupl = (e1.start, e1.end, e2.start, e2.end)
             ents2rels[tupl] = label
-        relation_featurizer = RelationFeaturizer(entities, text, ents2rels)
+        relation_featurizer = RelationFeaturizer(entities, text, ents2rels, ngc, labels=labels_to_use)
         features = relation_featurizer.extract_features()
         X += features
     return X
@@ -59,7 +67,7 @@ if __name__ == "__main__":
     else:
         segments = [data]
 
-    kfold = KFold(n_splits=2, shuffle=True, random_state=41)
+    kfold = KFold(n_splits=2, shuffle=True, random_state=42)
     segments = np.array(segments)
     splits = kfold.split(segments)
 
@@ -73,11 +81,13 @@ if __name__ == "__main__":
         X_train, y_train = feature_enc.transform(features_train)
         X_test, y_test = feature_enc.transform(features_test)
 
-        sample_indices = negative_sampling(y_train, frac=0.2)
+        sample_indices = negative_sampling(y_train, frac=0.1)
         X_train = X_train[sample_indices]
         y_train = y_train[sample_indices]
 
-        clf = MLPClassifier()
+        #clf = MLPClassifier(hidden_layer_sizes=(1000,))
+        #clf = RandomForestClassifier(n_estimators=200)
+        clf = SVC(kernel='linear')
         clf.fit(X_train, y_train)
         pred = feature_enc.label_enc.inverse_transform(clf.predict(X_test))
         y_true = feature_enc.label_enc.inverse_transform(y_test)

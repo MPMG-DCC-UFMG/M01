@@ -7,15 +7,44 @@ from collections import defaultdict
 import re
 import numpy as np
 
+p_pai = re.compile("(nome do)?\s+pai[:\s]+", flags=re.IGNORECASE)
+p_mae = re.compile("(nome da)?\s+m[ãa]e[:\s]+", flags=re.IGNORECASE)
+p_filiacao = re.compile("filia[çc][aã]o", flags=re.IGNORECASE)
+
+
 class RelationFeaturizer:
-    def __init__(self, entities, text, ents2rels):
+    def __init__(self, entities, text, ents2rels, name_gender_classifier, labels=None):
 
         # entities: vetor de entidades na ordem em que elas aparecem no texto
         self.entities = entities
         self.text = text
         self.lower_cased_text = self.text.lower()
         self.ents2rels = ents2rels
+        self.name_gender_classifier = name_gender_classifier
+        self.use_all_labels = False
+        if labels is None:
+            self.use_all_labels = True
+        self.labels = set()
+        self.used_labels = labels
 
+    #Verifica se eh nome de pai ou mae, se essa informacao jah nao estiver disponivel na entidade
+    def check_pai_mae(self, e):
+        if e.parent_is_set:
+            return
+        e.is_pai = self.pattern_is_in_context(p_pai, e, left_context_size=15, right_context_size=0)
+        if not e.is_pai:
+            e.is_mae = self.pattern_is_in_context(p_mae, e, left_context_size=15, right_context_size=0)
+        else:
+            e.is_mae = False
+
+        if not (e.is_pai or e.is_mae):
+            if self.pattern_is_in_context(p_filiacao, e, left_context_size=60, right_context_size=0):
+                first_name = e.string.split()[0]
+                if self.name_gender_classifier.predict(first_name) == 1:
+                    e.is_pai = True
+                else:
+                    e.is_mae = True
+        e.parent_is_set = True
 
     def overlap(self, e1, e2):
         return self.dist(e1, e2) < 0
@@ -27,9 +56,13 @@ class RelationFeaturizer:
             closest_ent[i] = 0
             closest_ent_of_type[i] = {}
             dist_min = np.inf
+
             for j, e2 in enumerate(self.entities):
                 d = self.dist(e1, e2)
                 if d > 0: #non overlapping
+                    rel_ident = (e1.start, e1.end, e2.start, e2.end)
+                    if rel_ident in self.ents2rels:
+                        self.labels.add(self.ents2rels[rel_ident])
                     if d < dist_min:
                         dist_min = d
                         closest_ent[i] = j
@@ -39,15 +72,25 @@ class RelationFeaturizer:
                         ent, d_current = closest_ent_of_type[i][e2.label]
                         if d < d_current:
                             closest_ent_of_type[i][e2.label] = (j, d)
+        if not self.use_all_labels:
+            self.labels = self.used_labels
         X = []
         for i, e1 in enumerate(self.entities):
+            if e1.label == "PESSOA":
+                self.check_pai_mae(e1)
             closest = closest_ent[i]
             closest_by_type = closest_ent_of_type[i]
             for j, e2 in enumerate(self.entities):
                 d = self.dist(e1, e2)
                 if d > 0: #non overlapping
+                    if e2.label == "PESSOA":
+                        self.check_pai_mae(e2)
                     rel_ident = (e1.start, e1.end, e2.start, e2.end)
-                    y = self.ents2rels[rel_ident] if rel_ident in self.ents2rels else "0"
+                    y = "0"
+                    if rel_ident in self.ents2rels:
+                        lab = self.ents2rels[rel_ident]
+                        if lab in self.labels:
+                            y = lab
                     row = [y]
                     d = self.dist(e1, e2)
                     row.append(e1.label)
@@ -65,6 +108,12 @@ class RelationFeaturizer:
                     row.append(1 if e1_preceds_e2 else 0)
                     row.append(1 if j == closest else 0)
                     row.append(1 if j == closest_by_type[e2.label][0] else 0)
+                    row.append(1 if e1.is_pai else 0)
+                    row.append(1 if e2.is_pai else 0)
+                    row.append(1 if e1.is_mae else 0)
+                    row.append(1 if e2.is_mae else 0)
+                    row.append(1 if (e1.is_pai or e1.is_mae) else 0)
+                    row.append(1 if (e2.is_pai or e2.is_mae) else 0)
                     row.append(1 / (d / 10 + 1))
                     row.append(context)
                     X.append(row)
