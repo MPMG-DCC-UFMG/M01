@@ -166,7 +166,7 @@ class JsonFormater:
         if "entities" in jdoc:
             orig_ents = jdoc["entities"] 
         #print("Not matched entities:", not_found)
-        return {"tokens":tokens, "entities": entities + orig_ents}
+        return {"tokens":tokens, "entities": orig_ents}
 
 
     #TO UPDATE
