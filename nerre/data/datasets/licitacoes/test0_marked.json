@@ -73,8 +73,8 @@
             "sob",
             "o",
             "n\u00ba",
-            "[Jur\u00eddica [Jur\u00eddica 11.105.375/",
-            "0001-32 Jur\u00eddica] Jur\u00eddica]",
+            "[Jur\u00eddica 11.105.375/",
+            "0001-32 Jur\u00eddica]",
             ",",
             "tendo",
             "por",
@@ -130,7 +130,7 @@
             "de",
             "Miranda",
             ".",
-            "[Cargo [Cargo Prefeito Cargo] Cargo]",
+            "[Cargo Prefeito Cargo]",
             "Municipal",
             ".",
             "Informa\u00e7\u00f5es",
@@ -166,66 +166,24 @@
             "Bras",
             "Pires",
             ",",
-            "[Data [Data 2",
+            "[Data 2",
             "de",
             "abril",
             "de",
-            "2020 Data] Data]",
+            "2020 Data]",
             ",",
             "MILTON",
             "DE",
             "ALMEIDA",
             "MARTINS",
             ",",
-            "[Cargo [Cargo Presidente Cargo] Cargo]",
+            "[Cargo Presidente Cargo]",
             "da",
             "Comissao",
             "de",
             "Licita\u00e7\u00e3o"
         ],
         "entities": [
-            {
-                "start": 42,
-                "end": 46,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 47,
-                "end": 52,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 72,
-                "end": 74,
-                "type": "CNPJ",
-                "score": 1
-            },
-            {
-                "start": 129,
-                "end": 130,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
-            {
-                "start": 155,
-                "end": 159,
-                "type": "TEL",
-                "score": 1
-            },
-            {
-                "start": 165,
-                "end": 170,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 176,
-                "end": 177,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 10,
                 "end": 17,
@@ -361,59 +319,29 @@
             "Sess\u00e3o",
             "dia",
             ":",
-            "[Data [Data 19",
+            "[Data 19",
             "de",
             "maio",
             "de",
-            "2016 Data] Data]",
+            "2016 Data]",
             "as",
             "14hs00mim",
             ".",
             "Santa",
             "Margarida",
-            "[Data [Data 06",
+            "[Data 06",
             "de",
             "maio",
             "de",
-            "2016 Data] Data]",
+            "2016 Data]",
             "TATIANE",
             "DE",
             "F\u00c1TIMA",
             "CASTRO",
             "ABREU",
-            "[Cargo [Cargo Pregoeira Cargo] Cargo]"
+            "[Cargo Pregoeira Cargo]"
         ],
         "entities": [
-            {
-                "start": 17,
-                "end": 23,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 26,
-                "end": 28,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 40,
-                "end": 45,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 50,
-                "end": 55,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 60,
-                "end": 61,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 21,
                 "end": 23,
@@ -515,7 +443,7 @@
             "para",
             "o",
             "dia",
-            "[Data [Data 10/07/2014 Data] Data]",
+            "[Data 10/07/2014 Data]",
             "\u00e0s",
             "08:30",
             "horas",
@@ -541,45 +469,15 @@
             "-",
             "MG",
             ",",
-            "[Data [Data 25/06/2014 Data] Data]",
+            "[Data 25/06/2014 Data]",
             "CL\u00c1UDIO",
             "DONIZETE",
             "FREIRE",
-            "[Cargo [Cargo Prefeito Cargo] Cargo]",
+            "[Cargo Prefeito Cargo]",
             "Municipal",
             "."
         ],
         "entities": [
-            {
-                "start": 19,
-                "end": 24,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 25,
-                "end": 28,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 61,
-                "end": 62,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 87,
-                "end": 88,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 91,
-                "end": 92,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 17,
                 "end": 24,
@@ -713,8 +611,8 @@
             "sob",
             "o",
             "n\u00ba",
-            "[Jur\u00eddica [Jur\u00eddica 20.746.322/",
-            "0001-91 Jur\u00eddica] Jur\u00eddica]",
+            "[Jur\u00eddica 20.746.322/",
+            "0001-91 Jur\u00eddica]",
             ",",
             "que",
             "venceu",
@@ -767,62 +665,20 @@
             "/",
             "MG",
             ",",
-            "[Data [Data 03",
+            "[Data 03",
             "de",
             "junho",
             "de",
-            "2015 Data] Data]",
+            "2015 Data]",
             ".",
             "SEBASTI\u00c3O",
             "RENATO",
             "DE",
             "OLIVEIRA",
-            "[Cargo [Cargo Prefeito Cargo] Cargo]",
+            "[Cargo Prefeito Cargo]",
             "Municipal"
         ],
         "entities": [
-            {
-                "start": 31,
-                "end": 36,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 40,
-                "end": 44,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 93,
-                "end": 95,
-                "type": "CNPJ",
-                "score": 1
-            },
-            {
-                "start": 108,
-                "end": 110,
-                "type": "VALOR_MONETARIO",
-                "score": 1
-            },
-            {
-                "start": 123,
-                "end": 125,
-                "type": "VALOR_MONETARIO",
-                "score": 1
-            },
-            {
-                "start": 147,
-                "end": 152,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 157,
-                "end": 158,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 12,
                 "end": 16,
@@ -918,7 +774,7 @@
             ",",
             "atrav\u00e9s",
             "da",
-            "[Cargo [Cargo Pregoeira Cargo] Cargo]",
+            "[Cargo Pregoeira Cargo]",
             "Oficial",
             "vem",
             "tornar",
@@ -975,7 +831,7 @@
             "dos",
             "Envelopes",
             ":",
-            "[Data [Data 27/04/2017 Data] Data]",
+            "[Data 27/04/2017 Data]",
             ",",
             "\u00e0s",
             "10:45",
@@ -1007,59 +863,17 @@
             ")",
             "3454-0200",
             ".",
-            "[Data [Data 12/04/2017 Data] Data]",
+            "[Data 12/04/2017 Data]",
             ".",
             "CLAUDIA",
             "APARECIDA",
             "DE",
             "ALMEIDA",
             "OLIVEIRA",
-            "[Cargo [Cargo Pregoeira Cargo] Cargo]",
+            "[Cargo Pregoeira Cargo]",
             "."
         ],
         "entities": [
-            {
-                "start": 9,
-                "end": 14,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 25,
-                "end": 26,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
-            {
-                "start": 65,
-                "end": 68,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 82,
-                "end": 83,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 94,
-                "end": 108,
-                "type": "ENDERECO",
-                "score": 1
-            },
-            {
-                "start": 114,
-                "end": 115,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 121,
-                "end": 122,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 6,
                 "end": 14,
@@ -1192,9 +1006,9 @@
             "Dota\u00e7\u00e3o",
             "or\u00e7ament\u00e1ria",
             ":",
-            "[Data [Data [Data 3.3.90.36.00.2.09.00.08.243.006.9.0071 Data] Data] Data]",
+            "3.3.90.36.00.2.09.00.08.243.006.9.0071",
             "\u2013",
-            "[Data 00.01.00 Data]",
+            "00.01.00",
             "-",
             "Manuten\u00e7\u00e3o",
             "do",
@@ -1208,7 +1022,7 @@
             ":",
             "[Data 1\u00ba/08/19 Data]",
             "a",
-            "[Data [Data 31/07/20 Data] Data]",
+            "[Data 31/07/20 Data]",
             "Fundamenta\u00e7\u00e3o",
             "legal",
             ":",
@@ -1238,7 +1052,7 @@
             "Bruno",
             "Ribeiro",
             "\u2013",
-            "[Cargo [Cargo Prefeito Cargo] Cargo]",
+            "[Cargo Prefeito Cargo]",
             "de",
             "Astolfo",
             "Dutra",
@@ -1249,66 +1063,6 @@
             "Locadora"
         ],
         "entities": [
-            {
-                "start": 2,
-                "end": 5,
-                "type": "CONTRATO",
-                "score": 1
-            },
-            {
-                "start": 55,
-                "end": 57,
-                "type": "VALOR_MONETARIO",
-                "score": 1
-            },
-            {
-                "start": 62,
-                "end": 63,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 62,
-                "end": 63,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 62,
-                "end": 63,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 64,
-                "end": 65,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 78,
-                "end": 79,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 82,
-                "end": 86,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 87,
-                "end": 92,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 108,
-                "end": 109,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 11,
                 "end": 14,
@@ -1487,7 +1241,7 @@
             "Abertura",
             ":",
             "dia",
-            "[Data [Data 02/12/2015 Data] Data]",
+            "[Data 02/12/2015 Data]",
             "\u00e0s",
             "13:30",
             "horas",
@@ -1556,80 +1310,26 @@
             "MG",
             ",",
             "aos",
-            "[Data [Data 16",
+            "[Data 16",
             "de",
             "novembro",
             "de",
-            "2015 Data] Data]",
+            "2015 Data]",
             ".",
             "CASTILHO",
             "VITAL",
             "SUTANA",
-            "[Cargo [Cargo Pregoeiro Cargo] Cargo]",
+            "[Cargo Pregoeiro Cargo]",
             ".",
             "PAULO",
             "C\u00c9SAR",
             "SANTOS",
             "NEVES",
-            "[Cargo [Cargo Prefeito Cargo] Cargo]",
+            "[Cargo Prefeito Cargo]",
             "Municipal",
             "."
         ],
         "entities": [
-            {
-                "start": 8,
-                "end": 11,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 12,
-                "end": 15,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 25,
-                "end": 28,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 29,
-                "end": 32,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 88,
-                "end": 89,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 95,
-                "end": 105,
-                "type": "ENDERECO",
-                "score": 1
-            },
-            {
-                "start": 157,
-                "end": 162,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 166,
-                "end": 167,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
-            {
-                "start": 172,
-                "end": 173,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 8,
                 "end": 11,
@@ -1750,11 +1450,11 @@
             ",",
             "NA",
             "DATA",
-            "[Data [Data 25",
+            "[Data 25",
             "DE",
             "JULHO",
             "DE",
-            "2019 Data] Data]",
+            "2019 Data]",
             ",",
             "a",
             "fim",
@@ -1763,7 +1463,7 @@
             "a",
             "solicita\u00e7\u00e3o",
             "do",
-            "[Cargo [Cargo Secret\u00e1rio Cargo] Cargo]",
+            "[Cargo Secret\u00e1rio Cargo]",
             "Municipal",
             "de",
             "Agricultura",
@@ -1771,7 +1471,7 @@
             "Meio",
             "Ambiente",
             "e",
-            "[Cargo [Cargo secret\u00e1rio Cargo] Cargo]",
+            "[Cargo secret\u00e1rio Cargo]",
             "municipal",
             "de",
             "educa\u00e7\u00e3o",
@@ -1825,53 +1525,11 @@
             "RAFAELA",
             "ROSANA",
             "PEREIRA",
-            "[Cargo [Cargo Presidente Cargo] Cargo]",
+            "[Cargo Presidente Cargo]",
             "da",
             "CPL"
         ],
         "entities": [
-            {
-                "start": 0,
-                "end": 3,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 3,
-                "end": 7,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 9,
-                "end": 11,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 45,
-                "end": 50,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 58,
-                "end": 59,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
-            {
-                "start": 66,
-                "end": 67,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
-            {
-                "start": 120,
-                "end": 121,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 0,
                 "end": 3,
@@ -1991,7 +1649,7 @@
             "envelopes",
             ":",
             "dia",
-            "[Data [Data 09/08/19 Data] Data]",
+            "[Data 09/08/19 Data]",
             "\u00e0s",
             "13h00min",
             ".",
@@ -2006,30 +1664,6 @@
             "."
         ],
         "entities": [
-            {
-                "start": 9,
-                "end": 12,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 13,
-                "end": 16,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 59,
-                "end": 60,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 65,
-                "end": 69,
-                "type": "TEL",
-                "score": 1
-            },
             {
                 "start": 9,
                 "end": 12,
@@ -2122,12 +1756,12 @@
             "Dota\u00e7ao",
             "Or\u00e7ament\u00e1ria",
             ":",
-            "[Data [Data 12.1.1.15.451.31.3076.449051 Data] Data]",
+            "12.1.1.15.451.31.3076.449051",
             ",",
             "Vig\u00eancia",
-            "[Data [Data 11/06/2014 Data] Data]",
+            "[Data 11/06/2014 Data]",
             "a",
-            "[Data [Data 11/12/2014 Data] Data]",
+            "[Data 11/12/2014 Data]",
             ",",
             "Valor",
             ":",
@@ -2144,79 +1778,19 @@
             "de",
             "Jesus",
             ",",
-            "[Data [Data 01",
+            "[Data 01",
             "de",
             "junho",
             "de",
-            "2014 Data] Data]",
+            "2014 Data]",
             "PEDRO",
             "ARAUJO",
             "MAGALHAES",
             ",",
-            "[Cargo [Cargo Prefeito Cargo] Cargo]",
+            "[Cargo Prefeito Cargo]",
             "Municipal"
         ],
         "entities": [
-            {
-                "start": 9,
-                "end": 13,
-                "type": "CONTRATO",
-                "score": 1
-            },
-            {
-                "start": 32,
-                "end": 36,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 38,
-                "end": 42,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 67,
-                "end": 68,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 67,
-                "end": 68,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 70,
-                "end": 71,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 72,
-                "end": 73,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 79,
-                "end": 81,
-                "type": "VALOR_MONETARIO",
-                "score": 1
-            },
-            {
-                "start": 89,
-                "end": 94,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 98,
-                "end": 99,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 9,
                 "end": 13,
@@ -2349,7 +1923,7 @@
             "realizado",
             "no",
             "dia",
-            "[Data [Data 02/01/2018 Data] Data]",
+            "[Data 02/01/2018 Data]",
             "\u00e0s",
             "13:00",
             "horas",
@@ -2382,50 +1956,14 @@
             "do",
             "Indai\u00e1",
             ",",
-            "[Data [Data 13",
+            "[Data 13",
             "de",
             "dezembro",
             "de",
-            "2017 Data] Data]",
+            "2017 Data]",
             "."
         ],
         "entities": [
-            {
-                "start": 9,
-                "end": 14,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 17,
-                "end": 21,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 52,
-                "end": 53,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 65,
-                "end": 72,
-                "type": "ENDERECO",
-                "score": 1
-            },
-            {
-                "start": 72,
-                "end": 76,
-                "type": "TEL",
-                "score": 1
-            },
-            {
-                "start": 85,
-                "end": 90,
-                "type": "DATA",
-                "score": 1
-            },
             {
                 "start": 0,
                 "end": 6,
@@ -2527,67 +2065,25 @@
             "pelo",
             "per\u00edodo",
             "at\u00e9",
-            "[Data [Data 31/12/2015 Data] Data]",
+            "[Data 31/12/2015 Data]",
             ".",
             "Japara\u00edba",
             "/",
             "MG",
             ",",
-            "[Data [Data 04",
+            "[Data 04",
             "de",
             "maio",
             "de",
-            "2015 Data] Data]",
+            "2015 Data]",
             ".",
             "ROBERTO",
             "EMILIO",
             "LOPES",
-            "[Cargo [Cargo Prefeito Cargo] Cargo]",
+            "[Cargo Prefeito Cargo]",
             "Municipal"
         ],
         "entities": [
-            {
-                "start": 2,
-                "end": 5,
-                "type": "CONTRATO",
-                "score": 1
-            },
-            {
-                "start": 6,
-                "end": 10,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 11,
-                "end": 15,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 51,
-                "end": 53,
-                "type": "VALOR_MONETARIO",
-                "score": 1
-            },
-            {
-                "start": 56,
-                "end": 57,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 62,
-                "end": 67,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 71,
-                "end": 72,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 2,
                 "end": 5,
@@ -2666,7 +2162,7 @@
             ",",
             "no",
             "dia",
-            "[Data [Data 08/10/2019 Data] Data]",
+            "[Data 08/10/2019 Data]",
             ",",
             "\u00e0s",
             "09h",
@@ -2758,13 +2254,13 @@
             "/",
             "MG",
             ",",
-            "[Data [Data 25/09/2019 Data] Data]",
+            "[Data 25/09/2019 Data]",
             ".",
             "KATIANE",
             "EMANUELE",
             "LEMOS",
             "NETO",
-            "[Cargo [Cargo Secret\u00e1ria Cargo] Cargo]",
+            "[Cargo Secret\u00e1ria Cargo]",
             "Municipal",
             "de",
             "Administra\u00e7\u00e3o",
@@ -2773,42 +2269,6 @@
             "ou"
         ],
         "entities": [
-            {
-                "start": 4,
-                "end": 8,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 21,
-                "end": 25,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 28,
-                "end": 29,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 82,
-                "end": 96,
-                "type": "ENDERECO",
-                "score": 1
-            },
-            {
-                "start": 120,
-                "end": 121,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 126,
-                "end": 127,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 4,
                 "end": 8,
@@ -2902,7 +2362,7 @@
             "das",
             "propostas",
             ":",
-            "[Data [Data 25/03/2014 Data] Data]",
+            "[Data 25/03/2014 Data]",
             "\u00e0s",
             "13",
             "horas",
@@ -2932,30 +2392,6 @@
             "."
         ],
         "entities": [
-            {
-                "start": 13,
-                "end": 16,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 48,
-                "end": 49,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 59,
-                "end": 76,
-                "type": "ENDERECO",
-                "score": 1
-            },
-            {
-                "start": 72,
-                "end": 75,
-                "type": "LICITACAO",
-                "score": 1
-            },
             {
                 "start": 13,
                 "end": 16,
@@ -3047,7 +2483,7 @@
             "AT\u00c9",
             "O",
             "DIA",
-            "[Data [Data 23/07/2018 Data] Data]",
+            "[Data 23/07/2018 Data]",
             "\u00c0S",
             "13:30",
             "HORAS",
@@ -3078,7 +2514,7 @@
             "A",
             "PARTIR",
             "DE",
-            "[Data [Data 02/07/2018 Data] Data]",
+            "[Data 02/07/2018 Data]",
             "SITE",
             "INFORMA\u00c7\u00d5ES",
             "WWW.DEMSUR.COM.BR",
@@ -3095,43 +2531,13 @@
             "DE",
             "FREITAS",
             "JUNIOR",
-            "[Cargo [Cargo Diretor Cargo] Cargo]",
+            "[Cargo Diretor Cargo]",
             "Geral",
             "do",
             "DEMSUR.PELO",
             "\u2013"
         ],
         "entities": [
-            {
-                "start": 14,
-                "end": 18,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 61,
-                "end": 62,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 92,
-                "end": 93,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 99,
-                "end": 103,
-                "type": "TEL",
-                "score": 1
-            },
-            {
-                "start": 109,
-                "end": 110,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 0,
                 "end": 1,
@@ -3202,7 +2608,7 @@
             ",",
             "firmado",
             "em",
-            "[Data [Data 30/03/2016 Data] Data]",
+            "[Data 30/03/2016 Data]",
             ",",
             "com",
             "a",
@@ -3271,48 +2677,6 @@
             "."
         ],
         "entities": [
-            {
-                "start": 7,
-                "end": 13,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 14,
-                "end": 17,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 20,
-                "end": 21,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 38,
-                "end": 40,
-                "type": "VALOR_MONETARIO",
-                "score": 1
-            },
-            {
-                "start": 41,
-                "end": 43,
-                "type": "VALOR_MONETARIO",
-                "score": 1
-            },
-            {
-                "start": 53,
-                "end": 56,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 57,
-                "end": 60,
-                "type": "LICITACAO",
-                "score": 1
-            },
             {
                 "start": 7,
                 "end": 13,
@@ -3440,58 +2804,22 @@
             "/",
             "MG",
             ",",
-            "[Data [Data 01",
+            "[Data 01",
             "DE",
             "JUNHO",
             "DE",
-            "2017 Data] Data]",
+            "2017 Data]",
             ".",
             "ANNA",
             "LUIZE",
             "FREIRE",
             "KASSABIAN",
-            "[Cargo [Cargo Procuradora Cargo] Cargo]",
+            "[Cargo Procuradora Cargo]",
             "Adjunta",
             "do",
             "Munic\u00edpio"
         ],
         "entities": [
-            {
-                "start": 4,
-                "end": 11,
-                "type": "CONTRATO",
-                "score": 1
-            },
-            {
-                "start": 41,
-                "end": 43,
-                "type": "VALOR_MONETARIO",
-                "score": 1
-            },
-            {
-                "start": 52,
-                "end": 57,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 58,
-                "end": 62,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 67,
-                "end": 72,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 77,
-                "end": 78,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 4,
                 "end": 11,
@@ -3572,55 +2900,19 @@
             ".",
             "Vig\u00eancia",
             ":",
-            "[Data [Data 03/09/2014 Data] Data]",
+            "[Data 03/09/2014 Data]",
             "a",
-            "[Data [Data 03/09/2015 Data] Data]",
+            "[Data 03/09/2015 Data]",
             ".",
             "MOACIR",
             "RIBEIRO",
             "DA",
             "SILVA",
-            "[Cargo [Cargo Prefeito Cargo] Cargo]",
+            "[Cargo Prefeito Cargo]",
             "Municipal",
             "."
         ],
         "entities": [
-            {
-                "start": 0,
-                "end": 4,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 5,
-                "end": 8,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 25,
-                "end": 27,
-                "type": "VALOR_MONETARIO",
-                "score": 1
-            },
-            {
-                "start": 30,
-                "end": 31,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 32,
-                "end": 33,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 38,
-                "end": 39,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 0,
                 "end": 4,
@@ -3681,7 +2973,7 @@
             ".",
             "Data",
             ":",
-            "[Data [Data 24/07/2015 Data] Data]",
+            "[Data 24/07/2015 Data]",
             ".",
             "Contratado",
             "(",
@@ -3731,7 +3023,7 @@
             "dia",
             "[Data 24/07/2015 Data]",
             "at\u00e9",
-            "[Data [Data 31/12/2015 Data] Data]",
+            "[Data 31/12/2015 Data]",
             ".",
             "TEREZINHA",
             "PRISCO",
@@ -3739,53 +3031,11 @@
             "DOS",
             "SANTOS",
             ".",
-            "[Cargo [Cargo Pregoeira Cargo] Cargo]",
+            "[Cargo Pregoeira Cargo]",
             "Titular",
             "."
         ],
         "entities": [
-            {
-                "start": 9,
-                "end": 12,
-                "type": "CONTRATO",
-                "score": 1
-            },
-            {
-                "start": 15,
-                "end": 16,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 29,
-                "end": 32,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 52,
-                "end": 54,
-                "type": "VALOR_MONETARIO",
-                "score": 1
-            },
-            {
-                "start": 60,
-                "end": 64,
-                "type": "CONTRATO",
-                "score": 1
-            },
-            {
-                "start": 65,
-                "end": 66,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 73,
-                "end": 74,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 9,
                 "end": 12,
@@ -3919,11 +3169,11 @@
             "Envelopes",
             ":",
             "Dia",
-            "[Data [Data 13",
+            "[Data 13",
             "De",
             "Maio",
             "De",
-            "2019 Data] Data]",
+            "2019 Data]",
             "\u00c0s",
             "13h30min",
             ".",
@@ -3958,7 +3208,7 @@
             "N.\u00ba",
             "8.666",
             "De",
-            "[Data [Data 21.06.1993 Data] Lei] Data]",
+            "[Data 21.06.1993 Lei] Data]",
             "E",
             "Altera\u00e7\u00f5es",
             ",",
@@ -4026,68 +3276,20 @@
             "Tr\u00eas",
             "Cora\u00e7\u00f5es",
             ",",
-            "[Data [Data 24",
+            "[Data 24",
             "De",
             "Abril",
             "De",
-            "2019 Data] Data]",
+            "2019 Data]",
             ".",
             "ALZIRA",
             "ARA\u00daJO",
             "DE",
             "OLIVEIRA",
             ".",
-            "[Cargo [Cargo Pregoeira Cargo] Cargo]"
+            "[Cargo Pregoeira Cargo]"
         ],
         "entities": [
-            {
-                "start": 10,
-                "end": 16,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 17,
-                "end": 21,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 46,
-                "end": 62,
-                "type": "ENDERECO",
-                "score": 1
-            },
-            {
-                "start": 78,
-                "end": 83,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 88,
-                "end": 93,
-                "type": "ENDERECO",
-                "score": 1
-            },
-            {
-                "start": 117,
-                "end": 118,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 185,
-                "end": 190,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 196,
-                "end": 197,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 10,
                 "end": 16,
@@ -4179,9 +3381,9 @@
             "ME",
             "CNPJ",
             ":",
-            "[Jur\u00eddica [Jur\u00eddica 14.095.641",
+            "[Jur\u00eddica 14.095.641",
             "/",
-            "0001-81 Jur\u00eddica] Jur\u00eddica]",
+            "0001-81 Jur\u00eddica]",
             ".",
             "Processo",
             "Administrativo",
@@ -4197,56 +3399,20 @@
             ".",
             "Vig\u00eancia",
             ":",
-            "[Data [Data 31/12/2017 Data] Data]",
+            "[Data 31/12/2017 Data]",
             ".",
             "Mendes",
             "Pimentel",
             ",",
-            "[Data 15/09/2017 Data]",
+            "15/09/2017",
             ",",
             "AYMOR\u00c9",
             "MOREIRA",
             "DA",
             "SILVA",
-            "[Cargo Prefeito Cargo]"
+            "Prefeito"
         ],
         "entities": [
-            {
-                "start": 16,
-                "end": 19,
-                "type": "CNPJ",
-                "score": 1
-            },
-            {
-                "start": 20,
-                "end": 26,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 27,
-                "end": 31,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 34,
-                "end": 35,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 39,
-                "end": 40,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 45,
-                "end": 46,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 10,
                 "end": 14,
@@ -4358,7 +3524,7 @@
             "de",
             "lances",
             ":",
-            "[Data [Data 19/04/2016 Data] Data]",
+            "[Data 19/04/2016 Data]",
             "\u00e0s",
             "13h30min",
             ".",
@@ -4375,40 +3541,10 @@
             "CELIANE",
             "PAPANDR\u00c9A",
             "BORGES",
-            "[Cargo [Cargo Pregoeira Cargo] Cargo]",
+            "[Cargo Pregoeira Cargo]",
             "Municipal"
         ],
         "entities": [
-            {
-                "start": 0,
-                "end": 2,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 3,
-                "end": 7,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 66,
-                "end": 69,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 76,
-                "end": 77,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 93,
-                "end": 94,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 0,
                 "end": 2,
@@ -4570,60 +3706,18 @@
             "-",
             "CPF",
             ":",
-            "[Id [Id 933.444",
+            "[Id 933.444",
             ".",
-            "226-34 Id] Id]",
+            "226-34 Id]",
             ".",
             "VIG\u00caNCIA",
             ":",
-            "[Data [Data 25/10/2018 Data] Data]",
+            "[Data 25/10/2018 Data]",
             "A",
-            "[Data [Data 31/12/2018 Data] Data]",
+            "[Data 31/12/2018 Data]",
             "parte"
         ],
         "entities": [
-            {
-                "start": 2,
-                "end": 5,
-                "type": "CONTRATO",
-                "score": 1
-            },
-            {
-                "start": 9,
-                "end": 12,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 12,
-                "end": 14,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 89,
-                "end": 93,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 116,
-                "end": 119,
-                "type": "CPF",
-                "score": 1
-            },
-            {
-                "start": 122,
-                "end": 123,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 124,
-                "end": 125,
-                "type": "DATA",
-                "score": 1
-            },
             {
                 "start": 2,
                 "end": 5,
@@ -4699,7 +3793,7 @@
             "que",
             "no",
             "dia",
-            "[Data [Data 08/05/2019 Data] Data]",
+            "[Data 08/05/2019 Data]",
             "\u00e0s",
             "13h00min",
             ",",
@@ -4788,50 +3882,20 @@
             ":",
             "www.naque.mg.gov.br",
             ".",
-            "[Data [Data 24",
+            "[Data 24",
             "de",
             "Abril",
             "de",
-            "2019 Data] Data]",
+            "2019 Data]",
             ".",
             "H\u00c9LIO",
             "PINTO",
             "DE",
             "CARVALHO",
-            "[Cargo [Cargo Prefeito Cargo] Cargo]",
+            "[Cargo Prefeito Cargo]",
             "Municipal"
         ],
         "entities": [
-            {
-                "start": 5,
-                "end": 9,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 25,
-                "end": 26,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 88,
-                "end": 97,
-                "type": "ENDERECO",
-                "score": 1
-            },
-            {
-                "start": 114,
-                "end": 119,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 124,
-                "end": 125,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 5,
                 "end": 9,
@@ -4890,8 +3954,8 @@
             "CNPJ",
             "n",
             "\u00b0",
-            "[Jur\u00eddica [Jur\u00eddica 18.712.174/",
-            "0001-42 Jur\u00eddica] Jur\u00eddica]",
+            "[Jur\u00eddica 18.712.174/",
+            "0001-42 Jur\u00eddica]",
             "-",
             "Torna",
             "P\u00fablico",
@@ -4919,7 +3983,7 @@
             "de",
             "abertura",
             ":",
-            "[Data [Data 24/08/2016 Data] Data]",
+            "[Data 24/08/2016 Data]",
             "site",
             ":",
             "www.campanha.mg.gov.br",
@@ -4964,7 +4028,7 @@
             "CRISTINA",
             "S.",
             "BORGES",
-            "[Cargo [Cargo Diretora Cargo] Cargo]",
+            "[Cargo Diretora Cargo]",
             "do",
             "Depto",
             "de",
@@ -4975,48 +4039,6 @@
             "Informa\u00e7\u00f5es"
         ],
         "entities": [
-            {
-                "start": 13,
-                "end": 15,
-                "type": "CNPJ",
-                "score": 1
-            },
-            {
-                "start": 19,
-                "end": 23,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 26,
-                "end": 29,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 42,
-                "end": 43,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 59,
-                "end": 65,
-                "type": "ENDERECO",
-                "score": 1
-            },
-            {
-                "start": 79,
-                "end": 83,
-                "type": "TEL",
-                "score": 1
-            },
-            {
-                "start": 87,
-                "end": 88,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 13,
                 "end": 15,
@@ -5114,11 +4136,11 @@
             "realizada",
             "no",
             "dia",
-            "[Data [Data 31",
+            "[Data 31",
             "de",
             "outubro",
             "de",
-            "2018 Data] Data]",
+            "2018 Data]",
             "\u00e0s",
             "9:00",
             "h.",
@@ -5180,48 +4202,18 @@
             "WILLIAN",
             "MOREIRA",
             "ROSA",
-            "[Cargo [Cargo Pregoeiro Cargo] Cargo]",
+            "[Cargo Pregoeiro Cargo]",
             "Municipal",
             "Pouso",
             "Alegre",
-            "[Data [Data 09",
+            "[Data 09",
             "de",
             "outubro",
             "de",
-            "2018 Data] Data]",
+            "2018 Data]",
             "."
         ],
         "entities": [
-            {
-                "start": 11,
-                "end": 16,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 47,
-                "end": 52,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 101,
-                "end": 105,
-                "type": "TEL",
-                "score": 1
-            },
-            {
-                "start": 113,
-                "end": 114,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
-            {
-                "start": 117,
-                "end": 122,
-                "type": "DATA",
-                "score": 1
-            },
             {
                 "start": 11,
                 "end": 16,
@@ -5318,10 +4310,10 @@
             "09:00hs",
             "do",
             "dia",
-            "[Data [Data 14/05/2015 Data] Data]",
+            "[Data 14/05/2015 Data]",
             "abertura",
             "dia",
-            "[Data [Data 14/05/2015 Data] Data]",
+            "[Data 14/05/2015 Data]",
             "\u00e1s",
             "09:00",
             "horas",
@@ -5372,60 +4364,18 @@
             "de",
             "Minas",
             ",",
-            "[Data [Data 8",
+            "[Data 8",
             "de",
             "abril",
             "de",
-            "2020 Data] Data]",
+            "2020 Data]",
             ",",
             "TATYANA",
             "APARECIDA",
             "FERREIRA",
-            "[Cargo [Cargo Pregoeira Cargo] Cargo]"
+            "[Cargo Pregoeira Cargo]"
         ],
         "entities": [
-            {
-                "start": 13,
-                "end": 18,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 19,
-                "end": 23,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 56,
-                "end": 57,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 59,
-                "end": 60,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 84,
-                "end": 92,
-                "type": "ENDERECO",
-                "score": 1
-            },
-            {
-                "start": 110,
-                "end": 115,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 119,
-                "end": 120,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 1,
                 "end": 8,
@@ -5495,11 +4445,11 @@
             "ir\u00e1",
             "realizar",
             "dia",
-            "[Data [Data [Data 25",
+            "[Data 25",
             "de",
             "mar\u00e7o",
             "de",
-            "2015 Data] Data] Data]",
+            "2015 Data]",
             ",",
             "processo",
             "licitat\u00f3rio",
@@ -5588,54 +4538,24 @@
             "MG",
             ")",
             ",",
-            "[Data [Data 27",
+            "[Data 27",
             "de",
             "fevereiro",
             "de",
-            "2015 Data] Data]",
+            "2015 Data]",
             ".",
             "S\u00d4NIA",
             "MARIA",
             "BATISTA",
             "COUTO",
             ".",
-            "[Cargo [Cargo Prefeita Cargo] Cargo]",
+            "[Cargo Prefeita Cargo]",
             "Municipal",
             ".",
             "-",
             "Telefone"
         ],
         "entities": [
-            {
-                "start": 14,
-                "end": 19,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 20,
-                "end": 27,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 14,
-                "end": 19,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 107,
-                "end": 112,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 118,
-                "end": 119,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 14,
                 "end": 19,
@@ -5723,7 +4643,7 @@
             ".",
             "Data",
             "de",
-            "[Data [Data abertura:30/10/2019\u00e0s Data] Data]",
+            "[Data abertura:30/10/2019\u00e0s Data]",
             "14:00",
             "horas",
             ".",
@@ -5757,44 +4677,20 @@
             ".",
             "Jo\u00e3o",
             "Monlevade",
-            "[Data [Data [Data 25",
+            "[Data [Data 25",
             "de",
-            "Setembro Data] Data]",
+            "Setembro Data]",
             "2019 Data]",
             ".",
             "MARLENE",
             "PESSOA",
             "FERREIRA",
-            "[Cargo [Cargo Secret\u00e1ria Cargo] Cargo]",
+            "[Cargo Secret\u00e1ria Cargo]",
             "Municipal",
             "de",
             "Administra\u00e7\u00e3o"
         ],
         "entities": [
-            {
-                "start": 8,
-                "end": 9,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 47,
-                "end": 48,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 81,
-                "end": 84,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 89,
-                "end": 90,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 8,
                 "end": 9,
@@ -5882,7 +4778,7 @@
             ".",
             "Sess\u00e3o",
             "dia",
-            "[Data [Data 27/04/2017 Data] Data]",
+            "[Data 27/04/2017 Data]",
             ",",
             "\u00e0s",
             "09h:00min",
@@ -5911,34 +4807,10 @@
             "ALEXANDRE",
             "DE",
             "CARVALHO",
-            "[Cargo [Cargo Pregoeiro Cargo] Cargo]",
+            "[Cargo Pregoeiro Cargo]",
             "."
         ],
         "entities": [
-            {
-                "start": 9,
-                "end": 12,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 42,
-                "end": 43,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 51,
-                "end": 65,
-                "type": "ENDERECO",
-                "score": 1
-            },
-            {
-                "start": 71,
-                "end": 72,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 9,
                 "end": 12,
@@ -6036,7 +4908,7 @@
             "de",
             "licita\u00e7\u00e3o",
             "dia",
-            "[Data [Data 08/10/2019 Data] Data]",
+            "[Data 08/10/2019 Data]",
             "\u00e0s",
             "08:30",
             "horas",
@@ -6093,40 +4965,10 @@
             "IOANNIS",
             "KONSTANTINOS",
             "GRAMMATIKOPOULOS",
-            "[Cargo [Cargo Prefeito Cargo] Cargo]",
+            "[Cargo Prefeito Cargo]",
             "Municipal"
         ],
         "entities": [
-            {
-                "start": 7,
-                "end": 11,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 12,
-                "end": 15,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 52,
-                "end": 53,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 69,
-                "end": 82,
-                "type": "ENDERECO",
-                "score": 1
-            },
-            {
-                "start": 109,
-                "end": 110,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 7,
                 "end": 11,
@@ -6168,7 +5010,7 @@
     {
         "tokens": [
             "GOVERNOO",
-            "[Cargo [Cargo PREFEITO Cargo] Cargo]",
+            "[Cargo PREFEITO Cargo]",
             "MUNICIPAL",
             ",",
             "NO",
@@ -6203,7 +5045,7 @@
             "N\u00ba",
             "053/2018",
             "O",
-            "[Cargo [Cargo Prefeito Cargo] Cargo]",
+            "[Cargo Prefeito Cargo]",
             "Municipal",
             ",",
             "no",
@@ -6332,86 +5174,26 @@
             "ALVES",
             "-",
             "CPF",
-            "[Id [Id 099.865",
+            "[Id 099.865",
             ".",
-            "236-99 Id] Id]",
+            "236-99 Id]",
             "Lagoa",
             "da",
             "Prata",
             ",",
-            "[Data [Data 21",
+            "[Data 21",
             "de",
             "dezembro",
             "de",
-            "2018 Data] Data]",
+            "2018 Data]",
             ".",
             "PAULO",
             "C\u00c9SAR",
             "TEODORO",
-            "[Cargo [Cargo Prefeito Cargo] Cargo]",
+            "[Cargo Prefeito Cargo]",
             "Municipal"
         ],
         "entities": [
-            {
-                "start": 1,
-                "end": 2,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
-            {
-                "start": 30,
-                "end": 35,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 36,
-                "end": 37,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
-            {
-                "start": 111,
-                "end": 113,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 118,
-                "end": 120,
-                "type": "VALOR_MONETARIO",
-                "score": 1
-            },
-            {
-                "start": 144,
-                "end": 148,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 149,
-                "end": 154,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 165,
-                "end": 168,
-                "type": "CPF",
-                "score": 1
-            },
-            {
-                "start": 172,
-                "end": 177,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 181,
-                "end": 182,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 1,
                 "end": 2,
@@ -6577,8 +5359,8 @@
             "ME",
             "-",
             "CNPJ",
-            "[Jur\u00eddica [Jur\u00eddica 17.476.045/",
-            "0001-30 Jur\u00eddica] Jur\u00eddica]",
+            "[Jur\u00eddica 17.476.045/",
+            "0001-30 Jur\u00eddica]",
             "Valor",
             "total",
             ":",
@@ -6635,50 +5417,20 @@
             "Ibi\u00e1(MG",
             ")",
             ",",
-            "[Data [Data 14",
+            "[Data 14",
             "de",
             "setembro",
             "de",
-            "2016 Data] Data]",
+            "2016 Data]",
             "H\u00c9LIO",
             "PAIVA",
             "DA",
             "SILVEIRA",
-            "[Cargo [Cargo Prefeito Cargo] Cargo]",
+            "[Cargo Prefeito Cargo]",
             "Municipal",
             "Publique-se"
         ],
         "entities": [
-            {
-                "start": 5,
-                "end": 9,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 75,
-                "end": 77,
-                "type": "CNPJ",
-                "score": 1
-            },
-            {
-                "start": 80,
-                "end": 82,
-                "type": "VALOR_MONETARIO",
-                "score": 1
-            },
-            {
-                "start": 133,
-                "end": 138,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 142,
-                "end": 143,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 5,
                 "end": 9,
@@ -6730,7 +5482,7 @@
     {
         "tokens": [
             "O",
-            "[Cargo [Cargo Prefeito Cargo] Cargo]",
+            "[Cargo Prefeito Cargo]",
             "Municipal",
             "de",
             "PO\u00c7O",
@@ -6772,7 +5524,7 @@
             "[Lei [Lei Lei",
             "10.520 Lei]",
             "de",
-            "[Data [Data 17/06/02 Data] Lei] Data]",
+            "[Data 17/06/02 Lei] Data]",
             ",",
             "realizar\u00e1",
             "o",
@@ -6821,11 +5573,11 @@
             "certame",
             "ser\u00e1",
             "dia",
-            "[Data [Data 27",
+            "[Data 27",
             "de",
             "julho",
             "de",
-            "2017 Data] Data]",
+            "2017 Data]",
             ",",
             "\u00e0s",
             "13:00",
@@ -6875,63 +5627,15 @@
             "FERREIRA",
             "DE",
             "OLIVEIRA",
-            "[Cargo [Cargo Prefeito Cargo] Cargo]",
+            "[Cargo Prefeito Cargo]",
             "Municipal",
             "PATRICIA",
             "SARKIS",
             "CARNEIRO",
             "ABRAH\u00c3O",
-            "[Cargo [Cargo Pregoeira Cargo] Cargo]"
+            "[Cargo Pregoeira Cargo]"
         ],
         "entities": [
-            {
-                "start": 1,
-                "end": 2,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
-            {
-                "start": 43,
-                "end": 44,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 47,
-                "end": 52,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 53,
-                "end": 56,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 92,
-                "end": 97,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 125,
-                "end": 134,
-                "type": "ENDERECO",
-                "score": 1
-            },
-            {
-                "start": 146,
-                "end": 147,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
-            {
-                "start": 152,
-                "end": 153,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 1,
                 "end": 2,
@@ -7088,7 +5792,7 @@
             "h",
             ",",
             "dia",
-            "[Data [Data 22/01/2020 Data] Data]",
+            "[Data 22/01/2020 Data]",
             ".",
             "Local",
             ":",
@@ -7098,7 +5802,7 @@
             "Piumhi",
             "92-A",
             ",",
-            "[Cargo [Cargo Diretoria Cargo] Cargo]",
+            "[Cargo Diretoria Cargo]",
             "de",
             "Compras",
             "P\u00fablicas",
@@ -7130,36 +5834,6 @@
             "."
         ],
         "entities": [
-            {
-                "start": 10,
-                "end": 15,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 22,
-                "end": 25,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 81,
-                "end": 82,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 91,
-                "end": 92,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
-            {
-                "start": 103,
-                "end": 107,
-                "type": "TEL",
-                "score": 1
-            },
             {
                 "start": 10,
                 "end": 15,
@@ -7336,47 +6010,11 @@
             "LUCAS",
             "FERREIRA",
             "SANTOS",
-            "[Cargo [Cargo Presidente Cargo] Cargo]",
+            "[Cargo Presidente Cargo]",
             "da",
             "CPL"
         ],
         "entities": [
-            {
-                "start": 0,
-                "end": 4,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 4,
-                "end": 7,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 44,
-                "end": 47,
-                "type": "CONTRATO",
-                "score": 1
-            },
-            {
-                "start": 87,
-                "end": 89,
-                "type": "VALOR_MONETARIO",
-                "score": 1
-            },
-            {
-                "start": 114,
-                "end": 118,
-                "type": "TEL",
-                "score": 1
-            },
-            {
-                "start": 126,
-                "end": 127,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 0,
                 "end": 4,
@@ -7515,7 +6153,7 @@
             "dar-se-\u00e1",
             "no",
             "dia",
-            "[Data [Data 29/09/2015 Data] Data]",
+            "[Data 29/09/2015 Data]",
             "at\u00e9",
             "\u00e0s",
             "09:00",
@@ -7562,47 +6200,11 @@
             "LEMES",
             "DE",
             "CARVALHO",
-            "[Cargo [Cargo Prefeito Cargo] Cargo]",
+            "[Cargo Prefeito Cargo]",
             "Municipal",
             "."
         ],
         "entities": [
-            {
-                "start": 11,
-                "end": 15,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 17,
-                "end": 20,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 21,
-                "end": 26,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 73,
-                "end": 74,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 102,
-                "end": 117,
-                "type": "ENDERECO",
-                "score": 1
-            },
-            {
-                "start": 120,
-                "end": 121,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 11,
                 "end": 15,
@@ -7697,7 +6299,7 @@
             "Assinatura",
             "...",
             ":",
-            "[Data [Data 02/03/2020 Data] Data]",
+            "[Data 02/03/2020 Data]",
             "Objeto",
             ".......",
             ":",
@@ -7706,30 +6308,6 @@
             "Quantidade"
         ],
         "entities": [
-            {
-                "start": 17,
-                "end": 19,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 21,
-                "end": 23,
-                "type": "PROCESSO",
-                "score": 1
-            },
-            {
-                "start": 44,
-                "end": 46,
-                "type": "VALOR_MONETARIO",
-                "score": 1
-            },
-            {
-                "start": 49,
-                "end": 50,
-                "type": "DATA",
-                "score": 1
-            },
             {
                 "start": 17,
                 "end": 19,
@@ -7823,7 +6401,7 @@
             "envelopes",
             ":",
             "At\u00e9",
-            "[Data [Data 2/04/2014 Data] Data]",
+            "[Data 2/04/2014 Data]",
             ",",
             "\u00e0s",
             "13h00min",
@@ -7865,51 +6443,21 @@
             "do",
             "Monte",
             ",",
-            "[Data [Data 14",
+            "[Data 14",
             "de",
             "mar\u00e7o",
             "de",
-            "2014 Data] Data]",
+            "2014 Data]",
             ".",
             "AUR\u00c9LIO",
             "DE",
             "OLIVEIRA",
             "J\u00daNIOR",
-            "[Cargo [Cargo Presidente Cargo] Cargo]",
+            "[Cargo Presidente Cargo]",
             "da",
             "CPL"
         ],
         "entities": [
-            {
-                "start": 16,
-                "end": 20,
-                "type": "LICITACAO",
-                "score": 1
-            },
-            {
-                "start": 63,
-                "end": 64,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 73,
-                "end": 78,
-                "type": "ENDERECO",
-                "score": 1
-            },
-            {
-                "start": 105,
-                "end": 110,
-                "type": "DATA",
-                "score": 1
-            },
-            {
-                "start": 115,
-                "end": 116,
-                "type": "COMPETENCIA",
-                "score": 1
-            },
             {
                 "start": 16,
                 "end": 20,
