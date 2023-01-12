@@ -164,9 +164,12 @@ class JsonFormater:
                 not_found += 1
         orig_ents = []
         if "entities" in jdoc:
-            orig_ents = jdoc["entities"] 
+            orig_ents = jdoc["entities"]
+        orig_rels = []
+        if "relations" in jdoc:
+            orig_rels = jdoc["relations"]
         #print("Not matched entities:", not_found)
-        return {"tokens":tokens, "entities": orig_ents}
+        return {"tokens":tokens, "entities": orig_ents, "relations": orig_rels}
 
 
     #TO UPDATE

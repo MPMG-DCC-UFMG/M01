@@ -275,7 +275,38 @@
                 "type": "ORGANIZACAO"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 3,
+                "tail": 2,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 4,
+                "tail": 2,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 6,
+                "tail": 5,
+                "type": "cnpj"
+            },
+            {
+                "head": 11,
+                "tail": 10,
+                "type": "competencia-pessoa"
+            },
+            {
+                "head": 16,
+                "tail": 15,
+                "type": "competencia-pessoa"
+            },
+            {
+                "head": 16,
+                "tail": 17,
+                "type": "competencia-organizacao"
+            }
+        ]
     },
     {
         "tokens": [
@@ -378,7 +409,18 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 2,
+                "tail": 1,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 6,
+                "tail": 5,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -514,7 +556,33 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 0,
+                "tail": 2,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 0,
+                "tail": 3,
+                "type": "data_abertura"
+            },
+            {
+                "head": 1,
+                "tail": 2,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 1,
+                "tail": 3,
+                "type": "data_abertura"
+            },
+            {
+                "head": 6,
+                "tail": 5,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -745,7 +813,43 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 3,
+                "tail": 2,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 5,
+                "tail": 4,
+                "type": "cnpj"
+            },
+            {
+                "head": 6,
+                "tail": 4,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 7,
+                "tail": 4,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 8,
+                "tail": 4,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 9,
+                "tail": 4,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 12,
+                "tail": 11,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -940,7 +1044,28 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 0,
+                "tail": 5,
+                "type": "data_abertura"
+            },
+            {
+                "head": 1,
+                "tail": 5,
+                "type": "data_abertura"
+            },
+            {
+                "head": 4,
+                "tail": 5,
+                "type": "data_abertura"
+            },
+            {
+                "head": 12,
+                "tail": 11,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -1149,7 +1274,28 @@
                 "type": "PESSOA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 4,
+                "tail": 0,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 11,
+                "tail": 10,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 12,
+                "tail": 10,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 15,
+                "tail": 16,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -1401,7 +1547,33 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 2,
+                "tail": 3,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 2,
+                "tail": 5,
+                "type": "data_abertura"
+            },
+            {
+                "head": 11,
+                "tail": 12,
+                "type": "competencia-pessoa"
+            },
+            {
+                "head": 13,
+                "tail": 12,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -1586,7 +1758,23 @@
                 "type": "ORGANIZACAO"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 1,
+                "tail": 0,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 9,
+                "tail": 8,
+                "type": "competencia-pessoa"
+            },
+            {
+                "head": 9,
+                "tail": 10,
+                "type": "competencia-organizacao"
+            }
+        ]
     },
     {
         "tokens": [
@@ -1685,7 +1873,18 @@
                 "type": "TEL"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 1,
+                "tail": 0,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 1,
+                "tail": 2,
+                "type": "data_abertura"
+            }
+        ]
     },
     {
         "tokens": [
@@ -1867,7 +2066,33 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 2,
+                "tail": 3,
+                "type": "contratante-contratado"
+            },
+            {
+                "head": 6,
+                "tail": 5,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 10,
+                "tail": 3,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 11,
+                "tail": 3,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 14,
+                "tail": 13,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -2005,7 +2230,13 @@
                 "type": "DATA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 2,
+                "tail": 1,
+                "type": "licitacao-processo"
+            }
+        ]
     },
     {
         "tokens": [
@@ -2130,7 +2361,28 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 0,
+                "tail": 2,
+                "type": "contrato-licitacao"
+            },
+            {
+                "head": 2,
+                "tail": 1,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 4,
+                "tail": 3,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 8,
+                "tail": 7,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -2310,7 +2562,13 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 7,
+                "tail": 6,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -2418,7 +2676,13 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 0,
+                "tail": 2,
+                "type": "data_abertura"
+            }
+        ]
     },
     {
         "tokens": [
@@ -2584,7 +2848,13 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 8,
+                "tail": 7,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -2733,7 +3003,33 @@
                 "type": "PESSOA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 4,
+                "tail": 3,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 5,
+                "tail": 3,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 8,
+                "tail": 7,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 9,
+                "tail": 10,
+                "type": "contratante-contratado"
+            }
+        ]
     },
     {
         "tokens": [
@@ -2866,7 +3162,28 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 2,
+                "tail": 1,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 3,
+                "tail": 1,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 5,
+                "tail": 4,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 8,
+                "tail": 7,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -2954,7 +3271,23 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 1,
+                "tail": 0,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 3,
+                "tail": 2,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 7,
+                "tail": 6,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -3087,7 +3420,23 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 0,
+                "tail": 3,
+                "type": "contrato-licitacao"
+            },
+            {
+                "head": 4,
+                "tail": 2,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 9,
+                "tail": 8,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -3361,7 +3710,23 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 0,
+                "tail": 4,
+                "type": "data_abertura"
+            },
+            {
+                "head": 13,
+                "tail": 12,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -3444,7 +3809,18 @@
                 "type": "PESSOA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 1,
+                "tail": 0,
+                "type": "cnpj"
+            },
+            {
+                "head": 3,
+                "tail": 2,
+                "type": "licitacao-processo"
+            }
+        ]
     },
     {
         "tokens": [
@@ -3586,7 +3962,18 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 1,
+                "tail": 0,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 7,
+                "tail": 6,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -3764,7 +4151,23 @@
                 "type": "DATA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 0,
+                "tail": 2,
+                "type": "contrato-licitacao"
+            },
+            {
+                "head": 2,
+                "tail": 1,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 6,
+                "tail": 5,
+                "type": "cpf"
+            }
+        ]
     },
     {
         "tokens": [
@@ -3937,7 +4340,13 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 7,
+                "tail": 6,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -4085,7 +4494,28 @@
                 "type": "ORGANIZACAO"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 2,
+                "tail": 1,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 2,
+                "tail": 3,
+                "type": "data_abertura"
+            },
+            {
+                "head": 7,
+                "tail": 6,
+                "type": "competencia-pessoa"
+            },
+            {
+                "head": 7,
+                "tail": 8,
+                "type": "competencia-organizacao"
+            }
+        ]
     },
     {
         "tokens": [
@@ -4250,7 +4680,13 @@
                 "type": "DATA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 5,
+                "tail": 4,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -4427,7 +4863,23 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 2,
+                "tail": 1,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 2,
+                "tail": 4,
+                "type": "data_abertura"
+            },
+            {
+                "head": 9,
+                "tail": 8,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -4592,7 +5044,13 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 6,
+                "tail": 5,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -4732,7 +5190,13 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 7,
+                "tail": 6,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -4852,7 +5316,13 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 7,
+                "tail": 6,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -5005,7 +5475,23 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 0,
+                "tail": 2,
+                "type": "data_abertura"
+            },
+            {
+                "head": 6,
+                "tail": 5,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -5280,7 +5766,33 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 8,
+                "tail": 6,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 9,
+                "tail": 6,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 11,
+                "tail": 10,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 13,
+                "tail": 12,
+                "type": "cpf"
+            },
+            {
+                "head": 16,
+                "tail": 15,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -5477,7 +5989,28 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 2,
+                "tail": 1,
+                "type": "cnpj"
+            },
+            {
+                "head": 3,
+                "tail": 1,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 4,
+                "tail": 1,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 8,
+                "tail": 7,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -5707,7 +6240,33 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "competencia-pessoa"
+            },
+            {
+                "head": 7,
+                "tail": 6,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 7,
+                "tail": 8,
+                "type": "data_abertura"
+            },
+            {
+                "head": 11,
+                "tail": 12,
+                "type": "competencia-pessoa"
+            },
+            {
+                "head": 13,
+                "tail": 12,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -5880,7 +6439,18 @@
                 "type": "TEL"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 1,
+                "tail": 0,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 1,
+                "tail": 5,
+                "type": "data_abertura"
+            }
+        ]
     },
     {
         "tokens": [
@@ -6076,7 +6646,33 @@
                 "type": "ORGANIZACAO"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 1,
+                "tail": 0,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 6,
+                "tail": 5,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 7,
+                "tail": 5,
+                "type": "valor-proposta"
+            },
+            {
+                "head": 10,
+                "tail": 9,
+                "type": "competencia-pessoa"
+            },
+            {
+                "head": 10,
+                "tail": 11,
+                "type": "competencia-organizacao"
+            }
+        ]
     },
     {
         "tokens": [
@@ -6246,7 +6842,18 @@
                 "type": "COMPETENCIA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 1,
+                "tail": 0,
+                "type": "licitacao-processo"
+            },
+            {
+                "head": 7,
+                "tail": 6,
+                "type": "competencia-pessoa"
+            }
+        ]
     },
     {
         "tokens": [
@@ -6334,7 +6941,13 @@
                 "type": "DATA"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 3,
+                "tail": 2,
+                "type": "valor-proposta"
+            }
+        ]
     },
     {
         "tokens": [
@@ -6504,6 +7117,17 @@
                 "type": "ORGANIZACAO"
             }
         ],
-        "relations": []
+        "relations": [
+            {
+                "head": 7,
+                "tail": 6,
+                "type": "competencia-pessoa"
+            },
+            {
+                "head": 7,
+                "tail": 8,
+                "type": "competencia-organizacao"
+            }
+        ]
     }
 ]
