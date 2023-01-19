@@ -22,7 +22,9 @@ res = []
 
 for dic in generated_data:
     tokens = dic["tokens"]
-    if " ".join(tokens).strip().lower() not in original_texts:
+    text = " ".join(tokens).strip().lower()
+    if text not in original_texts:
+        original_texts.add(text)
         res.append(dic)
 
 print("taxa de novos exemplos:", len(res)/len(generated_data))
