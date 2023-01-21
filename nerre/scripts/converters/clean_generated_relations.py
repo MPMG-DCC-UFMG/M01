@@ -13,9 +13,15 @@ generated.close()
 original.close()
 
 original_texts = set()
+original_ents = set()
 
 for dic in original_data:
     tokens = dic["tokens"]
+    for ent in dic["entities"]:
+        start = ent["start"]
+        end = ent["end"]
+        ent_str = " ".join(tokens[start:end]).lower()
+        original_ents.add(ent_str)
     original_texts.add(" ".join(tokens).strip().lower())
 
 res = []
@@ -23,8 +29,18 @@ res = []
 for dic in generated_data:
     tokens = dic["tokens"]
     text = " ".join(tokens).strip().lower()
-    if text not in original_texts:
-        original_texts.add(text)
+    if text in original_texts:
+        continue
+    original_texts.add(text)
+    ok = True
+    for ent in dic["entities"]:
+        start = ent["start"]
+        end = ent["end"]
+        ent_str = " ".join(tokens[start:end]).lower()
+        if ent_str in original_ents:
+            ok = False
+        original_ents.add(ent_str)
+    if ok:
         res.append(dic)
 
 print("taxa de novos exemplos:", len(res)/len(generated_data))
@@ -48,10 +64,14 @@ for dic in res:
     e1 = " ".join(tokens[start1:end1])
     e2 = " ".join(tokens[start2:end2])
 
-    print(f'{rel_type}: {e1}({label1}) --> {e2}({label2})?')
-    print(f'{text}')
-    resp = input('(s/n)?')
-    if resp != 'n':
+    #print(f'{rel_type}: {e1}({label1}) --> {e2}({label2})?')
+    #print(f'{text}')
+
+    if False: #rel_type in ["localizado_em", "contrato-licitacao"]:
+        resp = input('(s/n)?')
+        if resp != 'n':
+            res_corrected.append(dic)
+    else:
         res_corrected.append(dic)
 
 print("taxa de acertos:", len(res_corrected)/len(res))

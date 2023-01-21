@@ -1,6 +1,720 @@
 [
     {
         "tokens": [
+            "Contratante",
+            ":",
+            "La\u00eds",
+            "Faria",
+            "de",
+            "Oliveira",
+            ",",
+            "CPF",
+            ":",
+            "[Id 111.570.906.21 Id]",
+            ".",
+            "Contratada",
+            ":"
+        ],
+        "entities": [
+            {
+                "start": 9,
+                "end": 10,
+                "type": "CPF"
+            },
+            {
+                "start": 2,
+                "end": 6,
+                "type": "PESSOA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "cpf"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "CONTRATADO",
+            ":",
+            "LUCIANO",
+            "SILVA",
+            "RUFINO",
+            ",",
+            "inscrita",
+            "no",
+            "CPF",
+            "n\u00ba",
+            "[Id 080.021",
+            ".",
+            "446-35 Id]",
+            ","
+        ],
+        "entities": [
+            {
+                "start": 10,
+                "end": 13,
+                "type": "CPF"
+            },
+            {
+                "start": 2,
+                "end": 5,
+                "type": "PESSOA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "cpf"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "CONTRATADO",
+            ":",
+            "ERIVALDO",
+            "ALECRIM",
+            "ALVES",
+            "-",
+            "CPF",
+            ":",
+            "[Id 933.444",
+            ".",
+            "226-34 Id]",
+            ".",
+            "VIG\u00caNCIA"
+        ],
+        "entities": [
+            {
+                "start": 8,
+                "end": 11,
+                "type": "CPF"
+            },
+            {
+                "start": 2,
+                "end": 5,
+                "type": "PESSOA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "cpf"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "CONTRATADO",
+            ":",
+            "JOS\u00c9",
+            "CESAR",
+            "DA",
+            "SILVA",
+            "-",
+            "CPF",
+            ":",
+            "[Id 919.609",
+            ".",
+            "092-94 Id]",
+            ".",
+            "VIG\u00caNCIA"
+        ],
+        "entities": [
+            {
+                "start": 9,
+                "end": 12,
+                "type": "CPF"
+            },
+            {
+                "start": 2,
+                "end": 6,
+                "type": "PESSOA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "cpf"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "CONTRATADO",
+            ":",
+            "RAFAEL",
+            "FELIX",
+            "ALVES",
+            "-",
+            "CPF",
+            ":",
+            "[Id 099.865",
+            ".",
+            "236-99 Id]",
+            ".",
+            "VIG\u00caNCIA",
+            ":"
+        ],
+        "entities": [
+            {
+                "start": 8,
+                "end": 11,
+                "type": "CPF"
+            },
+            {
+                "start": 2,
+                "end": 5,
+                "type": "PESSOA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "cpf"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "[Cargo Presidente Cargo]",
+            "da",
+            "CPL",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 0,
+                "end": 1,
+                "type": "COMPETENCIA"
+            },
+            {
+                "start": 2,
+                "end": 3,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "competencia-organizacao"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "Funcion\u00e1ria",
+            "P\u00fablica",
+            "Municipal",
+            ";",
+            "Sueli",
+            "Costa",
+            "-",
+            "[Cargo Diretora Cargo]",
+            "do",
+            "Depto",
+            ".",
+            "de",
+            "Compras",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 7,
+                "end": 8,
+                "type": "COMPETENCIA"
+            },
+            {
+                "start": 9,
+                "end": 13,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "competencia-organizacao"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "[Cargo CNPJ Cargo]",
+            "5.680.038/",
+            "0001-93"
+        ],
+        "entities": [
+            {
+                "start": 0,
+                "end": 1,
+                "type": "COMPETENCIA"
+            },
+            {
+                "start": 1,
+                "end": 3,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "competencia-organizacao"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "GUSTAVO",
+            "SILVA",
+            "DA",
+            "CONCEICAO",
+            "[Cargo Diretor Cargo]",
+            "do",
+            "Departamento",
+            "de",
+            "Contabilidade",
+            ".",
+            "Di\u00e1rio",
+            "Oficial",
+            "do",
+            "Munic\u00edpio",
+            "de",
+            "Par\u00e1",
+            "de",
+            "Minas",
+            ".",
+            "Ter\u00e7a-feira",
+            ",",
+            "02",
+            "de",
+            "fevereiro",
+            "de",
+            "2016",
+            ".",
+            "Ano",
+            "II",
+            ",",
+            "Edi\u00e7\u00e3o",
+            "n\u1d52",
+            "1305",
+            ".",
+            "Pag",
+            ".",
+            "02",
+            "e",
+            "03"
+        ],
+        "entities": [
+            {
+                "start": 4,
+                "end": 5,
+                "type": "COMPETENCIA"
+            },
+            {
+                "start": 6,
+                "end": 9,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "competencia-organizacao"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "A",
+            "empresa",
+            "de",
+            "constru\u00e7\u00e3o",
+            "civil",
+            "Construsul",
+            "LTDA",
+            ",",
+            "inscrita",
+            "no",
+            "CNPJ",
+            ":",
+            "[Jur\u00eddica 12.345.678/",
+            "0001-01 Jur\u00eddica]",
+            ",",
+            "foi",
+            "contratada",
+            "para",
+            "a",
+            "obra",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 12,
+                "end": 14,
+                "type": "CNPJ"
+            },
+            {
+                "start": 5,
+                "end": 7,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "cnpj"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "A",
+            "loja",
+            "de",
+            "eletr\u00f4nicos",
+            "TechShop",
+            ",",
+            "inscrita",
+            "no",
+            "CNPJ",
+            ":",
+            "[Jur\u00eddica 23.456.789/",
+            "0001-02 Jur\u00eddica]",
+            ",",
+            "fornecer\u00e1",
+            "os",
+            "equipamentos",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 10,
+                "end": 12,
+                "type": "CNPJ"
+            },
+            {
+                "start": 4,
+                "end": 5,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "cnpj"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "A",
+            "empresa",
+            "de",
+            "transportes",
+            "Transportadora",
+            "do",
+            "Sul",
+            ",",
+            "inscrita",
+            "no",
+            "CNPJ",
+            ":",
+            "[Jur\u00eddica 34.567.890/",
+            "0001-03 Jur\u00eddica]",
+            ",",
+            "ser\u00e1",
+            "respons\u00e1vel",
+            "pelo",
+            "transporte",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 12,
+                "end": 14,
+                "type": "CNPJ"
+            },
+            {
+                "start": 4,
+                "end": 7,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "cnpj"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "A",
+            "ag\u00eancia",
+            "de",
+            "publicidade",
+            "Publicit\u00e1ria",
+            "EIRELI",
+            ",",
+            "CNPJ",
+            ":",
+            "[Jur\u00eddica 45.678.901/",
+            "0001-04 Jur\u00eddica]",
+            ",",
+            "ser\u00e1",
+            "respons\u00e1vel",
+            "pela",
+            "campanha",
+            "publicit\u00e1ria",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 9,
+                "end": 11,
+                "type": "CNPJ"
+            },
+            {
+                "start": 4,
+                "end": 6,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "cnpj"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "A",
+            "empresa",
+            "de",
+            "seguran\u00e7a",
+            "Seguradora",
+            "LTDA",
+            ",",
+            "CNPJ",
+            ":",
+            "[Jur\u00eddica 56.789.012/",
+            "0001-05 Jur\u00eddica]",
+            ",",
+            "ser\u00e1",
+            "respons\u00e1vel",
+            "pela",
+            "seguran\u00e7a",
+            "do",
+            "evento",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 9,
+                "end": 11,
+                "type": "CNPJ"
+            },
+            {
+                "start": 4,
+                "end": 6,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "cnpj"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "A",
+            "empresa",
+            "de",
+            "alimentos",
+            "NutriFoods",
+            "LTDA",
+            ",",
+            "inscrita",
+            "no",
+            "CNPJ",
+            "[Jur\u00eddica 67.890.123/",
+            "0001-06 Jur\u00eddica]",
+            ",",
+            "ser\u00e1",
+            "contratada",
+            "para",
+            "o",
+            "fornecimento",
+            "de",
+            "alimentos",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 10,
+                "end": 12,
+                "type": "CNPJ"
+            },
+            {
+                "start": 4,
+                "end": 6,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "cnpj"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "A",
+            "empresa",
+            "de",
+            "consultoria",
+            "Empresarial",
+            "LTDA",
+            ",",
+            "CNPJ",
+            "[Jur\u00eddica 78.901.234/",
+            "0001-07 Jur\u00eddica]",
+            ",",
+            "ser\u00e1",
+            "respons\u00e1vel",
+            "pela",
+            "consultoria",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 8,
+                "end": 10,
+                "type": "CNPJ"
+            },
+            {
+                "start": 4,
+                "end": 6,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "cnpj"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "A",
+            "empresa",
+            "de",
+            "manuten\u00e7\u00e3o",
+            "Manuten\u00e7\u00e3o",
+            "LTDA",
+            ",",
+            "inscrita",
+            "no",
+            "CNPJ",
+            "[Jur\u00eddica 89.012.345/",
+            "0001-08 Jur\u00eddica]",
+            ",",
+            "ser\u00e1",
+            "respons\u00e1vel",
+            "pela",
+            "manuten\u00e7\u00e3o",
+            "dos",
+            "equipamentos",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 10,
+                "end": 12,
+                "type": "CNPJ"
+            },
+            {
+                "start": 3,
+                "end": 6,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "cnpj"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "A",
+            "empresa",
+            "de",
+            "limpeza",
+            "Limpadora",
+            "EIRELI",
+            ",",
+            "inscrita",
+            "no",
+            "CNPJ",
+            "[Jur\u00eddica 90.123.456/",
+            "0001-09 Jur\u00eddica]",
+            ",",
+            "ser\u00e1",
+            "respons\u00e1vel",
+            "pela",
+            "limpeza",
+            "do",
+            "pr\u00e9dio",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 10,
+                "end": 12,
+                "type": "CNPJ"
+            },
+            {
+                "start": 4,
+                "end": 6,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "cnpj"
+            }
+        ]
+    },
+    {
+        "tokens": [
             "MUNIC\u00cdPIO",
             "DE",
             "BR\u00c1S",
