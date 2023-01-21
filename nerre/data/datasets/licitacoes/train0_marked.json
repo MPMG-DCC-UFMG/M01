@@ -1666,7 +1666,7 @@
             {
                 "head": 0,
                 "tail": 1,
-                "type": "proposta-valor"
+                "type": "valor-proposta"
             }
         ]
     },
@@ -1711,7 +1711,7 @@
             {
                 "head": 0,
                 "tail": 1,
-                "type": "proposta-valor"
+                "type": "valor-proposta"
             }
         ]
     },
@@ -1760,7 +1760,7 @@
             {
                 "head": 0,
                 "tail": 1,
-                "type": "proposta-valor"
+                "type": "valor-proposta"
             }
         ]
     },
@@ -1808,7 +1808,7 @@
             {
                 "head": 0,
                 "tail": 1,
-                "type": "proposta-valor"
+                "type": "valor-proposta"
             }
         ]
     },
@@ -1853,7 +1853,7 @@
             {
                 "head": 0,
                 "tail": 1,
-                "type": "proposta-valor"
+                "type": "valor-proposta"
             }
         ]
     },
@@ -1890,7 +1890,7 @@
             {
                 "head": 0,
                 "tail": 1,
-                "type": "proposta-valor"
+                "type": "valor-proposta"
             }
         ]
     },
@@ -1929,7 +1929,7 @@
             {
                 "head": 0,
                 "tail": 1,
-                "type": "proposta-valor"
+                "type": "valor-proposta"
             }
         ]
     },
@@ -1966,7 +1966,7 @@
             {
                 "head": 0,
                 "tail": 1,
-                "type": "proposta-valor"
+                "type": "valor-proposta"
             }
         ]
     },
@@ -2005,7 +2005,7 @@
             {
                 "head": 0,
                 "tail": 1,
-                "type": "proposta-valor"
+                "type": "valor-proposta"
             }
         ]
     },
@@ -2047,7 +2047,7 @@
             {
                 "head": 0,
                 "tail": 1,
-                "type": "proposta-valor"
+                "type": "valor-proposta"
             }
         ]
     },
@@ -2088,7 +2088,7 @@
             {
                 "head": 0,
                 "tail": 1,
-                "type": "proposta-valor"
+                "type": "valor-proposta"
             }
         ]
     },
@@ -2134,7 +2134,7 @@
             {
                 "head": 0,
                 "tail": 1,
-                "type": "proposta-valor"
+                "type": "valor-proposta"
             }
         ]
     },
@@ -2173,7 +2173,7 @@
             {
                 "head": 0,
                 "tail": 1,
-                "type": "proposta-valor"
+                "type": "valor-proposta"
             }
         ]
     },
@@ -2206,7 +2206,7 @@
             {
                 "head": 0,
                 "tail": 1,
-                "type": "proposta-valor"
+                "type": "valor-proposta"
             }
         ]
     },
