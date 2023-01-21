@@ -127,7 +127,8 @@ class JsonFormater:
     #tokenizer: spaCy model
     def __init__(self, tokenizer):
         self.tokenizer = tokenizer
-        self.labels = {"DATA": "Data", "CPF": "Id", "CNPJ": "Jurídica", "MASP": "Matrícula", "LOCAL": "Local", "COMPETENCIA": "Cargo", "LEGISLACAO": "Lei"}
+        self.labels = {"DATA": "Data", "CPF": "Id", "CNPJ": "Jurídica", "MASP": "Matrícula", "COMPETENCIA": "Cargo",
+                       "LEGISLACAO": "Lei", "LICITACAO": "Licitação", "PROCESSO": "Processo", "CONTRATO": "Contrato"}
 
     #ents = triples (start, end, label)
     def format(self, text, ents):
