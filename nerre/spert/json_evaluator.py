@@ -125,5 +125,5 @@ min_score = 0
 if len(sys.argv) == 4:
     min_score = float(sys.argv[3])
 
-evaluate(pred[:30], gt[:30], min_score=min_score)
+evaluate(pred, gt, min_score=min_score)
 
