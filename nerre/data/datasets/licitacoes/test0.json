@@ -1,6 +1,498 @@
 [
     {
         "tokens": [
+            "CONTRATANTE",
+            ":",
+            "MUNICIPIO",
+            "DE",
+            "ARCOS",
+            "CONTRATADO",
+            ":",
+            "IBAM",
+            "-",
+            "INSTITUTO",
+            "BRASILEIRO",
+            "DE",
+            "ADMINISTRA\u00c7\u00c3O",
+            "MUNICIPAL"
+        ],
+        "entities": [
+            {
+                "start": 2,
+                "end": 5,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 7,
+                "end": 14,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "contratante-contratado"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "Contratante",
+            ":",
+            "Munic\u00edpio",
+            "de",
+            "Cora\u00e7\u00e3o",
+            "de",
+            "Jesus-MG",
+            "-",
+            "Contratado",
+            ":",
+            "WELLINGTON",
+            "DURAES",
+            "LIMA"
+        ],
+        "entities": [
+            {
+                "start": 2,
+                "end": 7,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 10,
+                "end": 13,
+                "type": "PESSOA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "contratante-contratado"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "Contratante",
+            ":",
+            "Munic\u00edpio",
+            "de",
+            "Cora\u00e7\u00e3o",
+            "de",
+            "Jesus",
+            "-",
+            "MG",
+            "-",
+            "Contratado",
+            ":",
+            "T.",
+            "NOGUEIRA",
+            "MELO",
+            "-",
+            "COMERCIO",
+            "-",
+            "ME"
+        ],
+        "entities": [
+            {
+                "start": 2,
+                "end": 7,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 12,
+                "end": 19,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "contratante-contratado"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "Contratante",
+            ":",
+            "Munic\u00edpio",
+            "de",
+            "Guarda-Mor",
+            "\u2013",
+            "Contratado",
+            "(",
+            "a",
+            "):",
+            "MEN",
+            "CONSTRU\u00c7\u00d5ES",
+            "E",
+            "LIMPEZA",
+            "LTDA-ME"
+        ],
+        "entities": [
+            {
+                "start": 2,
+                "end": 5,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 10,
+                "end": 15,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "contratante-contratado"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "Contratante",
+            ":",
+            "Mun\u00edcipio",
+            "de",
+            "Itamarati",
+            "de",
+            "Minas",
+            "Contratada",
+            ":",
+            "FORTALEZA",
+            "COM\u00c9RCIO",
+            "DE",
+            "ALIMENTOS",
+            "LTDA"
+        ],
+        "entities": [
+            {
+                "start": 2,
+                "end": 7,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 9,
+                "end": 14,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "contratante-contratado"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "Contratante",
+            "..",
+            ":",
+            "Prefeitura",
+            "Municipal",
+            "de",
+            "Cabo",
+            "Verde",
+            "(",
+            "mg",
+            ")",
+            "Contratada",
+            "...",
+            ":",
+            "Distribuidora",
+            "Prod",
+            ".",
+            "Odontol\u00f3gicos",
+            "e",
+            "Materiais",
+            "Ltda"
+        ],
+        "entities": [
+            {
+                "start": 3,
+                "end": 8,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 14,
+                "end": 21,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "contratante-contratado"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "Contratante",
+            ":",
+            "Munic\u00edpio",
+            "de",
+            "Itanhomi",
+            ".",
+            "Contratado",
+            ":",
+            "Dr\u00aa.",
+            "Alessandra",
+            "Dias",
+            "Pires",
+            "."
+        ],
+        "entities": [
+            {
+                "start": 2,
+                "end": 5,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 9,
+                "end": 12,
+                "type": "PESSOA"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "contratante-contratado"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "Munic\u00edpio",
+            "de",
+            "Varginha",
+            ",",
+            "doravante",
+            "denominado",
+            "CONTRATANTE",
+            ",",
+            "e",
+            "de",
+            "outro",
+            "lado",
+            "a",
+            "empresa",
+            "CENTRO",
+            "TERAPEUTICO",
+            "EMANNUEL",
+            "LTDA-ME",
+            ",",
+            "doravante",
+            "denominada",
+            "CONTRATADA"
+        ],
+        "entities": [
+            {
+                "start": 0,
+                "end": 3,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 14,
+                "end": 18,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "contratante-contratado"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "Prefeitura",
+            "Municial",
+            "de",
+            "Ipatinga",
+            ",",
+            "doravante",
+            "denominado",
+            "CONTRATANTE",
+            ",",
+            "e",
+            "de",
+            "outro",
+            "lado",
+            "a",
+            "TAMBASA",
+            "EIRELI",
+            ",",
+            "doravante",
+            "denominada",
+            "CONTRATADA"
+        ],
+        "entities": [
+            {
+                "start": 0,
+                "end": 4,
+                "type": "ORGANIZACAO"
+            },
+            {
+                "start": 14,
+                "end": 16,
+                "type": "ORGANIZACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "contratante-contratado"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "CONTRATO",
+            "VIGENTE",
+            "-",
+            "DISPENSA",
+            "DE",
+            "LICITA\u00c7\u00c3O",
+            "N\u00ba",
+            ":",
+            "223/2019",
+            "CONTRATO",
+            "N\u00ba",
+            "078/2019"
+        ],
+        "entities": [
+            {
+                "start": 9,
+                "end": 12,
+                "type": "CONTRATO"
+            },
+            {
+                "start": 3,
+                "end": 9,
+                "type": "LICITACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "contrato-licitacao"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "CONTRATO",
+            "VIGENTE",
+            "-",
+            "INEXIGIBILIDADE",
+            "DE",
+            "LICITA\u00c7\u00c3O",
+            "N\u00ba",
+            ":",
+            "001/2019",
+            "CONTRATO",
+            "N\u00ba",
+            "001/2019"
+        ],
+        "entities": [
+            {
+                "start": 9,
+                "end": 12,
+                "type": "CONTRATO"
+            },
+            {
+                "start": 3,
+                "end": 9,
+                "type": "LICITACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "contrato-licitacao"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "CONTRATO",
+            "N\u00ba",
+            "991247",
+            "/",
+            "2019",
+            "-",
+            "INEXIGIBILIDADE",
+            "N\u00ba",
+            "5/2015"
+        ],
+        "entities": [
+            {
+                "start": 0,
+                "end": 5,
+                "type": "CONTRATO"
+            },
+            {
+                "start": 6,
+                "end": 9,
+                "type": "LICITACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "contrato-licitacao"
+            }
+        ]
+    },
+    {
+        "tokens": [
+            "CONTRATO",
+            "N\u00ba",
+            "991248",
+            "/",
+            "2019",
+            "-",
+            "INEXIGIBILIDADE",
+            "N\u00ba",
+            "5/2015"
+        ],
+        "entities": [
+            {
+                "start": 0,
+                "end": 5,
+                "type": "CONTRATO"
+            },
+            {
+                "start": 6,
+                "end": 9,
+                "type": "LICITACAO"
+            }
+        ],
+        "relations": [
+            {
+                "head": 0,
+                "tail": 1,
+                "type": "contrato-licitacao"
+            }
+        ]
+    },
+    {
+        "tokens": [
             "Contratante",
             ":",
             "La\u00eds",
