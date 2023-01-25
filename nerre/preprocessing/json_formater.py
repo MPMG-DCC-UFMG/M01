@@ -32,7 +32,7 @@ def to_iob(jdata, outfile):
         print(file=outfile)
 
 
-def to_char_level_format(jdata, source_file=None, dest_file=None, use_entity_indices=False):
+def to_char_level_format(jdata, source_file=None, dest_file=None, use_entity_indices=True):
     segments = []
     res = {}
     for dic in jdata:

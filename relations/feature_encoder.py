@@ -31,7 +31,7 @@ class FeatureEncoder:
         y = self.label_enc.transform(y)
         np_num = X[:, n-self.n_numerical_features:n-1]
         X_num = csr_matrix(np_num.astype(np.float64))
-        categorical_features = X[:, 1:n-self.n_numerical_features]
+        categorical_features = X[:, 3:n-self.n_numerical_features]
         X_cat = self.enc.transform(categorical_features)
         texts = X[:, n-1]
         X_text = self.text_enc.transform(texts)

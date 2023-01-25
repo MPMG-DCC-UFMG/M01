@@ -91,7 +91,7 @@ class RelationFeaturizer:
                         lab = self.ents2rels[rel_ident]
                         if lab in self.labels:
                             y = lab
-                    row = [y]
+                    row = [y, i, j]
                     d = self.dist(e1, e2)
                     row.append(e1.label)
                     row.append(e2.label)
