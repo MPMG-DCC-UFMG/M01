@@ -8,7 +8,7 @@ def ent_tuple_typeless(ent):
     return (ent["start"], ent["end"])
 
 
-def convert(jdata, min_score=0):
+def convert(jdata, min_score=0, blacklist=set()):
     rels = {"|micro": set()}
     ents = {"|micro": set()}
     for i,dic in enumerate(jdata):
@@ -23,6 +23,8 @@ def convert(jdata, min_score=0):
             start = ent["start"]
             end = ent["end"]
             label = ent["type"]
+            if label in blacklist:
+                continue
             if label not in ents:
                 ents[label] = set()
             cls = (i, ent_tuple(ent))
@@ -46,16 +48,18 @@ def convert(jdata, min_score=0):
                 pair2 = pair1
                 pair1 = aux
             label = rel["type"]
+            if label in blacklist:
+                continue
             if label not in rels:
                 rels[label] = set()
             cls = (i, pair1, pair2, label)
             rels[label].add(cls)
             rels["|micro"].add(cls)
-    return ents,rels
+    return ents, rels
 
-def evaluate(pred, gt, min_score=0):
-    gt_ents, gt_rels = convert(gt, min_score=min_score)
-    pred_ents, pred_rels = convert(pred)
+def evaluate(pred, gt, min_score=0, blacklist=set()):
+    gt_ents, gt_rels = convert(gt, min_score=min_score, blacklist=blacklist)
+    pred_ents, pred_rels = convert(pred, blacklist=blacklist)
     print("Entities")
     print(calc_metrics(pred_ents, gt_ents))
     print("Relations")
@@ -118,12 +122,17 @@ import json
 
 file1 = open(sys.argv[1], encoding="utf-8")
 file2 = open(sys.argv[2], encoding="utf-8")
+
+blacklist = set()
+if len(sys.argv) == 4:
+    blacklist = set(sys.argv[3].split())
+
 pred = json.load(file1)
 gt = json.load(file2)
 
 min_score = 0
-if len(sys.argv) == 4:
-    min_score = float(sys.argv[3])
+if len(sys.argv) == 5:
+     min_score = float(sys.argv[4])
 
-evaluate(pred, gt, min_score=min_score)
+evaluate(pred, gt, min_score=min_score, blacklist=blacklist)
 
