@@ -12,7 +12,6 @@ from municipio_matcher import MunicipioMatcher
 from name_gender import NameGenderClassifier
 import joblib
 from collections import Counter
-
 import re
 
 #DATE_PATTERN = re.compile("(\d\d?\s?/\s?\d\d?/\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\-\s?\d\d?\-\s?\d\s?\.?\s?\d(\d\d)?)|(\d\d?\s?\.\s?\d\d?\.\s?\d\s?\.?\s?\d(\d\d)?)")

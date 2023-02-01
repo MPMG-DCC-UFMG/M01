@@ -2,7 +2,7 @@ from relation import Relation
 from entity import Entity
 from collections import defaultdict
 import re
-import joblib
+#import joblib
 #from name_gender import NameGenderClassifier
 
 
@@ -157,7 +157,7 @@ class RelationExtractor:
             e1.add_candidate(e2, d, "contrato-licitacao")
 
     def cpf(self, e1, e2):
-        #d = self.proximity_score(e1, e2, context_size=40, prioritize_e1_before_e2=True)
+        #prox_score = self.proximity_score(e1, e2, context_size=200, prioritize_e1_before_e2=True)
         d = e2.start - e1.end
         if d < 0:
             return

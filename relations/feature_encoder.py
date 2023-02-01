@@ -19,7 +19,7 @@ class FeatureEncoder:
         n = len(X[0])
         y = X[:, 0]
         self.label_enc.fit(y)
-        categorical_features = X[:, 1:n-self.n_numerical_features]
+        categorical_features = X[:, 3:n-self.n_numerical_features]
         self.enc.fit(categorical_features)
         texts = X[:, n-1]
         self.text_enc.fit(texts)
