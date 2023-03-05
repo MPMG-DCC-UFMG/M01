@@ -12,6 +12,8 @@ import json
 import sys
 import joblib
 from name_gender import NameGenderClassifier
+import shap
+
 
 ngc = joblib.load("data/name_gender.joblib")
 
@@ -86,8 +88,52 @@ if __name__ == "__main__":
     pred = feature_enc.label_enc.inverse_transform(clf.predict(X_test))
     y_true = feature_enc.label_enc.inverse_transform(y_test)
     labels = set(list(y_true))
-    labels -= set(["0"])
+    labels -= {"0"}
     labels = list(labels)
+    #target_label = "data_abertura"
 
-    print(classification_report(y_true, pred, labels=labels))
+
+    for target_label in ["data_nascimento"]: #feature_enc.label_enc.classes_:
+        if target_label == "0":
+            continue
+        indices_pred = [i for i in range(len(pred)) if pred[i] == target_label]
+        indices_true = [i for i in range(len(pred)) if y_true[i] == target_label]
+        indices = sorted(list(set(indices_pred + indices_true)))
+        if len(indices) == 0:
+            continue
+        # print(f"\n\nPredicted as {target_label}:")
+        # for idx in indices_pred:
+        #     print(y_true[idx], features_test[idx])
+        #     print("---------------")
+        #
+        # print(f"\n\nTrue label = {target_label}:")
+        # for idx in indices_true:
+        #     print(y_true[idx], features_test[idx])
+        #     print("---------------")
+        #
+
+        print(classification_report(y_true, pred, labels=labels))
+        feat_names = feature_enc.feature_names()
+        explainer = shap.KernelExplainer(clf.predict, X_train[0:5, :]) #-np.ones((1, len(feat_names))))
+        shap_values = explainer.shap_values(X_test[indices, :])
+        expected_value = explainer.expected_value
+
+
+        ############## visualizations #############
+        # Generate summary dot plot
+        print(target_label)
+        shap.summary_plot(shap_values, X_test[indices, :], feature_names=feat_names, title=target_label,
+                          max_display=10)
+        #shap.force_plot(expected_value, shap_values, X_test[indices, :], feature_names=feat_names, show=True)
+
+        # Generate summary bar plot
+        #shap.summary_plot(shap_values, X_test[indices, :], feature_names=feat_names, plot_type="bar",
+        #                  title=target_label, max_display=10)
+
+        # Generate waterfall plot
+        #shap.plots._waterfall.waterfall_legacy(expected_value, shap_values[4], features=X_test.todense()[4, :],
+        #                                       feature_names=feat_names, max_display=15, show=True)
+
+        #shap.decision_plot(expected_value, shap_values[0],link='logit', features=X_test.todense()[0, :],
+        #                   feature_names=feat_names, show=True, title="Decision Plot")
 

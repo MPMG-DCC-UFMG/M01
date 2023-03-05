@@ -1,0 +1,2 @@
+port = 5010
+model = models/domg_pessoas0.joblib, models/licit0.joblib

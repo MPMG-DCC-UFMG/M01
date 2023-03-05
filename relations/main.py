@@ -65,21 +65,28 @@ def extract_relations(data, use_indices=True, verbose=False):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print ("usage: %s <input file (.json produced by NER)> <outfile (.json with relations included)>" % sys.argv[0])
+        print ("usage: %s <input file (.json produced by NER)> [outfile (.json with relations included)]" % sys.argv[0])
         sys.exit(-1)
 
     ngc = joblib.load("data/name_gender.joblib")
     use_indices = False
     verbose = False
+    num_file_args = len(sys.argv)
     for arg in sys.argv[1:]:
         if "--use-indices" == arg:
             use_indices = True
+            num_file_args -= 1
         if "--verbose" == arg:
             verbose = True
+            num_file_args -= 1
+
     filename = sys.argv[1]
-    outname = sys.argv[2]
+    if num_file_args < 3:
+        outfile = sys.stdout
+    else:
+        outname = sys.argv[2]
+        outfile = open(outname, "w", encoding="utf-8")
     infile = open(filename, encoding="utf-8")
-    outfile = open(outname, "w", encoding="utf-8")
     data = json.load(infile)
     infile.close()
     #data é modificado, acrescentando-se as relações

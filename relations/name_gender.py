@@ -3,12 +3,13 @@ from sklearn.svm import SVC
 from sklearn.naive_bayes import GaussianNB, MultinomialNB, BernoulliNB
 from sklearn.model_selection import cross_validate
 import joblib
+import pandas as pd
 
 class NameGenderClassifier:
     def __init__(self, lookup=None):
         self.lookup = lookup
         self.onehot = OneHotEncoder(handle_unknown='ignore')
-        self.classifier = SVC(kernel='linear')
+        self.classifier = BernoulliNB() #SVC(kernel='linear')
 
     def featurize(self, name):
         return [name[-1], name[-3:], name[:3]]
@@ -36,7 +37,10 @@ class NameGenderClassifier:
 
 
 if __name__ == "__main__":
-    ngc = joblib.load("data/name_gender.joblib")
+    #ngc = joblib.load("data/name_gender_old.joblib")
+    ngc = NameGenderClassifier()
+    data = pd.read_csv("data/name_gender.csv", encoding="utf-8").dropna().values
+    ngc.fit(data)
     for nome in "Mariana Mariane Marcela Capitu Dorotenilde Valdirene Adriele Adriel Bento Bentinho Tales Fabiano Doruvey Valdir".split():
         print(nome, "M" if ngc.predict(nome) == 1 else "F")
-
+    joblib.dump(ngc, "data/name_gender.joblib")

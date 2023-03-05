@@ -2,12 +2,12 @@ from collections import defaultdict
 
 
 class Entity:
-    def __init__(self, start, end, string, label):
+    def __init__(self, start, end, string, label, idx=None):
         self.start = start #indice do caractere inicial da entidade no texto
         self.end = end #indice do caractere final da entidade no texto
         self.string = string #sequencia de caracteres da entidade (equivale a texto[start:end])
         self.label = label #tipo da entidade
-        self.idx = None #Indice da entidade na lista de entidades (ajustado depois)
+        self.idx = idx #Indice da entidade na lista de entidades (ajustado depois se for None)
         self.lower_string = self.string.lower()
 
         # mapeia o nome da relacao p/ a lista de entidades relacionadas

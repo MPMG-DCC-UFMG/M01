@@ -13,7 +13,7 @@ import sys
 import joblib
 from name_gender import NameGenderClassifier
 
-ngc = joblib.load("data/name_gender.joblib")
+ngc = joblib.load("data/name_gender_old.joblib")
 
 #labels_to_use = set("cpf pessoa-pai pessoa-mae data_nascimento".split())
 #labels_to_use = set("cpf cnpj licitacao-processo valor-proposta competencia-organizacao competencia-pessoa".split())
