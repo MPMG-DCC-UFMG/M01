@@ -24,7 +24,8 @@ class BaseTrainer:
         self._args = args
         self._debug = self._args.debug
 
-        run_key = str(datetime.datetime.now()).replace(' ', '_')
+        #run_key = str(datetime.datetime.now()).replace(' ', '_')
+        run_key = ""
 
         if hasattr(args, 'save_path'):
             self._save_path = os.path.join(self._args.save_path, self._args.label, run_key)
