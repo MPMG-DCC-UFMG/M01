@@ -76,9 +76,9 @@ if __name__ == "__main__":
     feature_enc = FeatureEncoder()
     feature_enc.fit(features_train)
     X_train, y_train = feature_enc.transform(features_train)
-    sample_indices = negative_sampling(y_train, frac=1)
-    X_train = X_train[sample_indices]
-    y_train = y_train[sample_indices]
+    #sample_indices = negative_sampling(y_train, frac=1)
+    #X_train = X_train[sample_indices]
+    #y_train = y_train[sample_indices]
 
     clf = SVC(kernel='linear', probability=True)
     clf.fit(X_train, y_train)
