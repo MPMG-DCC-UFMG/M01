@@ -1,5 +1,5 @@
 Jinja2==2.11.3
-torch==1.10.2
+torch==1.13.1
 torchmetrics==0.6.2
 tqdm==4.62.3
 transformers==4.12.5
